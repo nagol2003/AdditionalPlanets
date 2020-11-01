@@ -1,5 +1,7 @@
 package io.github.nagol2003.planets;
 
+//import com.typesafe.config.Config;
+
 import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.Const;
 import io.github.nagol2003.AddonConfig.Dimension;
@@ -35,6 +37,7 @@ import net.minecraft.world.biome.Biome.SpawnListEntry;
 
 ;
 
+
 /**
  * Class AddonCelestialBodies
  * 
@@ -49,13 +52,22 @@ public class AddonCelestialBodies {
 
 	// Systems
 	public static SolarSystem customSystem;
+	public static SolarSystem AlphaCentauri;
+	public static SolarSystem Zakir;
 
 	// Planets
 	public static Planet planetOne;
 	public static Planet planetTwo;
+	public static Planet ProximaCentauriB;
+	public static Planet ZakirPrime;
+	public static Planet AlphaCentauriV;
+	public static Planet AlphaCentaurfour;
+	public static Planet AlphaCentaurone;
+	public static Planet AlphaCentaurtwo;
 
 	// Moons
 	public static Moon planetOneMoon;
+	public static Moon AlphaCentauroneA;
 
 	// SpaceStations
 	public static Satellite planetTwoSpaceStation;
@@ -108,6 +120,16 @@ public class AddonCelestialBodies {
 		Star starSol = (Star) new Star("custom_star").setParentSolarSystem(customSystem).setTierRequired(-1);
 		starSol.setBodyIcon(new ResourceLocation(Constants.ASSET_PREFIX, "textures/gui/celestialbodies/sun.png"));
 		customSystem.setMainStar(starSol);
+		
+		AlphaCentauri = new SolarSystem("AlphaCentauri", "milky_way").setMapPosition(new Vector3(3.8F, 1.6F, 0.0F));
+		Star starSol3 = (Star) new Star("AlphaCentauri").setParentSolarSystem(AlphaCentauri).setTierRequired(-1);
+		starSol3.setBodyIcon(new ResourceLocation(micdoodle8.mods.galacticraft.core.Constants.ASSET_PREFIX, "textures/gui/celestialbodies/sun.png"));
+		AlphaCentauri.setMainStar(starSol3);
+		
+		Zakir = new SolarSystem("Zakir", "milky_way").setMapPosition(new Vector3(4.8F, 2.6F, 0.0F));
+		Star starSol4 = (Star) new Star("ZakirStar").setParentSolarSystem(Zakir).setTierRequired(-1);
+		starSol4.setBodyIcon(new ResourceLocation(micdoodle8.mods.galacticraft.core.Constants.ASSET_PREFIX, "textures/gui/celestialbodies/sun.png"));
+		Zakir.setMainStar(starSol4);
 	}
 
 	/**
@@ -116,6 +138,90 @@ public class AddonCelestialBodies {
 	private static void registerPlanets_2nd_Task() {
 
 		// build planetOne
+		ZakirPrime = new Planet("ZakirPrime").setParentSolarSystem(Zakir);
+		ZakirPrime.setTierRequired(6);
+		ZakirPrime.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		ZakirPrime.setPhaseShift(1.45F);
+		ZakirPrime.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.0F, 1.0F));
+		ZakirPrime.setRelativeOrbitTime(1.0F);
+		ZakirPrime.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
+		ZakirPrime.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/planetOne.png"));
+		ZakirPrime.setDimensionInfo(dim.idPlanetOne, WorldProviderPlanetOne.class);
+		ZakirPrime.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		ZakirPrime.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
+		ZakirPrime.setBiomeInfo(PlanetOneBiomes.planetOne, PlanetOneBiomes.planetOne_sea);
+		setMobInfo(ZakirPrime);
+		
+		ProximaCentauriB = new Planet("ProximaCentauriB").setParentSolarSystem(AlphaCentauri);
+		ProximaCentauriB.setTierRequired(6);
+		ProximaCentauriB.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		ProximaCentauriB.setPhaseShift(1.45F);
+		ProximaCentauriB.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
+		ProximaCentauriB.setRelativeOrbitTime(1.0F);
+		ProximaCentauriB.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
+		ProximaCentauriB.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/PCB.png"));
+		ProximaCentauriB.setDimensionInfo(dim.idPlanetOne, WorldProviderPlanetOne.class);
+		ProximaCentauriB.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		ProximaCentauriB.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
+		ProximaCentauriB.setBiomeInfo(PlanetOneBiomes.planetOne, PlanetOneBiomes.planetOne_sea);
+		setMobInfo(ProximaCentauriB);
+		
+		AlphaCentauriV = new Planet("AlphaCentauriV").setParentSolarSystem(AlphaCentauri);
+		AlphaCentauriV.setTierRequired(6);
+		AlphaCentauriV.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		AlphaCentauriV.setPhaseShift(1.30F);
+		AlphaCentauriV.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.0F, 2.0F));
+		AlphaCentauriV.setRelativeOrbitTime(2.0F);
+		AlphaCentauriV.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
+		AlphaCentauriV.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/planetOne.png"));
+		AlphaCentauriV.setDimensionInfo(dim.idPlanetOne, WorldProviderPlanetOne.class);
+		AlphaCentauriV.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		AlphaCentauriV.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
+		AlphaCentauriV.setBiomeInfo(PlanetOneBiomes.planetOne, PlanetOneBiomes.planetOne_sea);
+		setMobInfo(AlphaCentauriV);
+		
+		AlphaCentaurfour = new Planet("AlphaCentaurfour").setParentSolarSystem(AlphaCentauri);
+		AlphaCentaurfour.setTierRequired(6);
+		AlphaCentaurfour.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		AlphaCentaurfour.setPhaseShift(1.30F);
+		AlphaCentaurfour.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.6F, 1.6F));
+		AlphaCentaurfour.setRelativeOrbitTime(2.0F);
+		AlphaCentaurfour.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
+		AlphaCentaurfour.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/planetOne.png"));
+		AlphaCentaurfour.setDimensionInfo(dim.idPlanetOne, WorldProviderPlanetOne.class);
+		AlphaCentaurfour.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		AlphaCentaurfour.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
+		AlphaCentaurfour.setBiomeInfo(PlanetOneBiomes.planetOne, PlanetOneBiomes.planetOne_sea);
+		setMobInfo(AlphaCentaurfour);
+		
+		AlphaCentaurtwo = new Planet("AlphaCentaurtwo").setParentSolarSystem(AlphaCentauri);
+		AlphaCentaurtwo.setTierRequired(6);
+		AlphaCentaurtwo.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		AlphaCentaurtwo.setPhaseShift(1.30F);
+		AlphaCentaurtwo.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.80F, 0.80F));
+		AlphaCentaurtwo.setRelativeOrbitTime(2.0F);
+		AlphaCentaurtwo.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
+		AlphaCentaurtwo.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/planetOne.png"));
+		AlphaCentaurtwo.setDimensionInfo(dim.idPlanetOne, WorldProviderPlanetOne.class);
+		AlphaCentaurtwo.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		AlphaCentaurtwo.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
+		AlphaCentaurtwo.setBiomeInfo(PlanetOneBiomes.planetOne, PlanetOneBiomes.planetOne_sea);
+		setMobInfo(AlphaCentaurtwo);
+		
+		AlphaCentaurone = new Planet("AlphaCentaurone").setParentSolarSystem(AlphaCentauri);
+		AlphaCentaurone.setTierRequired(6);
+		AlphaCentaurone.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		AlphaCentaurone.setPhaseShift(1.30F);
+		AlphaCentaurone.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.40F, 0.40F));
+		AlphaCentaurone.setRelativeOrbitTime(2.0F);
+		AlphaCentaurone.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
+		AlphaCentaurone.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/planetOne.png"));
+		AlphaCentaurone.setDimensionInfo(dim.idPlanetOne, WorldProviderPlanetOne.class);
+		AlphaCentaurone.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		AlphaCentaurone.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
+		AlphaCentaurone.setBiomeInfo(PlanetOneBiomes.planetOne, PlanetOneBiomes.planetOne_sea);
+		setMobInfo(AlphaCentaurone);
+		
 		planetOne = new Planet("planet_one").setParentSolarSystem(customSystem);
 		planetOne.setTierRequired(3);
 		planetOne.setRingColorRGB(0.1F, 0.9F, 0.6F);
@@ -123,7 +229,7 @@ public class AddonCelestialBodies {
 		planetOne.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.0F, 1.0F));
 		planetOne.setRelativeOrbitTime(1.0F);
 		planetOne.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
-		planetOne.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/planetOne.png"));
+		planetOne.setBodyIcon(new ResourceLocation("galacticraftcore:textures/gui/celestialbodies/space_station.png"));
 		planetOne.setDimensionInfo(dim.idPlanetOne, WorldProviderPlanetOne.class);
 		planetOne.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		planetOne.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
@@ -131,14 +237,14 @@ public class AddonCelestialBodies {
 		setMobInfo(planetOne);
 
 		// build planetTwo
-		planetTwo = new Planet("planet_one").setParentSolarSystem(customSystem);
+		planetTwo = new Planet("planet_two").setParentSolarSystem(customSystem);
 		planetTwo.setTierRequired(3);
 		planetTwo.setRingColorRGB(0.1F, 0.9F, 0.6F);
 		planetTwo.setPhaseShift(1.45F);
 		planetTwo.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.5F, 1.5F));
 		planetTwo.setRelativeOrbitTime(1.0F);
 		planetTwo.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
-		planetTwo.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/planetTwo.png"));
+		planetTwo.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/PCB.png"));
 		planetTwo.setDimensionInfo(dim.idPlanetTwo, WorldProviderPlanetTwo.class);
 		planetTwo.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		planetTwo.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
@@ -163,6 +269,20 @@ public class AddonCelestialBodies {
 		planetOneMoon.setDimensionInfo(dim.idMoon, WorldProviderPlanetOneMoon.class);
 		planetOneMoon.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.2F));
 		planetOneMoon.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
+		//TRITON.setBiomeInfo(TritonBiomes.triton, TritonBiomes.tritonIceLands, TritonBiomes.tritonIceSea);
+		
+		AlphaCentauroneA = new Moon("AlphaCentauroneA").setParentPlanet(AlphaCentaurone);
+		AlphaCentauroneA.setPhaseShift(2.436F);
+		AlphaCentauroneA.setRingColorRGB(0.1F, 0.1F, 0.6F);
+		AlphaCentauroneA.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(9F, 9F));
+		AlphaCentauroneA.setRelativeOrbitTime(75.0F);
+		AlphaCentauroneA.setTierRequired(7);
+		AlphaCentauroneA.setRelativeSize(0.3867F);
+		AlphaCentauroneA.atmosphereComponent(EnumAtmosphericGas.HYDROGEN).atmosphereComponent(EnumAtmosphericGas.HELIUM).atmosphereComponent(EnumAtmosphericGas.METHANE);
+		AlphaCentauroneA.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX , "textures/gui/celestialbodies/planetOneMoon.png"));
+		AlphaCentauroneA.setDimensionInfo(dim.idMoon, WorldProviderPlanetOneMoon.class);
+		AlphaCentauroneA.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.2F));
+		AlphaCentauroneA.addChecklistKeys("space_suit", "equip_oxygen_suit", "equip_parachute");
 		//TRITON.setBiomeInfo(TritonBiomes.triton, TritonBiomes.tritonIceLands, TritonBiomes.tritonIceSea);
 		
 	}
@@ -207,9 +327,18 @@ public class AddonCelestialBodies {
 
 		GalaxyRegistry.registerSolarSystem(customSystem);
 		GalaxyRegistry.registerSolarSystem(customSystem);
+		GalaxyRegistry.registerSolarSystem(AlphaCentauri);
+		GalaxyRegistry.registerSolarSystem(Zakir);
+		GalaxyRegistry.registerPlanet(ProximaCentauriB);
+		GalaxyRegistry.registerPlanet(AlphaCentauriV);
+		GalaxyRegistry.registerPlanet(AlphaCentaurfour);
+		GalaxyRegistry.registerPlanet(AlphaCentaurone);
+		GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
+		GalaxyRegistry.registerPlanet(ZakirPrime);
 		GalaxyRegistry.registerPlanet(planetOne);
 		GalaxyRegistry.registerPlanet(planetTwo);
 		GalaxyRegistry.registerMoon(planetOneMoon);
+		GalaxyRegistry.registerMoon(AlphaCentauroneA);
 		GalaxyRegistry.registerSatellite(planetTwoSpaceStation);
 
 	}
