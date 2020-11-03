@@ -16,9 +16,9 @@ import net.minecraft.world.gen.IChunkGenerator;
 import java.util.LinkedList;
 import java.util.List;
 
+import io.github.nagol2003.AddonCelestialBodies;
 import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.dimension.AddonDimensions;
-import io.github.nagol2003.planets.AddonCelestialBodies;
 
 public class WorldProviderPlanetTwo extends WorldProviderSpace implements ISolarLevel {
 

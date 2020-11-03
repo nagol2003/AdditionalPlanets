@@ -15,7 +15,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import io.github.nagol2003.dimension.AddonDimensions;
-import io.github.nagol2003.planets.AddonCelestialBodies;
 import io.github.nagol2003.proxy.Proxy;
 import io.github.nagol2003.util.Utils;
 

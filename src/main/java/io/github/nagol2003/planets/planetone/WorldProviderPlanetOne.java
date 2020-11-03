@@ -3,8 +3,8 @@ package io.github.nagol2003.planets.planetone;
 import java.util.LinkedList;
 import java.util.List;
 
+import io.github.nagol2003.AddonCelestialBodies;
 import io.github.nagol2003.dimension.AddonDimensions;
-import io.github.nagol2003.planets.AddonCelestialBodies;
 import io.github.nagol2003.planets.planetone.biome.BiomeProviderPlanetOne;
 import io.github.nagol2003.planets.planetone.biome.ChunkProviderPlanetOne;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;

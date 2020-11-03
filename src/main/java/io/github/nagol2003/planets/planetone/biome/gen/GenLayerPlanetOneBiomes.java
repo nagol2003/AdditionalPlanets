@@ -1,6 +1,6 @@
 package io.github.nagol2003.planets.planetone.biome.gen;
 
-import io.github.nagol2003.planets.AddonCelestialBodies;
+import io.github.nagol2003.AddonCelestialBodies;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
 import micdoodle8.mods.miccore.IntCache;
 import net.minecraft.world.biome.Biome;

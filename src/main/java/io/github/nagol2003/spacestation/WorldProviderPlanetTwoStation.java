@@ -1,8 +1,8 @@
 package io.github.nagol2003.spacestation;
 
+import io.github.nagol2003.AddonCelestialBodies;
 import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.dimension.AddonDimensions;
-import io.github.nagol2003.planets.AddonCelestialBodies;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.vector.Vector3;
 import micdoodle8.mods.galacticraft.core.Constants;

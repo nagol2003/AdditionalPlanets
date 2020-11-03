@@ -6,7 +6,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import io.github.nagol2003.planets.AddonCelestialBodies;
+import io.github.nagol2003.AddonCelestialBodies;
 import io.github.nagol2003.planets.planetone.biome.gen.GenLayerPlanetOne;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
