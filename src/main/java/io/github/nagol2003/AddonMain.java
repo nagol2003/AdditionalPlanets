@@ -1,7 +1,13 @@
 package io.github.nagol2003;
 
-//import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
+import io.github.nagol2003.celestial.AddonCelestialBodies;
+import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.init.InitBlocks;
+import io.github.nagol2003.proxy.ServerProxy;
+import io.github.nagol2003.registry.APRegistry;
+import io.github.nagol2003.util.Logging;
+import io.github.nagol2003.util.Utils;
+import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -11,32 +17,23 @@ import net.minecraftforge.fml.common.event.FMLInterModComms.IMCEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import io.github.nagol2003.dimension.AddonDimensions;
-import io.github.nagol2003.proxy.Proxy;
-import io.github.nagol2003.util.Utils;
-
-@Mod(
-		modid = Const.modID,
-		name = Const.modName,
-		version = Const.modVersion,
-		dependencies = Const.DEPENDENCIES_FORGE + Const.DEPENDENCIES_MODS,
-		certificateFingerprint = Const.CERTIFICATEFINGERPRINT)
+@Mod(modid = Const.modID, 
+	 name = Const.modName, 
+	 version = Const.modVersion, 
+	 dependencies = Const.DEPENDENCIES_FORGE + Const.DEPENDENCIES_MODS, 
+     certificateFingerprint = Const.CERTIFICATEFINGERPRINT)
 public class AddonMain {
 
-	public static final Logger LOGGER   = LogManager.getLogger(Const.modID);
-	public static AddonMain    INSTANCE = new AddonMain();
+	public static final Logging LOGGER = new Logging(Const.modID);
+	public static final AddonMain INSTANCE = new AddonMain();
+	public static APRegistry registry = new APRegistry();
 
-	@SidedProxy(
-			clientSide = "io.github.nagol2003.proxy.ClientProxy",
-			serverSide = "io.github.nagol2003.proxy.ServerProxy")
-	private static Proxy proxy;
+	@SidedProxy(clientSide = "io.github.nagol2003.proxy.ClientProxy", serverSide = "io.github.nagol2003.proxy.ServerProxy")
+	private static ServerProxy proxy;
 
 	@EventHandler
-	public static void onFingerprintViolation (final FMLFingerprintViolationEvent event) {
-		if (!Utils.developerEnvironment) {
+	public static void onFingerprintViolation(final FMLFingerprintViolationEvent event) {
+		if (!Utils.isDeobfuscated()) {
 			// This complains if jar not signed, even if certificateFingerprint is blank
 			// But only when not in our Development Environment
 			LOGGER.warn("Invalid Fingerprint");
@@ -44,33 +41,34 @@ public class AddonMain {
 	}
 
 	@EventHandler
-	public static void preInit (final FMLPreInitializationEvent event) {
+	public void preInit(final FMLPreInitializationEvent event) {
+		// Sets the Registry object to this mods class
+		registry.setMod(this);
+		
+		// add the registerAll method in our InitBlocks class to the registry
+		registry.addRegistrationHandler(InitBlocks::registerAll, Block.class);
+		
 
-		// call this in the preInit (MAKE SURE YOU REGISTER ANY BLOCKS OR ITEMS FIRST)
 		AddonCelestialBodies.init();
 
-		proxy.preInit(event);
+		proxy.preInit(registry, event);
 	}
 
 	@EventHandler
-	public static void init (final FMLInitializationEvent event) {
-		proxy.init(event);
+	public void init(final FMLInitializationEvent event) {
+		proxy.init(registry,event);
 
 	}
 
 	@EventHandler
-	public static void receiveIMC (final IMCEvent event) {
+	public void receiveIMC(final IMCEvent event) {
 		proxy.receiveIMC(event);
 	}
 
 	@EventHandler
-	public static void postInit (final FMLPostInitializationEvent event) {
+	public void postInit(final FMLPostInitializationEvent event) {
 		// Register addons dimensions used by planets/moonds/etc.. in postInit
 		AddonDimensions.init();
-		proxy.postInit(event);
-	}
-
-	public static World getWorld () {
-		return proxy.getWorld();
+		proxy.postInit(registry,event);
 	}
 }
