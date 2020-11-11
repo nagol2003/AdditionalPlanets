@@ -8,7 +8,7 @@ import net.minecraft.world.gen.layer.GenLayer;
 
 public class GenLayerPlanetOneBiomes extends GenLayer {
 
-    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(AddonCelestialBodies.planetOne).toArray(new Biome[0]);
+    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(AddonCelestialBodies.AlphaCentaurfour).toArray(new Biome[0]);
 
     public GenLayerPlanetOneBiomes(long l, GenLayer parent) {
         super(l);

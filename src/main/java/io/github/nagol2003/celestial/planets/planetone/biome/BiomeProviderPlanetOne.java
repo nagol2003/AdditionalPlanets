@@ -29,7 +29,7 @@ public class BiomeProviderPlanetOne extends BiomeProvider {
 	private CelestialBody body;
 
 	protected BiomeProviderPlanetOne() {
-		this.body = AddonCelestialBodies.planetOne;
+		this.body = AddonCelestialBodies.AlphaCentaurfour;
 		this.biomeCache = new BiomeCache(this);
 		this.biomesToSpawnIn = new ArrayList<>();
 	}

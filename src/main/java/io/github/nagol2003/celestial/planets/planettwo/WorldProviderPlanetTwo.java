@@ -1,5 +1,11 @@
 package io.github.nagol2003.celestial.planets.planettwo;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import io.github.nagol2003.AddonConfig;
+import io.github.nagol2003.celestial.AddonCelestialBodies;
+import io.github.nagol2003.celestial.AddonDimensions;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.WorldProviderSpace;
 import micdoodle8.mods.galacticraft.api.vector.Vector3;
@@ -12,13 +18,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
-
-import java.util.LinkedList;
-import java.util.List;
-
-import io.github.nagol2003.AddonConfig;
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
 
 public class WorldProviderPlanetTwo extends WorldProviderSpace implements ISolarLevel {
 
@@ -114,7 +113,7 @@ public class WorldProviderPlanetTwo extends WorldProviderSpace implements ISolar
 
 	@Override
 	public CelestialBody getCelestialBody() {
-		return AddonCelestialBodies.planetTwo;
+		return AddonCelestialBodies.AlphaCentaurfour;
 	}
 
 	@Override

@@ -48,7 +48,7 @@ public class WorldProviderPlanetOne extends WorldProviderSpace implements ISolar
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.planetOne);
+        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.AlphaCentaurfour);
         return BiomeProviderPlanetOne.class;
     }
 
@@ -100,7 +100,7 @@ public class WorldProviderPlanetOne extends WorldProviderSpace implements ISolar
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.planetOne;
+        return AddonCelestialBodies.AlphaCentaurfour;
     }
 
     @Override
