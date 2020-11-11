@@ -1,7 +1,6 @@
 package io.github.nagol2003.celestial.spacestation;
 
 import io.github.nagol2003.AddonConfig;
-import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.vector.Vector3;
@@ -18,7 +17,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class WorldProviderPlanetTwoStation extends WorldProviderOverworldOrbit {
 	@Override
 	public CelestialBody getCelestialBody() {
-		return AddonCelestialBodies.planetTwoSpaceStation;
+		return null;
+		//return AddonCelestialBodies.planetTwoSpaceStation;
 	}
 
 	@Override

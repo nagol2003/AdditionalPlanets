@@ -13,8 +13,8 @@ public class ClientProxy extends ServerProxy {
 	@Override
 	public void preInit(APRegistry registry, FMLPreInitializationEvent event) {
 		super.preInit(registry, event);
-		/// PLACE CODE BELOW ///
 		register_event(this);
+		/// PLACE CODE BELOW ///
 		
 		
 		/// PLACE CODE ABOVE ///

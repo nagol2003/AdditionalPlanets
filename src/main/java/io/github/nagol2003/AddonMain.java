@@ -3,11 +3,14 @@ package io.github.nagol2003;
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
 import io.github.nagol2003.init.InitBlocks;
+import io.github.nagol2003.init.InitItems;
+import io.github.nagol2003.init.Recipes;
 import io.github.nagol2003.proxy.ServerProxy;
 import io.github.nagol2003.registry.APRegistry;
 import io.github.nagol2003.util.Logging;
 import io.github.nagol2003.util.Utils;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -39,6 +42,7 @@ public class AddonMain {
 			LOGGER.warn("Invalid Fingerprint");
 		}
 	}
+	
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {
@@ -48,15 +52,18 @@ public class AddonMain {
 		// add the registerAll method in our InitBlocks class to the registry
 		registry.addRegistrationHandler(InitBlocks::registerAll, Block.class);
 		
-
+		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
 		AddonCelestialBodies.init();
 
 		proxy.preInit(registry, event);
+		
+		
 	}
 
 	@EventHandler
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);
+		Recipes.init();
 
 	}
 

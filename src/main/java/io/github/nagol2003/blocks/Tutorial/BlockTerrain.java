@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package io.github.nagol2003.blocks;
+package io.github.nagol2003.blocks.Tutorial;
 
 import micdoodle8.mods.galacticraft.api.block.ITerraformableBlock;
 import micdoodle8.mods.galacticraft.core.blocks.ISortableBlock;
