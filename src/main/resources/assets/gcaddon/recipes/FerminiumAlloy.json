@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+   		 "FF ",
+   		 "FS ",
+   		 "   "
+    ],
+    
+    "key": 
+    {
+    	"F":
+    	{
+    		"item": "gcaddon:ferminium_chunk"
+    	},
+    	
+    	"S":
+    	{
+    		"item": "gcaddon:strange_metallic_substance"
+    	}
+     },
+    
+    "result": 
+    {
+    	"item": "gcaddon:ferminium_alloy",
+    	"count": 2
+    }
+}

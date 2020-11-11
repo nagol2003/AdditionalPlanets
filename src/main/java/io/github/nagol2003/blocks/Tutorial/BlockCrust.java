@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package io.github.nagol2003.blocks;
+package io.github.nagol2003.blocks.Tutorial;
 
 import io.github.nagol2003.init.AdditionalPlanetsTab;
 import net.minecraft.block.SoundType;

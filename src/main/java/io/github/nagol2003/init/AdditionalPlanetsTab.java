@@ -1,8 +1,6 @@
 package io.github.nagol2003.init;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -14,7 +12,27 @@ public class AdditionalPlanetsTab {
 		@Override
 		@SideOnly(Side.CLIENT)
 		public ItemStack getTabIconItem() {
-			return new ItemStack(Item.getItemFromBlock(Blocks.BARRIER));
+			return new ItemStack(InitBlocks.ROCK_1);
 		}
 	};
+	
+	
+	public static final CreativeTabs ItemTab = new CreativeTabs("apItemTab") {
+
+		@Override
+		@SideOnly(Side.CLIENT)
+		public ItemStack getTabIconItem() {
+			return new ItemStack(InitItems.FERMINIUM_CHUNK);
+		}
+		
+	};
+	
+	public static final CreativeTabs AdditionalPlanets = new CreativeTabs("additionalPlanets") {
+
+			@Override
+			@SideOnly(Side.CLIENT)
+			public ItemStack getTabIconItem() {
+				return new ItemStack(InitItems.FERMINIUM_ALLOY);
+			}
+	    };
 }

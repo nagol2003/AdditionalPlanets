@@ -383,7 +383,7 @@ public class AddonCelestialBodies {
 
 		Vermon = new Planet("Vermon").setParentSolarSystem(Garphina);
 		Vermon.setTierRequired(6);
-		Vermon.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		Vermon.setRingColorRGB(0.8F, 0.1F, 0.6F);
 		Vermon.setPhaseShift(1.30F);
 		Vermon.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(9.00F, 9.00F));
 		Vermon.setRelativeOrbitTime(2.0F);
