@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.planetone.biome;
+package io.github.nagol2003.celestial.planets.Polulos.biome;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.planets.planetone.biome.gen.GenLayerPlanetOne;
+import io.github.nagol2003.celestial.planets.Polulos.biome.gen.GenLayerPolulos;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
 import net.minecraft.util.math.BlockPos;
@@ -21,27 +21,27 @@ import net.minecraft.world.gen.layer.IntCache;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BiomeProviderPlanetOne extends BiomeProvider {
+public class BiomeProviderPolulos extends BiomeProvider {
 	private GenLayer unzoomedBiomes;
 	private GenLayer zoomedBiomes;
 	private BiomeCache biomeCache;
 	private List<Biome> biomesToSpawnIn;
 	private CelestialBody body;
 
-	protected BiomeProviderPlanetOne() {
-		this.body = AddonCelestialBodies.AlphaCentaurfour;
+	protected BiomeProviderPolulos() {
+		this.body = AddonCelestialBodies.Polulos;
 		this.biomeCache = new BiomeCache(this);
 		this.biomesToSpawnIn = new ArrayList<>();
 	}
 
-	public BiomeProviderPlanetOne(long seed, WorldType type) {
+	public BiomeProviderPolulos(long seed, WorldType type) {
 		this();
-		GenLayer[] genLayers = GenLayerPlanetOne.createWorld(seed);
+		GenLayer[] genLayers = GenLayerPolulos.createWorld(seed);
 		this.unzoomedBiomes = genLayers[0];
 		this.zoomedBiomes = genLayers[1];
 	}
 
-	public BiomeProviderPlanetOne(World world) {
+	public BiomeProviderPolulos(World world) {
 		this(world.getSeed(), world.getWorldInfo().getTerrainType());
 	}
 

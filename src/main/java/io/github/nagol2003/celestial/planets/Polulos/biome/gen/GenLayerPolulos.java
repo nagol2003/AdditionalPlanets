@@ -1,16 +1,16 @@
-package io.github.nagol2003.celestial.planets.planetone.biome.gen;
+package io.github.nagol2003.celestial.planets.Polulos.biome.gen;
 
 import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.GenLayerVoronoiZoom;
 import net.minecraft.world.gen.layer.GenLayerZoom;
 
-public abstract class GenLayerPlanetOne extends GenLayer {
-	public GenLayerPlanetOne(long l) {
+public abstract class GenLayerPolulos extends GenLayer {
+	public GenLayerPolulos(long l) {
 		super(l);
 	}
 
 	public static GenLayer[] createWorld(long l) {
-		GenLayer biomes = new GenLayerPlanetOneBiomes(l);
+		GenLayer biomes = new GenLayerPolulosBiomes(l);
 		biomes = new GenLayerZoom(1000L, biomes);
 		biomes = new GenLayerZoom(1001L, biomes);
 		biomes = new GenLayerZoom(1002L, biomes);

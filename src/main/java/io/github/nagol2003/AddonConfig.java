@@ -62,19 +62,7 @@ public class AddonConfig {
 	public static class Dimension {
 
 		@Config.Name(value = "PlanetOne Dimension ID")
-		public int idPlanetOne = -4440;
-
-		@Config.Name(value = "PlanetTwo Dimension ID")
-		public int idPlanetTwo = -4401;
-
-		@Config.Name(value = "PlanetOne Moon Dimension ID")
-		public int idMoon = -4402;
-
-		@Config.Name(value = "PlanetTwo Space Station Dimension ID")
-		public int idSpaceStation = -4450;
-
-		@Config.Name(value = "PlanetTwo Space Station Dimension Static ID")
-		public int StaticidSpaceStation = -4451;
+		public int idPolulos = -4440;
 
 	}
 

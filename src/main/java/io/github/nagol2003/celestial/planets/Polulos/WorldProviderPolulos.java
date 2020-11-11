@@ -1,12 +1,13 @@
-package io.github.nagol2003.celestial.planets.planetone;
+package io.github.nagol2003.celestial.planets.Polulos;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
-import io.github.nagol2003.celestial.planets.planetone.biome.BiomeProviderPlanetOne;
-import io.github.nagol2003.celestial.planets.planetone.biome.ChunkProviderPlanetOne;
+import io.github.nagol2003.celestial.planets.Polulos.biome.BiomeProviderPolulos;
+import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
+import io.github.nagol2003.init.InitBlocks;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.WorldProviderSpace;
@@ -19,7 +20,7 @@ import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
-public class WorldProviderPlanetOne extends WorldProviderSpace implements ISolarLevel {
+public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLevel {
 
     @Override
     public Vector3 getSkyColor() {
@@ -43,13 +44,13 @@ public class WorldProviderPlanetOne extends WorldProviderSpace implements ISolar
 
     @Override
     public Class<? extends IChunkGenerator> getChunkProviderClass() {
-        return ChunkProviderPlanetOne.class;
+        return ChunkProviderPolulos.class;
     }
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.AlphaCentaurfour);
-        return BiomeProviderPlanetOne.class;
+        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Polulos);
+        return BiomeProviderPolulos.class;
     }
 
     @Override
@@ -100,7 +101,7 @@ public class WorldProviderPlanetOne extends WorldProviderSpace implements ISolar
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.AlphaCentaurfour;
+        return AddonCelestialBodies.Polulos;
     }
 
     @Override
@@ -115,7 +116,7 @@ public class WorldProviderPlanetOne extends WorldProviderSpace implements ISolar
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimPlanetOne;
+        return AddonDimensions.dimPolulos;
     }
 
     @Override
@@ -131,15 +132,15 @@ public class WorldProviderPlanetOne extends WorldProviderSpace implements ISolar
     @Override
     public List<Block> getSurfaceBlocks() {
         List<Block> list = new LinkedList<>();
-        list.add(Blocks.STONE);
+        list.add(InitBlocks.POLULOSROCK);
         list.add(Blocks.COBBLESTONE_WALL);
         list.add(Blocks.MOSSY_COBBLESTONE);
         list.add(Blocks.GRAVEL);
         return list;
     }
 
-	@Override
-	public Vector3 getFogColor() {
-		return null;
-	}
+    @Override
+    public Vector3 getFogColor() {
+        return new Vector3(0, 0, 0);
+    }
 }

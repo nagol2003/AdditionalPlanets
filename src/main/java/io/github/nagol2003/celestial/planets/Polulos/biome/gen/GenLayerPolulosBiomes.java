@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.planetone.biome.gen;
+package io.github.nagol2003.celestial.planets.Polulos.biome.gen;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
@@ -6,16 +6,16 @@ import micdoodle8.mods.miccore.IntCache;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.layer.GenLayer;
 
-public class GenLayerPlanetOneBiomes extends GenLayer {
+public class GenLayerPolulosBiomes extends GenLayer {
 
-    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(AddonCelestialBodies.AlphaCentaurfour).toArray(new Biome[0]);
+    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(AddonCelestialBodies.Polulos).toArray(new Biome[0]);
 
-    public GenLayerPlanetOneBiomes(long l, GenLayer parent) {
+    public GenLayerPolulosBiomes(long l, GenLayer parent) {
         super(l);
         this.parent = parent;
     }
 
-    public GenLayerPlanetOneBiomes(long l) {
+    public GenLayerPolulosBiomes(long l) {
         super(l);
     }
 

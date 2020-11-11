@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.planetone;
+package io.github.nagol2003.celestial.planets.Polulos;
 
 import java.util.Random;
 
@@ -22,7 +22,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.client.IRenderHandler;
 import net.minecraftforge.fml.client.FMLClientHandler;
 
-public class SkyProviderPlanetOne extends IRenderHandler {
+public class SkyProviderPolulos extends IRenderHandler {
 	
 	private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/celestialbodies/kepler452b.png");
 
@@ -31,7 +31,7 @@ public class SkyProviderPlanetOne extends IRenderHandler {
 	public int glSkyList2;
 	private float sunSize;
 	
-	public SkyProviderPlanetOne(IGalacticraftWorldProvider mercuryProvider) {
+	public SkyProviderPolulos(IGalacticraftWorldProvider mercuryProvider) {
 		this.sunSize = 17.5F * mercuryProvider.getSolarSize() * 7;
 
 		int displayLists = GLAllocation.generateDisplayLists(3);
@@ -230,7 +230,7 @@ public class SkyProviderPlanetOne extends IRenderHandler {
 		GL11.glEnable(GL11.GL_TEXTURE_2D);
 		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 		f10 = this.sunSize;
-		mc.renderEngine.bindTexture(SkyProviderPlanetOne.sunTexture);
+		mc.renderEngine.bindTexture(SkyProviderPolulos.sunTexture);
 		worldRenderer1.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
 		worldRenderer1.pos(-f10, 100.0D, -f10).tex(0.0D, 0.0D).endVertex();
 		worldRenderer1.pos(f10, 100.0D, -f10).tex(1.0D, 0.0D).endVertex();

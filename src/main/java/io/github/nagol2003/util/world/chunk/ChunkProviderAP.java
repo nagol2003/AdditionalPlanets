@@ -16,7 +16,7 @@ import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraft.world.gen.NoiseGeneratorPerlin;
 
-public abstract class ChunkProviderBase extends ChunkProviderAbst {
+public abstract class ChunkProviderAP extends ChunkProviderAbst {
 	protected Random rand;
 	protected World worldObj;
 	private double[] depthBuffer;
@@ -43,7 +43,7 @@ public abstract class ChunkProviderBase extends ChunkProviderAbst {
 
 	private List<MapGenBaseMeta> worldGenerators;
 
-	public ChunkProviderBase(World world, long seed, boolean flag) {
+	public ChunkProviderAP(World world, long seed, boolean flag) {
 		super();
 		this.depthBuffer = new double[256];
 		this.worldObj = world;

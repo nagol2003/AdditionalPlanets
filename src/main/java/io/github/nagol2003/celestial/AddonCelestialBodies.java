@@ -4,6 +4,9 @@ import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.AddonConfig.Dimension;
 import io.github.nagol2003.AddonConfig.PlanetSettings;
 import io.github.nagol2003.Const;
+import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
+import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.galaxies.GalaxyRegistry;
 import micdoodle8.mods.galacticraft.api.galaxies.Moon;
@@ -11,11 +14,15 @@ import micdoodle8.mods.galacticraft.api.galaxies.Planet;
 import micdoodle8.mods.galacticraft.api.galaxies.SolarSystem;
 import micdoodle8.mods.galacticraft.api.galaxies.Star;
 import micdoodle8.mods.galacticraft.api.vector.Vector3;
+import micdoodle8.mods.galacticraft.api.world.AtmosphereInfo;
+import micdoodle8.mods.galacticraft.api.world.EnumAtmosphericGas;
+import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeOverworld;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedCreeper;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedEnderman;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSkeleton;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSpider;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedZombie;
+import micdoodle8.mods.galacticraft.planets.mars.dimension.TeleportTypeMars;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome.SpawnListEntry;
 
@@ -209,6 +216,10 @@ public class AddonCelestialBodies {
 		Polulos.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.25F, 0.25F));
 		Polulos.setRelativeOrbitTime(2.0F);
 		Polulos.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Polulos.setBiomeInfo(PolulosBiomes.Polulos);
+		Polulos.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Polulos.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
+		Polulos.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
 
 		Shayan = new Planet("Shayan").setParentSolarSystem(Garphina);
 		Shayan.setTierRequired(6);
@@ -364,7 +375,7 @@ public class AddonCelestialBodies {
 		
 		// comment these out for now but keep em to just change the world provider class later
 
-//		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOne.class, new TeleportTypeMars());
+		GalacticraftRegistry.registerTeleportType(WorldProviderPolulos.class, new TeleportTypeOverworld());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());

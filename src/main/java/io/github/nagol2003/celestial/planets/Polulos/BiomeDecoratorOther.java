@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.planetone;
+package io.github.nagol2003.celestial.planets.Polulos;
 
 import net.minecraft.world.biome.BiomeDecorator;
 

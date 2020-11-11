@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.planetone.biome;
+package io.github.nagol2003.celestial.planets.Polulos.biome;
 
 import java.util.List;
 import java.util.Random;
@@ -6,7 +6,7 @@ import java.util.Random;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
-import io.github.nagol2003.util.world.chunk.ChunkProviderBase;
+import io.github.nagol2003.util.world.chunk.ChunkProviderAP;
 import io.github.nagol2003.util.world.chunk.MapGenAddonCaveGen;
 import io.github.nagol2003.util.world.chunk.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.chunk.MapGenBaseMeta;
@@ -15,14 +15,14 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
 
-public class ChunkProviderPlanetOne extends ChunkProviderBase {
+public class ChunkProviderPolulos extends ChunkProviderAP {
 
-    private final BiomeDecoratorPlanetOne decorator = new BiomeDecoratorPlanetOne();
+    private final BiomeDecoratorPolulos decorator = new BiomeDecoratorPolulos();
     private final MapGenAddonRavinGen ravineGenerator = new MapGenAddonRavinGen();
     private final MapGenAddonCaveGen caveGenerator = new MapGenAddonCaveGen(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState(),
             Sets.newHashSet(Blocks.HARDENED_CLAY, Blocks.BLACK_GLAZED_TERRACOTTA));
 
-    public ChunkProviderPlanetOne(World par1World, long seed, boolean mapFeaturesEnabled) {
+    public ChunkProviderPolulos(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = Blocks.STONE.getDefaultState();
         this.waterBlock =Blocks.WATER.getDefaultState();

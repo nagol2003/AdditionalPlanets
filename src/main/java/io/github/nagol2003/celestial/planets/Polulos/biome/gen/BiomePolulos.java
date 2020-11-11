@@ -1,13 +1,13 @@
-package io.github.nagol2003.celestial.planets.planetone.biome.gen;
+package io.github.nagol2003.celestial.planets.Polulos.biome.gen;
 
-import io.github.nagol2003.celestial.planets.planetone.biome.PlanetOneBiomes;
+import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 
-public class BiomeGenPlanetOne extends PlanetOneBiomes {
+public class BiomePolulos extends PolulosBiomes {
 
-	public BiomeGenPlanetOne(BiomeProperties properties) {
+	public BiomePolulos(BiomeProperties properties) {
 		super(properties);
         this.topBlock = Blocks.GRASS.getDefaultState(); //TODO change this
         this.fillerBlock = Blocks.STONE.getDefaultState(); //TODO change this
