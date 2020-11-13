@@ -24,12 +24,20 @@ public class ChunkProviderPolulos extends ChunkProviderAP {
     private final MapGenAddonCaveGen caveGenerator = new MapGenAddonCaveGen(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState(),
             Sets.newHashSet(Blocks.HARDENED_CLAY, Blocks.BLACK_GLAZED_TERRACOTTA));
     
+<<<<<<< HEAD
     private static IBlockState stoneBlockState = InitBlocks.POLULOSROCK.getDefaultState();
+=======
+    private static IBlockState stoneBlockState = Blocks.STONE.getDefaultState();
+>>>>>>> 3ede939029ff1a6978dcaceb6e376ca04aa2aa73
 
     public ChunkProviderPolulos(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
+<<<<<<< HEAD
         this.waterBlock =InitBlocks.POLULOSSAND.getDefaultState();
+=======
+        this.waterBlock =Blocks.WATER.getDefaultState();
+>>>>>>> 3ede939029ff1a6978dcaceb6e376ca04aa2aa73
     }
 
     @Override

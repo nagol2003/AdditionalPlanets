@@ -4,7 +4,10 @@ import java.util.Random;
 
 import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+<<<<<<< HEAD
 import io.github.nagol2003.init.InitBlocks;
+=======
+>>>>>>> 3ede939029ff1a6978dcaceb6e376ca04aa2aa73
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -17,8 +20,13 @@ public class BiomePolulos extends PolulosBiomes {
 
 	public BiomePolulos(BiomeProperties properties) {
 		super(properties);
+<<<<<<< HEAD
         this.topBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
         this.fillerBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
+=======
+        this.topBlock = Blocks.GLASS.getDefaultState(); //TODO change this
+        this.fillerBlock = Blocks.DIAMOND_BLOCK.getDefaultState(); //TODO change this
+>>>>>>> 3ede939029ff1a6978dcaceb6e376ca04aa2aa73
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
@@ -29,6 +37,10 @@ public class BiomePolulos extends PolulosBiomes {
             BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 3ede939029ff1a6978dcaceb6e376ca04aa2aa73
 	@Override
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
