@@ -227,7 +227,7 @@ public class AddonCelestialBodies {
 		Polulos.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.25F, 0.25F));
 		Polulos.setRelativeOrbitTime(2.0F);
 		Polulos.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/polulos.png"));
-		Polulos.setBiomeInfo(PolulosBiomes.Polulos, PolulosBiomes.PolulosDry);
+		Polulos.setBiomeInfo(PolulosBiomes.PolulosSavanna, PolulosBiomes.PolulosDesert);
 		Polulos.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Polulos.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
 		Polulos.atmosphereComponent(EnumAtmosphericGas.METHANE);

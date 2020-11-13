@@ -12,9 +12,9 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 
-public class BiomePolulos extends PolulosBiomes {
+public class BiomePolulosSavanna extends PolulosBiomes {
 
-	public BiomePolulos(BiomeProperties properties) {
+	public BiomePolulosSavanna(BiomeProperties properties) {
 		super(properties);
         this.topBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
         this.fillerBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this

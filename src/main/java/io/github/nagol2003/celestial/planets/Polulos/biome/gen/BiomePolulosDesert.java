@@ -13,12 +13,12 @@ import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 
-public class BiomePolulosDry extends PolulosBiomes {
+public class BiomePolulosDesert extends PolulosBiomes {
 
-	public BiomePolulosDry(BiomeProperties properties) {
+	public BiomePolulosDesert(BiomeProperties properties) {
 		super(properties);
-        this.topBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
-        this.fillerBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
+        this.topBlock = InitBlocks.POLULOSSAND.getDefaultState(); //TODO change this
+        this.fillerBlock = InitBlocks.POLULOSSAND.getDefaultState(); //TODO change this
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();

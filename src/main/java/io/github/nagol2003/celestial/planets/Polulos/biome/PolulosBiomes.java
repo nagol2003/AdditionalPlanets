@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.Polulos.biome;
 import java.util.Random;
 
 import io.github.nagol2003.celestial.planets.Polulos.BiomeDecoratorOther;
-import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulos;
-import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulosDry;
+import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulosSavanna;
+import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulosDesert;
 //import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomeGenPlanetOneSea;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.material.Material;
@@ -16,9 +16,9 @@ import net.minecraft.world.chunk.ChunkPrimer;
 
 public class PolulosBiomes extends BiomeGenBaseGC {
 
-	public static final Biome Polulos = new BiomePolulos(new BiomeProperties("Polulos").setBaseHeight(0.145F).setHeightVariation(0.5F).setRainfall(0.8F));
-	public static final Biome PolulosDry = new BiomePolulosDry(new BiomeProperties("PolulosDry").setBaseHeight(0.290F).setHeightVariation(0.9F).setRainfall(0.1F));
-	//public static final Biome planetOne_sea = new BiomeGenPlanetOneSea(new BiomeProperties("Planet One Sea").setBaseHeight(0.100F).setHeightVariation(0.2F).setRainfall(0.1F));
+	public static final Biome PolulosSavanna = new BiomePolulosSavanna(new BiomeProperties("Polulos Savanna").setBaseHeight(0.145F).setHeightVariation(0.05F).setRainfall(0.8F));
+	public static final Biome PolulosDesert = new BiomePolulosDesert(new BiomeProperties("Polulos Desert").setBaseHeight(0.145F).setHeightVariation(0.1F).setRainfall(0.1F));
+	//public static final Biome PolulosSea = new BiomeGenPolulosSea(new BiomeProperties("PolulosSea").setBaseHeight(0.999F).setHeightVariation(0.1F).setRainfall(0.1F));
 
 	protected PolulosBiomes(BiomeProperties properties) {
 		super(properties, true);
