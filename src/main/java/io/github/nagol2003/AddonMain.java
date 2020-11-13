@@ -56,7 +56,6 @@ public class AddonMain {
 
 		proxy.preInit(registry, event);
 		
-		
 	}
 
 	@EventHandler

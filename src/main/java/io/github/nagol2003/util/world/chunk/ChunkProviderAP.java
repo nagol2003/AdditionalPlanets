@@ -13,11 +13,10 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
-import net.minecraft.world.gen.NoiseGenerator;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraft.world.gen.NoiseGeneratorPerlin;
 
-public abstract class ChunkProviderAP extends ChunkProviderAbst { 
+public abstract class ChunkProviderAP extends ChunkProviderAbst {
 	protected Random rand;
 	protected World worldObj;
 	private double[] depthBuffer;
