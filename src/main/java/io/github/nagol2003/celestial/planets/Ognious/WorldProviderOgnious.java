@@ -1,12 +1,12 @@
-package io.github.nagol2003.celestial.planets.Ogniuos;
+package io.github.nagol2003.celestial.planets.Ognious;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
-import io.github.nagol2003.celestial.planets.Ogniuos.biome.BiomeProviderOgnious;
-import io.github.nagol2003.celestial.planets.Ogniuos.biome.ChunkProviderOgnious;
+import io.github.nagol2003.celestial.planets.Ognious.biome.BiomeProviderOgnious;
+import io.github.nagol2003.celestial.planets.Ognious.biome.ChunkProviderOgnious;
 import io.github.nagol2003.init.InitBlocks;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;

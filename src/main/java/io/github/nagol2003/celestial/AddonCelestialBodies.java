@@ -4,8 +4,8 @@ import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.AddonConfig.Dimension;
 import io.github.nagol2003.AddonConfig.PlanetSettings;
 import io.github.nagol2003.Const;
-import io.github.nagol2003.celestial.planets.Ogniuos.WorldProviderOgnious;
-import io.github.nagol2003.celestial.planets.Ogniuos.biome.OgniousBiomes;
+import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
+import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
 import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
@@ -50,6 +50,7 @@ public class AddonCelestialBodies {
 	public static SolarSystem Zakir;
 	public static SolarSystem unknown;
 	public static SolarSystem Garphina;
+	public static SolarSystem Test;
 
 	// Planets
 	public static Planet ProximaCentauriB;
@@ -66,6 +67,7 @@ public class AddonCelestialBodies {
 	public static Planet Ognious;
 	public static Planet Queran;
 	public static Planet Vermon;
+	public static Planet Dark;
 
 	// Moons
     public static Moon planetOneMoon;
@@ -141,6 +143,11 @@ public class AddonCelestialBodies {
 		Star starSol6 = (Star) new Star("Radon").setParentSolarSystem(Garphina).setTierRequired(-1);
 		starSol6.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		Garphina.setMainStar(starSol6);
+		
+		Test = new SolarSystem("Test", "milky_way").setMapPosition(new Vector3(0.5F, -1.0F, 0.0F));
+		Star starSol7 = (Star) new Star("Radon").setParentSolarSystem(Test).setTierRequired(-1);
+		starSol7.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
+		Test.setMainStar(starSol7);
 	}
 
 	/**
@@ -219,11 +226,11 @@ public class AddonCelestialBodies {
 		Polulos.setPhaseShift(1.30F);
 		Polulos.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.25F, 0.25F));
 		Polulos.setRelativeOrbitTime(2.0F);
-		Polulos.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Polulos.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/polulos.png"));
 		Polulos.setBiomeInfo(PolulosBiomes.Polulos);
 		Polulos.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Polulos.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
-		Polulos.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
+		Polulos.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Shayan = new Planet("Shayan").setParentSolarSystem(Garphina);
 		Shayan.setTierRequired(6);
@@ -247,6 +254,7 @@ public class AddonCelestialBodies {
 		Ognious.setPhaseShift(1.30F);
 		Ognious.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.35F, 1.35F));
 		Ognious.setRelativeOrbitTime(2.0F);
+		Ognious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png"));
 		Ognious.setBiomeInfo(OgniousBiomes.Ognious);
 		Ognious.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Ognious.setDimensionInfo(dim.idOgnious, WorldProviderOgnious.class);
@@ -267,6 +275,14 @@ public class AddonCelestialBodies {
 		Vermon.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(3.6F, 3.6F));
 		Vermon.setRelativeOrbitTime(12.0F);
 		Vermon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		Dark = new Planet("Dark").setParentSolarSystem(Test);
+		Dark.setTierRequired(6);
+		Dark.setRingColorRGB(0.8F, 0.1F, 0.6F);
+		Dark.setPhaseShift(1.30F);
+		Dark.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0F, 0F));
+		Dark.setRelativeOrbitTime(12.0F);
+		Dark.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
 
 	}
 
@@ -398,6 +414,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerSolarSystem(Zakir);
 		GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
+		//GalaxyRegistry.registerSolarSystem(Test);
 		
 		// then plants
 		GalaxyRegistry.registerPlanet(ProximaCentauriB);
@@ -414,6 +431,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerPlanet(Ognious);
 		GalaxyRegistry.registerPlanet(Queran);
 		GalaxyRegistry.registerPlanet(Vermon);
+		GalaxyRegistry.registerPlanet(Dark);
 		
 		// then moons
 		GalaxyRegistry.registerMoon(AlphaCentauroneA);

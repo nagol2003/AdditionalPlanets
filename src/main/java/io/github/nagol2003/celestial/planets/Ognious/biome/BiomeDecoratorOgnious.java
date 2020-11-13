@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.Ogniuos.biome;
+package io.github.nagol2003.celestial.planets.Ognious.biome;
 
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeDecoratorSpace;
 import net.minecraft.world.World;

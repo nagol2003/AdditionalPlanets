@@ -1,9 +1,9 @@
-package io.github.nagol2003.celestial.planets.Polulos.biome.gen;
+package io.github.nagol2003.celestial.planets.Ognious.biome.gen;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
-import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import io.github.nagol2003.celestial.planets.Ognious.biome.ChunkProviderOgnious;
+import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -12,12 +12,12 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 
-public class BiomePolulos extends PolulosBiomes {
+public class BiomeOgnious extends OgniousBiomes {
 
-	public BiomePolulos(BiomeProperties properties) {
+	public BiomeOgnious(BiomeProperties properties) {
 		super(properties);
-        this.topBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
-        this.fillerBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
+        this.topBlock = InitBlocks.OGNIOUSGRASS.getDefaultState(); //TODO change this
+        this.fillerBlock = InitBlocks.OGNIOUSROCK.getDefaultState(); //TODO change this
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
@@ -32,7 +32,7 @@ public class BiomePolulos extends PolulosBiomes {
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = ChunkProviderPolulos.getStoneBlockState();
+		IBlockState stoneBlockState = ChunkProviderOgnious.getStoneBlockState();
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;
@@ -82,4 +82,3 @@ public class BiomePolulos extends PolulosBiomes {
 		}
 	}
 }
-//penis

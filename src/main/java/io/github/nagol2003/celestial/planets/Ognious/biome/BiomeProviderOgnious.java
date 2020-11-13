@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.Ogniuos.biome;
+package io.github.nagol2003.celestial.planets.Ognious.biome;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.planets.Ogniuos.biome.gen.GenLayerOgnious;
+import io.github.nagol2003.celestial.planets.Ognious.biome.gen.GenLayerOgnious;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
 import net.minecraft.util.math.BlockPos;

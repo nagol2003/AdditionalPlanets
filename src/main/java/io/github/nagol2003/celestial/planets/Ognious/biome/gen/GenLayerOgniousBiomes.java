@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.Ogniuos.biome.gen;
+package io.github.nagol2003.celestial.planets.Ognious.biome.gen;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;

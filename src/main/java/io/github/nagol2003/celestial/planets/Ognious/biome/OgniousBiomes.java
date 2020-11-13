@@ -1,38 +1,40 @@
-package io.github.nagol2003.celestial.planets.Polulos.biome.gen;
+package io.github.nagol2003.celestial.planets.Ognious.biome;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
-import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
-import io.github.nagol2003.init.InitBlocks;
+import io.github.nagol2003.celestial.planets.Ognious.BiomeDecoratorOther;
+import io.github.nagol2003.celestial.planets.Ognious.biome.gen.BiomeOgnious;
+import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.chunk.ChunkPrimer;
-import net.minecraftforge.common.BiomeDictionary;
 
-public class BiomePolulos extends PolulosBiomes {
+public class OgniousBiomes extends BiomeGenBaseGC {
 
-	public BiomePolulos(BiomeProperties properties) {
-		super(properties);
-        this.topBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
-        this.fillerBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
-        this.spawnableMonsterList.clear();
-        this.spawnableCreatureList.clear();
-        this.spawnableWaterCreatureList.clear();
+	public static final Biome Ognious = new BiomeOgnious(new BiomeProperties("Ognious").setBaseHeight(0.145F).setHeightVariation(0.5F).setRainfall(0.8F));
+	//public static final Biome planetOne_sea = new BiomeGenPlanetOneSea(new BiomeProperties("Planet One Sea").setBaseHeight(0.100F).setHeightVariation(0.2F).setRainfall(0.1F));
+
+	protected OgniousBiomes(BiomeProperties properties) {
+		super(properties, true);
 	}
 
 	@Override
-	public void registerTypes(Biome b) {
-            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
-
+	public BiomeDecorator createBiomeDecorator() {
+		return new BiomeDecoratorOther();
 	}
+
 	@Override
+	public void genTerrainBlocks (World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
+		generateBiomeSurface(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
+	}
+
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = ChunkProviderPolulos.getStoneBlockState();
+		IBlockState stoneBlockState = ChunkProviderOgnious.getStoneBlockState();
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;
@@ -82,4 +84,3 @@ public class BiomePolulos extends PolulosBiomes {
 		}
 	}
 }
-//penis

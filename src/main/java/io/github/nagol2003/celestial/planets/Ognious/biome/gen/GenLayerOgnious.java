@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.Ogniuos.biome.gen;
+package io.github.nagol2003.celestial.planets.Ognious.biome.gen;
 
 import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.GenLayerVoronoiZoom;

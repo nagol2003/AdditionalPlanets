@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.Ogniuos;
+package io.github.nagol2003.celestial.planets.Ognious;
 
 import java.util.Random;
 
