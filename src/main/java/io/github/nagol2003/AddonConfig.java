@@ -63,6 +63,8 @@ public class AddonConfig {
 
 		@Config.Name(value = "PlanetOne Dimension ID")
 		public int idPolulos = -4440;
+		@Config.Name(value = "PlanetTwo Dimension ID")
+		public int idOgnious = -4441;
 
 	}
 

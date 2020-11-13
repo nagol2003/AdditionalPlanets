@@ -1,12 +1,12 @@
-package io.github.nagol2003.celestial.planets.Polulos;
+package io.github.nagol2003.celestial.planets.Ogniuos;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
-import io.github.nagol2003.celestial.planets.Polulos.biome.BiomeProviderPolulos;
-import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
+import io.github.nagol2003.celestial.planets.Ogniuos.biome.BiomeProviderOgnious;
+import io.github.nagol2003.celestial.planets.Ogniuos.biome.ChunkProviderOgnious;
 import io.github.nagol2003.init.InitBlocks;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
@@ -20,16 +20,17 @@ import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
-public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLevel {
+
+public class WorldProviderOgnious extends WorldProviderSpace implements ISolarLevel {
 
     @Override
     public Vector3 getSkyColor() {
-        return new Vector3(1, .2, .1);
+        return new Vector3(.3, .6, 1);
     }
 
     @Override
     public float getSolarSize() {
-        return 0.1F;
+        return 0.5F;
     }
 
     @Override
@@ -44,13 +45,13 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public Class<? extends IChunkGenerator> getChunkProviderClass() {
-        return ChunkProviderPolulos.class;
+        return ChunkProviderOgnious.class;
     }
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Polulos);
-        return BiomeProviderPolulos.class;
+        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Ognious);
+        return BiomeProviderOgnious.class;
     }
 
     @Override
@@ -80,7 +81,7 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public double getMeteorFrequency() {
-        return 9.0D;
+        return 3.0D;
     }
 
     @Override
@@ -101,7 +102,7 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Polulos;
+        return AddonCelestialBodies.Ognious;
     }
 
     @Override
@@ -116,7 +117,7 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimPolulos;
+        return AddonDimensions.dimOgnious;
     }
 
     @Override
@@ -141,6 +142,6 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public Vector3 getFogColor() {
-        return new Vector3(1, .3, .3);
+        return new Vector3(0, 0, 0);
     }
 }

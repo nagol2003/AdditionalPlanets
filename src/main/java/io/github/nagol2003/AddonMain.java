@@ -25,7 +25,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 	 version = Const.modVersion, 
 	 dependencies = Const.DEPENDENCIES_FORGE + Const.DEPENDENCIES_MODS, 
      certificateFingerprint = Const.CERTIFICATEFINGERPRINT)
-public class AddonMain {
+public class AddonMain { 
 
 	public static final Logging LOGGER = new Logging(Const.modID);
 	public static final AddonMain INSTANCE = new AddonMain();
@@ -42,7 +42,6 @@ public class AddonMain {
 			LOGGER.warn("Invalid Fingerprint");
 		}
 	}
-	
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {
@@ -56,6 +55,7 @@ public class AddonMain {
 		AddonCelestialBodies.init();
 
 		proxy.preInit(registry, event);
+		
 		
 	}
 

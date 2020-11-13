@@ -4,6 +4,8 @@ import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.AddonConfig.Dimension;
 import io.github.nagol2003.AddonConfig.PlanetSettings;
 import io.github.nagol2003.Const;
+import io.github.nagol2003.celestial.planets.Ogniuos.WorldProviderOgnious;
+import io.github.nagol2003.celestial.planets.Ogniuos.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
 import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
@@ -16,6 +18,8 @@ import micdoodle8.mods.galacticraft.api.galaxies.Star;
 import micdoodle8.mods.galacticraft.api.vector.Vector3;
 import micdoodle8.mods.galacticraft.api.world.AtmosphereInfo;
 import micdoodle8.mods.galacticraft.api.world.EnumAtmosphericGas;
+import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeMoon;
+import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeOrbit;
 import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeOverworld;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedCreeper;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedEnderman;
@@ -243,6 +247,10 @@ public class AddonCelestialBodies {
 		Ognious.setPhaseShift(1.30F);
 		Ognious.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.35F, 1.35F));
 		Ognious.setRelativeOrbitTime(2.0F);
+		Ognious.setBiomeInfo(OgniousBiomes.Ognious);
+		Ognious.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Ognious.setDimensionInfo(dim.idOgnious, WorldProviderOgnious.class);
+		Ognious.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
 
 		Queran = new Planet("Queran").setParentSolarSystem(Garphina);
 		Queran.setTierRequired(6);
@@ -375,7 +383,8 @@ public class AddonCelestialBodies {
 		
 		// comment these out for now but keep em to just change the world provider class later
 
-		GalacticraftRegistry.registerTeleportType(WorldProviderPolulos.class, new TeleportTypeOverworld());
+		GalacticraftRegistry.registerTeleportType(WorldProviderPolulos.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());

@@ -13,10 +13,11 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraft.world.gen.NoiseGenerator;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraft.world.gen.NoiseGeneratorPerlin;
 
-public abstract class ChunkProviderAP extends ChunkProviderAbst {
+public abstract class ChunkProviderAP extends ChunkProviderAbst { 
 	protected Random rand;
 	protected World worldObj;
 	private double[] depthBuffer;
@@ -37,6 +38,7 @@ public abstract class ChunkProviderAP extends ChunkProviderAbst {
 
 	protected IBlockState stoneBlock;
 	protected IBlockState waterBlock;
+	protected IBlockState dirtBlock;
 
 	protected int seaLevel = 63;
 	protected boolean seaIceLayer = false;
@@ -140,6 +142,9 @@ public abstract class ChunkProviderAP extends ChunkProviderAbst {
 											Blocks.ICE.getDefaultState());
 								} else if (i2 * 8 + j2 < (this.seaLevel - 1)) {
 									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.waterBlock);
+								}
+								else if (i2 * 8 + j2 < (this.seaLevel + 2)) {
+									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.dirtBlock);
 								}
 							}
 
