@@ -1,39 +1,35 @@
-package io.github.nagol2003.celestial.planets.Polulos.biome;
+package io.github.nagol2003.celestial.planets.Polulos.biome.gen;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.Polulos.BiomeDecoratorOther;
-import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulos;
-import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulosDry;
-//import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomeGenPlanetOneSea;
-import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
+import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
+import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeDecorator;
+import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraftforge.common.BiomeDictionary;
 
-public class PolulosBiomes extends BiomeGenBaseGC {
+public class BiomePolulosDry extends PolulosBiomes {
 
-	public static final Biome Polulos = new BiomePolulos(new BiomeProperties("Polulos").setBaseHeight(0.145F).setHeightVariation(0.5F).setRainfall(0.8F));
-	public static final Biome PolulosDry = new BiomePolulosDry(new BiomeProperties("PolulosDry").setBaseHeight(0.290F).setHeightVariation(0.9F).setRainfall(0.1F));
-	//public static final Biome planetOne_sea = new BiomeGenPlanetOneSea(new BiomeProperties("Planet One Sea").setBaseHeight(0.100F).setHeightVariation(0.2F).setRainfall(0.1F));
-
-	protected PolulosBiomes(BiomeProperties properties) {
-		super(properties, true);
+	public BiomePolulosDry(BiomeProperties properties) {
+		super(properties);
+        this.topBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
+        this.fillerBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
+        this.spawnableMonsterList.clear();
+        this.spawnableCreatureList.clear();
+        this.spawnableWaterCreatureList.clear();
 	}
 
 	@Override
-	public BiomeDecorator createBiomeDecorator() {
-		return new BiomeDecoratorOther();
-	}
+	public void registerTypes(Biome b) {
+            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
+	}
 	@Override
-	public void genTerrainBlocks (World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
-		generateBiomeSurface(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
-	}
-
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();

@@ -24,7 +24,7 @@ import net.minecraftforge.fml.client.FMLClientHandler;
 
 public class SkyProviderPolulos extends IRenderHandler {
 	
-	private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/celestialbodies/kepler452b.png");
+	private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png");
 
 	public int starList;
 	public int glSkyList;

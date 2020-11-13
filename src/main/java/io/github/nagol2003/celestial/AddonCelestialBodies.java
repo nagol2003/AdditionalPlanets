@@ -141,12 +141,12 @@ public class AddonCelestialBodies {
 		
 		Garphina = new SolarSystem("Garphina", "milky_way").setMapPosition(new Vector3(1.0F, 1.0F, 0.0F));
 		Star starSol6 = (Star) new Star("Radon").setParentSolarSystem(Garphina).setTierRequired(-1);
-		starSol6.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
+		starSol6.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png"));
 		Garphina.setMainStar(starSol6);
 		
 		Test = new SolarSystem("Test", "milky_way").setMapPosition(new Vector3(0.5F, -1.0F, 0.0F));
 		Star starSol7 = (Star) new Star("Radon").setParentSolarSystem(Test).setTierRequired(-1);
-		starSol7.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
+		starSol7.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png"));
 		Test.setMainStar(starSol7);
 	}
 
@@ -227,7 +227,7 @@ public class AddonCelestialBodies {
 		Polulos.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.25F, 0.25F));
 		Polulos.setRelativeOrbitTime(2.0F);
 		Polulos.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/polulos.png"));
-		Polulos.setBiomeInfo(PolulosBiomes.Polulos);
+		Polulos.setBiomeInfo(PolulosBiomes.Polulos, PolulosBiomes.PolulosDry);
 		Polulos.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Polulos.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
 		Polulos.atmosphereComponent(EnumAtmosphericGas.METHANE);
@@ -410,38 +410,38 @@ public class AddonCelestialBodies {
 		// Now we register each Celestial Body after we have created and defined them
 
 		// Solar systems first
-		GalaxyRegistry.registerSolarSystem(AlphaCentauri);
-		GalaxyRegistry.registerSolarSystem(Zakir);
-		GalaxyRegistry.registerSolarSystem(unknown);
+		//GalaxyRegistry.registerSolarSystem(AlphaCentauri);
+		//GalaxyRegistry.registerSolarSystem(Zakir);
+		//GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
 		//GalaxyRegistry.registerSolarSystem(Test);
 		
 		// then plants
-		GalaxyRegistry.registerPlanet(ProximaCentauriB);
-		GalaxyRegistry.registerPlanet(AlphaCentauriV);
-		GalaxyRegistry.registerPlanet(AlphaCentaurfour);
-		GalaxyRegistry.registerPlanet(AlphaCentaurone);
-		GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
-		GalaxyRegistry.registerPlanet(ZakirPrime);
-		GalaxyRegistry.registerPlanet(unknownplanet);
-		GalaxyRegistry.registerPlanet(mother);
+		//GalaxyRegistry.registerPlanet(ProximaCentauriB);
+		//GalaxyRegistry.registerPlanet(AlphaCentauriV);
+		//GalaxyRegistry.registerPlanet(AlphaCentaurfour);
+		//GalaxyRegistry.registerPlanet(AlphaCentaurone);
+		//GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
+		//GalaxyRegistry.registerPlanet(ZakirPrime);
+		//GalaxyRegistry.registerPlanet(unknownplanet);
+		//GalaxyRegistry.registerPlanet(mother);
 		GalaxyRegistry.registerPlanet(Polulos);
-		GalaxyRegistry.registerPlanet(Shayan);
-		GalaxyRegistry.registerPlanet(Denia);
+		//GalaxyRegistry.registerPlanet(Shayan);
+		//GalaxyRegistry.registerPlanet(Denia);
 		GalaxyRegistry.registerPlanet(Ognious);
-		GalaxyRegistry.registerPlanet(Queran);
-		GalaxyRegistry.registerPlanet(Vermon);
-		GalaxyRegistry.registerPlanet(Dark);
+		//GalaxyRegistry.registerPlanet(Queran);
+		//GalaxyRegistry.registerPlanet(Vermon);
+		//GalaxyRegistry.registerPlanet(Dark);
 		
 		// then moons
-		GalaxyRegistry.registerMoon(AlphaCentauroneA);
-		GalaxyRegistry.registerMoon(Erink);
-		GalaxyRegistry.registerMoon(Blastopy);
-		GalaxyRegistry.registerMoon(Keyian);
-		GalaxyRegistry.registerMoon(Junsin);
-		GalaxyRegistry.registerMoon(Xareious);
-		GalaxyRegistry.registerMoon(Ammon);
-		GalaxyRegistry.registerMoon(Terrin);
+		//GalaxyRegistry.registerMoon(AlphaCentauroneA);
+		//GalaxyRegistry.registerMoon(Erink);
+		//GalaxyRegistry.registerMoon(Blastopy);
+		//GalaxyRegistry.registerMoon(Keyian);
+		//GalaxyRegistry.registerMoon(Junsin);
+		//GalaxyRegistry.registerMoon(Xareious);
+		//GalaxyRegistry.registerMoon(Ammon);
+		//GalaxyRegistry.registerMoon(Terrin);
 
 	}
 

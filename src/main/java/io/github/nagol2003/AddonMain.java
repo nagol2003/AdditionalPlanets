@@ -77,3 +77,6 @@ public class AddonMain {
 		proxy.postInit(registry,event);
 	}
 }
+
+//Shift + U is undo
+//Control + Y is redo
