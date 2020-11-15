@@ -57,6 +57,8 @@ public class AddonCelestialBodies {
 	public static SolarSystem SiriusS;
 	public static SolarSystem Kepler452;
 	public static SolarSystem V1400Centauri;
+	public static SolarSystem Barban;
+	public static SolarSystem KOI4878;
 
 	// Planets
 	public static Planet ProximaCentauriB;
@@ -77,6 +79,12 @@ public class AddonCelestialBodies {
 	public static Planet Vulcan;
 	public static Planet Kepler452b;
 	public static Planet J1407b;
+	public static Planet BarbanI;
+	public static Planet BarbanII;
+	public static Planet Asteroids;
+	public static Planet BarbanIII;
+	public static Planet BarbanIV;
+	public static Planet KOI4878b;
 
 	// Moons
     public static Moon planetOneMoon;
@@ -88,6 +96,7 @@ public class AddonCelestialBodies {
 	public static Moon Xareious;
 	public static Moon Ammon;
 	public static Moon Terrin;
+	public static Moon BarbanIVa;
 
 	/**
 	 * These are used to keep the building method parameters shorter when calling
@@ -187,6 +196,16 @@ public class AddonCelestialBodies {
 		Star starSol13 = (Star) new Star("V1400Centauri").setParentSolarSystem(V1400Centauri).setTierRequired(-1);
 		starSol13.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		V1400Centauri.setMainStar(starSol13);
+		
+		Barban = new SolarSystem("Barban", "milky_way").setMapPosition(new Vector3(3.1F, 1.7F, 0.0F));
+		Star starSol14 = (Star) new Star("Barban").setParentSolarSystem(Barban).setTierRequired(-1);
+		starSol14.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		Barban.setMainStar(starSol14);
+		
+		KOI4878 = new SolarSystem("KOI4878", "milky_way").setMapPosition(new Vector3(3.1F, 1.2F, 0.0F));
+		Star starSol15 = (Star) new Star("KOI4878").setParentSolarSystem(KOI4878).setTierRequired(-1);
+		starSol15.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		KOI4878.setMainStar(starSol15);
 	}
 
 	/**
@@ -343,9 +362,57 @@ public class AddonCelestialBodies {
 		J1407b.setTierRequired(6);
 		J1407b.setRingColorRGB(0F, 1F, 0F);
 		J1407b.setPhaseShift(1.30F);
-		J1407b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
+		J1407b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.6F, 1.6F));
 		J1407b.setRelativeOrbitTime(12.0F);
 		J1407b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		BarbanI = new Planet("BarbanI").setParentSolarSystem(Barban);
+		BarbanI.setTierRequired(6);
+		BarbanI.setRingColorRGB(0F, 1F, 0F);
+		BarbanI.setPhaseShift(1.30F);
+		BarbanI.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.6F, 0.6F));
+		BarbanI.setRelativeOrbitTime(12.0F);
+		BarbanI.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		BarbanII = new Planet("BarbanII").setParentSolarSystem(Barban);
+		BarbanII.setTierRequired(6);
+		BarbanII.setRingColorRGB(0F, 1F, 0F);
+		BarbanII.setPhaseShift(1.30F);
+		BarbanII.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
+		BarbanII.setRelativeOrbitTime(12.0F);
+		BarbanII.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		Asteroids = new Planet("Asteroids").setParentSolarSystem(Barban);
+		Asteroids.setTierRequired(6);
+		Asteroids.setRingColorRGB(0F, 1F, 0F);
+		Asteroids.setPhaseShift(1.30F);
+		Asteroids.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.6F, 1.6F));
+		Asteroids.setRelativeOrbitTime(12.0F);
+		Asteroids.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		BarbanIII = new Planet("BarbanIII").setParentSolarSystem(Barban);
+		BarbanIII.setTierRequired(6);
+		BarbanIII.setRingColorRGB(0F, 1F, 0F);
+		BarbanIII.setPhaseShift(1.30F);
+		BarbanIII.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2F, 2F));
+		BarbanIII.setRelativeOrbitTime(12.0F);
+		BarbanIII.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		BarbanIV = new Planet("BarbanIV").setParentSolarSystem(Barban);
+		BarbanIV.setTierRequired(6);
+		BarbanIV.setRingColorRGB(0F, 1F, 0F);
+		BarbanIV.setPhaseShift(1.30F);
+		BarbanIV.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
+		BarbanIV.setRelativeOrbitTime(12.0F);
+		BarbanIV.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		KOI4878b = new Planet("KOI4878b").setParentSolarSystem(KOI4878);
+		KOI4878b.setTierRequired(6);
+		KOI4878b.setRingColorRGB(0F, 1F, 0F);
+		KOI4878b.setPhaseShift(1.30F);
+		KOI4878b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
+		KOI4878b.setRelativeOrbitTime(12.0F);
+		KOI4878b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/koiplanet.png"));
 
 	}
 
@@ -416,7 +483,7 @@ public class AddonCelestialBodies {
 		Ammon.setTierRequired(7);
 		Ammon.setRelativeSize(0.3867F);
 		Ammon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
-
+		
 		Terrin = new Moon("Terrin").setParentPlanet(Ognious);
 		Terrin.setPhaseShift(2.436F);
 		Terrin.setRingColorRGB(0.1F, 0.1F, 0.6F);
@@ -425,6 +492,15 @@ public class AddonCelestialBodies {
 		Terrin.setTierRequired(7);
 		Terrin.setRelativeSize(0.3867F);
 		Terrin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		
+		BarbanIVa = new Moon("BarbanIVa").setParentPlanet(BarbanIV);
+		BarbanIVa.setPhaseShift(2.436F);
+		BarbanIVa.setRingColorRGB(0.1F, 0.1F, 0.6F);
+		BarbanIVa.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2F,2F));
+		BarbanIVa.setRelativeOrbitTime(75.0F);
+		BarbanIVa.setTierRequired(7);
+		BarbanIVa.setRelativeSize(0.3867F);
+		BarbanIVa.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
 
 	}
 
@@ -484,6 +560,8 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerSolarSystem(SiriusS);
 		//GalaxyRegistry.registerSolarSystem(Kepler452);
 		//GalaxyRegistry.registerSolarSystem(V1400Centauri);
+		//GalaxyRegistry.registerSolarSystem(Barban);
+		GalaxyRegistry.registerSolarSystem(KOI4878);
 		
 		// then plants
 		//GalaxyRegistry.registerPlanet(ProximaCentauriB);
@@ -503,7 +581,13 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(Dark);
 		//GalaxyRegistry.registerPlanet(Vulcan);
 		//GalaxyRegistry.registerPlanet(Kepler452b);
-		//GalaxyRegistry.registerPlanet(J1407b);
+		//GalaxyRegistry.registerPlanet(J1407b); 
+		//GalaxyRegistry.registerPlanet(BarbanI); 
+		//GalaxyRegistry.registerPlanet(BarbanII); 
+		//GalaxyRegistry.registerPlanet(Asteroids); 
+		//GalaxyRegistry.registerPlanet(BarbanIII); 
+		//GalaxyRegistry.registerPlanet(BarbanIV); 
+		GalaxyRegistry.registerPlanet(KOI4878b); 
 		
 		// then moons
 		//GalaxyRegistry.registerMoon(AlphaCentauroneA);
@@ -514,6 +598,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerMoon(Xareious);
 		//GalaxyRegistry.registerMoon(Ammon);
 		//GalaxyRegistry.registerMoon(Terrin);
+		//GalaxyRegistry.registerMoon(BarbanIVa);
 
 	}
 

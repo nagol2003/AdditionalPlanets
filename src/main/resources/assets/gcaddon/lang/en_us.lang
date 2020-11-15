@@ -66,7 +66,18 @@ solarsystem.SiriusS=Sirius
 star.Kepler452=Kepler-452
 solarsystem.Kepler452=Kepler-452
 planet.Kepler452b=Kepler-452b
-
 star.V1400Centauri=V1400 Centauri
 solarsystem.V1400Centauri=1SWASP
 planet.J1407b=J1407b
+planet.BarbanI=Barban I
+planet.BarbanII=Barban II
+planet.Asteroids=Asteroids
+planet.BarbanIII=Barban III
+planet.BarbanIV=Barban IV
+star.Barban=Barban
+solarsystem.Barban=Barban
+moon.BarbanIVa=Barban IVa
+
+planet.KOI4878b=KOI-4878b
+star.KOI4878=KOI-4878
+solarsystem.KOI4878=KOI-4878
