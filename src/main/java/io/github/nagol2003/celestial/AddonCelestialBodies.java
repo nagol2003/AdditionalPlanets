@@ -146,32 +146,32 @@ public class AddonCelestialBodies {
 		starSol3.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		AlphaCentauri.setMainStar(starSol3);
 		
-		Zakir = new SolarSystem("Zakir", "milky_way").setMapPosition(new Vector3(1.0F, -1.0F, 0.0F));
+		Zakir = new SolarSystem("Zakir", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(1.0F, -1.0F, 0.0F));
 		Star starSol4 = (Star) new Star("ZakirStar").setParentSolarSystem(Zakir).setTierRequired(-1);
 		starSol4.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		Zakir.setMainStar(starSol4);
 		
-		unknown = new SolarSystem("unknown", "milky_way").setMapPosition(new Vector3(-1.0F, -1.0F, 0.0F));
+		unknown = new SolarSystem("unknown", NewGalaxy.messier81.getName()).setMapPosition(new Vector3(-1.0F, -1.0F, 0.0F));
 		Star starSol5 = (Star) new Star("unknown").setParentSolarSystem(unknown).setTierRequired(-1);
 		starSol5.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		unknown.setMainStar(starSol5);
 		
-		Garphina = new SolarSystem("Garphina", "milky_way").setMapPosition(new Vector3(1.0F, 1.0F, 0.0F));
+		Garphina = new SolarSystem("Garphina", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(1.0F, 1.0F, 0.0F));
 		Star starSol6 = (Star) new Star("Radon").setParentSolarSystem(Garphina).setTierRequired(-1);
 		starSol6.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png"));
 		Garphina.setMainStar(starSol6);
 		
-		Test = new SolarSystem("Test", "milky_way").setMapPosition(new Vector3(0.5F, -1.0F, 0.0F));
+		Test = new SolarSystem("Test", NewGalaxy.messier81.getName()).setMapPosition(new Vector3(0.5F, -1.0F, 0.0F));
 		Star starSol7 = (Star) new Star("Radon").setParentSolarSystem(Test).setTierRequired(-1);
 		starSol7.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png"));
 		Test.setMainStar(starSol7);
 		
-		BlackHole = new SolarSystem("BlackHole", "milky_way").setMapPosition(new Vector3(0.9F, -1.5F, 0.0F));
+		BlackHole = new SolarSystem("BlackHole", NewGalaxy.messier81.getName()).setMapPosition(new Vector3(0.9F, -1.5F, 0.0F));
 		Star starSol8 = (Star) new Star("BlackHole").setParentSolarSystem(BlackHole).setTierRequired(-1);
 		starSol8.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/blackhole.png"));
 		BlackHole.setMainStar(starSol8);
 		
-		Aa = new SolarSystem("Aa", "milky_way").setMapPosition(new Vector3(1.2F, -1.8F, 0.0F));
+		Aa = new SolarSystem("Aa", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(1.2F, -1.8F, 0.0F));
 		Star starSol9 = (Star) new Star("KanLaon").setParentSolarSystem(Aa).setTierRequired(-1);
 		starSol9.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		Aa.setMainStar(starSol9);
@@ -191,7 +191,7 @@ public class AddonCelestialBodies {
 		starSol12.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kepler452.png"));
 		Kepler452.setMainStar(starSol12);
 		
-		V1400Centauri = new SolarSystem("V1400Centauri", "milky_way").setMapPosition(new Vector3(2.5F, -1.1F, 0.0F));
+		V1400Centauri = new SolarSystem("V1400Centauri", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(2.5F, -1.1F, 0.0F));
 		Star starSol13 = (Star) new Star("V1400Centauri").setParentSolarSystem(V1400Centauri).setTierRequired(-1);
 		starSol13.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		V1400Centauri.setMainStar(starSol13);
@@ -201,7 +201,7 @@ public class AddonCelestialBodies {
 		starSol14.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		Barban.setMainStar(starSol14);
 		
-		KOI4878 = new SolarSystem("KOI4878", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(0.0F, 0.0F, 0.0F));
+		KOI4878 = new SolarSystem("KOI4878", "milky_way").setMapPosition(new Vector3(-1.0F, 0.5F, 0.0F));
 		Star starSol15 = (Star) new Star("KOI4878").setParentSolarSystem(KOI4878).setTierRequired(-1);
 		starSol15.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		KOI4878.setMainStar(starSol15);
@@ -548,56 +548,56 @@ public class AddonCelestialBodies {
 		// Now we register each Celestial Body after we have created and defined them
 
 		// Solar systems first
-		//GalaxyRegistry.registerSolarSystem(AlphaCentauri);
-		//GalaxyRegistry.registerSolarSystem(Zakir);
-		//GalaxyRegistry.registerSolarSystem(unknown);
+		GalaxyRegistry.registerSolarSystem(AlphaCentauri);
+		GalaxyRegistry.registerSolarSystem(Zakir);
+		GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
-		//GalaxyRegistry.registerSolarSystem(Test);
-		//GalaxyRegistry.registerSolarSystem(BlackHole);
-		//GalaxyRegistry.registerSolarSystem(Aa);
-		//GalaxyRegistry.registerSolarSystem(SiriusM);
-		//GalaxyRegistry.registerSolarSystem(SiriusS);
-		//GalaxyRegistry.registerSolarSystem(Kepler452);
-		//GalaxyRegistry.registerSolarSystem(V1400Centauri);
-		//GalaxyRegistry.registerSolarSystem(Barban);
+		////GalaxyRegistry.registerSolarSystem(Test);
+		GalaxyRegistry.registerSolarSystem(BlackHole);
+		GalaxyRegistry.registerSolarSystem(Aa);
+		GalaxyRegistry.registerSolarSystem(SiriusM);
+		GalaxyRegistry.registerSolarSystem(SiriusS);
+		GalaxyRegistry.registerSolarSystem(Kepler452);
+		GalaxyRegistry.registerSolarSystem(V1400Centauri);
+		GalaxyRegistry.registerSolarSystem(Barban);
 		GalaxyRegistry.registerSolarSystem(KOI4878);
 		
 		// then plants
-		//GalaxyRegistry.registerPlanet(ProximaCentauriB);
-		//GalaxyRegistry.registerPlanet(AlphaCentauriV);
-		//GalaxyRegistry.registerPlanet(AlphaCentaurfour);
-		//GalaxyRegistry.registerPlanet(AlphaCentaurone);
-		//GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
-		//GalaxyRegistry.registerPlanet(ZakirPrime);
-		//GalaxyRegistry.registerPlanet(unknownplanet);
-		//GalaxyRegistry.registerPlanet(mother);
+		GalaxyRegistry.registerPlanet(ProximaCentauriB);
+		GalaxyRegistry.registerPlanet(AlphaCentauriV);
+		GalaxyRegistry.registerPlanet(AlphaCentaurfour);
+		GalaxyRegistry.registerPlanet(AlphaCentaurone);
+		GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
+		GalaxyRegistry.registerPlanet(ZakirPrime);
+		GalaxyRegistry.registerPlanet(unknownplanet);
+		GalaxyRegistry.registerPlanet(mother);
 		GalaxyRegistry.registerPlanet(Polulos);
-		//GalaxyRegistry.registerPlanet(Shayan);
-		//GalaxyRegistry.registerPlanet(Denia);
+		GalaxyRegistry.registerPlanet(Shayan);
+		GalaxyRegistry.registerPlanet(Denia);
 		GalaxyRegistry.registerPlanet(Ognious);
-		//GalaxyRegistry.registerPlanet(Queran);
-		//GalaxyRegistry.registerPlanet(Vermon);
-		//GalaxyRegistry.registerPlanet(Dark);
-		//GalaxyRegistry.registerPlanet(Vulcan);
-		//GalaxyRegistry.registerPlanet(Kepler452b);
-		//GalaxyRegistry.registerPlanet(J1407b); 
-		//GalaxyRegistry.registerPlanet(BarbanI); 
-		//GalaxyRegistry.registerPlanet(BarbanII); 
-		//GalaxyRegistry.registerPlanet(Asteroids); 
-		//GalaxyRegistry.registerPlanet(BarbanIII); 
-		//GalaxyRegistry.registerPlanet(BarbanIV); 
+		GalaxyRegistry.registerPlanet(Queran);
+		GalaxyRegistry.registerPlanet(Vermon);
+		GalaxyRegistry.registerPlanet(Dark);
+		GalaxyRegistry.registerPlanet(Vulcan);
+		GalaxyRegistry.registerPlanet(Kepler452b);
+		GalaxyRegistry.registerPlanet(J1407b); 
+		GalaxyRegistry.registerPlanet(BarbanI); 
+		GalaxyRegistry.registerPlanet(BarbanII); 
+		GalaxyRegistry.registerPlanet(Asteroids); 
+		GalaxyRegistry.registerPlanet(BarbanIII); 
+		GalaxyRegistry.registerPlanet(BarbanIV); 
 		GalaxyRegistry.registerPlanet(KOI4878b); 
 		
 		// then moons
-		//GalaxyRegistry.registerMoon(AlphaCentauroneA);
-		//GalaxyRegistry.registerMoon(Erink);
-		//GalaxyRegistry.registerMoon(Blastopy);
-		//GalaxyRegistry.registerMoon(Keyian);
-		//GalaxyRegistry.registerMoon(Junsin);
-		//GalaxyRegistry.registerMoon(Xareious);
-		//GalaxyRegistry.registerMoon(Ammon);
-		//GalaxyRegistry.registerMoon(Terrin);
-		//GalaxyRegistry.registerMoon(BarbanIVa);
+		GalaxyRegistry.registerMoon(AlphaCentauroneA);
+		GalaxyRegistry.registerMoon(Erink);
+		GalaxyRegistry.registerMoon(Blastopy);
+		GalaxyRegistry.registerMoon(Keyian);
+		GalaxyRegistry.registerMoon(Junsin);
+		GalaxyRegistry.registerMoon(Xareious);
+		GalaxyRegistry.registerMoon(Ammon);
+		GalaxyRegistry.registerMoon(Terrin);
+		GalaxyRegistry.registerMoon(BarbanIVa);
 
 	}
 
