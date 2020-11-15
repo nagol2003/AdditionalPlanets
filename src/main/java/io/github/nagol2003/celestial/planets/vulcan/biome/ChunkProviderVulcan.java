@@ -30,6 +30,7 @@ public class ChunkProviderVulcan extends ChunkProviderAP {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
         this.waterBlock =Blocks.LAVA.getDefaultState();
+        this.seaLevel = 75;
     }
 
     @Override
