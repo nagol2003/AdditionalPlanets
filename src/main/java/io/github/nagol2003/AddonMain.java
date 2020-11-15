@@ -60,7 +60,6 @@ public class AddonMain {
 		AddonCelestialBodies.init();
 		
 		proxy.preInit(registry, event);
-		
 	}
 
 	@EventHandler

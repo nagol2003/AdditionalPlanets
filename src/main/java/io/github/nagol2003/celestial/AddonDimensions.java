@@ -8,11 +8,13 @@ public class AddonDimensions {
 
     public static DimensionType dimPolulos;
     public static DimensionType dimOgnious;
+    public static DimensionType dimVulcan;
 
     public static void init() {
 
         AddonDimensions.dimPolulos = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idPolulos);
         AddonDimensions.dimOgnious = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idOgnious);
+        AddonDimensions.dimOgnious = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idVulcan);
 
     }
 }

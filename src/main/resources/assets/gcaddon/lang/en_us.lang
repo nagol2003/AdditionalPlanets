@@ -81,3 +81,9 @@ planet.KOI4878b=KOI-4878b
 star.KOI4878=KOI-4878
 solarsystem.KOI4878=KOI-4878
 galaxy.messier81=Messier 81
+moon.Chiona=Chiona
+planet.ThesiusOmega=Thesius Omega
+
+tile.gcaddon.vulcandirt.name=Scorched Dirt
+tile.gcaddon.vulcanrockscorched.name=Scorched Rock
+tile.gcaddon.vulcanrockburnt.name=Burnt Rock

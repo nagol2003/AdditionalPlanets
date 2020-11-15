@@ -16,6 +16,9 @@ import io.github.nagol2003.blocks.Polulos.ScorchedLeaves;
 import io.github.nagol2003.blocks.Polulos.ScorchedLog;
 import io.github.nagol2003.blocks.Tutorial.BlockCrust;
 import io.github.nagol2003.blocks.Tutorial.BlockCrust.RockType;
+import io.github.nagol2003.blocks.vulcan.VulcanDirt;
+import io.github.nagol2003.blocks.vulcan.VulcanRockBurnt;
+import io.github.nagol2003.blocks.vulcan.VulcanRockScorched;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -42,6 +45,9 @@ public class InitBlocks {
 	public static final Block OGNIOUSLEAVES= new OgniousLeaves();
 	public static final Block OGNIOUSSTONE= new OgniousStone();
 	public static final Block OGNIOUSROCK= new OgniousRock();
+	public static final Block VULCANDIRT= new VulcanDirt();
+	public static final Block VULCANROCKSCORCHED= new VulcanRockScorched();
+	public static final Block VULCANROCKBURNT= new VulcanRockBurnt();
 	
 	public static void registerAll (APRegistry registry) {
 		CreativeTabs toTab = AdditionalPlanetsTab.blockTab;
@@ -64,6 +70,9 @@ public class InitBlocks {
 		registry.registerBlock(OGNIOUSLEAVES, "ogniousleaves").setCreativeTab(toTab2);
 		registry.registerBlock(OGNIOUSSTONE, "ogniousstone").setCreativeTab(toTab2);
 		registry.registerBlock(OGNIOUSROCK, "ogniousrock").setCreativeTab(toTab2);
+		registry.registerBlock(VULCANDIRT, "vulcandirt").setCreativeTab(toTab2);
+		registry.registerBlock(VULCANROCKSCORCHED, "vulcanrockscorched").setCreativeTab(toTab2);
+		registry.registerBlock(VULCANROCKBURNT, "vulcanrockburnt").setCreativeTab(toTab2);
 	}
 	
 }

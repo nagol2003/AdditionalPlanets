@@ -8,6 +8,8 @@ import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import io.github.nagol2003.celestial.planets.vulcan.WorldProviderVulcan;
+import io.github.nagol2003.celestial.planets.vulcan.biome.VulcanBiomes;
 import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.galaxies.GalaxyRegistry;
@@ -81,6 +83,7 @@ public class AddonCelestialBodies {
 	public static Planet BarbanIII;
 	public static Planet BarbanIV;
 	public static Planet KOI4878b;
+	public static Planet ThesiusOmega;
 	
 	//  Astro
 	public static Planet Asteroids;
@@ -96,6 +99,7 @@ public class AddonCelestialBodies {
 	public static Moon Ammon;
 	public static Moon Terrin;
 	public static Moon BarbanIVa;
+	public static Moon Chiona;
 
 	/**
 	 * These are used to keep the building method parameters shorter when calling
@@ -171,7 +175,7 @@ public class AddonCelestialBodies {
 		starSol8.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/blackhole.png"));
 		BlackHole.setMainStar(starSol8);
 		
-		Aa = new SolarSystem("Aa", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(1.2F, -1.8F, 0.0F));
+		Aa = new SolarSystem("Aa", "milky_way").setMapPosition(new Vector3(1.2F, -1.8F, 0.0F));
 		Star starSol9 = (Star) new Star("KanLaon").setParentSolarSystem(Aa).setTierRequired(-1);
 		starSol9.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		Aa.setMainStar(starSol9);
@@ -347,7 +351,11 @@ public class AddonCelestialBodies {
 		Vulcan.setPhaseShift(1.30F);
 		Vulcan.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.5F, 0.5F));
 		Vulcan.setRelativeOrbitTime(12.0F);
-		Vulcan.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Vulcan.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/vulcan.png"));
+		Vulcan.setBiomeInfo(VulcanBiomes.VulcanHell);
+		Vulcan.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Vulcan.setDimensionInfo(dim.idVulcan, WorldProviderVulcan.class);
+		Vulcan.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		Kepler452b = new Planet("Kepler452b").setParentSolarSystem(Kepler452);
 		Kepler452b.setTierRequired(6);
@@ -412,6 +420,14 @@ public class AddonCelestialBodies {
 		KOI4878b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
 		KOI4878b.setRelativeOrbitTime(12.0F);
 		KOI4878b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/koiplanet.png"));
+		
+		ThesiusOmega = new Planet("ThesiusOmega").setParentSolarSystem(Aa);
+		ThesiusOmega.setTierRequired(6);
+		ThesiusOmega.setRingColorRGB(0F, 1F, 0F);
+		ThesiusOmega.setPhaseShift(1.30F);
+		ThesiusOmega.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
+		ThesiusOmega.setRelativeOrbitTime(12.0F);
+		ThesiusOmega.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/thesius.png"));
 
 	}
 
@@ -500,6 +516,15 @@ public class AddonCelestialBodies {
 		BarbanIVa.setTierRequired(7);
 		BarbanIVa.setRelativeSize(0.3867F);
 		BarbanIVa.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		
+		Chiona = new Moon("Chiona").setParentPlanet(ThesiusOmega);
+		Chiona.setPhaseShift(2.436F);
+		Chiona.setRingColorRGB(0.1F, 0.1F, 0.6F);
+		Chiona.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(15F,15F));
+		Chiona.setRelativeOrbitTime(75.0F);
+		Chiona.setTierRequired(7);
+		Chiona.setRelativeSize(0.3867F);
+		Chiona.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/chiona.png"));
 
 	}
 
@@ -539,6 +564,7 @@ public class AddonCelestialBodies {
 
 		GalacticraftRegistry.registerTeleportType(WorldProviderPolulos.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderVulcan.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
@@ -587,6 +613,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerPlanet(BarbanIII); 
 		GalaxyRegistry.registerPlanet(BarbanIV); 
 		GalaxyRegistry.registerPlanet(KOI4878b); 
+		GalaxyRegistry.registerPlanet(ThesiusOmega);
 		
 		// then moons
 		GalaxyRegistry.registerMoon(AlphaCentauroneA);
@@ -598,6 +625,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerMoon(Ammon);
 		GalaxyRegistry.registerMoon(Terrin);
 		GalaxyRegistry.registerMoon(BarbanIVa);
+		GalaxyRegistry.registerMoon(Chiona);
 
 	}
 
