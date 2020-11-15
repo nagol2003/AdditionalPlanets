@@ -1,4 +1,4 @@
-package io.github.nagol2003.util.world.chunk;
+package io.github.nagol2003.util.world;
 
 import java.util.HashSet;
 import java.util.Random;

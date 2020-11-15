@@ -1,6 +1,5 @@
 package io.github.nagol2003.util.world.biome;
 
-import io.github.nagol2003.util.world.CrazyBiomes;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;
@@ -24,7 +23,7 @@ public class AddonBiomeBase extends BiomeGenBaseGC {
 	public AddonBiomeBase(BiomeProperties properties) {
 		super(properties, true);
 		this.clearAllSpawning();
-		CrazyBiomes.biomeList.add(this);
+		//CrazyBiomes.biomeList.add(this);
 	}
 
 	public AddonBiomeBase(String singleName, BiomeProperties properties) {

@@ -19,14 +19,11 @@ import micdoodle8.mods.galacticraft.api.vector.Vector3;
 import micdoodle8.mods.galacticraft.api.world.AtmosphereInfo;
 import micdoodle8.mods.galacticraft.api.world.EnumAtmosphericGas;
 import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeMoon;
-import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeOrbit;
-import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeOverworld;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedCreeper;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedEnderman;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSkeleton;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSpider;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedZombie;
-import micdoodle8.mods.galacticraft.planets.mars.dimension.TeleportTypeMars;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome.SpawnListEntry;
 
@@ -81,10 +78,12 @@ public class AddonCelestialBodies {
 	public static Planet J1407b;
 	public static Planet BarbanI;
 	public static Planet BarbanII;
-	public static Planet Asteroids;
 	public static Planet BarbanIII;
 	public static Planet BarbanIV;
 	public static Planet KOI4878b;
+	
+	//  Astro
+	public static Planet Asteroids;
 
 	// Moons
     public static Moon planetOneMoon;
@@ -202,7 +201,7 @@ public class AddonCelestialBodies {
 		starSol14.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		Barban.setMainStar(starSol14);
 		
-		KOI4878 = new SolarSystem("KOI4878", "milky_way").setMapPosition(new Vector3(3.1F, 1.2F, 0.0F));
+		KOI4878 = new SolarSystem("KOI4878", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(0.0F, 0.0F, 0.0F));
 		Star starSol15 = (Star) new Star("KOI4878").setParentSolarSystem(KOI4878).setTierRequired(-1);
 		starSol15.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		KOI4878.setMainStar(starSol15);

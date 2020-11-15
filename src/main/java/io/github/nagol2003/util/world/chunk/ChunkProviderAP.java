@@ -3,6 +3,7 @@ package io.github.nagol2003.util.world.chunk;
 import java.util.List;
 import java.util.Random;
 
+import io.github.nagol2003.util.world.MapGenBaseMeta;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EnumCreatureType;

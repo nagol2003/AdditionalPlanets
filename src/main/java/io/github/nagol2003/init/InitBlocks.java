@@ -1,13 +1,6 @@
 package io.github.nagol2003.init;
 
 import io.github.nagol2003.blocks.FerminiumOre;
-import io.github.nagol2003.blocks.Polulos.PolulosDirt;
-import io.github.nagol2003.blocks.Polulos.PolulosRock;
-import io.github.nagol2003.blocks.Polulos.PolulosSand;
-import io.github.nagol2003.blocks.Polulos.ScorchedLeaves;
-import io.github.nagol2003.blocks.Polulos.ScorchedLog;
-import io.github.nagol2003.blocks.Tutorial.BlockCrust;
-import io.github.nagol2003.blocks.Tutorial.BlockCrust.RockType;
 import io.github.nagol2003.blocks.StrangeMetallic;
 import io.github.nagol2003.blocks.Denia.FROZENCO2;
 import io.github.nagol2003.blocks.Ognious.MoistDirt;
@@ -16,6 +9,13 @@ import io.github.nagol2003.blocks.Ognious.OgniousLeaves;
 import io.github.nagol2003.blocks.Ognious.OgniousLog;
 import io.github.nagol2003.blocks.Ognious.OgniousRock;
 import io.github.nagol2003.blocks.Ognious.OgniousStone;
+import io.github.nagol2003.blocks.Polulos.PolulosDirt;
+import io.github.nagol2003.blocks.Polulos.PolulosRock;
+import io.github.nagol2003.blocks.Polulos.PolulosSand;
+import io.github.nagol2003.blocks.Polulos.ScorchedLeaves;
+import io.github.nagol2003.blocks.Polulos.ScorchedLog;
+import io.github.nagol2003.blocks.Tutorial.BlockCrust;
+import io.github.nagol2003.blocks.Tutorial.BlockCrust.RockType;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;

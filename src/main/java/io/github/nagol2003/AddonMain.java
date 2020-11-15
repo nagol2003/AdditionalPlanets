@@ -1,7 +1,9 @@
 package io.github.nagol2003;
 
+import asmodeuscore.core.astronomy.BodiesRegistry;
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.NewGalaxy;
 import io.github.nagol2003.init.InitBlocks;
 import io.github.nagol2003.init.InitItems;
 import io.github.nagol2003.init.Recipes;
@@ -52,8 +54,11 @@ public class AddonMain {
 		registry.addRegistrationHandler(InitBlocks::registerAll, Block.class);
 		
 		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
+		
+		BodiesRegistry.setMaxTier(1);
+		NewGalaxy.init();
 		AddonCelestialBodies.init();
-
+		
 		proxy.preInit(registry, event);
 		
 	}

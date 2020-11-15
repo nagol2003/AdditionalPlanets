@@ -19,7 +19,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
-import net.minecraftforge.client.CloudRenderer;
 
 public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLevel {
 
@@ -143,5 +142,9 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
     @Override
     public Vector3 getFogColor() {
         return new Vector3(1, .3, .3);
+    }
+    
+    public int getCloudColor() {
+    	return 0;
     }
 }

@@ -61,20 +61,13 @@ apply from: "https://raw.githubusercontent.com/ReadOnly-Mods/Misc/master/Gradle/
 // ==========================================
 
 repositories {
-
+    maven { 
+        url "https://www.cursemaven.com"
+    }
 }
 
 dependencies {
-
-}
-
-dependencies {
-
-	compile "GC-1.12-dev:GalacticraftCore-Dev:${GCVersion}"
-	compile "GC-1.12-dev:Galacticraft-API:${GCVersion}"
-	compile "GC-1.12-dev:Galacticraft-Planets-Dev:${GCVersion}"
-	compile "GC-1.12-dev:MicdoodleCore-Dev:${GCVersion}"
-	
+    compile "curse.maven:AsmodeusCore:3098581"
 }
 
 processResources {

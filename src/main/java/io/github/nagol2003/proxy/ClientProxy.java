@@ -1,5 +1,6 @@
 package io.github.nagol2003.proxy;
 
+import io.github.nagol2003.client.SkyProviderEvent;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,7 +17,7 @@ public class ClientProxy extends ServerProxy {
 		register_event(this);
 		/// PLACE CODE BELOW ///
 		
-		
+		register_event(new SkyProviderEvent());
 		/// PLACE CODE ABOVE ///
 		registry.clientPreInit(event);
 	}
