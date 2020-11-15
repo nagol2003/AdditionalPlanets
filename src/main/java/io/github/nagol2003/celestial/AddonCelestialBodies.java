@@ -51,6 +51,12 @@ public class AddonCelestialBodies {
 	public static SolarSystem unknown;
 	public static SolarSystem Garphina;
 	public static SolarSystem Test;
+	public static SolarSystem BlackHole;
+	public static SolarSystem Aa;
+	public static SolarSystem SiriusM;
+	public static SolarSystem SiriusS;
+	public static SolarSystem Kepler452;
+	public static SolarSystem V1400Centauri;
 
 	// Planets
 	public static Planet ProximaCentauriB;
@@ -68,6 +74,9 @@ public class AddonCelestialBodies {
 	public static Planet Queran;
 	public static Planet Vermon;
 	public static Planet Dark;
+	public static Planet Vulcan;
+	public static Planet Kepler452b;
+	public static Planet J1407b;
 
 	// Moons
     public static Moon planetOneMoon;
@@ -148,6 +157,36 @@ public class AddonCelestialBodies {
 		Star starSol7 = (Star) new Star("Radon").setParentSolarSystem(Test).setTierRequired(-1);
 		starSol7.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png"));
 		Test.setMainStar(starSol7);
+		
+		BlackHole = new SolarSystem("BlackHole", "milky_way").setMapPosition(new Vector3(0.9F, -1.5F, 0.0F));
+		Star starSol8 = (Star) new Star("BlackHole").setParentSolarSystem(BlackHole).setTierRequired(-1);
+		starSol8.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/blackhole.png"));
+		BlackHole.setMainStar(starSol8);
+		
+		Aa = new SolarSystem("Aa", "milky_way").setMapPosition(new Vector3(1.2F, -1.8F, 0.0F));
+		Star starSol9 = (Star) new Star("KanLaon").setParentSolarSystem(Aa).setTierRequired(-1);
+		starSol9.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		Aa.setMainStar(starSol9);
+		
+		SiriusM = new SolarSystem("SiriusM", "milky_way").setMapPosition(new Vector3(2.225F, -1.8F, 0.0F));
+		Star starSol10 = (Star) new Star("Sirius A").setParentSolarSystem(SiriusM).setTierRequired(-1);
+		starSol10.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		SiriusM.setMainStar(starSol10);
+		
+		SiriusS = new SolarSystem("SiriusS", "milky_way").setMapPosition(new Vector3(2.2F, -1.8F, 0.0F));
+		Star starSol11 = (Star) new Star("Sirius B").setParentSolarSystem(SiriusS).setTierRequired(-1);
+		starSol11.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		SiriusS.setMainStar(starSol11);
+		
+		Kepler452 = new SolarSystem("Kepler452", "milky_way").setMapPosition(new Vector3(2.2F, -1.1F, 0.0F));
+		Star starSol12 = (Star) new Star("Kepler452").setParentSolarSystem(Kepler452).setTierRequired(-1);
+		starSol12.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kepler452.png"));
+		Kepler452.setMainStar(starSol12);
+		
+		V1400Centauri = new SolarSystem("V1400Centauri", "milky_way").setMapPosition(new Vector3(2.5F, -1.1F, 0.0F));
+		Star starSol13 = (Star) new Star("V1400Centauri").setParentSolarSystem(V1400Centauri).setTierRequired(-1);
+		starSol13.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		V1400Centauri.setMainStar(starSol13);
 	}
 
 	/**
@@ -283,6 +322,30 @@ public class AddonCelestialBodies {
 		Dark.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0F, 0F));
 		Dark.setRelativeOrbitTime(12.0F);
 		Dark.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		Vulcan = new Planet("Vulcan").setParentSolarSystem(Aa);
+		Vulcan.setTierRequired(6);
+		Vulcan.setRingColorRGB(0.8F, 0.1F, 0.6F);
+		Vulcan.setPhaseShift(1.30F);
+		Vulcan.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.5F, 0.5F));
+		Vulcan.setRelativeOrbitTime(12.0F);
+		Vulcan.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		Kepler452b = new Planet("Kepler452b").setParentSolarSystem(Kepler452);
+		Kepler452b.setTierRequired(6);
+		Kepler452b.setRingColorRGB(0F, 1F, 0F);
+		Kepler452b.setPhaseShift(1.30F);
+		Kepler452b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
+		Kepler452b.setRelativeOrbitTime(12.0F);
+		Kepler452b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		
+		J1407b = new Planet("J1407b").setParentSolarSystem(V1400Centauri);
+		J1407b.setTierRequired(6);
+		J1407b.setRingColorRGB(0F, 1F, 0F);
+		J1407b.setPhaseShift(1.30F);
+		J1407b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
+		J1407b.setRelativeOrbitTime(12.0F);
+		J1407b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
 
 	}
 
@@ -415,6 +478,12 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
 		//GalaxyRegistry.registerSolarSystem(Test);
+		//GalaxyRegistry.registerSolarSystem(BlackHole);
+		//GalaxyRegistry.registerSolarSystem(Aa);
+		//GalaxyRegistry.registerSolarSystem(SiriusM);
+		//GalaxyRegistry.registerSolarSystem(SiriusS);
+		//GalaxyRegistry.registerSolarSystem(Kepler452);
+		//GalaxyRegistry.registerSolarSystem(V1400Centauri);
 		
 		// then plants
 		//GalaxyRegistry.registerPlanet(ProximaCentauriB);
@@ -432,6 +501,9 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(Queran);
 		//GalaxyRegistry.registerPlanet(Vermon);
 		//GalaxyRegistry.registerPlanet(Dark);
+		//GalaxyRegistry.registerPlanet(Vulcan);
+		//GalaxyRegistry.registerPlanet(Kepler452b);
+		//GalaxyRegistry.registerPlanet(J1407b);
 		
 		// then moons
 		//GalaxyRegistry.registerMoon(AlphaCentauroneA);

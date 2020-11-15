@@ -31,8 +31,8 @@ public class SkyProviderPolulos extends IRenderHandler {
 	public int glSkyList2;
 	private float sunSize;
 	
-	public SkyProviderPolulos(IGalacticraftWorldProvider mercuryProvider) {
-		this.sunSize = 17.5F * mercuryProvider.getSolarSize() * 7;
+	public SkyProviderPolulos(IGalacticraftWorldProvider PolulosProvider) {
+		this.sunSize = 0.5F * PolulosProvider.getSolarSize() * 7;
 
 		int displayLists = GLAllocation.generateDisplayLists(3);
 		this.starList = displayLists;
