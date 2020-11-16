@@ -10,6 +10,8 @@ import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
 import io.github.nagol2003.celestial.planets.j1407b.WorldProviderj1407b;
 import io.github.nagol2003.celestial.planets.j1407b.biome.J1407bBiomes;
+import io.github.nagol2003.celestial.planets.koi4878b.WorldProviderkoi4878b;
+import io.github.nagol2003.celestial.planets.koi4878b.biome.Koi4878bBiomes;
 import io.github.nagol2003.celestial.planets.vulcan.WorldProviderVulcan;
 import io.github.nagol2003.celestial.planets.vulcan.biome.VulcanBiomes;
 import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
@@ -345,7 +347,7 @@ public class AddonCelestialBodies {
 		Dark.setPhaseShift(1.30F);
 		Dark.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0F, 0F));
 		Dark.setRelativeOrbitTime(12.0F);
-		Dark.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Dark.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/dark.png"));
 		
 		Vulcan = new Planet("Vulcan").setParentSolarSystem(Aa);
 		Vulcan.setTierRequired(6);
@@ -365,7 +367,7 @@ public class AddonCelestialBodies {
 		Kepler452b.setPhaseShift(1.30F);
 		Kepler452b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
 		Kepler452b.setRelativeOrbitTime(12.0F);
-		Kepler452b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Kepler452b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kepler452b.png"));
 		
 		J1407b = new Planet("J1407b").setParentSolarSystem(V1400Centauri);
 		J1407b.setTierRequired(6);
@@ -373,7 +375,7 @@ public class AddonCelestialBodies {
 		J1407b.setPhaseShift(1.30F);
 		J1407b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.6F, 1.6F));
 		J1407b.setRelativeOrbitTime(12.0F);
-		J1407b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		J1407b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/j1407b.png"));
 		J1407b.setBiomeInfo(J1407bBiomes.j1407b);
 		J1407b.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		J1407b.setDimensionInfo(dim.idj1407b, WorldProviderj1407b.class);
@@ -409,7 +411,7 @@ public class AddonCelestialBodies {
 		BarbanIII.setPhaseShift(1.30F);
 		BarbanIII.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2F, 2F));
 		BarbanIII.setRelativeOrbitTime(12.0F);
-		BarbanIII.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		BarbanIII.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/barbaniii.png"));
 		
 		BarbanIV = new Planet("BarbanIV").setParentSolarSystem(Barban);
 		BarbanIV.setTierRequired(6);
@@ -426,6 +428,10 @@ public class AddonCelestialBodies {
 		KOI4878b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
 		KOI4878b.setRelativeOrbitTime(12.0F);
 		KOI4878b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/koiplanet.png"));
+		KOI4878b.setBiomeInfo(Koi4878bBiomes.koi4878b);
+		KOI4878b.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		KOI4878b.setDimensionInfo(dim.idkoi4878b, WorldProviderkoi4878b.class);
+		KOI4878b.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		ThesiusOmega = new Planet("ThesiusOmega").setParentSolarSystem(Aa);
 		ThesiusOmega.setTierRequired(6);
@@ -572,6 +578,7 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderVulcan.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderj1407b.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderkoi4878b.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
