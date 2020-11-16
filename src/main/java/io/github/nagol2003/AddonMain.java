@@ -66,7 +66,6 @@ public class AddonMain {
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);
 		Recipes.init();
-
 	}
 
 	@EventHandler
@@ -84,3 +83,4 @@ public class AddonMain {
 
 //Shift + U is undo
 //Control + Y is redo
+//35 bodies

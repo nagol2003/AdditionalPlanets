@@ -8,6 +8,8 @@ import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import io.github.nagol2003.celestial.planets.j1407b.WorldProviderj1407b;
+import io.github.nagol2003.celestial.planets.j1407b.biome.J1407bBiomes;
 import io.github.nagol2003.celestial.planets.vulcan.WorldProviderVulcan;
 import io.github.nagol2003.celestial.planets.vulcan.biome.VulcanBiomes;
 import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
@@ -372,6 +374,10 @@ public class AddonCelestialBodies {
 		J1407b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.6F, 1.6F));
 		J1407b.setRelativeOrbitTime(12.0F);
 		J1407b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		J1407b.setBiomeInfo(J1407bBiomes.j1407b);
+		J1407b.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		J1407b.setDimensionInfo(dim.idj1407b, WorldProviderj1407b.class);
+		J1407b.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		BarbanI = new Planet("BarbanI").setParentSolarSystem(Barban);
 		BarbanI.setTierRequired(6);
@@ -565,6 +571,7 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderPolulos.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderVulcan.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderj1407b.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
