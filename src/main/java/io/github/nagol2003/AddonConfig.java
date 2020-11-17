@@ -71,6 +71,18 @@ public class AddonConfig {
 		public int idj1407b = -4443;
 		@Config.Name(value = "PlanetFive Dimension ID")
 		public int idkoi4878b = -4444;
+		@Config.Name(value = "PlanetSix Dimension ID")
+		public int idZakir = -4445;
+		@Config.Name(value = "PlanetSeven Dimension ID")
+		public int idKepler452b = -4446;
+		@Config.Name(value = "PlanetEight Dimension ID")
+		public int idAlphaCentauriB = -4447;
+		@Config.Name(value = "PlanetNine Dimension ID")
+		public int idDark = -4448;
+		@Config.Name(value = "PlanetTen Dimension ID")
+		public int idUnknown = -4449;
+		@Config.Name(value = "PlanetEleven Dimension ID")
+		public int idMother = -4450;
 
 	}
 

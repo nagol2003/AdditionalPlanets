@@ -8,12 +8,24 @@ import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import io.github.nagol2003.celestial.planets.dark.WorldProviderDark;
+import io.github.nagol2003.celestial.planets.dark.biome.DarkBiomes;
 import io.github.nagol2003.celestial.planets.j1407b.WorldProviderj1407b;
 import io.github.nagol2003.celestial.planets.j1407b.biome.J1407bBiomes;
+import io.github.nagol2003.celestial.planets.kepler452b.WorldProviderKepler452b;
+import io.github.nagol2003.celestial.planets.kepler452b.biome.Kepler452bBiomes;
 import io.github.nagol2003.celestial.planets.koi4878b.WorldProviderkoi4878b;
 import io.github.nagol2003.celestial.planets.koi4878b.biome.Koi4878bBiomes;
+import io.github.nagol2003.celestial.planets.mother.WorldProviderMother;
+import io.github.nagol2003.celestial.planets.mother.biome.MotherBiomes;
+import io.github.nagol2003.celestial.planets.proximaCentauriB.WorldProviderProximaCentauriB;
+import io.github.nagol2003.celestial.planets.proximaCentauriB.biome.ProximaCentauriBBiomes;
+import io.github.nagol2003.celestial.planets.unknown.WorldProviderUnknown;
+import io.github.nagol2003.celestial.planets.unknown.biome.UnknownBiomes;
 import io.github.nagol2003.celestial.planets.vulcan.WorldProviderVulcan;
 import io.github.nagol2003.celestial.planets.vulcan.biome.VulcanBiomes;
+import io.github.nagol2003.celestial.planets.zakir.WorldProviderZakir;
+import io.github.nagol2003.celestial.planets.zakir.biome.ZakirBiomes;
 import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.galaxies.GalaxyRegistry;
@@ -89,7 +101,7 @@ public class AddonCelestialBodies {
 	public static Planet KOI4878b;
 	public static Planet ThesiusOmega;
 	
-	//  Astro
+	//  Astroids
 	public static Planet Asteroids;
 
 	// Moons
@@ -228,6 +240,10 @@ public class AddonCelestialBodies {
 		ZakirPrime.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.0F, 1.0F));
 		ZakirPrime.setRelativeOrbitTime(1.0F);
 		ZakirPrime.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/zakir.png"));
+		ZakirPrime.setBiomeInfo(ZakirBiomes.Zakir);
+		ZakirPrime.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		ZakirPrime.setDimensionInfo(dim.idZakir, WorldProviderZakir.class);
+		ZakirPrime.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		ProximaCentauriB = new Planet("ProximaCentauriB").setParentSolarSystem(AlphaCentauri);
 		ProximaCentauriB.setTierRequired(6);
@@ -236,6 +252,10 @@ public class AddonCelestialBodies {
 		ProximaCentauriB.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
 		ProximaCentauriB.setRelativeOrbitTime(1.0F);
 		ProximaCentauriB.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/pcb.png"));
+		ProximaCentauriB.setBiomeInfo(ProximaCentauriBBiomes.ProximaCentauriB);
+		ProximaCentauriB.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		ProximaCentauriB.setDimensionInfo(dim.idAlphaCentauriB, WorldProviderProximaCentauriB.class);
+		ProximaCentauriB.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		AlphaCentauriV = new Planet("AlphaCentauriV").setParentSolarSystem(AlphaCentauri);
 		AlphaCentauriV.setTierRequired(6);
@@ -276,6 +296,10 @@ public class AddonCelestialBodies {
 		unknownplanet.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.80F, 0.80F));
 		unknownplanet.setRelativeOrbitTime(2.0F);
 		unknownplanet.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/unknown.png"));
+		unknownplanet.setBiomeInfo(UnknownBiomes.Unknown);
+		unknownplanet.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		unknownplanet.setDimensionInfo(dim.idUnknown, WorldProviderUnknown.class);
+		unknownplanet.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		mother = new Planet("mother").setParentSolarSystem(Zakir);
 		mother.setTierRequired(6);
@@ -284,6 +308,10 @@ public class AddonCelestialBodies {
 		mother.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.80F, 1.80F));
 		mother.setRelativeOrbitTime(2.0F);
 		mother.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		mother.setBiomeInfo(MotherBiomes.Mother);
+		mother.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		mother.setDimensionInfo(dim.idMother, WorldProviderMother.class);
+		mother.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Polulos = new Planet("Polulos").setParentSolarSystem(Garphina);
 		Polulos.setTierRequired(6);
@@ -348,6 +376,10 @@ public class AddonCelestialBodies {
 		Dark.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0F, 0F));
 		Dark.setRelativeOrbitTime(12.0F);
 		Dark.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/dark.png"));
+		Dark.setBiomeInfo(DarkBiomes.Dark);
+		Dark.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Dark.setDimensionInfo(dim.idDark, WorldProviderDark.class);
+		Dark.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		Vulcan = new Planet("Vulcan").setParentSolarSystem(Aa);
 		Vulcan.setTierRequired(6);
@@ -368,6 +400,10 @@ public class AddonCelestialBodies {
 		Kepler452b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
 		Kepler452b.setRelativeOrbitTime(12.0F);
 		Kepler452b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kepler452b.png"));
+		Kepler452b.setBiomeInfo(Kepler452bBiomes.Kepler452b);
+		Kepler452b.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Kepler452b.setDimensionInfo(dim.idKepler452b, WorldProviderKepler452b.class);
+		Kepler452b.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		J1407b = new Planet("J1407b").setParentSolarSystem(V1400Centauri);
 		J1407b.setTierRequired(6);
@@ -579,6 +615,12 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderVulcan.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderj1407b.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderkoi4878b.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderZakir.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderKepler452b.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderProximaCentauriB.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderDark.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderUnknown.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderMother.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
