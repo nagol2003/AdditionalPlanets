@@ -10,6 +10,8 @@ import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
 import io.github.nagol2003.celestial.planets.dark.WorldProviderDark;
 import io.github.nagol2003.celestial.planets.dark.biome.DarkBiomes;
+import io.github.nagol2003.celestial.planets.denia.WorldProviderDenia;
+import io.github.nagol2003.celestial.planets.denia.biome.DeniaBiomes;
 import io.github.nagol2003.celestial.planets.j1407b.WorldProviderj1407b;
 import io.github.nagol2003.celestial.planets.j1407b.biome.J1407bBiomes;
 import io.github.nagol2003.celestial.planets.kepler452b.WorldProviderKepler452b;
@@ -342,6 +344,10 @@ public class AddonCelestialBodies {
 		Denia.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.05F, 1.05F));
 		Denia.setRelativeOrbitTime(2.0F);
 		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Denia.setBiomeInfo(DeniaBiomes.Denia);
+		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Denia.setDimensionInfo(dim.idDenia, WorldProviderDenia.class);
+		Denia.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Ognious = new Planet("Ognious").setParentSolarSystem(Garphina);
 		Ognious.setTierRequired(6);
@@ -628,6 +634,7 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderUnknown.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderMother.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderVermon.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderDenia.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
