@@ -1,9 +1,9 @@
-package io.github.nagol2003.celestial.planets.vulcan.biome;
+package io.github.nagol2003.celestial.planets.vermon.biome;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.vulcan.BiomeDecoratorOther;
-import io.github.nagol2003.celestial.planets.vulcan.biome.gen.BiomeVulcanHell;
+import io.github.nagol2003.celestial.planets.vermon.BiomeDecoratorOther;
+import io.github.nagol2003.celestial.planets.vermon.biome.gen.BiomeVermon;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -13,11 +13,11 @@ import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
 
-public class VulcanBiomes extends BiomeGenBaseGC {
+public class VermonBiomes extends BiomeGenBaseGC {
 
-	public static final Biome VulcanHell = new BiomeVulcanHell(new BiomeProperties("VulcanHell").setBaseHeight(0.145F).setHeightVariation(1F).setRainfall(0.8F));
+	public static final Biome Vermon = new BiomeVermon(new BiomeProperties("Vermon").setBaseHeight(0.145F).setHeightVariation(0.5F).setRainfall(0.8F));
 
-	protected VulcanBiomes(BiomeProperties properties) {
+	protected VermonBiomes(BiomeProperties properties) {
 		super(properties, true);
 	}
 
@@ -34,7 +34,7 @@ public class VulcanBiomes extends BiomeGenBaseGC {
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = ChunkProviderVulcan.getStoneBlockState();
+		IBlockState stoneBlockState = ChunkProviderVermon.getStoneBlockState();
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;

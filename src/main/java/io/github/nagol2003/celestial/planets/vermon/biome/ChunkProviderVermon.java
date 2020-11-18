@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.vulcan.biome;
+package io.github.nagol2003.celestial.planets.vermon.biome;
 
 import java.util.List;
 import java.util.Random;
@@ -17,20 +17,20 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
 
-public class ChunkProviderVulcan extends ChunkProviderAP {
+public class ChunkProviderVermon extends ChunkProviderAP {
 
-    private final BiomeDecoratorVulcan decorator = new BiomeDecoratorVulcan();
+    private final BiomeDecoratorVermon decorator = new BiomeDecoratorVermon();
     private final MapGenAddonRavinGen ravineGenerator = new MapGenAddonRavinGen();
     private final MapGenAddonCaveGen caveGenerator = new MapGenAddonCaveGen(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState(),
             Sets.newHashSet(Blocks.HARDENED_CLAY, Blocks.BLACK_GLAZED_TERRACOTTA));
     
-    private static IBlockState stoneBlockState = InitBlocks.VULCANROCKBURNT.getDefaultState();
+    private static IBlockState stoneBlockState = Blocks.IRON_ORE.getDefaultState();
 
-    public ChunkProviderVulcan(World par1World, long seed, boolean mapFeaturesEnabled) {
+    public ChunkProviderVermon(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
         this.waterBlock =Blocks.LAVA.getDefaultState();
-        this.seaLevel = 65;
+        this.seaLevel = 75;
     }
 
     @Override

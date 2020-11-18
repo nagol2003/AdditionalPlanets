@@ -1,40 +1,40 @@
-package io.github.nagol2003.celestial.planets.vulcan.biome;
+package io.github.nagol2003.celestial.planets.vermon.biome.gen;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.vulcan.BiomeDecoratorOther;
-import io.github.nagol2003.celestial.planets.vulcan.biome.gen.BiomeVulcanHell;
-import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
+import io.github.nagol2003.celestial.planets.vermon.biome.ChunkProviderVermon;
+import io.github.nagol2003.celestial.planets.vermon.biome.VermonBiomes;
+import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraftforge.common.BiomeDictionary;
 
-public class VulcanBiomes extends BiomeGenBaseGC {
+public class BiomeVermon extends VermonBiomes {
 
-	public static final Biome VulcanHell = new BiomeVulcanHell(new BiomeProperties("VulcanHell").setBaseHeight(0.145F).setHeightVariation(1F).setRainfall(0.8F));
-
-	protected VulcanBiomes(BiomeProperties properties) {
-		super(properties, true);
+	public BiomeVermon(BiomeProperties properties) {
+		super(properties);
+        this.topBlock = Blocks.GRASS.getDefaultState(); //TODO change this
+        this.fillerBlock = Blocks.STONE.getDefaultState(); //TODO change this
+        this.spawnableMonsterList.clear();
+        this.spawnableCreatureList.clear();
+        this.spawnableWaterCreatureList.clear();
 	}
 
 	@Override
-	public BiomeDecorator createBiomeDecorator() {
-		return new BiomeDecoratorOther();
-	}
+	public void registerTypes(Biome b) {
+            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
+	}
 	@Override
-	public void genTerrainBlocks (World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
-		generateBiomeSurface(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
-	}
-
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = ChunkProviderVulcan.getStoneBlockState();
+		IBlockState stoneBlockState = ChunkProviderVermon.getStoneBlockState();
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;

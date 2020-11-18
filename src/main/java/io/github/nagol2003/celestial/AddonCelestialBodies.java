@@ -22,6 +22,8 @@ import io.github.nagol2003.celestial.planets.proximaCentauriB.WorldProviderProxi
 import io.github.nagol2003.celestial.planets.proximaCentauriB.biome.ProximaCentauriBBiomes;
 import io.github.nagol2003.celestial.planets.unknown.WorldProviderUnknown;
 import io.github.nagol2003.celestial.planets.unknown.biome.UnknownBiomes;
+import io.github.nagol2003.celestial.planets.vermon.WorldProviderVermon;
+import io.github.nagol2003.celestial.planets.vermon.biome.VermonBiomes;
 import io.github.nagol2003.celestial.planets.vulcan.WorldProviderVulcan;
 import io.github.nagol2003.celestial.planets.vulcan.biome.VulcanBiomes;
 import io.github.nagol2003.celestial.planets.zakir.WorldProviderZakir;
@@ -368,6 +370,10 @@ public class AddonCelestialBodies {
 		Vermon.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(3.6F, 3.6F));
 		Vermon.setRelativeOrbitTime(12.0F);
 		Vermon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Vermon.setBiomeInfo(VermonBiomes.Vermon);
+		Vermon.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Vermon.setDimensionInfo(dim.idVermon, WorldProviderVermon.class);
+		Vermon.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		Dark = new Planet("Dark").setParentSolarSystem(Test);
 		Dark.setTierRequired(6);
@@ -621,6 +627,7 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderDark.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderUnknown.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderMother.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderVermon.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
