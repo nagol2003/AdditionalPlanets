@@ -87,6 +87,10 @@ public class AddonConfig {
 		public int idVermon = -4451;
 		@Config.Name(value = "PlanetThirteen Dimension ID")
 		public int idDenia = -4452;
+		@Config.Name(value = "PlanetFourteen Dimension ID")
+		public int idShayan = -4453;
+		@Config.Name(value = "PlanetFifteen Dimension ID")
+		public int idQueran = -4454;
 
 	}
 

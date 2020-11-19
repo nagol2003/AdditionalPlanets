@@ -22,6 +22,10 @@ import io.github.nagol2003.celestial.planets.mother.WorldProviderMother;
 import io.github.nagol2003.celestial.planets.mother.biome.MotherBiomes;
 import io.github.nagol2003.celestial.planets.proximaCentauriB.WorldProviderProximaCentauriB;
 import io.github.nagol2003.celestial.planets.proximaCentauriB.biome.ProximaCentauriBBiomes;
+import io.github.nagol2003.celestial.planets.queran.WorldProviderQueran;
+import io.github.nagol2003.celestial.planets.queran.biome.QueranBiomes;
+import io.github.nagol2003.celestial.planets.shayan.WorldProviderShayan;
+import io.github.nagol2003.celestial.planets.shayan.biome.ShayanBiomes;
 import io.github.nagol2003.celestial.planets.unknown.WorldProviderUnknown;
 import io.github.nagol2003.celestial.planets.unknown.biome.UnknownBiomes;
 import io.github.nagol2003.celestial.planets.vermon.WorldProviderVermon;
@@ -336,6 +340,10 @@ public class AddonCelestialBodies {
 		Shayan.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.65F, 0.65F));
 		Shayan.setRelativeOrbitTime(2.0F);
 		Shayan.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Shayan.setBiomeInfo(ShayanBiomes.Shayan);
+		Shayan.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Shayan.setDimensionInfo(dim.idShayan, WorldProviderShayan.class);
+		Shayan.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Denia = new Planet("Denia").setParentSolarSystem(Garphina);
 		Denia.setTierRequired(6);
@@ -368,6 +376,10 @@ public class AddonCelestialBodies {
 		Queran.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(3.0F, 3.0F));
 		Queran.setRelativeOrbitTime(6.0F);
 		Queran.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Queran.setBiomeInfo(QueranBiomes.Queran);
+		Queran.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Queran.setDimensionInfo(dim.idQueran, WorldProviderQueran.class);
+		Queran.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Vermon = new Planet("Vermon").setParentSolarSystem(Garphina);
 		Vermon.setTierRequired(6);
@@ -635,6 +647,8 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderMother.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderVermon.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderDenia.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderShayan.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderQueran.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
