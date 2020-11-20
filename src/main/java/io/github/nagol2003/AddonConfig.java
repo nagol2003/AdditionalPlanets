@@ -99,8 +99,14 @@ public class AddonConfig {
 		public int idBarbanIII = -4457;
 		@Config.Name(value = "MoonOne Dimension ID")
 		public int idTerrin = -4458;
+		@Config.Name(value = "MoonTwo Dimension ID")
+		public int idAmmon = -4459;
+		@Config.Name(value = "MoonThree Dimension ID")
+		public int idXareious = -4460;
+		@Config.Name(value = "MoonFour Dimension ID")
+		public int idErink = -4461;
 
-	}
+	} 
 
 	public static class PlanetSettings {
 

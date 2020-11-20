@@ -4,8 +4,14 @@ import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.AddonConfig.Dimension;
 import io.github.nagol2003.AddonConfig.PlanetSettings;
 import io.github.nagol2003.Const;
+import io.github.nagol2003.celestial.moons.ammon.WorldProviderAmmon;
+import io.github.nagol2003.celestial.moons.ammon.biome.AmmonBiomes;
+import io.github.nagol2003.celestial.moons.erink.WorldProviderErink;
+import io.github.nagol2003.celestial.moons.erink.biome.ErinkBiomes;
 import io.github.nagol2003.celestial.moons.terrin.WorldProviderTerrin;
 import io.github.nagol2003.celestial.moons.terrin.biome.TerrinBiomes;
+import io.github.nagol2003.celestial.moons.xareious.WorldProviderXareious;
+import io.github.nagol2003.celestial.moons.xareious.biome.XareiousBiomes;
 import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
@@ -545,6 +551,11 @@ public class AddonCelestialBodies {
 		Erink.setTierRequired(7);
 		Erink.setRelativeSize(0.3867F);
 		Erink.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Erink.setBiomeInfo(ErinkBiomes.Erink);
+		Erink.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Erink.setDimensionInfo(dim.idErink, WorldProviderErink.class);
+		Erink.atmosphereComponent(EnumAtmosphericGas.METHANE);
+
 
 		Blastopy = new Moon("Blastopy").setParentPlanet(Vermon);
 		Blastopy.setPhaseShift(2.436F);
@@ -581,6 +592,10 @@ public class AddonCelestialBodies {
 		Xareious.setTierRequired(7);
 		Xareious.setRelativeSize(0.3867F);
 		Xareious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Xareious.setBiomeInfo(XareiousBiomes.Xareious);
+		Xareious.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Xareious.setDimensionInfo(dim.idXareious, WorldProviderXareious.class);
+		Xareious.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Ammon = new Moon("Ammon").setParentPlanet(Queran);
 		Ammon.setPhaseShift(2.436F);
@@ -590,6 +605,10 @@ public class AddonCelestialBodies {
 		Ammon.setTierRequired(7);
 		Ammon.setRelativeSize(0.3867F);
 		Ammon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Ammon.setBiomeInfo(AmmonBiomes.Ammon);
+		Ammon.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Ammon.setDimensionInfo(dim.idAmmon, WorldProviderAmmon.class);
+		Ammon.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		Terrin = new Moon("Terrin").setParentPlanet(Ognious);
 		Terrin.setPhaseShift(2.436F);
@@ -677,6 +696,9 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanII.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanIII.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderTerrin.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderAmmon.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderXareious.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderErink.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
