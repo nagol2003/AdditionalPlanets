@@ -4,6 +4,8 @@ import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.AddonConfig.Dimension;
 import io.github.nagol2003.AddonConfig.PlanetSettings;
 import io.github.nagol2003.Const;
+import io.github.nagol2003.celestial.moons.terrin.WorldProviderTerrin;
+import io.github.nagol2003.celestial.moons.terrin.biome.TerrinBiomes;
 import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
@@ -597,6 +599,10 @@ public class AddonCelestialBodies {
 		Terrin.setTierRequired(7);
 		Terrin.setRelativeSize(0.3867F);
 		Terrin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Terrin.setBiomeInfo(TerrinBiomes.Terrin);
+		Terrin.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Terrin.setDimensionInfo(dim.idTerrin, WorldProviderTerrin.class);
+		Terrin.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		BarbanIVa = new Moon("BarbanIVa").setParentPlanet(BarbanIV);
 		BarbanIVa.setPhaseShift(2.436F);
@@ -670,6 +676,7 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanI.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanII.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanIII.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderTerrin.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());

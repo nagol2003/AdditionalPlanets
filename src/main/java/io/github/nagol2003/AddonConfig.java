@@ -97,6 +97,8 @@ public class AddonConfig {
 		public int idBarbanII = -4456;
 		@Config.Name(value = "PlanetEighteen Dimension ID")
 		public int idBarbanIII = -4457;
+		@Config.Name(value = "MoonOne Dimension ID")
+		public int idTerrin = -4458;
 
 	}
 
