@@ -8,6 +8,12 @@ import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.biome.OgniousBiomes;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import io.github.nagol2003.celestial.planets.barbanI.WorldProviderBarbanI;
+import io.github.nagol2003.celestial.planets.barbanI.biome.BarbanIBiomes;
+import io.github.nagol2003.celestial.planets.barbanII.WorldProviderBarbanII;
+import io.github.nagol2003.celestial.planets.barbanII.biome.BarbanIIBiomes;
+import io.github.nagol2003.celestial.planets.barbanIII.WorldProviderBarbanIII;
+import io.github.nagol2003.celestial.planets.barbanIII.biome.BarbanIIIBiomes;
 import io.github.nagol2003.celestial.planets.dark.WorldProviderDark;
 import io.github.nagol2003.celestial.planets.dark.biome.DarkBiomes;
 import io.github.nagol2003.celestial.planets.denia.WorldProviderDenia;
@@ -448,6 +454,10 @@ public class AddonCelestialBodies {
 		BarbanI.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.6F, 0.6F));
 		BarbanI.setRelativeOrbitTime(12.0F);
 		BarbanI.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		BarbanI.setBiomeInfo(BarbanIBiomes.BarbanI);
+		BarbanI.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		BarbanI.setDimensionInfo(dim.idBarbanI, WorldProviderBarbanI.class);
+		BarbanI.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		BarbanII = new Planet("BarbanII").setParentSolarSystem(Barban);
 		BarbanII.setTierRequired(6);
@@ -456,6 +466,10 @@ public class AddonCelestialBodies {
 		BarbanII.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
 		BarbanII.setRelativeOrbitTime(12.0F);
 		BarbanII.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		BarbanII.setBiomeInfo(BarbanIIBiomes.BarbanII);
+		BarbanII.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		BarbanII.setDimensionInfo(dim.idBarbanII, WorldProviderBarbanII.class);
+		BarbanII.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		Asteroids = new Planet("Asteroids").setParentSolarSystem(Barban);
 		Asteroids.setTierRequired(6);
@@ -472,6 +486,10 @@ public class AddonCelestialBodies {
 		BarbanIII.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2F, 2F));
 		BarbanIII.setRelativeOrbitTime(12.0F);
 		BarbanIII.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/barbaniii.png"));
+		BarbanIII.setBiomeInfo(BarbanIIIBiomes.BarbanIII);
+		BarbanIII.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		BarbanIII.setDimensionInfo(dim.idBarbanIII, WorldProviderBarbanIII.class);
+		BarbanIII.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		BarbanIV = new Planet("BarbanIV").setParentSolarSystem(Barban);
 		BarbanIV.setTierRequired(6);
@@ -649,6 +667,9 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderDenia.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderShayan.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderQueran.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanI.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanII.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderBarbanIII.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
@@ -662,7 +683,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerSolarSystem(Zakir);
 		GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
-		////GalaxyRegistry.registerSolarSystem(Test);
+		//GalaxyRegistry.registerSolarSystem(Test);
 		GalaxyRegistry.registerSolarSystem(BlackHole);
 		GalaxyRegistry.registerSolarSystem(Aa);
 		GalaxyRegistry.registerSolarSystem(SiriusM);
@@ -691,11 +712,11 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerPlanet(Vulcan);
 		GalaxyRegistry.registerPlanet(Kepler452b);
 		GalaxyRegistry.registerPlanet(J1407b); 
-		GalaxyRegistry.registerPlanet(BarbanI); 
-		GalaxyRegistry.registerPlanet(BarbanII); 
-		GalaxyRegistry.registerPlanet(Asteroids); 
-		GalaxyRegistry.registerPlanet(BarbanIII); 
-		GalaxyRegistry.registerPlanet(BarbanIV); 
+		//GalaxyRegistry.registerPlanet(BarbanI); 
+		//GalaxyRegistry.registerPlanet(BarbanII); 
+		//GalaxyRegistry.registerPlanet(Asteroids); 
+		//GalaxyRegistry.registerPlanet(BarbanIII); 
+		//GalaxyRegistry.registerPlanet(BarbanIV); 
 		GalaxyRegistry.registerPlanet(KOI4878b); 
 		GalaxyRegistry.registerPlanet(ThesiusOmega);
 		
@@ -708,7 +729,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerMoon(Xareious);
 		GalaxyRegistry.registerMoon(Ammon);
 		GalaxyRegistry.registerMoon(Terrin);
-		GalaxyRegistry.registerMoon(BarbanIVa);
+		//GalaxyRegistry.registerMoon(BarbanIVa);
 		GalaxyRegistry.registerMoon(Chiona);
 
 	}

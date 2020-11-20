@@ -21,6 +21,9 @@ public class AddonDimensions {
     public static DimensionType dimDenia;
     public static DimensionType dimShayan;
     public static DimensionType dimQueran;
+    public static DimensionType dimBarbanI;
+    public static DimensionType dimBarbanII;
+    public static DimensionType dimBarbanIII;
 
     public static void init() {
 
@@ -39,6 +42,9 @@ public class AddonDimensions {
         AddonDimensions.dimDenia = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idDenia);
         AddonDimensions.dimShayan = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idShayan);
         AddonDimensions.dimQueran = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idQueran);
+        AddonDimensions.dimBarbanI = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idBarbanI);
+        AddonDimensions.dimBarbanII = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idBarbanII);
+        AddonDimensions.dimBarbanIII = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idBarbanIII);
 
     }
 }
