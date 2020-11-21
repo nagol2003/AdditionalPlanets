@@ -105,6 +105,16 @@ public class AddonConfig {
 		public int idXareious = -4460;
 		@Config.Name(value = "MoonFour Dimension ID")
 		public int idErink = -4461;
+		@Config.Name(value = "MoonFive Dimension ID")
+		public int idJunsin = -4462;
+		@Config.Name(value = "MoonSix Dimension ID")
+		public int idChiona = -4463;
+		@Config.Name(value = "MoonSeven Dimension ID")
+		public int idKeyian = -4464;
+		@Config.Name(value = "MoonEight Dimension ID")
+		public int idBlastopy = -4465;
+		@Config.Name(value = "PlanetNineteen Dimension ID")
+		public int idThesiusOmega = -4466;
 
 	} 
 

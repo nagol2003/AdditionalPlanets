@@ -28,6 +28,11 @@ public class AddonDimensions {
     public static DimensionType dimAmmon;
     public static DimensionType dimXareious;
     public static DimensionType dimErink;
+    public static DimensionType dimJunsin;
+    public static DimensionType dimChiona;
+    public static DimensionType dimKeyian;
+    public static DimensionType dimBlastopy;
+    public static DimensionType dimThesiusOmega;
 
     public static void init() { 
 
@@ -53,6 +58,11 @@ public class AddonDimensions {
         AddonDimensions.dimAmmon = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idAmmon);
         AddonDimensions.dimXareious = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idXareious);
         AddonDimensions.dimErink = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idErink);
+        AddonDimensions.dimJunsin = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idJunsin);
+        AddonDimensions.dimChiona = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idChiona);
+        AddonDimensions.dimKeyian = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idKeyian);
+        AddonDimensions.dimBlastopy = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idBlastopy);
+        AddonDimensions.dimThesiusOmega = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idThesiusOmega);
 
     }
 }

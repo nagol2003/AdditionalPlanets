@@ -6,8 +6,16 @@ import io.github.nagol2003.AddonConfig.PlanetSettings;
 import io.github.nagol2003.Const;
 import io.github.nagol2003.celestial.moons.ammon.WorldProviderAmmon;
 import io.github.nagol2003.celestial.moons.ammon.biome.AmmonBiomes;
+import io.github.nagol2003.celestial.moons.blastopy.WorldProviderBlastopy;
+import io.github.nagol2003.celestial.moons.blastopy.biome.BlastopyBiomes;
+import io.github.nagol2003.celestial.moons.chiona.WorldProviderChiona;
+import io.github.nagol2003.celestial.moons.chiona.biome.ChionaBiomes;
 import io.github.nagol2003.celestial.moons.erink.WorldProviderErink;
 import io.github.nagol2003.celestial.moons.erink.biome.ErinkBiomes;
+import io.github.nagol2003.celestial.moons.junsin.WorldProviderJunsin;
+import io.github.nagol2003.celestial.moons.junsin.biome.JunsinBiomes;
+import io.github.nagol2003.celestial.moons.keyian.WorldProviderKeyian;
+import io.github.nagol2003.celestial.moons.keyian.biome.KeyianBiomes;
 import io.github.nagol2003.celestial.moons.terrin.WorldProviderTerrin;
 import io.github.nagol2003.celestial.moons.terrin.biome.TerrinBiomes;
 import io.github.nagol2003.celestial.moons.xareious.WorldProviderXareious;
@@ -40,6 +48,8 @@ import io.github.nagol2003.celestial.planets.queran.WorldProviderQueran;
 import io.github.nagol2003.celestial.planets.queran.biome.QueranBiomes;
 import io.github.nagol2003.celestial.planets.shayan.WorldProviderShayan;
 import io.github.nagol2003.celestial.planets.shayan.biome.ShayanBiomes;
+import io.github.nagol2003.celestial.planets.thesiusOmega.WorldProviderThesiusOmega;
+import io.github.nagol2003.celestial.planets.thesiusOmega.biome.ThesiusOmegaBiomes;
 import io.github.nagol2003.celestial.planets.unknown.WorldProviderUnknown;
 import io.github.nagol2003.celestial.planets.unknown.biome.UnknownBiomes;
 import io.github.nagol2003.celestial.planets.vermon.WorldProviderVermon;
@@ -59,11 +69,13 @@ import micdoodle8.mods.galacticraft.api.vector.Vector3;
 import micdoodle8.mods.galacticraft.api.world.AtmosphereInfo;
 import micdoodle8.mods.galacticraft.api.world.EnumAtmosphericGas;
 import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeMoon;
+import micdoodle8.mods.galacticraft.core.dimension.TeleportTypeSpaceStation;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedCreeper;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedEnderman;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSkeleton;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSpider;
 import micdoodle8.mods.galacticraft.core.entities.EntityEvolvedZombie;
+import micdoodle8.mods.galacticraft.planets.asteroids.dimension.TeleportTypeAsteroids;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome.SpawnListEntry;
 
@@ -96,6 +108,9 @@ public class AddonCelestialBodies {
 	public static SolarSystem V1400Centauri;
 	public static SolarSystem Barban;
 	public static SolarSystem KOI4878;
+	public static SolarSystem WormHoleMilkeyWay;
+	public static SolarSystem WormHoleAndromeda;
+	public static SolarSystem WormHoleMessier;
 
 	// Planets
 	public static Planet ProximaCentauriB;
@@ -247,6 +262,22 @@ public class AddonCelestialBodies {
 		Star starSol15 = (Star) new Star("KOI4878").setParentSolarSystem(KOI4878).setTierRequired(-1);
 		starSol15.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
 		KOI4878.setMainStar(starSol15);
+		
+		WormHoleMilkeyWay = new SolarSystem("WormHoleMilkeyWay", "milky_way").setMapPosition(new Vector3(-1.0F, 2.5F, 0.0F));
+		Star starSol16 = (Star) new Star("WormHoleMilkeyWay").setParentSolarSystem(WormHoleMilkeyWay).setTierRequired(-1);
+		starSol16.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
+		WormHoleMilkeyWay.setMainStar(starSol16);
+		
+		WormHoleAndromeda = new SolarSystem("WormHoleAndromeda", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(-1.0F, 0.5F, 0.0F));
+		Star starSol17 = (Star) new Star("WormHoleAndromeda").setParentSolarSystem(WormHoleAndromeda).setTierRequired(-1);
+		starSol17.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
+		WormHoleAndromeda.setMainStar(starSol17);
+		
+		WormHoleMessier = new SolarSystem("WormHoleMessier", NewGalaxy.messier81.getName()).setMapPosition(new Vector3(-1.0F, 0.5F, 0.0F));
+		Star starSol18 = (Star) new Star("WormHoleMessier").setParentSolarSystem(WormHoleMessier).setTierRequired(-1);
+		starSol18.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
+		WormHoleMessier.setMainStar(starSol18);
+		
 	}
 
 	/**
@@ -526,6 +557,10 @@ public class AddonCelestialBodies {
 		ThesiusOmega.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
 		ThesiusOmega.setRelativeOrbitTime(12.0F);
 		ThesiusOmega.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/thesius.png"));
+		ThesiusOmega.setBiomeInfo(ThesiusOmegaBiomes.ThesiusOmega);
+		ThesiusOmega.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		ThesiusOmega.setDimensionInfo(dim.idThesiusOmega, WorldProviderThesiusOmega.class);
+		ThesiusOmega.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 	}
 
@@ -565,6 +600,10 @@ public class AddonCelestialBodies {
 		Blastopy.setTierRequired(7);
 		Blastopy.setRelativeSize(0.3867F);
 		Blastopy.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Blastopy.setBiomeInfo(BlastopyBiomes.Blastopy);
+		Blastopy.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Blastopy.setDimensionInfo(dim.idBlastopy, WorldProviderBlastopy.class);
+		Blastopy.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Keyian = new Moon("Keyian").setParentPlanet(Vermon);
 		Keyian.setPhaseShift(2.436F);
@@ -574,6 +613,10 @@ public class AddonCelestialBodies {
 		Keyian.setTierRequired(7);
 		Keyian.setRelativeSize(0.3867F);
 		Keyian.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Keyian.setBiomeInfo(KeyianBiomes.Keyian);
+		Keyian.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Keyian.setDimensionInfo(dim.idKeyian, WorldProviderKeyian.class);
+		Keyian.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Junsin = new Moon("Junsin").setParentPlanet(Vermon);
 		Junsin.setPhaseShift(2.436F);
@@ -582,7 +625,12 @@ public class AddonCelestialBodies {
 		Junsin.setRelativeOrbitTime(75.0F);
 		Junsin.setTierRequired(7);
 		Junsin.setRelativeSize(0.3867F);
-		Junsin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Junsin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));		Erink.setBiomeInfo(ErinkBiomes.Erink);
+		Junsin.setBiomeInfo(JunsinBiomes.Junsin);
+		Junsin.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Junsin.setDimensionInfo(dim.idJunsin, WorldProviderJunsin.class);
+		Junsin.atmosphereComponent(EnumAtmosphericGas.METHANE);
+
 
 		Xareious = new Moon("Xareious").setParentPlanet(Queran);
 		Xareious.setPhaseShift(2.436F);
@@ -640,6 +688,10 @@ public class AddonCelestialBodies {
 		Chiona.setTierRequired(7);
 		Chiona.setRelativeSize(0.3867F);
 		Chiona.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/chiona.png"));
+		Chiona.setBiomeInfo(ChionaBiomes.Chiona);
+		Chiona.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Chiona.setDimensionInfo(dim.idChiona, WorldProviderChiona.class);
+		Chiona.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 	}
 
@@ -699,9 +751,12 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderAmmon.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderXareious.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderErink.class, new TeleportTypeMoon());
-//		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwo.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderJunsin.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderChiona.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderKeyian.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderBlastopy.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderThesiusOmega.class, new TeleportTypeMoon());
 //		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetTwoStation.class, new TeleportTypeSpaceStation());
-//		GalacticraftRegistry.registerTeleportType(WorldProviderPlanetOneMoon.class, new TeleportTypeMars());
 	}
 
 	private static void registerAll() {
@@ -712,7 +767,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerSolarSystem(Zakir);
 		GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
-		//GalaxyRegistry.registerSolarSystem(Test);
+		////GalaxyRegistry.registerSolarSystem(Test);
 		GalaxyRegistry.registerSolarSystem(BlackHole);
 		GalaxyRegistry.registerSolarSystem(Aa);
 		GalaxyRegistry.registerSolarSystem(SiriusM);
@@ -721,13 +776,16 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerSolarSystem(V1400Centauri);
 		GalaxyRegistry.registerSolarSystem(Barban);
 		GalaxyRegistry.registerSolarSystem(KOI4878);
+		GalaxyRegistry.registerSolarSystem(WormHoleMilkeyWay);
+		GalaxyRegistry.registerSolarSystem(WormHoleAndromeda);
+		GalaxyRegistry.registerSolarSystem(WormHoleMessier);
 		
 		// then plants
-		GalaxyRegistry.registerPlanet(ProximaCentauriB);
-		GalaxyRegistry.registerPlanet(AlphaCentauriV);
-		GalaxyRegistry.registerPlanet(AlphaCentaurfour);
-		GalaxyRegistry.registerPlanet(AlphaCentaurone);
-		GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
+		//GalaxyRegistry.registerPlanet(ProximaCentauriB);
+		//GalaxyRegistry.registerPlanet(AlphaCentauriV);
+		//GalaxyRegistry.registerPlanet(AlphaCentaurfour);
+		//GalaxyRegistry.registerPlanet(AlphaCentaurone);
+		//GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
 		GalaxyRegistry.registerPlanet(ZakirPrime);
 		GalaxyRegistry.registerPlanet(unknownplanet);
 		GalaxyRegistry.registerPlanet(mother);
@@ -750,7 +808,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerPlanet(ThesiusOmega);
 		
 		// then moons
-		GalaxyRegistry.registerMoon(AlphaCentauroneA);
+		//GalaxyRegistry.registerMoon(AlphaCentauroneA);
 		GalaxyRegistry.registerMoon(Erink);
 		GalaxyRegistry.registerMoon(Blastopy);
 		GalaxyRegistry.registerMoon(Keyian);
