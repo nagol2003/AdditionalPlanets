@@ -3,6 +3,7 @@ package io.github.nagol2003.init;
 import io.github.nagol2003.blocks.FerminiumOre;
 import io.github.nagol2003.blocks.StrangeMetallic;
 import io.github.nagol2003.blocks.Denia.FROZENCO2;
+import io.github.nagol2003.blocks.Denia.deniastone;
 import io.github.nagol2003.blocks.Ognious.MoistDirt;
 import io.github.nagol2003.blocks.Ognious.OgniousGrass;
 import io.github.nagol2003.blocks.Ognious.OgniousLeaves;
@@ -48,6 +49,7 @@ public class InitBlocks {
 	public static final Block VULCANDIRT= new VulcanDirt();
 	public static final Block VULCANROCKSCORCHED= new VulcanRockScorched();
 	public static final Block VULCANROCKBURNT= new VulcanRockBurnt();
+	public static final Block DENIASTONE = new deniastone();
 	
 	public static void registerAll (APRegistry registry) {
 		CreativeTabs toTab = AdditionalPlanetsTab.blockTab;
@@ -73,6 +75,7 @@ public class InitBlocks {
 		registry.registerBlock(VULCANDIRT, "vulcandirt").setCreativeTab(toTab2);
 		registry.registerBlock(VULCANROCKSCORCHED, "vulcanrockscorched").setCreativeTab(toTab2);
 		registry.registerBlock(VULCANROCKBURNT, "vulcanrockburnt").setCreativeTab(toTab2);
+		registry.registerBlock(DENIASTONE, "deniastone").setCreativeTab(toTab2);
 	}
 	
 }

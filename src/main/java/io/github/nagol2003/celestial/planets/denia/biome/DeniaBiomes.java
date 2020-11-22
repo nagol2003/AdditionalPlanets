@@ -15,7 +15,7 @@ import net.minecraft.world.chunk.ChunkPrimer;
 
 public class DeniaBiomes extends BiomeGenBaseGC {
 
-	public static final Biome Denia = new BiomeDenia(new BiomeProperties("Denia").setBaseHeight(0.145F).setHeightVariation(0.5F).setRainfall(0.8F));
+	public static final Biome Denia = new BiomeDenia(new BiomeProperties("Denia").setBaseHeight(0.75F).setHeightVariation(0.15F).setRainfall(0.8F));
 
 	protected DeniaBiomes(BiomeProperties properties) {
 		super(properties, true);

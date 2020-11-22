@@ -24,7 +24,7 @@ public class ChunkProviderDenia extends ChunkProviderAP {
     private final MapGenAddonCaveGen caveGenerator = new MapGenAddonCaveGen(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState(),
             Sets.newHashSet(Blocks.HARDENED_CLAY, Blocks.BLACK_GLAZED_TERRACOTTA));
     
-    private static IBlockState stoneBlockState = Blocks.IRON_ORE.getDefaultState();
+    private static IBlockState stoneBlockState = InitBlocks.DENIASTONE.getDefaultState();
 
     public ChunkProviderDenia(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
