@@ -205,12 +205,12 @@ public class AddonCelestialBodies {
 		
 		Zakir = new SolarSystem("Zakir", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(1.0F, -1.0F, 0.0F));
 		Star starSol4 = (Star) new Star("ZakirStar").setParentSolarSystem(Zakir).setTierRequired(-1);
-		starSol4.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
+		starSol4.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/zakirr.png"));
 		Zakir.setMainStar(starSol4);
 		
 		unknown = new SolarSystem("unknown", NewGalaxy.messier81.getName()).setMapPosition(new Vector3(-1.0F, -1.0F, 0.0F));
 		Star starSol5 = (Star) new Star("unknown").setParentSolarSystem(unknown).setTierRequired(-1);
-		starSol5.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
+		starSol5.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/unknownn.png"));
 		unknown.setMainStar(starSol5);
 		
 		Garphina = new SolarSystem("Garphina", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(1.0F, 1.0F, 0.0F));
@@ -220,7 +220,7 @@ public class AddonCelestialBodies {
 		
 		Test = new SolarSystem("Test", NewGalaxy.messier81.getName()).setMapPosition(new Vector3(0.5F, -1.0F, 0.0F));
 		Star starSol7 = (Star) new Star("Radon").setParentSolarSystem(Test).setTierRequired(-1);
-		starSol7.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png"));
+		starSol7.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		Test.setMainStar(starSol7);
 		
 		BlackHole = new SolarSystem("BlackHole", NewGalaxy.messier81.getName()).setMapPosition(new Vector3(0.9F, -1.5F, 0.0F));
@@ -235,12 +235,12 @@ public class AddonCelestialBodies {
 		
 		SiriusM = new SolarSystem("SiriusM", "milky_way").setMapPosition(new Vector3(2.225F, -1.8F, 0.0F));
 		Star starSol10 = (Star) new Star("Sirius A").setParentSolarSystem(SiriusM).setTierRequired(-1);
-		starSol10.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		starSol10.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		SiriusM.setMainStar(starSol10);
 		
 		SiriusS = new SolarSystem("SiriusS", "milky_way").setMapPosition(new Vector3(2.2F, -1.8F, 0.0F));
 		Star starSol11 = (Star) new Star("Sirius B").setParentSolarSystem(SiriusS).setTierRequired(-1);
-		starSol11.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		starSol11.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		SiriusS.setMainStar(starSol11);
 		
 		Kepler452 = new SolarSystem("Kepler452", "milky_way").setMapPosition(new Vector3(2.2F, -1.1F, 0.0F));
@@ -250,17 +250,17 @@ public class AddonCelestialBodies {
 		
 		V1400Centauri = new SolarSystem("V1400Centauri", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(2.5F, -1.1F, 0.0F));
 		Star starSol13 = (Star) new Star("V1400Centauri").setParentSolarSystem(V1400Centauri).setTierRequired(-1);
-		starSol13.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		starSol13.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/v1400star.png"));
 		V1400Centauri.setMainStar(starSol13);
 		
 		Barban = new SolarSystem("Barban", "milky_way").setMapPosition(new Vector3(3.1F, 1.7F, 0.0F));
 		Star starSol14 = (Star) new Star("Barban").setParentSolarSystem(Barban).setTierRequired(-1);
-		starSol14.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		starSol14.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/sun.png"));
 		Barban.setMainStar(starSol14);
 		
 		KOI4878 = new SolarSystem("KOI4878", "milky_way").setMapPosition(new Vector3(-1.0F, 0.5F, 0.0F));
 		Star starSol15 = (Star) new Star("KOI4878").setParentSolarSystem(KOI4878).setTierRequired(-1);
-		starSol15.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kanlaon.png"));
+		starSol15.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/koistar.png"));
 		KOI4878.setMainStar(starSol15);
 		
 		WormHoleMilkeyWay = new SolarSystem("WormHoleMilkeyWay", "milky_way").setMapPosition(new Vector3(-1.0F, 2.5F, 0.0F));
@@ -384,7 +384,7 @@ public class AddonCelestialBodies {
 		Shayan.setPhaseShift(1.30F);
 		Shayan.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.65F, 0.65F));
 		Shayan.setRelativeOrbitTime(2.0F);
-		Shayan.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Shayan.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/shayan.png"));
 		Shayan.setBiomeInfo(ShayanBiomes.Shayan);
 		Shayan.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Shayan.setDimensionInfo(dim.idShayan, WorldProviderShayan.class);
@@ -396,7 +396,7 @@ public class AddonCelestialBodies {
 		Denia.setPhaseShift(1.30F);
 		Denia.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.05F, 1.05F));
 		Denia.setRelativeOrbitTime(2.0F);
-		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png"));
 		Denia.setBiomeInfo(DeniaBiomes.Denia);
 		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Denia.setDimensionInfo(dim.idDenia, WorldProviderDenia.class);
@@ -420,7 +420,7 @@ public class AddonCelestialBodies {
 		Queran.setPhaseShift(1.30F);
 		Queran.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(3.0F, 3.0F));
 		Queran.setRelativeOrbitTime(6.0F);
-		Queran.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Queran.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/queran.png"));
 		Queran.setBiomeInfo(QueranBiomes.Queran);
 		Queran.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Queran.setDimensionInfo(dim.idQueran, WorldProviderQueran.class);
@@ -432,7 +432,7 @@ public class AddonCelestialBodies {
 		Vermon.setPhaseShift(1.30F);
 		Vermon.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(3.6F, 3.6F));
 		Vermon.setRelativeOrbitTime(12.0F);
-		Vermon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/mother.png"));
+		Vermon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/vermon.png"));
 		Vermon.setBiomeInfo(VermonBiomes.Vermon);
 		Vermon.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Vermon.setDimensionInfo(dim.idVermon, WorldProviderVermon.class);
@@ -585,7 +585,7 @@ public class AddonCelestialBodies {
 		Erink.setRelativeOrbitTime(75.0F);
 		Erink.setTierRequired(7);
 		Erink.setRelativeSize(0.3867F);
-		Erink.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Erink.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/erink.png"));
 		Erink.setBiomeInfo(ErinkBiomes.Erink);
 		Erink.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Erink.setDimensionInfo(dim.idErink, WorldProviderErink.class);
@@ -599,7 +599,7 @@ public class AddonCelestialBodies {
 		Blastopy.setRelativeOrbitTime(75.0F);
 		Blastopy.setTierRequired(7);
 		Blastopy.setRelativeSize(0.3867F);
-		Blastopy.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Blastopy.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/blastopy.png"));
 		Blastopy.setBiomeInfo(BlastopyBiomes.Blastopy);
 		Blastopy.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Blastopy.setDimensionInfo(dim.idBlastopy, WorldProviderBlastopy.class);
@@ -612,7 +612,7 @@ public class AddonCelestialBodies {
 		Keyian.setRelativeOrbitTime(75.0F);
 		Keyian.setTierRequired(7);
 		Keyian.setRelativeSize(0.3867F);
-		Keyian.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Keyian.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/keyian.png"));
 		Keyian.setBiomeInfo(KeyianBiomes.Keyian);
 		Keyian.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Keyian.setDimensionInfo(dim.idKeyian, WorldProviderKeyian.class);
@@ -625,7 +625,7 @@ public class AddonCelestialBodies {
 		Junsin.setRelativeOrbitTime(75.0F);
 		Junsin.setTierRequired(7);
 		Junsin.setRelativeSize(0.3867F);
-		Junsin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));		Erink.setBiomeInfo(ErinkBiomes.Erink);
+		Junsin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/junsin.png"));		Erink.setBiomeInfo(ErinkBiomes.Erink);
 		Junsin.setBiomeInfo(JunsinBiomes.Junsin);
 		Junsin.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Junsin.setDimensionInfo(dim.idJunsin, WorldProviderJunsin.class);
@@ -639,7 +639,7 @@ public class AddonCelestialBodies {
 		Xareious.setRelativeOrbitTime(75.0F);
 		Xareious.setTierRequired(7);
 		Xareious.setRelativeSize(0.3867F);
-		Xareious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Xareious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/xareious.png"));
 		Xareious.setBiomeInfo(XareiousBiomes.Xareious);
 		Xareious.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Xareious.setDimensionInfo(dim.idXareious, WorldProviderXareious.class);
@@ -652,7 +652,7 @@ public class AddonCelestialBodies {
 		Ammon.setRelativeOrbitTime(75.0F);
 		Ammon.setTierRequired(7);
 		Ammon.setRelativeSize(0.3867F);
-		Ammon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Ammon.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ammon.png"));
 		Ammon.setBiomeInfo(AmmonBiomes.Ammon);
 		Ammon.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Ammon.setDimensionInfo(dim.idAmmon, WorldProviderAmmon.class);
@@ -665,7 +665,7 @@ public class AddonCelestialBodies {
 		Terrin.setRelativeOrbitTime(75.0F);
 		Terrin.setTierRequired(7);
 		Terrin.setRelativeSize(0.3867F);
-		Terrin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/aciia.png"));
+		Terrin.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/terrin.png"));
 		Terrin.setBiomeInfo(TerrinBiomes.Terrin);
 		Terrin.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Terrin.setDimensionInfo(dim.idTerrin, WorldProviderTerrin.class);
@@ -763,18 +763,18 @@ public class AddonCelestialBodies {
 		// Now we register each Celestial Body after we have created and defined them
 
 		// Solar systems first
-		GalaxyRegistry.registerSolarSystem(AlphaCentauri);
+		//GalaxyRegistry.registerSolarSystem(AlphaCentauri);
 		GalaxyRegistry.registerSolarSystem(Zakir);
 		GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
 		////GalaxyRegistry.registerSolarSystem(Test);
 		GalaxyRegistry.registerSolarSystem(BlackHole);
 		GalaxyRegistry.registerSolarSystem(Aa);
-		GalaxyRegistry.registerSolarSystem(SiriusM);
-		GalaxyRegistry.registerSolarSystem(SiriusS);
+		//GalaxyRegistry.registerSolarSystem(SiriusM);
+		//GalaxyRegistry.registerSolarSystem(SiriusS);
 		GalaxyRegistry.registerSolarSystem(Kepler452);
 		GalaxyRegistry.registerSolarSystem(V1400Centauri);
-		GalaxyRegistry.registerSolarSystem(Barban);
+		//GalaxyRegistry.registerSolarSystem(Barban);
 		GalaxyRegistry.registerSolarSystem(KOI4878);
 		GalaxyRegistry.registerSolarSystem(WormHoleMilkeyWay);
 		GalaxyRegistry.registerSolarSystem(WormHoleAndromeda);
