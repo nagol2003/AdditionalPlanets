@@ -24,7 +24,7 @@ public class WorldProviderKepler452b extends WorldProviderSpace implements ISola
 
     @Override
     public Vector3 getSkyColor() {
-        return new Vector3(1, .2, .1);
+        return new Vector3(0, .6, .8);
     }
 
     @Override
@@ -141,7 +141,7 @@ public class WorldProviderKepler452b extends WorldProviderSpace implements ISola
 
     @Override
     public Vector3 getFogColor() {
-        return new Vector3(1, .3, .3);
+        return new Vector3(0, .6, .8);
     }
     
     public int getCloudColor() {

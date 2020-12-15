@@ -19,7 +19,7 @@ public class BiomeKepler452b extends Kepler452bBiomes {
 	public BiomeKepler452b(BiomeProperties properties) {
 		super(properties);
         this.topBlock = Blocks.GRASS.getDefaultState(); //TODO change this
-        this.fillerBlock = Blocks.STONE.getDefaultState(); //TODO change this
+        this.fillerBlock = Blocks.DIRT.getDefaultState(); //TODO change this
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();

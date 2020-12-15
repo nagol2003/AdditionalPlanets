@@ -1,37 +1,35 @@
-package io.github.nagol2003.celestial.planets.kepler452b.biome;
+package io.github.nagol2003.celestial.planets.kepler452b.biome.gen;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.kepler452b.BiomeDecoratorOther;
-import io.github.nagol2003.celestial.planets.kepler452b.biome.gen.BiomeKepler452b;
-import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
+import io.github.nagol2003.celestial.planets.kepler452b.biome.ChunkProviderKepler452b;
+import io.github.nagol2003.celestial.planets.kepler452b.biome.Kepler452bBiomes;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraftforge.common.BiomeDictionary;
 
-public class Kepler452bBiomes extends BiomeGenBaseGC {
+public class BiomeKepler452bOcean extends Kepler452bBiomes {
 
-	public static final Biome Kepler452b = new BiomeKepler452b(new BiomeProperties("Kepler-452b").setBaseHeight(0.545F).setHeightVariation(0.5F).setRainfall(0.8F));
-	public static final Biome Kepler452bOcean = new BiomeKepler452b(new BiomeProperties("Kepler-452b Ocean").setBaseHeight(-0.6F).setHeightVariation(0.1F).setRainfall(0.8F));
-
-	protected Kepler452bBiomes(BiomeProperties properties) {
-		super(properties, true);
+	public BiomeKepler452bOcean(BiomeProperties properties) {
+		super(properties);
+        this.topBlock = Blocks.DIRT.getDefaultState(); //TODO change this
+        this.fillerBlock = Blocks.SAND.getDefaultState(); //TODO change this
+        this.spawnableMonsterList.clear();
+        this.spawnableCreatureList.clear();
+        this.spawnableWaterCreatureList.clear();
 	}
 
 	@Override
-	public BiomeDecorator createBiomeDecorator() {
-		return new BiomeDecoratorOther();
-	}
+	public void registerTypes(Biome b) {
+            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
+	}
 	@Override
-	public void genTerrainBlocks (World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
-		generateBiomeSurface(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
-	}
-
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();

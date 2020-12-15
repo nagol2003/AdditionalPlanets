@@ -24,7 +24,7 @@ public class WorldProviderChiona extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Vector3 getSkyColor() {
-        return new Vector3(1, .2, .1);
+        return new Vector3(1, 1, 1);
     }
 
     @Override
@@ -141,7 +141,7 @@ public class WorldProviderChiona extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Vector3 getFogColor() {
-        return new Vector3(1, .3, .3);
+        return new Vector3(1, 1, 1);
     }
     
     public int getCloudColor() {

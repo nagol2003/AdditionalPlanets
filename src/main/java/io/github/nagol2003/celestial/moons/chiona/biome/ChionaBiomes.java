@@ -15,7 +15,7 @@ import net.minecraft.world.chunk.ChunkPrimer;
 
 public class ChionaBiomes extends BiomeGenBaseGC {
 
-	public static final Biome Chiona = new BiomeChiona(new BiomeProperties("Chiona").setBaseHeight(0.145F).setHeightVariation(0.5F).setRainfall(0.8F));
+	public static final Biome Chiona = new BiomeChiona(new BiomeProperties("Chiona").setBaseHeight(0.5F).setHeightVariation(0.7F).setRainfall(0.8F));
 
 	protected ChionaBiomes(BiomeProperties properties) {
 		super(properties, true);

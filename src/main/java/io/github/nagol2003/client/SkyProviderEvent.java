@@ -2,6 +2,7 @@ package io.github.nagol2003.client;
 
 import io.github.nagol2003.Const;
 import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
+import io.github.nagol2003.celestial.planets.Polulos.SkyProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
 import micdoodle8.mods.galacticraft.core.client.CloudRenderer;
 import micdoodle8.mods.galacticraft.core.client.SkyProviderMoon;
@@ -32,7 +33,7 @@ public class SkyProviderEvent {
 			
 			if(provider instanceof WorldProviderPolulos) {
 				if(provider.getSkyRenderer() == null) {
-					provider.setSkyRenderer(new SkyProviderMoon());
+					provider.setSkyRenderer(new SkyProviderPolulos());
 				}
 				
 				if (world.provider.getCloudRenderer() == null) {

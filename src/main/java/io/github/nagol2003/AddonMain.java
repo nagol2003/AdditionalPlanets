@@ -4,6 +4,7 @@ import asmodeuscore.core.astronomy.BodiesRegistry;
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
 import io.github.nagol2003.celestial.NewGalaxy;
+//import io.github.nagol2003.celestial.planets.Polulos.biome.gen.PolulosTreeGen;
 import io.github.nagol2003.init.InitBlocks;
 import io.github.nagol2003.init.InitItems;
 import io.github.nagol2003.init.Recipes;
@@ -79,6 +80,7 @@ public class AddonMain {
 	public void postInit(final FMLPostInitializationEvent event) {
 		// Register addons dimensions used by planets/moonds/etc.. in postInit
 		AddonDimensions.init();
+		//PolulosTreeGen.register();
 		proxy.postInit(registry,event);
 	}
 }

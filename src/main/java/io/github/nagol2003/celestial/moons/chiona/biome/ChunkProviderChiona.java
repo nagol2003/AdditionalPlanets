@@ -24,12 +24,12 @@ public class ChunkProviderChiona extends ChunkProviderAP {
     private final MapGenAddonCaveGen caveGenerator = new MapGenAddonCaveGen(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState(),
             Sets.newHashSet(Blocks.HARDENED_CLAY, Blocks.BLACK_GLAZED_TERRACOTTA));
     
-    private static IBlockState stoneBlockState = Blocks.IRON_ORE.getDefaultState();
+    private static IBlockState stoneBlockState = InitBlocks.DENIASTONE.getDefaultState();
 
     public ChunkProviderChiona(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
-        this.waterBlock = InitBlocks.FROZENCO2.getDefaultState();
+        this.waterBlock = Blocks.PACKED_ICE.getDefaultState();
         this.seaLevel = 75;
     }
 

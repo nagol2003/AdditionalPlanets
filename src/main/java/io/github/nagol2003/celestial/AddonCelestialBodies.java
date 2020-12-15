@@ -469,7 +469,7 @@ public class AddonCelestialBodies {
 		Kepler452b.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.2F, 1.2F));
 		Kepler452b.setRelativeOrbitTime(12.0F);
 		Kepler452b.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/kepler452b.png"));
-		Kepler452b.setBiomeInfo(Kepler452bBiomes.Kepler452b);
+		Kepler452b.setBiomeInfo(Kepler452bBiomes.Kepler452b, Kepler452bBiomes.Kepler452bOcean);
 		Kepler452b.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Kepler452b.setDimensionInfo(dim.idKepler452b, WorldProviderKepler452b.class);
 		Kepler452b.atmosphereComponent(EnumAtmosphericGas.METHANE);
@@ -764,18 +764,18 @@ public class AddonCelestialBodies {
 
 		// Solar systems first
 		//GalaxyRegistry.registerSolarSystem(AlphaCentauri);
-		GalaxyRegistry.registerSolarSystem(Zakir);
-		GalaxyRegistry.registerSolarSystem(unknown);
+		//GalaxyRegistry.registerSolarSystem(Zakir);
+		//GalaxyRegistry.registerSolarSystem(unknown);
 		GalaxyRegistry.registerSolarSystem(Garphina);
 		////GalaxyRegistry.registerSolarSystem(Test);
-		GalaxyRegistry.registerSolarSystem(BlackHole);
+		//GalaxyRegistry.registerSolarSystem(BlackHole);
 		GalaxyRegistry.registerSolarSystem(Aa);
 		//GalaxyRegistry.registerSolarSystem(SiriusM);
 		//GalaxyRegistry.registerSolarSystem(SiriusS);
-		GalaxyRegistry.registerSolarSystem(Kepler452);
-		GalaxyRegistry.registerSolarSystem(V1400Centauri);
+		//GalaxyRegistry.registerSolarSystem(Kepler452);
+		//GalaxyRegistry.registerSolarSystem(V1400Centauri);
 		//GalaxyRegistry.registerSolarSystem(Barban);
-		GalaxyRegistry.registerSolarSystem(KOI4878);
+		//GalaxyRegistry.registerSolarSystem(KOI4878);
 		GalaxyRegistry.registerSolarSystem(WormHoleMilkeyWay);
 		GalaxyRegistry.registerSolarSystem(WormHoleAndromeda);
 		GalaxyRegistry.registerSolarSystem(WormHoleMessier);
@@ -786,38 +786,38 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(AlphaCentaurfour);
 		//GalaxyRegistry.registerPlanet(AlphaCentaurone);
 		//GalaxyRegistry.registerPlanet(AlphaCentaurtwo);
-		GalaxyRegistry.registerPlanet(ZakirPrime);
-		GalaxyRegistry.registerPlanet(unknownplanet);
-		GalaxyRegistry.registerPlanet(mother);
+		//GalaxyRegistry.registerPlanet(ZakirPrime);
+		//GalaxyRegistry.registerPlanet(unknownplanet);
+		//GalaxyRegistry.registerPlanet(mother);
 		GalaxyRegistry.registerPlanet(Polulos);
-		GalaxyRegistry.registerPlanet(Shayan);
+		//GalaxyRegistry.registerPlanet(Shayan);
 		GalaxyRegistry.registerPlanet(Denia);
-		GalaxyRegistry.registerPlanet(Ognious);
-		GalaxyRegistry.registerPlanet(Queran);
-		GalaxyRegistry.registerPlanet(Vermon);
-		GalaxyRegistry.registerPlanet(Dark);
+		//GalaxyRegistry.registerPlanet(Ognious);
+		//GalaxyRegistry.registerPlanet(Queran);
+		//GalaxyRegistry.registerPlanet(Vermon);
+		//GalaxyRegistry.registerPlanet(Dark);
 		GalaxyRegistry.registerPlanet(Vulcan);
-		GalaxyRegistry.registerPlanet(Kepler452b);
-		GalaxyRegistry.registerPlanet(J1407b); 
+		//GalaxyRegistry.registerPlanet(Kepler452b);
+		//GalaxyRegistry.registerPlanet(J1407b); 
 		//GalaxyRegistry.registerPlanet(BarbanI); 
 		//GalaxyRegistry.registerPlanet(BarbanII); 
 		//GalaxyRegistry.registerPlanet(Asteroids); 
 		//GalaxyRegistry.registerPlanet(BarbanIII); 
 		//GalaxyRegistry.registerPlanet(BarbanIV); 
-		GalaxyRegistry.registerPlanet(KOI4878b); 
-		GalaxyRegistry.registerPlanet(ThesiusOmega);
+		//GalaxyRegistry.registerPlanet(KOI4878b); 
+		//GalaxyRegistry.registerPlanet(ThesiusOmega);
 		
 		// then moons
 		//GalaxyRegistry.registerMoon(AlphaCentauroneA);
-		GalaxyRegistry.registerMoon(Erink);
-		GalaxyRegistry.registerMoon(Blastopy);
-		GalaxyRegistry.registerMoon(Keyian);
-		GalaxyRegistry.registerMoon(Junsin);
-		GalaxyRegistry.registerMoon(Xareious);
-		GalaxyRegistry.registerMoon(Ammon);
-		GalaxyRegistry.registerMoon(Terrin);
+		//GalaxyRegistry.registerMoon(Erink);
+		//GalaxyRegistry.registerMoon(Blastopy);
+		//GalaxyRegistry.registerMoon(Keyian);
+		//GalaxyRegistry.registerMoon(Junsin);
+		//GalaxyRegistry.registerMoon(Xareious);
+		//GalaxyRegistry.registerMoon(Ammon);
+		//GalaxyRegistry.registerMoon(Terrin);
 		//GalaxyRegistry.registerMoon(BarbanIVa);
-		GalaxyRegistry.registerMoon(Chiona);
+		//GalaxyRegistry.registerMoon(Chiona);
 
 	}
 

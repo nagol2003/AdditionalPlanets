@@ -7,6 +7,7 @@ import micdoodle8.mods.galacticraft.core.util.EnumSortCategoryBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -18,6 +19,7 @@ public class ScorchedLeaves extends Block implements ISortableBlock, ITerraforma
 		this.setHardness(5.0f);
 		this.setHarvestLevel("pickaxe", 2);
 		this.setCreativeTab(AdditionalPlanetsTab.blockTab);
+		//this.fullBlock = false;
 
 	}
 
@@ -29,6 +31,11 @@ public class ScorchedLeaves extends Block implements ISortableBlock, ITerraforma
 	@Override
 	public EnumSortCategoryBlock getCategory(int meta) {
 		return EnumSortCategoryBlock.DECORATION;
+	}
+	
+	@Override
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.TRANSLUCENT;
 	}
 	
 }

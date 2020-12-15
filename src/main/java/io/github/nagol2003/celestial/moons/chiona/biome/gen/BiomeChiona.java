@@ -18,8 +18,8 @@ public class BiomeChiona extends ChionaBiomes {
 
 	public BiomeChiona(BiomeProperties properties) {
 		super(properties);
-        this.topBlock = Blocks.GRASS.getDefaultState(); //TODO change this
-        this.fillerBlock = Blocks.STONE.getDefaultState(); //TODO change this
+        this.topBlock = Blocks.SNOW.getDefaultState(); //TODO change this
+        this.fillerBlock = Blocks.SNOW.getDefaultState(); //TODO change this
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
