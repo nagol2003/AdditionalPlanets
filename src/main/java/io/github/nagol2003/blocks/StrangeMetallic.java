@@ -45,4 +45,10 @@ public class StrangeMetallic extends Block implements ISortableBlock, ITerraform
 	    		return EnumSortCategoryBlock.DECORATION;
 	    	}
 	        
+	    	@Override
+	    	public int quantityDropped(Random rand) {
+	    		int max = 4;
+	    		int min = 1;
+	    		return rand.nextInt(max) + min;
+	    	}	
 }
