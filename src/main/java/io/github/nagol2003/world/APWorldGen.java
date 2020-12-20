@@ -16,7 +16,7 @@ public class APWorldGen implements IWorldGenerator {
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		
-		if (world.provider.getDimension() == 0) {
+		if (world.provider.getDimension() == -4440) {
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
 		

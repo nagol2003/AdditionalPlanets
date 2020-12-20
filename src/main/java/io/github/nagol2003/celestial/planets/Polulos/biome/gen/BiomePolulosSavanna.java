@@ -7,6 +7,7 @@ import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
 import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
@@ -17,7 +18,7 @@ public class BiomePolulosSavanna extends PolulosBiomes {
 	public BiomePolulosSavanna(BiomeProperties properties) {
 		super(properties);
         this.topBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
-        this.fillerBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
+        this.fillerBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();

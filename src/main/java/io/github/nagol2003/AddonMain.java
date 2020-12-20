@@ -67,14 +67,18 @@ public class AddonMain {
 		
 		GameRegistry.registerWorldGenerator(new APWorldGen(), 3);
 		
+		//GameRegistry.registerWorldGenerator(new PolulosWorldGen(), -4440);
+		
 	}
 
 	@EventHandler
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);
 		Recipes.init();
+		
 	}
 
+	
 	@EventHandler
 	public void receiveIMC(final IMCEvent event) {
 		proxy.receiveIMC(event);
