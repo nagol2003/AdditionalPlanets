@@ -1,4 +1,4 @@
-package io.github.nagol2003.blocks;
+package io.github.nagol2003.blocks.Polulos;
 
 import java.util.Random;
 
@@ -16,10 +16,10 @@ import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class FerminiumOre extends Block implements ISortableBlock, ITerraformableBlock {
+public class PolulosFerminiumOre extends Block implements ISortableBlock, ITerraformableBlock {
 
 
-	        public FerminiumOre() {
+	        public PolulosFerminiumOre() {
 	    		super(Material.ROCK);
 	    		this.setSoundType(SoundType.STONE);
 	    		this.setHardness(5.0f);

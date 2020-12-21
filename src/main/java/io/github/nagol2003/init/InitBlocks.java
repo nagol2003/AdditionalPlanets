@@ -1,7 +1,7 @@
 package io.github.nagol2003.init;
 
-import io.github.nagol2003.blocks.FerminiumOre;
 import io.github.nagol2003.blocks.StrangeMetallic;
+import io.github.nagol2003.blocks.Denia.DeniaFerminiumOre;
 import io.github.nagol2003.blocks.Denia.FROZENCO2;
 import io.github.nagol2003.blocks.Denia.deniastone;
 import io.github.nagol2003.blocks.Ognious.MoistDirt;
@@ -11,6 +11,7 @@ import io.github.nagol2003.blocks.Ognious.OgniousLog;
 import io.github.nagol2003.blocks.Ognious.OgniousRock;
 import io.github.nagol2003.blocks.Ognious.OgniousStone;
 import io.github.nagol2003.blocks.Polulos.PolulosDirt;
+import io.github.nagol2003.blocks.Polulos.PolulosFerminiumOre;
 import io.github.nagol2003.blocks.Polulos.PolulosRock;
 import io.github.nagol2003.blocks.Polulos.PolulosSand;
 import io.github.nagol2003.blocks.Polulos.ScorchedLeaves;
@@ -38,7 +39,7 @@ public class InitBlocks {
 	public static final Block SCORCHEDLOG = new ScorchedLog();
 	public static final Block POLULOSSAND = new PolulosSand();
 	public static final Block SCORCHEDLEAVES = new ScorchedLeaves();
-	public static final Block FERMINIUMORE = new FerminiumOre();
+	public static final Block POLULOSFERMINIUMORE = new PolulosFerminiumOre();
 	public static final Block STRANGEMETALLIC = new StrangeMetallic();
 	public static final Block OGNIOUSGRASS = new OgniousGrass();
 	public static final Block MOISTDIRT= new MoistDirt();
@@ -50,6 +51,7 @@ public class InitBlocks {
 	public static final Block VULCANROCKSCORCHED= new VulcanRockScorched();
 	public static final Block VULCANROCKBURNT= new VulcanRockBurnt();
 	public static final Block DENIASTONE = new deniastone();
+	public static final Block DENIAFERMINIUMORE = new DeniaFerminiumOre();
 	
 	public static void registerAll (APRegistry registry) {
 		CreativeTabs toTab = AdditionalPlanetsTab.blockTab;
@@ -64,7 +66,7 @@ public class InitBlocks {
 		registry.registerBlock(SCORCHEDLOG, "schorchedlog").setCreativeTab(toTab2);
 		registry.registerBlock(POLULOSSAND, "polulossand").setCreativeTab(toTab2);
 		registry.registerBlock(SCORCHEDLEAVES, "schorchedleaves").setCreativeTab(toTab2);
-		registry.registerBlock(FERMINIUMORE, "ferminiumore").setCreativeTab(toTab2);
+		registry.registerBlock(POLULOSFERMINIUMORE, "polulosferminiumore").setCreativeTab(toTab2);
 		registry.registerBlock(STRANGEMETALLIC, "strangemetallic").setCreativeTab(toTab2);
 		registry.registerBlock(OGNIOUSGRASS, "ogniousgrass").setCreativeTab(toTab2);
 		registry.registerBlock(MOISTDIRT, "moistdirt").setCreativeTab(toTab2);
@@ -76,6 +78,7 @@ public class InitBlocks {
 		registry.registerBlock(VULCANROCKSCORCHED, "vulcanrockscorched").setCreativeTab(toTab2);
 		registry.registerBlock(VULCANROCKBURNT, "vulcanrockburnt").setCreativeTab(toTab2);
 		registry.registerBlock(DENIASTONE, "deniastone").setCreativeTab(toTab2);
+		registry.registerBlock(DENIAFERMINIUMORE, "deniaferminiumore").setCreativeTab(toTab2);
 	}
 	
 }
