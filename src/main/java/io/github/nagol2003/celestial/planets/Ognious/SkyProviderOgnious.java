@@ -8,8 +8,6 @@ import io.github.nagol2003.Const;
 import micdoodle8.mods.galacticraft.core.Constants;
 import micdoodle8.mods.galacticraft.core.dimension.WorldProviderMoon;
 import micdoodle8.mods.galacticraft.core.util.ConfigManagerCore;
-import micdoodle8.mods.galacticraft.planets.mars.client.SkyProviderMars;
-import micdoodle8.mods.galacticraft.planets.venus.client.SkyProviderVenus;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.renderer.BufferBuilder;
@@ -212,6 +210,20 @@ public class SkyProviderOgnious extends IRenderHandler
         worldRenderer1.pos(f10, -100.0D, -f10).tex(1.0, 0).endVertex();
         worldRenderer1.pos(-f10, -100.0D, -f10).tex(0, 0).endVertex();
         tessellator1.draw();
+        
+     // Render earth2
+        f10 = 1.5F;
+        GL11.glScalef(0.6F, 0.6F, 0.6F);
+        GL11.glRotatef(40.0F, 0.0F, 0.0F, 1.0F);
+        GL11.glRotatef(200F, 1.0F, 0.0F, 0.0F);
+        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
+        FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.overworldTexturetwo);
+        worldRenderer1.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
+        worldRenderer1.pos(-f10, -100.0D, f10).tex(0, 1.0).endVertex();
+        worldRenderer1.pos(f10, -100.0D, f10).tex(1.0, 1.0).endVertex();
+        worldRenderer1.pos(f10, -100.0D, -f10).tex(1.0, 0).endVertex();
+        worldRenderer1.pos(-f10, -100.0D, -f10).tex(0, 0).endVertex();
+        tessellator1.draw();
 
         // HOME:
         var12 = 10.0F;
@@ -287,7 +299,7 @@ public class SkyProviderOgnious extends IRenderHandler
         }
 
         GL11.glPushMatrix();
-        GL11.glTranslatef(0.0F, -((float) (d0 - 16.0D)), 0.0F);
+        GL11.glTranslatef(0.0F, -((float) (var25 - 16.0D)), 0.0F);
         GL11.glCallList(this.glSkyList2);
         GL11.glPopMatrix();
         GL11.glEnable(GL11.GL_TEXTURE_2D);
