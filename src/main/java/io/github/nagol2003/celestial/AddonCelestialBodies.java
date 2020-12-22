@@ -792,7 +792,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerPlanet(Polulos);
 		//GalaxyRegistry.registerPlanet(Shayan);
 		GalaxyRegistry.registerPlanet(Denia);
-		//GalaxyRegistry.registerPlanet(Ognious);
+		GalaxyRegistry.registerPlanet(Ognious);
 		//GalaxyRegistry.registerPlanet(Queran);
 		//GalaxyRegistry.registerPlanet(Vermon);
 		//GalaxyRegistry.registerPlanet(Dark);

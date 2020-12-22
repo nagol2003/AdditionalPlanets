@@ -1,11 +1,14 @@
 package io.github.nagol2003.client;
 
 import io.github.nagol2003.Const;
+import io.github.nagol2003.celestial.planets.Ognious.SkyProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Polulos.SkyProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
+import micdoodle8.mods.galacticraft.api.world.IGalacticraftWorldProvider;
 import micdoodle8.mods.galacticraft.core.client.CloudRenderer;
 import micdoodle8.mods.galacticraft.core.client.SkyProviderMoon;
+import micdoodle8.mods.galacticraft.planets.mars.client.SkyProviderMars;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.multiplayer.WorldClient;
@@ -31,19 +34,15 @@ public class SkyProviderEvent {
 		if(event.phase == Phase.START && player != null && world != null) {
 			WorldProvider provider = world.provider;
 			
-			if(provider instanceof WorldProviderPolulos) {
-				if(provider.getSkyRenderer() == null) {
-					provider.setSkyRenderer(new SkyProviderPolulos());
+			if(provider instanceof WorldProviderOgnious) {
+				if (world.provider.getSkyRenderer() == null) {
+					world.provider.setSkyRenderer(new SkyProviderOgnious());
 				}
 				
 				if (world.provider.getCloudRenderer() == null) {
 					world.provider.setCloudRenderer(new CloudRenderer());
 				}
 			}
-			if(provider instanceof WorldProviderOgnious) {
-				if(provider.getSkyRenderer() == null) {
-					provider.setSkyRenderer(new SkyProviderMoon());
-				}
 				
 //				if (world.provider.getCloudRenderer() == null) {
 //					world.provider.setCloudRenderer(new CloudRenderer());
@@ -52,4 +51,10 @@ public class SkyProviderEvent {
 		}
 	}
 
-}
+
+
+/*	if(provider instanceof WorldProviderPolulos) {
+if(provider.getSkyRenderer() == null) {
+	provider.setSkyRenderer(new SkyProviderPolulos());
+} */ 
+//in place of ognious 
