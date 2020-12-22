@@ -1,10 +1,13 @@
 package io.github.nagol2003.proxy;
 
 import io.github.nagol2003.client.SkyProviderEvent;
+import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
+import io.github.nagol2003.entities.poluloscrab.RenderCrab;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -16,6 +19,7 @@ public class ClientProxy extends ServerProxy {
 		super.preInit(registry, event);
 		register_event(this);
 		/// PLACE CODE BELOW ///
+		RenderingRegistry.registerEntityRenderingHandler(EntityPolulosCrab.class, RenderCrab::new);
 		
 		register_event(new SkyProviderEvent());
 		/// PLACE CODE ABOVE ///

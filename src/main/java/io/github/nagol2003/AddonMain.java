@@ -25,6 +25,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInterModComms.IMCEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Const.modID, 
@@ -58,8 +59,8 @@ public class AddonMain {
 		
 		// add the registerAll method in our InitBlocks class to the registry
 		registry.addRegistrationHandler(InitBlocks::registerAll, Block.class);
-		
 		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
+		registry.addRegistrationHandler(EntityInit::registerEntities, EntityEntry.class);
 		
 		BodiesRegistry.setMaxTier(1);
 		NewGalaxy.init();
@@ -70,9 +71,7 @@ public class AddonMain {
 		GameRegistry.registerWorldGenerator(new APWorldGen(), 3);
 		
 		//GameRegistry.registerWorldGenerator(new PolulosWorldGen(), -4440);
-		
-		EntityInit.registerEntities();
-		
+
 		RenderHandler.registerEntityRenders();
 		
 	}
