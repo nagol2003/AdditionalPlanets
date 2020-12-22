@@ -18,7 +18,7 @@ public class BiomePolulosSavanna extends PolulosBiomes {
 	public BiomePolulosSavanna(BiomeProperties properties) {
 		super(properties);
         this.topBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
-        this.fillerBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
+        this.fillerBlock = InitBlocks.POLULOSDIRT.getDefaultState(); //TODO change this
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();

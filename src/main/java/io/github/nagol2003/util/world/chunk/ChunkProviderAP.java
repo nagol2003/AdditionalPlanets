@@ -16,6 +16,7 @@ import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraft.world.gen.NoiseGeneratorPerlin;
+import net.minecraftforge.fluids.Fluid;
 
 public abstract class ChunkProviderAP extends ChunkProviderAbst {
 	protected Random rand;
@@ -37,6 +38,7 @@ public abstract class ChunkProviderAP extends ChunkProviderAbst {
 	double[] depthRegion;
 
 	protected IBlockState stoneBlock;
+	protected Fluid waterBlock2;
 	protected IBlockState waterBlock;
 	protected IBlockState dirtBlock;
 

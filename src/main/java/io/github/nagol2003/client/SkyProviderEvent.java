@@ -5,6 +5,8 @@ import io.github.nagol2003.celestial.planets.Ognious.SkyProviderOgnious;
 import io.github.nagol2003.celestial.planets.Ognious.WorldProviderOgnious;
 import io.github.nagol2003.celestial.planets.Polulos.SkyProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.WorldProviderPolulos;
+import io.github.nagol2003.celestial.planets.denia.SkyProviderDenia;
+import io.github.nagol2003.celestial.planets.denia.WorldProviderDenia;
 import micdoodle8.mods.galacticraft.api.world.IGalacticraftWorldProvider;
 import micdoodle8.mods.galacticraft.core.client.CloudRenderer;
 import micdoodle8.mods.galacticraft.core.client.SkyProviderMoon;
@@ -37,6 +39,22 @@ public class SkyProviderEvent {
 			if(provider instanceof WorldProviderOgnious) {
 				if (world.provider.getSkyRenderer() == null) {
 					world.provider.setSkyRenderer(new SkyProviderOgnious());
+				}
+			}
+			
+			if(provider instanceof WorldProviderPolulos) {
+				if (world.provider.getSkyRenderer() == null) {
+					world.provider.setSkyRenderer(new SkyProviderPolulos());
+				}
+				
+				if (world.provider.getCloudRenderer() == null) {
+					world.provider.setCloudRenderer(new CloudRenderer());
+				}
+			}
+			
+			if(provider instanceof WorldProviderDenia) {
+				if (world.provider.getSkyRenderer() == null) {
+					world.provider.setSkyRenderer(new SkyProviderDenia());
 				}
 				
 				if (world.provider.getCloudRenderer() == null) {

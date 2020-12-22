@@ -16,8 +16,8 @@ import net.minecraft.world.chunk.ChunkPrimer;
 
 public class PolulosBiomes extends BiomeGenBaseGC {
 
-	public static final Biome PolulosSavanna = new BiomePolulosSavanna(new BiomeProperties("Polulos Savanna").setBaseHeight(0.145F).setHeightVariation(0.05F).setRainfall(0.8F));
-	public static final Biome PolulosDesert = new BiomePolulosDesert(new BiomeProperties("Polulos Desert").setBaseHeight(0.145F).setHeightVariation(0.1F).setRainfall(0.1F));
+	public static final Biome PolulosSavanna = new BiomePolulosSavanna(new BiomeProperties("Polulos Savanna").setBaseHeight(0.175F).setHeightVariation(0.05F).setRainfall(0.8F));
+	public static final Biome PolulosDesert = new BiomePolulosDesert(new BiomeProperties("Polulos Desert").setBaseHeight(0.100F).setHeightVariation(0.12F).setRainfall(0.1F));
 	//public static final Biome PolulosSea = new BiomeGenPolulosSea(new BiomeProperties("PolulosSea").setBaseHeight(0.999F).setHeightVariation(0.1F).setRainfall(0.1F));
 
 	protected PolulosBiomes(BiomeProperties properties) {

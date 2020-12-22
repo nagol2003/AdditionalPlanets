@@ -25,8 +25,8 @@ import net.minecraftforge.fml.client.FMLClientHandler;
 
 public class SkyProviderOgnious extends IRenderHandler
 {
-    private static final ResourceLocation overworldTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png");
-    private static final ResourceLocation overworldTexturetwo = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/zakir.png");
+    private static final ResourceLocation planet1 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/polulos.png");
+    private static final ResourceLocation planet2 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png");
     private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png");
 
     public int starGLCallList = GLAllocation.generateDisplayLists(3);
@@ -197,13 +197,13 @@ public class SkyProviderOgnious extends IRenderHandler
         worldRenderer.pos(-var12, 100.0D, var12).tex(0.0D, 1.0D).endVertex();
         var23.draw();
         
-        // Render earth
-        f10 = 0.5F;
+        // Polulos
+        f10 = 1.5F;
         GL11.glScalef(0.6F, 0.6F, 0.6F);
         GL11.glRotatef(40.0F, 0.0F, 0.0F, 1.0F);
         GL11.glRotatef(200F, 1.0F, 0.0F, 0.0F);
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
-        FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.overworldTexturetwo);
+        FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.planet1);
         worldRenderer1.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
         worldRenderer1.pos(-f10, -100.0D, f10).tex(0, 1.0).endVertex();
         worldRenderer1.pos(f10, -100.0D, f10).tex(1.0, 1.0).endVertex();
@@ -211,22 +211,9 @@ public class SkyProviderOgnious extends IRenderHandler
         worldRenderer1.pos(-f10, -100.0D, -f10).tex(0, 0).endVertex();
         tessellator1.draw();
         
-     // Render earth2
-        f10 = 1.5F;
-        GL11.glScalef(0.6F, 0.6F, 0.6F);
-        GL11.glRotatef(40.0F, 0.0F, 0.0F, 1.0F);
-        GL11.glRotatef(200F, 1.0F, 0.0F, 0.0F);
-        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
-        FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.overworldTexturetwo);
-        worldRenderer1.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
-        worldRenderer1.pos(-f10, -100.0D, f10).tex(0, 1.0).endVertex();
-        worldRenderer1.pos(f10, -100.0D, f10).tex(1.0, 1.0).endVertex();
-        worldRenderer1.pos(f10, -100.0D, -f10).tex(1.0, 0).endVertex();
-        worldRenderer1.pos(-f10, -100.0D, -f10).tex(0, 0).endVertex();
-        tessellator1.draw();
 
         // HOME:
-        var12 = 10.0F;
+        var12 = 3.5F;
         final float earthRotation = (float) (world.getSpawnPoint().getZ() - mc.player.posZ) * 0.01F;
         GL11.glScalef(0.6F, 0.6F, 0.6F);
         GL11.glRotatef(earthRotation, 1.0F, 0.0F, 0.0F);
@@ -234,7 +221,7 @@ public class SkyProviderOgnious extends IRenderHandler
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
 
         {
-            FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.overworldTexture);
+            FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.planet2);
         }
 
         world.getMoonPhase();

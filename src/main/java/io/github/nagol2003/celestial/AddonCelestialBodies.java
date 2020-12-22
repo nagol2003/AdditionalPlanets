@@ -394,7 +394,7 @@ public class AddonCelestialBodies {
 		Denia.setTierRequired(6);
 		Denia.setRingColorRGB(0.1F, 0.9F, 0.6F);
 		Denia.setPhaseShift(1.30F);
-		Denia.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.05F, 1.05F));
+		Denia.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.35F, 1.35F));
 		Denia.setRelativeOrbitTime(2.0F);
 		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png"));
 		Denia.setBiomeInfo(DeniaBiomes.Denia);
@@ -406,7 +406,7 @@ public class AddonCelestialBodies {
 		Ognious.setTierRequired(6);
 		Ognious.setRingColorRGB(0.1F, 0.9F, 0.6F);
 		Ognious.setPhaseShift(1.30F);
-		Ognious.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.35F, 1.35F));
+		Ognious.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.05F, 1.05F));
 		Ognious.setRelativeOrbitTime(2.0F);
 		Ognious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png"));
 		Ognious.setBiomeInfo(OgniousBiomes.Ognious);
@@ -769,7 +769,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerSolarSystem(Garphina);
 		////GalaxyRegistry.registerSolarSystem(Test);
 		//GalaxyRegistry.registerSolarSystem(BlackHole);
-		GalaxyRegistry.registerSolarSystem(Aa);
+		//GalaxyRegistry.registerSolarSystem(Aa);
 		//GalaxyRegistry.registerSolarSystem(SiriusM);
 		//GalaxyRegistry.registerSolarSystem(SiriusS);
 		//GalaxyRegistry.registerSolarSystem(Kepler452);
@@ -796,7 +796,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(Queran);
 		//GalaxyRegistry.registerPlanet(Vermon);
 		//GalaxyRegistry.registerPlanet(Dark);
-		GalaxyRegistry.registerPlanet(Vulcan);
+		//GalaxyRegistry.registerPlanet(Vulcan);
 		//GalaxyRegistry.registerPlanet(Kepler452b);
 		//GalaxyRegistry.registerPlanet(J1407b); 
 		//GalaxyRegistry.registerPlanet(BarbanI); 

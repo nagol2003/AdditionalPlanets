@@ -49,8 +49,8 @@ public class AddonMain {
 			// But only when not in our Development Environment
 			LOGGER.warn("Invalid Fingerprint");
 		}
-		
 	}
+	
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {

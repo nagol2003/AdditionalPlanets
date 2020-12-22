@@ -11,6 +11,9 @@ import io.github.nagol2003.util.world.MapGenAddonCaveGen;
 import io.github.nagol2003.util.world.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.MapGenBaseMeta;
 import io.github.nagol2003.util.world.chunk.ChunkProviderAP;
+import micdoodle8.mods.galacticraft.core.GCBlocks;
+import micdoodle8.mods.galacticraft.core.GCFluids;
+import micdoodle8.mods.galacticraft.core.blocks.BlockFluidGC;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -29,7 +32,7 @@ public class ChunkProviderOgnious extends ChunkProviderAP {
     public ChunkProviderOgnious(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
-        this.waterBlock =Blocks.WATER.getDefaultState();
+        this.waterBlock = Blocks.WATER.getDefaultState();
     }
 
     @Override

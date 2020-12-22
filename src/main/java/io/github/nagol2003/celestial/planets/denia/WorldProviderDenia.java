@@ -22,10 +22,6 @@ import net.minecraft.world.gen.IChunkGenerator;
 
 public class WorldProviderDenia extends WorldProviderSpace implements ISolarLevel {
 	
-	protected void renderSky() {
-		this.setSkyRenderer(new SkyProviderDenia(this));
-	}
-
     @Override
     public Vector3 getSkyColor() {
         return new Vector3(1, 1, 1);

@@ -11,6 +11,7 @@ import io.github.nagol2003.util.world.MapGenAddonCaveGen;
 import io.github.nagol2003.util.world.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.MapGenBaseMeta;
 import io.github.nagol2003.util.world.chunk.ChunkProviderAP;
+import micdoodle8.mods.galacticraft.core.GCBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -29,7 +30,8 @@ public class ChunkProviderPolulos extends ChunkProviderAP {
     public ChunkProviderPolulos(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
-        this.waterBlock =InitBlocks.POLULOSSAND.getDefaultState();
+        this.waterBlock = GCBlocks.crudeOil.getDefaultState();
+        this.seaLevel = 63;
     }
 
     @Override

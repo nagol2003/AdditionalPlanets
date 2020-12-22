@@ -4,6 +4,8 @@ import java.util.Random;
 
 import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
+import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
+import io.github.nagol2003.init.EntityInit;
 import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -19,8 +21,9 @@ public class BiomePolulosDesert extends PolulosBiomes {
 	public BiomePolulosDesert(BiomeProperties properties) {
 		super(properties);
         this.topBlock = InitBlocks.POLULOSSAND.getDefaultState(); //TODO change this
-        this.fillerBlock = InitBlocks.POLULOSROCK.getDefaultState(); //TODO change this
-        this.spawnableMonsterList.clear();
+        this.fillerBlock = InitBlocks.POLULOSSAND.getDefaultState(); //TODO change this
+        this.spawnableMonsterList.add(new SpawnListEntry(EntityPolulosCrab.class, 25, 100, 50));
+        //add(new SpawnListEntry(EntityPolulosCrab.class, 50, 100, 20));
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
 	}

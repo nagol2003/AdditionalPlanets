@@ -28,13 +28,13 @@ public class WorldProviderOgnious extends WorldProviderSpace implements ISolarLe
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Vec3d getCloudColor(float partialTicks) {
-		return new Vec3d(0.4, 0.4, 0.0);
+		return new Vec3d(0.5, 0.8, 0.8);
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public float getCloudHeight() {
-		return 74.0F;
+		return 200.0F;
 	}
 
 	@Override
