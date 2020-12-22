@@ -4,6 +4,7 @@ import asmodeuscore.core.astronomy.BodiesRegistry;
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
 import io.github.nagol2003.celestial.NewGalaxy;
+import io.github.nagol2003.init.EntityInit;
 //import io.github.nagol2003.celestial.planets.Polulos.biome.gen.PolulosTreeGen;
 import io.github.nagol2003.init.InitBlocks;
 import io.github.nagol2003.init.InitItems;
@@ -12,6 +13,7 @@ import io.github.nagol2003.proxy.ServerProxy;
 import io.github.nagol2003.registry.APRegistry;
 import io.github.nagol2003.util.Logging;
 import io.github.nagol2003.util.Utils;
+import io.github.nagol2003.util.handlers.RenderHandler;
 import io.github.nagol2003.world.APWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -68,6 +70,10 @@ public class AddonMain {
 		GameRegistry.registerWorldGenerator(new APWorldGen(), 3);
 		
 		//GameRegistry.registerWorldGenerator(new PolulosWorldGen(), -4440);
+		
+		EntityInit.registerEntities();
+		
+		RenderHandler.registerEntityRenders();
 		
 	}
 

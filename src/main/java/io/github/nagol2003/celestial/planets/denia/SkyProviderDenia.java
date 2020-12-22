@@ -30,8 +30,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class SkyProviderDenia extends IRenderHandler
 {
-    private static final ResourceLocation overworldTexture = new ResourceLocation(Constants.ASSET_PREFIX, "textures/gui/celestialbodies/earth.png");
-    private static final ResourceLocation sunTexture = new ResourceLocation(Constants.ASSET_PREFIX, "textures/gui/planets/atmosphericsun.png");
+    private static final ResourceLocation overworldTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/zakir.png");
+    private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/zakir.png");
 
     public int starList;
     public int glSkyList;

@@ -13,4 +13,6 @@ public final class Const {
 
    public static final String ASSET_PREFIX = modID;
    public static final String TEXTURE_PREFIX = ASSET_PREFIX + ":";
+   
+   public static final int ENTITY_POLULOSCRAB = 250;
 }

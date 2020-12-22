@@ -21,6 +21,10 @@ import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
 public class WorldProviderDenia extends WorldProviderSpace implements ISolarLevel {
+	
+	protected void renderSky() {
+		this.setSkyRenderer(new SkyProviderDenia(this));
+	}
 
     @Override
     public Vector3 getSkyColor() {
@@ -147,4 +151,5 @@ public class WorldProviderDenia extends WorldProviderSpace implements ISolarLeve
     public int getCloudColor() {
     	return 0;
     }
+
 }
