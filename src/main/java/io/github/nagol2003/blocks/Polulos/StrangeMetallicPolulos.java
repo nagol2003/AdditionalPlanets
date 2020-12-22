@@ -1,4 +1,4 @@
-package io.github.nagol2003.blocks;
+package io.github.nagol2003.blocks.Polulos;
 
 import java.util.Random;
 
@@ -16,17 +16,17 @@ import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class StrangeMetallic extends Block implements ISortableBlock, ITerraformableBlock {
+public class StrangeMetallicPolulos extends Block implements ISortableBlock, ITerraformableBlock {
 	
 	  public Item getItemDropped(IBlockState state, Random rand, int fortune)
 	  {
 		  {
-	        if (this == InitBlocks.STRANGEMETALLIC);
+	        if (this == InitBlocks.STRANGEMETALLICPOLULOS);
 	  };
 	            return InitItems.STRANGE_METALLIC_SUBSTANCE;
 	    }
 
-	        public StrangeMetallic() {
+	        public StrangeMetallicPolulos() {
 	    		super(Material.ROCK);
 	    		this.setSoundType(SoundType.STONE);
 	    		this.setHardness(5.0f);

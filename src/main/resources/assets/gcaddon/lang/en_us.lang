@@ -1,22 +1,47 @@
+//Solar Systems
 solarsystem.custom_system=Custom Solar System
+solarsystem.AlphaCentauri=Alpha Centauri
+solarsystem.Zakir=Zakir
+solarsystem.Aa=Aa
+solarsystem.BlackHole=Black Hole
+solarsystem.Garphina=Garphina
+solarsystem.SiriusM=Sirius
+solarsystem.unknown=Unknown
+solarsystem.SiriusS=Sirius
+solarsystem.Kepler452=Kepler-452
+solarsystem.V1400Centauri=1SWASP
+solarsystem.Barban=Barban
+solarsystem.KOI4878=KOI-4878
+solarsystem.WormHoleMilkeyWay=Worm Hole
+solarsystem.WormHoleAndromeda=Worm Hole
+solarsystem.WormHoleMessier=Worm Hole
+
+//Stars
 star.custom_star=Custom Star
+star.AlphaCentauri=Alpha Centauri AB
+star.ZakirStar=Zakir
+star.unknown=Unknown
+star.Sirius B=Sirius B
+star.Radon=Radon
+star.Sirius A=Sirius A
+star.BlackHole=Black Hole
+star.KanLaon=Kan-Laon
+star.Kepler452=Kepler-452
+star.V1400Centauri=V1400 Centauri
+star.Barban=Barban
+star.KOI4878=KOI-4878
+star.WormHoleMilkeyWay=Worm Hole
+star.WormHoleAndromeda=Worm Hole
+star.WormHoleMessier=Worm Hole
+
+//Planets
 planet.planet_one=Custom Planet 1
 planet.planet_two=Custom Planet 2
-moon.planet_one_moon=Planet 1 Moon
-solarsystem.AlphaCentauri=Alpha Centauri
-star.AlphaCentauri=Alpha Centauri AB
-planet.ProximaCentauriB=Proxima Centauri B
-solarsystem.Zakir=Zakir
-star.ZakirStar=Zakir
 planet.ZakirPrime=Zakir Prime
 planet.AlphaCentauriV=Alpha Centauri V
 planet.AlphaCentaurfour=Alpha Centauri IV
 planet.AlphaCentaurone=Alpha Centauri I
 planet.AlphaCentaurtwo=Alpha Centauri II
-moon.AlphaCentauroneA=AlphaCentauri Ia
-planet.unknownplanet=u̴̯͗n̸̺͘ǩ̸͈n̸̙̈́o̶̠͐w̵̠̄n̸̲̋
-star.unknown=Unknown
-solarsystem.unknown=Unknown
 planet.mother=Ruin
 planet.Polulos=Polulos
 planet.Shayan=Shayan
@@ -24,8 +49,22 @@ planet.Denia=Denia
 planet.Ognious=Ognious
 planet.Queran=Queran
 planet.Vermon=Vermon
-star.Radon=Radon
-solarsystem.Garphina=Garphina
+planet.ProximaCentauriB=Proxima Centauri B
+planet.unknownplanet=u̴̯͗n̸̺͘ǩ̸͈n̸̙̈́o̶̠͐w̵̠̄n̸̲̋
+planet.Vulcan=Vulcan
+planet.J1407b=J1407b
+planet.BarbanI=Barban I
+planet.BarbanII=Barban II
+planet.Asteroids=Asteroids
+planet.BarbanIII=Barban III
+planet.BarbanIV=Barban IV
+planet.Kepler452b=Kepler-452b
+planet.ThesiusOmega=Thesius Omega
+planet.KOI4878b=KOI-4878b
+
+//Moons
+moon.planet_one_moon=Planet 1 Moon
+moon.AlphaCentauroneA=AlphaCentauri Ia
 moon.Erink=Erink
 moon.Blastopy=Blastopy
 moon.Keyian=Keyian
@@ -33,11 +72,10 @@ moon.Junsin=Junsin
 moon.Xareious=Xareious
 moon.Ammon=Ammon
 moon.Terrin=Terrin
-item.ferminium_chunk=Ferminium Chunk
-itemGroup.AdditionalPlanetsTab=Additional Planets
-item.gcaddon.ferminium_chunk.name=Ferminuim Chunk
-item.gcaddon.strange_metallic_substance.name=Strange Metallic Substance
-item.gcaddon.ferminium_alloy.name=Ferminium Alloy
+moon.BarbanIVa=Barban IVa
+moon.Chiona=Chiona
+
+//Blocks
 tile.gcaddon.frozenco2.name=Frozen CO2
 tile.gcaddon.polulosdirt.name=Polulos Dirt
 tile.gcaddon.polulosrock.name=Polulos Rock
@@ -45,51 +83,30 @@ tile.gcaddon.schorchedlog.name=Scorched Log
 tile.gcaddon.schorchedleaves.name=Scorched Leaves
 tile.gcaddon.polulossand.name=Polulos Sand
 tile.gcaddon.polulosferminiumore.name=Ferminium Ore
-tile.gcaddon.strangemetallic.name=Strange Metallic Ore
 tile.gcaddon.ogniousgrass.name=Ognious Grass
 tile.gcaddon.moistdirt.name=Moist Dirt
 tile.gcaddon.ogniouslog.name=Ognie Log
 tile.gcaddon.ogniousleaves.name=Ognie Leaves
 tile.gcaddon.ogniousstone.name=Ognious Stone
 tile.gcaddon.ogniousrock.name=Ognious Rock
-itemGroup.additionalPlanets=Additional Planets
-item.gcaddon.ferminium_sword.name=Ferminium Blade
-star.BlackHole=Black Hole
-solarsystem.BlackHole=Black Hole
-star.KanLaon=Kan-Laon
-solarsystem.Aa=Aa
-planet.Vulcan=Vulcan
-star.Sirius A=Sirius A
-solarsystem.SiriusM=Sirius
-star.Sirius B=Sirius B
-solarsystem.SiriusS=Sirius
-star.Kepler452=Kepler-452
-solarsystem.Kepler452=Kepler-452
-planet.Kepler452b=Kepler-452b
-star.V1400Centauri=V1400 Centauri
-solarsystem.V1400Centauri=1SWASP
-planet.J1407b=J1407b
-planet.BarbanI=Barban I
-planet.BarbanII=Barban II
-planet.Asteroids=Asteroids
-planet.BarbanIII=Barban III
-planet.BarbanIV=Barban IV
-star.Barban=Barban
-solarsystem.Barban=Barban
-moon.BarbanIVa=Barban IVa
-planet.KOI4878b=KOI-4878b
-star.KOI4878=KOI-4878
-solarsystem.KOI4878=KOI-4878
-galaxy.messier81=Messier 81
-moon.Chiona=Chiona
-planet.ThesiusOmega=Thesius Omega
 tile.gcaddon.vulcandirt.name=Scorched Dirt
 tile.gcaddon.vulcanrockscorched.name=Scorched Rock
 tile.gcaddon.vulcanrockburnt.name=Burnt Rock
-solarsystem.WormHoleMilkeyWay=Worm Hole
-solarsystem.WormHoleAndromeda=Worm Hole
-solarsystem.WormHoleMessier=Worm Hole
-star.WormHoleMilkeyWay=Worm Hole
-star.WormHoleAndromeda=Worm Hole
-star.WormHoleMessier=Worm Hole
 tile.gcaddon.deniaferminiumore.name=Ferminium Ore
+tile.gcaddon.strangemetallicdenia.name=Strange Metallic Ore
+tile.gcaddon.strangemetallicpolulos.name=Strange Metallic Ore
+
+//Items
+item.ferminium_chunk=Ferminium Chunk
+itemGroup.AdditionalPlanetsTab=Additional Planets
+item.gcaddon.ferminium_chunk.name=Ferminuim Chunk
+item.gcaddon.strange_metallic_substance.name=Strange Metallic Substance
+item.gcaddon.ferminium_alloy.name=Ferminium Alloy
+itemGroup.additionalPlanets=Additional Planets
+item.gcaddon.ferminium_sword.name=Ferminium Blade
+
+//Entities
+entity.test.name=Krayt
+
+//Galaxies
+galaxy.messier81=Messier 81

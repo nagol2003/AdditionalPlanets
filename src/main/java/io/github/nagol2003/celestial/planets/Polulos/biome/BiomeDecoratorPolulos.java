@@ -17,7 +17,7 @@ public class BiomeDecoratorPolulos extends BiomeDecoratorSpace {
     public BiomeDecoratorPolulos() {
 
         this.ferminiumOre = new WorldGenMinableMeta(InitBlocks.POLULOSFERMINIUMORE, 20, 0, false, InitBlocks.POLULOSROCK, 0);
-        this.strangemetallicsubstance = new WorldGenMinableMeta(InitBlocks.STRANGEMETALLIC, 20, 0, false, InitBlocks.POLULOSROCK, 0);
+        this.strangemetallicsubstance = new WorldGenMinableMeta(InitBlocks.STRANGEMETALLICPOLULOS, 20, 0, false, InitBlocks.POLULOSROCK, 0);
         // WorldGenMinableMeta(Block OreBlock, int numberOfBlocks, int OreMeta, boolean usingMetaData, Block StoneBlock, int StoneMeta);
     }
 

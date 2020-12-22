@@ -17,7 +17,7 @@ public class BiomeDecoratorDenia extends BiomeDecoratorSpace {
     public BiomeDecoratorDenia() {
 
         this.ferminiumOre = new WorldGenMinableMeta(InitBlocks.DENIAFERMINIUMORE, 20, 0, false, InitBlocks.DENIASTONE, 0);
-        this.strangemetallicsubstance = new WorldGenMinableMeta(InitBlocks.STRANGEMETALLIC, 20, 0, false, InitBlocks.DENIASTONE, 0);
+        this.strangemetallicsubstance = new WorldGenMinableMeta(InitBlocks.STRANGEMETALLICDENIA, 20, 0, false, InitBlocks.DENIASTONE, 0);
         // WorldGenMinableMeta(Block OreBlock, int numberOfBlocks, int OreMeta, boolean usingMetaData, Block StoneBlock, int StoneMeta);
     }
 
