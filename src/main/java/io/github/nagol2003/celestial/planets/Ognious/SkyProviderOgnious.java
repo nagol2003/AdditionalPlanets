@@ -87,9 +87,7 @@ public class SkyProviderOgnious extends IRenderHandler
     @Override
     public void render(float partialTicks, WorldClient world, Minecraft mc)
     {
-      
-    	
-    	
+
     	GL11.glDisable(GL11.GL_TEXTURE_2D);
         GlStateManager.disableRescaleNormal();
         Vec3d vec3 = world.getSkyColor(mc.getRenderViewEntity(), partialTicks);
@@ -173,16 +171,13 @@ public class SkyProviderOgnious extends IRenderHandler
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE);
         GL11.glPushMatrix();
 
-        GL11.glPopMatrix();
-
-        GL11.glPushMatrix();
-
         GL11.glRotatef(-90.0F, 0.0F, 1.0F, 0.0F);
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 5F);
         GL11.glRotatef(world.getCelestialAngle(partialTicks) * 360.0F, 1.0F, 0.0F, 0.0F);
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         GL11.glDisable(GL11.GL_TEXTURE_2D);
         GL11.glColor4f(0.0F, 0.0F, 0.0F, 1.0F);
+        
         var12 = 20.0F / 3.5F;
         BufferBuilder worldRenderer = var23.getBuffer();
         worldRenderer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION);
@@ -191,6 +186,7 @@ public class SkyProviderOgnious extends IRenderHandler
         worldRenderer.pos(var12, 99.9D, var12).endVertex();
         worldRenderer.pos(-var12, 99.9D, var12).endVertex();
         var23.draw();
+        
         GL11.glEnable(GL11.GL_TEXTURE_2D);
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE);
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
@@ -202,12 +198,20 @@ public class SkyProviderOgnious extends IRenderHandler
         worldRenderer.pos(var12, 100.0D, var12).tex(1.0D, 1.0D).endVertex();
         worldRenderer.pos(-var12, 100.0D, var12).tex(0.0D, 1.0D).endVertex();
         var23.draw();
-
-        GL11.glPopMatrix();
-
-        GL11.glPushMatrix();
-
-        GL11.glDisable(GL11.GL_BLEND);
+        
+        // Render earth
+        f10 = 0.5F;
+        GL11.glScalef(0.6F, 0.6F, 0.6F);
+        GL11.glRotatef(40.0F, 0.0F, 0.0F, 1.0F);
+        GL11.glRotatef(200F, 1.0F, 0.0F, 0.0F);
+        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
+        FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.overworldTexturetwo);
+        worldRenderer1.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
+        worldRenderer1.pos(-f10, -100.0D, f10).tex(0, 1.0).endVertex();
+        worldRenderer1.pos(f10, -100.0D, f10).tex(1.0, 1.0).endVertex();
+        worldRenderer1.pos(f10, -100.0D, -f10).tex(1.0, 0).endVertex();
+        worldRenderer1.pos(-f10, -100.0D, -f10).tex(0, 0).endVertex();
+        tessellator1.draw();
 
         // HOME:
         var12 = 10.0F;
@@ -273,78 +277,6 @@ public class SkyProviderOgnious extends IRenderHandler
 
         GL11.glColor3f(70F / 256F, 70F / 256F, 70F / 256F);
 
-        GL11.glPushMatrix();
-        GL11.glTranslatef(0.0F, -((float) (var25 - 16.0D)), 0.0F);
-        GL11.glCallList(this.glSkyList2);
-        GL11.glPopMatrix();
-        GlStateManager.enableRescaleNormal();
-        GL11.glEnable(GL11.GL_TEXTURE_2D);
-        GL11.glDepthMask(true);
-        GL11.glEnable(GL11.GL_COLOR_MATERIAL);
-        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
-        GL11.glDisable(GL11.GL_BLEND);
-        
-        
-        
-        
-     // Render earth
-        f10 = 0.5F;
-        GL11.glScalef(0.6F, 0.6F, 0.6F);
-        GL11.glRotatef(40.0F, 0.0F, 0.0F, 1.0F);
-        GL11.glRotatef(200F, 1.0F, 0.0F, 0.0F);
-        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
-        FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.overworldTexturetwo);
-        worldRenderer1.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
-        worldRenderer1.pos(-f10, -100.0D, f10).tex(0, 1.0).endVertex();
-        worldRenderer1.pos(f10, -100.0D, f10).tex(1.0, 1.0).endVertex();
-        worldRenderer1.pos(f10, -100.0D, -f10).tex(1.0, 0).endVertex();
-        worldRenderer1.pos(-f10, -100.0D, -f10).tex(0, 0).endVertex();
-        tessellator1.draw();
-
-        GL11.glDisable(GL11.GL_TEXTURE_2D);
-
-        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-        GL11.glDisable(GL11.GL_BLEND);
-        GL11.glEnable(GL11.GL_ALPHA_TEST);
-        GL11.glEnable(GL11.GL_FOG);
-        GL11.glPopMatrix();
-        GL11.glDisable(GL11.GL_TEXTURE_2D);
-        GL11.glColor3f(0.0F, 0.0F, 0.0F);
-        double d0 = mc.player.getPosition().getY() - world.getHorizon();
-
-        if (d0 < 0.0D)
-        {
-            GL11.glPushMatrix();
-            GL11.glTranslatef(0.0F, 12.0F, 0.0F);
-            GL11.glCallList(this.glSkyList2);
-            GL11.glPopMatrix();
-            f8 = 1.0F;
-            f9 = -((float) (d0 + 65.0D));
-            f10 = -f8;
-            worldRenderer1.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_COLOR);
-            worldRenderer1.pos(-f8, f9, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f9, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f10, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f10, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f10, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f10, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f9, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f9, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f10, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f10, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f9, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f9, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f9, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f9, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f10, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f10, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f10, -f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(-f8, f10, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f10, f8).color(0, 0, 0, 1.0F).endVertex();
-            worldRenderer1.pos(f8, f10, -f8).color(0, 0, 0, 1.0F).endVertex();
-            tessellator1.draw();
-        }
-
         if (world.provider.isSkyColored())
         {
             GL11.glColor3f(f1 * 0.2F + 0.04F, f2 * 0.2F + 0.04F, f3 * 0.6F + 0.1F);
@@ -365,24 +297,8 @@ public class SkyProviderOgnious extends IRenderHandler
         GL11.glDepthMask(true);
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         GL11.glDisable(GL11.GL_BLEND);
-        
-        
-     
+
     }
-        
-        
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     private void renderStars()
     {
@@ -460,13 +376,3 @@ public class SkyProviderOgnious extends IRenderHandler
         return var3 * var3 * 1F;
     }
 }
-
-
-
-
-
-
-
-
-
-
