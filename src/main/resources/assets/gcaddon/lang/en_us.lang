@@ -104,6 +104,8 @@ item.gcaddon.strange_metallic_substance.name=Strange Metallic Substance
 item.gcaddon.ferminium_alloy.name=Ferminium Alloy
 itemGroup.additionalPlanets=Additional Planets
 item.gcaddon.ferminium_sword.name=Ferminium Blade
+item.gcaddon.rawcrabmeat.name=Raw Crab Meat
+item.gcaddon.cookedcrabmeat.name=Cooked Crab Meat
 
 //Entities
 entity.test.name=Krayt

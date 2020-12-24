@@ -1,6 +1,8 @@
-package io.github.nagol2003.proxy;
+ package io.github.nagol2003.proxy;
 
 import io.github.nagol2003.client.SkyProviderEvent;
+import io.github.nagol2003.entities.deniamammal.EntityMammal;
+import io.github.nagol2003.entities.deniamammal.RenderMammal;
 import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
 import io.github.nagol2003.entities.poluloscrab.RenderCrab;
 import io.github.nagol2003.registry.APRegistry;
@@ -20,6 +22,8 @@ public class ClientProxy extends ServerProxy {
 		register_event(this);
 		/// PLACE CODE BELOW ///
 		RenderingRegistry.registerEntityRenderingHandler(EntityPolulosCrab.class, RenderCrab::new);
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityMammal.class, RenderMammal::new);
 		
 		register_event(new SkyProviderEvent());
 		/// PLACE CODE ABOVE ///

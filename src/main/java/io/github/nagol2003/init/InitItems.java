@@ -3,6 +3,8 @@ package io.github.nagol2003.init;
 import io.github.nagol2003.items.ItemFerminiumAlloy;
 import io.github.nagol2003.items.ItemFerminiumChunk;
 import io.github.nagol2003.items.ItemStrangeMetallicSubstance;
+import io.github.nagol2003.items.food.CookedCrabMeat;
+import io.github.nagol2003.items.food.RawCrabMeat;
 import io.github.nagol2003.items.tools.ToolFerminiunSword;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,9 +17,7 @@ public class InitItems {
 	
 	//Items
 	public static final Item FERMINIUM_CHUNK = new ItemFerminiumChunk();
-	
 	public static final Item FERMINIUM_ALLOY = new ItemFerminiumAlloy();
-	
 	public static final Item STRANGE_METALLIC_SUBSTANCE = new ItemStrangeMetallicSubstance();
 	
 	//Materials
@@ -26,18 +26,21 @@ public class InitItems {
 	//Tools
 	public static final ItemSword FERMINIUM_SWORD = new ToolFerminiunSword("ferminium_sword", MATERIAL_FERMINIUM);
 	
+	//Food
+	public static final Item RAW_CRAB_MEAT = new RawCrabMeat("rawcrabmeat", 4, 0.3F, false);
+	public static final Item COOKED_CRAB_MEAT = new CookedCrabMeat("cookedcrabmeat", 8, 0.9F, false);
+	
 	
 	
 	public static void registerAll (APRegistry registry) {
 		CreativeTabs toTab = AdditionalPlanetsTab.AdditionalPlanets;
 		
 		registry.registerItem(FERMINIUM_CHUNK, "ferminium_chunk").setCreativeTab(toTab);
-		
 		registry.registerItem(FERMINIUM_ALLOY, "ferminium_alloy").setCreativeTab(toTab);
-		
 		registry.registerItem(STRANGE_METALLIC_SUBSTANCE, "strange_metallic_substance").setCreativeTab(toTab);
-		
 		registry.registerItem(FERMINIUM_SWORD, "ferminium_sword").setCreativeTab(toTab);
+		registry.registerItem(RAW_CRAB_MEAT, "rawcrabmeat").setCreativeTab(toTab);
+		registry.registerItem(COOKED_CRAB_MEAT, "cookedcrabmeat").setCreativeTab(toTab);
 	}
 	
 	//public static void registerAll (APRegistry registry) {

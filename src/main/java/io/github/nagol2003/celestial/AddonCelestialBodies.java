@@ -773,7 +773,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerSolarSystem(SiriusM);
 		//GalaxyRegistry.registerSolarSystem(SiriusS);
 		//GalaxyRegistry.registerSolarSystem(Kepler452);
-		//GalaxyRegistry.registerSolarSystem(V1400Centauri);
+		GalaxyRegistry.registerSolarSystem(V1400Centauri);
 		//GalaxyRegistry.registerSolarSystem(Barban);
 		//GalaxyRegistry.registerSolarSystem(KOI4878);
 		GalaxyRegistry.registerSolarSystem(WormHoleMilkeyWay);
@@ -798,7 +798,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(Dark);
 		//GalaxyRegistry.registerPlanet(Vulcan);
 		//GalaxyRegistry.registerPlanet(Kepler452b);
-		//GalaxyRegistry.registerPlanet(J1407b); 
+		GalaxyRegistry.registerPlanet(J1407b); 
 		//GalaxyRegistry.registerPlanet(BarbanI); 
 		//GalaxyRegistry.registerPlanet(BarbanII); 
 		//GalaxyRegistry.registerPlanet(Asteroids); 

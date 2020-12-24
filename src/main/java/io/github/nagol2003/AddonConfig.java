@@ -115,6 +115,12 @@ public class AddonConfig {
 		public int idBlastopy = -4465;
 		@Config.Name(value = "PlanetNineteen Dimension ID")
 		public int idThesiusOmega = -4466;
+		
+		@Config.Name(value = "PlanetTwo Space Station Dimension ID")
+		public int idSpaceStation = -4950;
+
+		@Config.Name(value = "PlanetTwo Space Station Dimension Static ID")
+		public int StaticidSpaceStation = -4951;
 
 	} 
 
