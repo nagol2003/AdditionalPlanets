@@ -6,6 +6,7 @@ import io.github.nagol2003.items.ItemStrangeMetallicSubstance;
 import io.github.nagol2003.items.food.CookedCrabMeat;
 import io.github.nagol2003.items.food.RawCrabMeat;
 import io.github.nagol2003.items.tools.ToolFerminiunSword;
+import io.github.nagol2003.items.tools.ToolPickaxe;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -22,9 +23,13 @@ public class InitItems {
 	
 	//Materials
 	public static final ToolMaterial MATERIAL_FERMINIUM = EnumHelper.addToolMaterial("material_ferminium", 3, 950, 13.0F, 6.0F, 15);
+	public static final ToolMaterial TOOL_FERMINIUM = EnumHelper.addToolMaterial("tool_ferminium", 7, 1500, 15.0f, 7.0f, 19);
 	
 	//Tools
 	public static final ItemSword FERMINIUM_SWORD = new ToolFerminiunSword("ferminium_sword", MATERIAL_FERMINIUM);
+	//public static final ItemSword FERMINIUM_SWORD = new ToolSword("ferminium_sword", MATERIAL_FERMINIUM);
+	//public static final Item PICKAXE_FERMINIUM = ToolPickaxe("ferminium_pickaxe", TOOL_FERMINIUM);
+	public static final Item PICKAXE_FERMINIUM = new ToolPickaxe("ferminium_pickaxe", TOOL_FERMINIUM);
 	
 	//Food
 	public static final Item RAW_CRAB_MEAT = new RawCrabMeat("rawcrabmeat", 4, 0.3F, false);
@@ -41,6 +46,7 @@ public class InitItems {
 		registry.registerItem(FERMINIUM_SWORD, "ferminium_sword").setCreativeTab(toTab);
 		registry.registerItem(RAW_CRAB_MEAT, "rawcrabmeat").setCreativeTab(toTab);
 		registry.registerItem(COOKED_CRAB_MEAT, "cookedcrabmeat").setCreativeTab(toTab);
+		registry.registerItem(PICKAXE_FERMINIUM, "ferminium_pickaxe").setCreativeTab(toTab);
 	}
 	
 	//public static void registerAll (APRegistry registry) {

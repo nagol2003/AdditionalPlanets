@@ -106,6 +106,7 @@ itemGroup.additionalPlanets=Additional Planets
 item.gcaddon.ferminium_sword.name=Ferminium Blade
 item.gcaddon.rawcrabmeat.name=Raw Crab Meat
 item.gcaddon.cookedcrabmeat.name=Cooked Crab Meat
+item.gcaddon.ferminium_pickaxe.name=Ferminium Pickaxe
 
 //Entities
 entity.test.name=Krayt
