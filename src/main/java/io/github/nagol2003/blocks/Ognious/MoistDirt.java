@@ -13,7 +13,7 @@ import net.minecraft.world.World;
 public class MoistDirt extends Block implements ISortableBlock, ITerraformableBlock {
 
 	public MoistDirt() {
-		super(Material.ROCK);
+		super(Material.GRASS);
 		this.setSoundType(SoundType.STONE);
 		this.setHardness(5.0f);
 		this.setHarvestLevel("pickaxe", 2);

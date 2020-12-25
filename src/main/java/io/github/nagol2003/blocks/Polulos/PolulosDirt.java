@@ -16,7 +16,7 @@ public class PolulosDirt extends Block implements ISortableBlock, ITerraformable
 		super(Material.GROUND);
 		this.setSoundType(SoundType.GROUND);
 		this.setHardness(1.0f);
-		this.setHarvestLevel("pickaxe", 2);
+		this.setHarvestLevel("spade", 2);
 		this.setCreativeTab(AdditionalPlanetsTab.blockTab);
 
 	}
