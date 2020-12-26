@@ -33,7 +33,9 @@ public class AddonDimensions {
     public static DimensionType dimKeyian;
     public static DimensionType dimBlastopy;
     public static DimensionType dimThesiusOmega;
-    public static DimensionType dimSpaceStationPlanetTwo;
+    public static DimensionType dimtestSatellite;
+    public static DimensionType dimtestSatellite_STATIC;
+
 
     public static void init() { 
 
@@ -64,7 +66,8 @@ public class AddonDimensions {
         AddonDimensions.dimKeyian = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idKeyian);
         AddonDimensions.dimBlastopy = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idBlastopy);
         AddonDimensions.dimThesiusOmega = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idThesiusOmega);
-        AddonDimensions.dimSpaceStationPlanetTwo = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idSpaceStation);
+        AddonDimensions.dimtestSatellite = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idtestSatellite);
+        AddonDimensions.dimtestSatellite_STATIC = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idtestSatellite_STATIC);
 
     }
 }
