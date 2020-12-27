@@ -2,6 +2,8 @@ package io.github.nagol2003.util.handlers;
 
 import io.github.nagol2003.entities.deniamammal.EntityMammal;
 import io.github.nagol2003.entities.deniamammal.RenderMammal;
+import io.github.nagol2003.entities.pigman.EntityPigman;
+import io.github.nagol2003.entities.pigman.RenderPigman;
 import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
 import io.github.nagol2003.entities.poluloscrab.RenderCrab;
 import net.minecraft.client.renderer.entity.Render;
@@ -25,6 +27,13 @@ public class RenderHandler {
 			@Override
 			public Render<? super EntityMammal> createRenderFor(RenderManager manager) {
 				return new RenderMammal(manager);
+			}
+		});
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityPigman.class, new IRenderFactory<EntityPigman>() {
+			@Override
+			public Render<? super EntityPigman> createRenderFor(RenderManager manager) {
+				return new RenderPigman(manager);
 			}
 		});
 		

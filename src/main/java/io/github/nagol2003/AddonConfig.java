@@ -119,9 +119,6 @@ public class AddonConfig {
 		@Config.Name(value = "PlanetTwo Space Station Dimension ID")
 		public int idtestSatellite = -4950;
 
-		@Config.Name(value = "PlanetTwo Space Station Dimension Static ID")
-		public int StaticidSpaceStation = -4951;
-
 	} 
 
 	public static class PlanetSettings {
@@ -155,7 +152,7 @@ public class AddonConfig {
 	public static class SpaceStationSettings {
 
 		@Config.Name(value = "PlanetTwo Space Station Dimension Static ID")
-		public int staticIdSpaceStation = -4451;
+		public int idtestSatellite_STATIC = -4451;
 
 	}
 

@@ -157,7 +157,7 @@ public class AddonCelestialBodies {
 	public static Moon Chiona;
 	
 	//Satellites
-	public static Satellite testStation;
+	//public static Satellite testStation;
 
 	/**
 	 * These are used to keep the building method parameters shorter when calling
@@ -708,15 +708,15 @@ public class AddonCelestialBodies {
 //		commenting out but keeping just in case
 		
 
-		testStation = new Satellite("space_station.eris").setParentBody(Polulos);
-		testStation.setRelativeSize(0.2667F);
-		testStation.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(5.5F, 5.5F));
-		testStation.setRelativeOrbitTime(20.0F);
-		testStation.setTierRequired(Polulos.getTierRequirement());
-		testStation.setDimensionInfo(dim.idStestStation, dim.StaticidtestStation, WorldProvidertestStation.class);
-		testStation.setBodyIcon(new ResourceLocation("galacticraftcore:textures/gui/celestialbodies/space_station.png"));
-		testStation.addChecklistKeys("equip_oxygen_suit", "equip_parachute");
-		testStation.setBiomeInfo(BiomeOrbit.space);
+//		testStation = new Satellite("space_station.eris").setParentBody(Polulos);
+//		testStation.setRelativeSize(0.2667F);
+//		testStation.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(5.5F, 5.5F));
+//		testStation.setRelativeOrbitTime(20.0F);
+///		testStation.setTierRequired(Polulos.getTierRequirement());
+	//	//testStation.setDimensionInfo(dim.idStestStation, dim.StaticidtestStation, WorldProvidertestStation.class);
+//		testStation.setBodyIcon(new ResourceLocation("galacticraftcore:textures/gui/celestialbodies/space_station.png"));
+//		testStation.addChecklistKeys("equip_oxygen_suit", "equip_parachute");
+	//	testStation.setBiomeInfo(BiomeOrbit.space);
 	}
 
 	private static void setMobInfo(CelestialBody body) {
@@ -761,7 +761,7 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderKeyian.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderBlastopy.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderThesiusOmega.class, new TeleportTypeMoon());
-		GalacticraftRegistry.registerTeleportType(WorldProvidertestStation.class, new TeleportTypeSpaceStation());
+		//GalacticraftRegistry.registerTeleportType(WorldProvidertestStation.class, new TeleportTypeSpaceStation());
 	}
 
 	private static void registerAll() {
@@ -823,7 +823,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerMoon(Terrin);
 		//GalaxyRegistry.registerMoon(BarbanIVa);
 		//GalaxyRegistry.registerMoon(Chiona);
-		GalaxyRegistry.registerSatellite(testStation);
+		//GalaxyRegistry.registerSatellite(testStation);
 
 	}
 
