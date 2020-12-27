@@ -148,8 +148,11 @@ public class AddonConfig {
 
 	public static class SpaceStationSettings {
 
-		@Config.Name(value = "PlanetTwo Space Station Dimension Static ID")
-		public int staticIdSpaceStation = -4451;
+		@Config.Name(value = "Polulos Space Station Dimension ID")
+		public int polulosOrbitDimID = -4550;
+		
+		@Config.Name(value = "Polulos Space Station Dimension Static ID")
+		public int polulosOrbitDimID_static = -4551;
 
 	}
 

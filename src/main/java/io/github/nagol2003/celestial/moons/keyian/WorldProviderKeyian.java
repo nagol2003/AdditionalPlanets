@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.moons.keyian;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.moons.keyian.biome.BiomeProviderKeyian;
 import io.github.nagol2003.celestial.moons.keyian.biome.ChunkProviderKeyian;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderKeyian extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Keyian);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Keyian);
         return BiomeProviderKeyian.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderKeyian extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Keyian;
+        return Planets.Keyian;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderKeyian extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimKeyian;
+        return Dimensions.dimKeyian;
     }
 
     @Override

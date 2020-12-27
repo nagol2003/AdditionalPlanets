@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.dark;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.dark.biome.BiomeProviderDark;
 import io.github.nagol2003.celestial.planets.dark.biome.ChunkProviderDark;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderDark extends WorldProviderSpace implements ISolarLevel
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Dark);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Dark);
         return BiomeProviderDark.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderDark extends WorldProviderSpace implements ISolarLevel
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Dark;
+        return Planets.Dark;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderDark extends WorldProviderSpace implements ISolarLevel
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimDark;
+        return Dimensions.dimDark;
     }
 
     @Override

@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.vermon;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.vermon.biome.BiomeProviderVermon;
 import io.github.nagol2003.celestial.planets.vermon.biome.ChunkProviderVermon;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderVermon extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Vermon);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Vermon);
         return BiomeProviderVermon.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderVermon extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Vermon;
+        return Planets.Vermon;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderVermon extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimVermon;
+        return Dimensions.dimVermon;
     }
 
     @Override

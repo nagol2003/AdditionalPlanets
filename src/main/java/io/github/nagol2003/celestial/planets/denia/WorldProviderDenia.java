@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.denia;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.denia.biome.BiomeProviderDenia;
 import io.github.nagol2003.celestial.planets.denia.biome.ChunkProviderDenia;
 import io.github.nagol2003.init.InitBlocks;
@@ -53,7 +53,7 @@ public class WorldProviderDenia extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Denia);
+        BiomeAdaptive.setBodyMultiBiome(Planets.denia);
         return BiomeProviderDenia.class;
     }
 
@@ -105,7 +105,7 @@ public class WorldProviderDenia extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Denia;
+        return Planets.denia;
     }
 
     @Override
@@ -120,7 +120,7 @@ public class WorldProviderDenia extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimDenia;
+        return Dimensions.dimDenia;
     }
 
     @Override

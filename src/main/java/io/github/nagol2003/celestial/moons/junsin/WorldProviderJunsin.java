@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.moons.junsin;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.moons.junsin.biome.BiomeProviderJunsin;
 import io.github.nagol2003.celestial.moons.junsin.biome.ChunkProviderJunsin;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderJunsin extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Junsin);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Junsin);
         return BiomeProviderJunsin.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderJunsin extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Junsin;
+        return Planets.Junsin;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderJunsin extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimJunsin;
+        return Dimensions.dimJunsin;
     }
 
     @Override

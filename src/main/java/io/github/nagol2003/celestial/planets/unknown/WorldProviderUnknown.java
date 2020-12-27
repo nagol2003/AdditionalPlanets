@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.unknown;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.unknown.biome.BiomeProviderUnknown;
 import io.github.nagol2003.celestial.planets.unknown.biome.ChunkProviderUnknown;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderUnknown extends WorldProviderSpace implements ISolarLe
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.unknownplanet);
+        BiomeAdaptive.setBodyMultiBiome(Planets.unknownplanet);
         return BiomeProviderUnknown.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderUnknown extends WorldProviderSpace implements ISolarLe
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.unknownplanet;
+        return Planets.unknownplanet;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderUnknown extends WorldProviderSpace implements ISolarLe
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimUnknown;
+        return Dimensions.dimUnknown;
     }
 
     @Override

@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.thesiusOmega;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.thesiusOmega.biome.BiomeProviderThesiusOmega;
 import io.github.nagol2003.celestial.planets.thesiusOmega.biome.ChunkProviderThesiusOmega;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderThesiusOmega extends WorldProviderSpace implements ISo
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.ThesiusOmega);
+        BiomeAdaptive.setBodyMultiBiome(Planets.ThesiusOmega);
         return BiomeProviderThesiusOmega.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderThesiusOmega extends WorldProviderSpace implements ISo
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.ThesiusOmega;
+        return Planets.ThesiusOmega;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderThesiusOmega extends WorldProviderSpace implements ISo
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimThesiusOmega;
+        return Dimensions.dimThesiusOmega;
     }
 
     @Override

@@ -1,6 +1,6 @@
 package io.github.nagol2003.celestial.planets.j1407b.biome.gen;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
+import io.github.nagol2003.celestial.Planets;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
 import micdoodle8.mods.miccore.IntCache;
 import net.minecraft.world.biome.Biome;
@@ -8,7 +8,7 @@ import net.minecraft.world.gen.layer.GenLayer;
 
 public class GenLayerj1407bBiomes extends GenLayer {
 
-    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(AddonCelestialBodies.J1407b).toArray(new Biome[0]);
+    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(Planets.J1407b).toArray(new Biome[0]);
 
     public GenLayerj1407bBiomes(long l, GenLayer parent) {
         super(l);

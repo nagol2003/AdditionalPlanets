@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.vulcan;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.vulcan.biome.BiomeProviderVulcan;
 import io.github.nagol2003.celestial.planets.vulcan.biome.ChunkProviderVulcan;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderVulcan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Vulcan);
+        BiomeAdaptive.setBodyMultiBiome(Planets.vulcan);
         return BiomeProviderVulcan.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderVulcan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Vulcan;
+        return Planets.vulcan;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderVulcan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimVulcan;
+        return Dimensions.dimVulcan;
     }
 
     @Override

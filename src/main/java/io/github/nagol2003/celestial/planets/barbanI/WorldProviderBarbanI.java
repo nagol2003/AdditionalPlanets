@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.barbanI;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.barbanI.biome.BiomeProviderBarbanI;
 import io.github.nagol2003.celestial.planets.barbanI.biome.ChunkProviderBarbanI;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderBarbanI extends WorldProviderSpace implements ISolarLe
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.BarbanI);
+        BiomeAdaptive.setBodyMultiBiome(Planets.BarbanI);
         return BiomeProviderBarbanI.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderBarbanI extends WorldProviderSpace implements ISolarLe
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.BarbanI;
+        return Planets.BarbanI;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderBarbanI extends WorldProviderSpace implements ISolarLe
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimBarbanI;
+        return Dimensions.dimBarbanI;
     }
 
     @Override

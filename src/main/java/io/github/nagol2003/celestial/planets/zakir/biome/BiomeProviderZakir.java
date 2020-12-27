@@ -6,7 +6,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.zakir.biome.gen.GenLayerZakir;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
@@ -29,7 +29,7 @@ public class BiomeProviderZakir extends BiomeProvider {
 	private CelestialBody body;
 
 	protected BiomeProviderZakir() {
-		this.body = AddonCelestialBodies.ZakirPrime;
+		this.body = Planets.ZakirPrime;
 		this.biomeCache = new BiomeCache(this);
 		this.biomesToSpawnIn = new ArrayList<>();
 	}

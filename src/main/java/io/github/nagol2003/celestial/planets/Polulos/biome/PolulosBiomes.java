@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.Polulos.biome;
 import java.util.Random;
 
 import io.github.nagol2003.celestial.planets.Polulos.BiomeDecoratorOther;
-import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulosSavanna;
 import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulosDesert;
+import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomePolulosSavanna;
 //import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomeGenPlanetOneSea;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.material.Material;

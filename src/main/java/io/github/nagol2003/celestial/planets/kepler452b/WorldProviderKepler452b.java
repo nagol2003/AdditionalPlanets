@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.kepler452b;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.kepler452b.biome.BiomeProviderKepler452b;
 import io.github.nagol2003.celestial.planets.kepler452b.biome.ChunkProviderKepler452b;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderKepler452b extends WorldProviderSpace implements ISola
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Kepler452b);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Kepler452b);
         return BiomeProviderKepler452b.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderKepler452b extends WorldProviderSpace implements ISola
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Kepler452b;
+        return Planets.Kepler452b;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderKepler452b extends WorldProviderSpace implements ISola
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimKepler452b;
+        return Dimensions.dimKepler452b;
     }
 
     @Override

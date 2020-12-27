@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.queran;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.queran.biome.BiomeProviderQueran;
 import io.github.nagol2003.celestial.planets.queran.biome.ChunkProviderQueran;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderQueran extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Queran);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Queran);
         return BiomeProviderQueran.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderQueran extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Queran;
+        return Planets.Queran;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderQueran extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimQueran;
+        return Dimensions.dimQueran;
     }
 
     @Override

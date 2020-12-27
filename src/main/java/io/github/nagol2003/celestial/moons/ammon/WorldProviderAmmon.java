@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.moons.ammon;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.moons.ammon.biome.BiomeProviderAmmon;
 import io.github.nagol2003.celestial.moons.ammon.biome.ChunkProviderAmmon;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderAmmon extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Ammon);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Ammon);
         return BiomeProviderAmmon.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderAmmon extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Ammon;
+        return Planets.Ammon;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderAmmon extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimAmmon;
+        return Dimensions.dimAmmon;
     }
 
     @Override

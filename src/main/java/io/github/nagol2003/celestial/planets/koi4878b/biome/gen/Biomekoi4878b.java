@@ -4,13 +4,11 @@ import java.util.Random;
 
 import io.github.nagol2003.celestial.planets.koi4878b.biome.ChunkProviderkoi4878b;
 import io.github.nagol2003.celestial.planets.koi4878b.biome.Koi4878bBiomes;
-import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 

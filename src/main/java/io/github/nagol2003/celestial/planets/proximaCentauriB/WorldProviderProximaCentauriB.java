@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.proximaCentauriB;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.proximaCentauriB.biome.BiomeProviderProximaCentauriB;
 import io.github.nagol2003.celestial.planets.proximaCentauriB.biome.ChunkProviderProximaCentauriB;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderProximaCentauriB extends WorldProviderSpace implements
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.ProximaCentauriB);
+        BiomeAdaptive.setBodyMultiBiome(Planets.ProximaCentauriB);
         return BiomeProviderProximaCentauriB.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderProximaCentauriB extends WorldProviderSpace implements
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.ProximaCentauriB;
+        return Planets.ProximaCentauriB;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderProximaCentauriB extends WorldProviderSpace implements
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimAlphaCentauriB;
+        return Dimensions.dimAlphaCentauriB;
     }
 
     @Override

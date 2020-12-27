@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.Polulos;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.Polulos.biome.BiomeProviderPolulos;
 import io.github.nagol2003.celestial.planets.Polulos.biome.ChunkProviderPolulos;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Polulos);
+        BiomeAdaptive.setBodyMultiBiome(Planets.polulos);
         return BiomeProviderPolulos.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Polulos;
+        return Planets.polulos;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderPolulos extends WorldProviderSpace implements ISolarLe
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimPolulos;
+        return Dimensions.dimPolulos;
     }
 
     @Override

@@ -1,12 +1,11 @@
 package io.github.nagol2003;
 
-import asmodeuscore.core.astronomy.BodiesRegistry;
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
-import io.github.nagol2003.celestial.NewGalaxy;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.StationRecipes;
 import io.github.nagol2003.init.EntityInit;
 //import io.github.nagol2003.celestial.planets.Polulos.biome.gen.PolulosTreeGen;
 import io.github.nagol2003.init.InitBlocks;
+import io.github.nagol2003.init.InitCelestial;
 import io.github.nagol2003.init.InitItems;
 import io.github.nagol2003.init.Recipes;
 import io.github.nagol2003.proxy.ServerProxy;
@@ -61,17 +60,13 @@ public class AddonMain {
 		registry.addRegistrationHandler(InitBlocks::registerAll, Block.class);
 		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
 		registry.addRegistrationHandler(EntityInit::registerEntities, EntityEntry.class);
-		
-		BodiesRegistry.setMaxTier(1);
-		NewGalaxy.init();
-		AddonCelestialBodies.init();
+
+		InitCelestial.init();
 		
 		proxy.preInit(registry, event);
 		
 		GameRegistry.registerWorldGenerator(new APWorldGen(), 3);
 		
-		//GameRegistry.registerWorldGenerator(new PolulosWorldGen(), -4440);
-
 		RenderHandler.registerEntityRenders();
 		
 	}
@@ -79,7 +74,10 @@ public class AddonMain {
 	@EventHandler
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);
+
 		Recipes.init();
+		
+		StationRecipes.register();
 		
 	}
 
@@ -92,7 +90,8 @@ public class AddonMain {
 	@EventHandler
 	public void postInit(final FMLPostInitializationEvent event) {
 		// Register addons dimensions used by planets/moonds/etc.. in postInit
-		AddonDimensions.init();
+		Dimensions.init();
+		Dimensions.initSpaceStationDims();
 		//PolulosTreeGen.register();
 		proxy.postInit(registry,event);
 	}

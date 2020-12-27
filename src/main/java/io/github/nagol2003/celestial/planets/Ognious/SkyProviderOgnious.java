@@ -8,8 +8,6 @@ import io.github.nagol2003.Const;
 import micdoodle8.mods.galacticraft.core.Constants;
 import micdoodle8.mods.galacticraft.core.dimension.WorldProviderMoon;
 import micdoodle8.mods.galacticraft.core.util.ConfigManagerCore;
-import micdoodle8.mods.galacticraft.planets.mars.client.SkyProviderMars;
-import micdoodle8.mods.galacticraft.planets.venus.client.SkyProviderVenus;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.renderer.BufferBuilder;
@@ -287,7 +285,7 @@ public class SkyProviderOgnious extends IRenderHandler
         }
 
         GL11.glPushMatrix();
-        GL11.glTranslatef(0.0F, -((float) (d0 - 16.0D)), 0.0F);
+        GL11.glTranslatef(0.0F, -((float) (var25 - 16.0D)), 0.0F);
         GL11.glCallList(this.glSkyList2);
         GL11.glPopMatrix();
         GL11.glEnable(GL11.GL_TEXTURE_2D);

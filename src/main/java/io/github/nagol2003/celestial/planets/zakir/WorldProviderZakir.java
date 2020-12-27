@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.zakir;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.zakir.biome.BiomeProviderZakir;
 import io.github.nagol2003.celestial.planets.zakir.biome.ChunkProviderZakir;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderZakir extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.ZakirPrime);
+        BiomeAdaptive.setBodyMultiBiome(Planets.ZakirPrime);
         return BiomeProviderZakir.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderZakir extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.ZakirPrime;
+        return Planets.ZakirPrime;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderZakir extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimZakir;
+        return Dimensions.dimZakir;
     }
 
     @Override

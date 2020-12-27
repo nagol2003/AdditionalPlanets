@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.mother;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.mother.biome.BiomeProviderMother;
 import io.github.nagol2003.celestial.planets.mother.biome.ChunkProviderMother;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderMother extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.mother);
+        BiomeAdaptive.setBodyMultiBiome(Planets.mother);
         return BiomeProviderMother.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderMother extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.mother;
+        return Planets.mother;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderMother extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimMother;
+        return Dimensions.dimMother;
     }
 
     @Override

@@ -6,7 +6,6 @@ import java.util.Random;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
-import io.github.nagol2003.init.InitBlocks;
 import io.github.nagol2003.util.world.MapGenAddonCaveGen;
 import io.github.nagol2003.util.world.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.MapGenBaseMeta;

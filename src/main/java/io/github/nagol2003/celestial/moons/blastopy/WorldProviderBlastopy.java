@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.moons.blastopy;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.moons.blastopy.biome.BiomeProviderBlastopy;
 import io.github.nagol2003.celestial.moons.blastopy.biome.ChunkProviderBlastopy;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderBlastopy extends WorldProviderSpace implements ISolarL
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Blastopy);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Blastopy);
         return BiomeProviderBlastopy.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderBlastopy extends WorldProviderSpace implements ISolarL
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Blastopy;
+        return Planets.Blastopy;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderBlastopy extends WorldProviderSpace implements ISolarL
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimBlastopy;
+        return Dimensions.dimBlastopy;
     }
 
     @Override

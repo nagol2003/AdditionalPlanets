@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.shayan;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.shayan.biome.BiomeProviderShayan;
 import io.github.nagol2003.celestial.planets.shayan.biome.ChunkProviderShayan;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderShayan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Shayan);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Shayan);
         return BiomeProviderShayan.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderShayan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Shayan;
+        return Planets.Shayan;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderShayan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimShayan;
+        return Dimensions.dimShayan;
     }
 
     @Override

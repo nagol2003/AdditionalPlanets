@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.moons.chiona;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.moons.chiona.biome.BiomeProviderChiona;
 import io.github.nagol2003.celestial.moons.chiona.biome.ChunkProviderChiona;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderChiona extends WorldProviderSpace implements ISolarLev
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Chiona);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Chiona);
         return BiomeProviderChiona.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderChiona extends WorldProviderSpace implements ISolarLev
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Chiona;
+        return Planets.Chiona;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderChiona extends WorldProviderSpace implements ISolarLev
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimChiona;
+        return Dimensions.dimChiona;
     }
 
     @Override

@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.moons.xareious;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.moons.xareious.biome.BiomeProviderXareious;
 import io.github.nagol2003.celestial.moons.xareious.biome.ChunkProviderXareious;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderXareious extends WorldProviderSpace implements ISolarL
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Xareious);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Xareious);
         return BiomeProviderXareious.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderXareious extends WorldProviderSpace implements ISolarL
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Xareious;
+        return Planets.Xareious;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderXareious extends WorldProviderSpace implements ISolarL
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimXareious;
+        return Dimensions.dimXareious;
     }
 
     @Override

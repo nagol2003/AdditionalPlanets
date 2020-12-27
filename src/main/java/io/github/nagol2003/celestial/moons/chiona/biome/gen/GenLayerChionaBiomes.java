@@ -1,6 +1,7 @@
 package io.github.nagol2003.celestial.moons.chiona.biome.gen;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
+
+import io.github.nagol2003.celestial.Planets;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
 import micdoodle8.mods.miccore.IntCache;
 import net.minecraft.world.biome.Biome;
@@ -8,7 +9,7 @@ import net.minecraft.world.gen.layer.GenLayer;
 
 public class GenLayerChionaBiomes extends GenLayer {
 
-    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(AddonCelestialBodies.Chiona).toArray(new Biome[0]);
+    private static final Biome[] biomes = BiomeAdaptive.getBiomesListFor(Planets.Chiona).toArray(new Biome[0]);
 
     public GenLayerChionaBiomes(long l, GenLayer parent) {
         super(l);

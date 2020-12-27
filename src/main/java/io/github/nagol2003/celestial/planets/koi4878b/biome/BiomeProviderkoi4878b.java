@@ -6,7 +6,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.koi4878b.biome.gen.GenLayerkoi4878b;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
@@ -29,7 +29,7 @@ public class BiomeProviderkoi4878b extends BiomeProvider {
 	private CelestialBody body;
 
 	protected BiomeProviderkoi4878b() {
-		this.body = AddonCelestialBodies.KOI4878b;
+		this.body = Planets.KOI4878b;
 		this.biomeCache = new BiomeCache(this);
 		this.biomesToSpawnIn = new ArrayList<>();
 	}

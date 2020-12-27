@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.moons.erink;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.moons.erink.biome.BiomeProviderErink;
 import io.github.nagol2003.celestial.moons.erink.biome.ChunkProviderErink;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderErink extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Erink);
+        BiomeAdaptive.setBodyMultiBiome(Planets.Erink);
         return BiomeProviderErink.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderErink extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.Erink;
+        return Planets.Erink;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderErink extends WorldProviderSpace implements ISolarLeve
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimErink;
+        return Dimensions.dimErink;
     }
 
     @Override

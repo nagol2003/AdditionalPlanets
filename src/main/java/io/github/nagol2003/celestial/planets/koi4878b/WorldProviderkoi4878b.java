@@ -3,8 +3,8 @@ package io.github.nagol2003.celestial.planets.koi4878b;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.nagol2003.celestial.AddonCelestialBodies;
-import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.Dimensions;
+import io.github.nagol2003.celestial.Planets;
 import io.github.nagol2003.celestial.planets.koi4878b.biome.BiomeProviderkoi4878b;
 import io.github.nagol2003.celestial.planets.koi4878b.biome.ChunkProviderkoi4878b;
 import io.github.nagol2003.init.InitBlocks;
@@ -49,7 +49,7 @@ public class WorldProviderkoi4878b extends WorldProviderSpace implements ISolarL
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.KOI4878b);
+        BiomeAdaptive.setBodyMultiBiome(Planets.KOI4878b);
         return BiomeProviderkoi4878b.class;
     }
 
@@ -101,7 +101,7 @@ public class WorldProviderkoi4878b extends WorldProviderSpace implements ISolarL
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.KOI4878b;
+        return Planets.KOI4878b;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class WorldProviderkoi4878b extends WorldProviderSpace implements ISolarL
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimkoi4878b;
+        return Dimensions.dimkoi4878b;
     }
 
     @Override
