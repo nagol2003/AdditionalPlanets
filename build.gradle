@@ -61,13 +61,10 @@ apply from: "https://raw.githubusercontent.com/ReadOnly-Mods/Misc/master/Gradle/
 // ==========================================
 
 repositories {
-    maven { 
-        url "https://www.cursemaven.com"
-    }
 }
 
 dependencies {
-    compile "curse.maven:AsmodeusCore:3098581"
+    compile fileTree(include: ['*.jar'], dir: 'lib')
 }
 
 processResources {

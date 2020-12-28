@@ -3,10 +3,6 @@ package io.github.nagol2003.celestial;
 import asmodeuscore.core.astronomy.BodiesRegistry;
 import asmodeuscore.core.astronomy.BodiesRegistry.Galaxies;
 import io.github.nagol2003.Const;
-import micdoodle8.mods.galacticraft.api.galaxies.GalaxyRegistry;
-import micdoodle8.mods.galacticraft.api.galaxies.SolarSystem;
-import micdoodle8.mods.galacticraft.api.galaxies.Star;
-import micdoodle8.mods.galacticraft.api.vector.Vector3;
 import net.minecraft.util.ResourceLocation;
 
 public class NewGalaxy {

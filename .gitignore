@@ -27,4 +27,4 @@ hs_err_pid*
 !/gradle/wrapper/gradle-wrapper.jar
 /build/
 /run
-run/config/splash.properties
+!/lib/*
