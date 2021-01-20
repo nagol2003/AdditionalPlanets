@@ -3,6 +3,7 @@ package io.github.nagol2003.celestial;
 import io.github.nagol2003.AddonConfig;
 import io.github.nagol2003.AddonConfig.Dimension;
 import io.github.nagol2003.AddonConfig.PlanetSettings;
+import io.github.nagol2003.AddonConfig.SpaceStationSettings;
 import io.github.nagol2003.Const;
 import io.github.nagol2003.celestial.moons.ammon.WorldProviderAmmon;
 import io.github.nagol2003.celestial.moons.ammon.biome.AmmonBiomes;
@@ -155,6 +156,10 @@ public class AddonCelestialBodies {
 	public static Moon Terrin;
 	public static Moon BarbanIVa;
 	public static Moon Chiona;
+	
+
+	//public static Satellite polulosOrbit;
+	//static SpaceStationSettings satDim = AddonConfig.addon_spacestation_settings;
 	
 	//Satellites
 	//public static Satellite testStation;
@@ -707,16 +712,15 @@ public class AddonCelestialBodies {
 		
 //		commenting out but keeping just in case
 		
-
-//		testStation = new Satellite("space_station.eris").setParentBody(Polulos);
-//		testStation.setRelativeSize(0.2667F);
-//		testStation.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(5.5F, 5.5F));
-//		testStation.setRelativeOrbitTime(20.0F);
-///		testStation.setTierRequired(Polulos.getTierRequirement());
-	//	//testStation.setDimensionInfo(dim.idStestStation, dim.StaticidtestStation, WorldProvidertestStation.class);
-//		testStation.setBodyIcon(new ResourceLocation("galacticraftcore:textures/gui/celestialbodies/space_station.png"));
-//		testStation.addChecklistKeys("equip_oxygen_suit", "equip_parachute");
-	//	testStation.setBiomeInfo(BiomeOrbit.space);
+	//	polulosOrbit = new Satellite("space_station.polulos").setParentBody(AddonCelestialBodies.Polulos);
+		//polulosOrbit.setRelativeSize(0.2667F);
+	//	polulosOrbit.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(5.5F, 5.5F));
+	//	polulosOrbit.setRelativeOrbitTime(20.0F);
+	//	polulosOrbit.setTierRequired(AddonCelestialBodies.Polulos.getTierRequirement());
+	//	polulosOrbit.setDimensionInfo(satDim.polulosOrbitDimID, satDim.polulosOrbitDimID_static, WorldProviderPolulosOrbit.class);
+	//	polulosOrbit.setBodyIcon(new ResourceLocation("galacticraftcore:textures/gui/celestialbodies/space_station.png"));
+	//	polulosOrbit.addChecklistKeys("equip_oxygen_suit");
+	//	polulosOrbit.setBiomeInfo(BiomeOrbit.space);
 	}
 
 	private static void setMobInfo(CelestialBody body) {
@@ -762,6 +766,7 @@ public class AddonCelestialBodies {
 		GalacticraftRegistry.registerTeleportType(WorldProviderBlastopy.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderThesiusOmega.class, new TeleportTypeMoon());
 		//GalacticraftRegistry.registerTeleportType(WorldProvidertestStation.class, new TeleportTypeSpaceStation());
+		//GalacticraftRegistry.registerTeleportType(WorldProviderPolulosOrbit.class, new APSatTeleportType());
 	}
 
 	private static void registerAll() {
@@ -825,6 +830,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerMoon(Chiona);
 		//GalaxyRegistry.registerSatellite(testStation);
 
+		//GalaxyRegistry.registerSatellite(polulosOrbit);
 	}
 
 }

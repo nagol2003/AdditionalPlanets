@@ -52,8 +52,8 @@ public abstract class ChunkProviderDeniaAP extends ChunkProviderAbst {
 		this.depthBuffer = new double[256];
 		this.worldObj = world;
 		this.rand = new Random(seed);
-		this.minLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 20);
-		this.maxLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 20);
+		this.minLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 18);
+		this.maxLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 18);
 		this.mainPerlinNoise = new NoiseGeneratorOctaves(this.rand, 10);
 		this.surfaceNoise = new NoiseGeneratorPerlin(this.rand, 4);
 		this.scaleNoise = new NoiseGeneratorOctaves(this.rand, 10);
