@@ -23,20 +23,16 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'com.matthewprenger.cursegradle'
 
-def mcVersion="1.12.2"
-def forgeVersion="14.23.5.2847"
+version = "${minecraft_version}-1.0.0"
+group= "io.github.nagol2003" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Additional Planets"
 
-version = "${mcVersion}-1.0.0"
-group= "net.rom.addontutorial" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Additional Planets 1.12.2"
-
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
 
 minecraft {
-    version = "${mcVersion}-${forgeVersion}"
+    version = "${minecraft_version}-${forge_version}"
     runDir = "run"
-    mappings = "snapshot_20171003"
+    mappings = "${mappings_version}"
     makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
@@ -50,30 +46,50 @@ idea.module {
     }
 }
 
-// ==========================================
-//            Load GC Dev Files
-// ==========================================
-project.ext {
-    GCBuild = "261"
-    GCVersion = "1.12.2-4.0.2.${GCBuild}"
-}
-apply from: "https://raw.githubusercontent.com/ReadOnly-Mods/Misc/master/Gradle/gcdevfiles.gradle"
-// ==========================================
+apply from: "https://raw.githubusercontent.com/ReadOnlyDevelopment/gradle/galacticraft/dev-latest.gradle"
 
 repositories {
+    removeIf { it.url.host == 'files.minecraftforge.net' }
+    maven {
+        url "https://maven.minecraftforge.net/"
+    }
+        maven {
+        url "https://www.cursemaven.com"
+    }
+    maven {
+        name 'prog'
+        url 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        name 'curseforge'
+        url 'https://minecraft.curseforge.com/api/maven/'
+    }
+    maven {
+        name 'BlameJared - Crafttweaker'
+        url 'https://maven.blamejared.com/'
+    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'lib')
+    compile "mezz.jei:jei_${minecraft_version}:${jei_version}:api"
+    runtime "mezz.jei:jei_${minecraft_version}:${jei_version}"
+    
+    compile("CraftTweaker2:CraftTweaker2-API:${crafttweaker_version}") {
+        exclude module: "asm-debug-all"
+    }
+    compile("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-${crafttweaker_version}") {
+        exclude module: "asm-debug-all"
+    }
+	deobfCompile "curse.maven:asmodeuscore-0.0.25-303101:3231302"
 }
 
 processResources {
 
     inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
+    inputs.property "minecraft_version", project.minecraft.version
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-		expand 'version':project.version, 'mcversion':project.minecraft.version
+		expand 'version':project.version, 'minecraft_version':project.minecraft.version
     }
     
     from(sourceSets.main.resources.srcDirs) {
@@ -114,12 +130,8 @@ curseforge {
 		project {
 			id = "PROJECT-ID"
 			releaseType = "release"
-			addGameVersion "${mcVersion}"
-			mainArtifact(jar) {
-				//relations {
-				//	requiredLibrary 'some-coremod'
-				//}
-			}
+			addGameVersion "${minecraft_version}"
+			mainArtifact(jar)
 			addArtifact(apiJar)
 			addArtifact(deobfJar)
 		}
