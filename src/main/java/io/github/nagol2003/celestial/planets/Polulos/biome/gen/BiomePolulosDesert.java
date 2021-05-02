@@ -7,6 +7,7 @@ import io.github.nagol2003.celestial.planets.Polulos.biome.PolulosBiomes;
 import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
 import io.github.nagol2003.init.EntityInit;
 import io.github.nagol2003.init.InitBlocks;
+import micdoodle8.mods.galacticraft.planets.mars.world.gen.BiomeMars;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -37,7 +38,7 @@ public class BiomePolulosDesert extends PolulosBiomes {
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = ChunkProviderPolulos.getStoneBlockState();
+		IBlockState stoneBlockState = (IBlockState) InitBlocks.POLULOSROCK;
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;

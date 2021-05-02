@@ -63,6 +63,7 @@ public class AddonMain {
 		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
 		registry.addRegistrationHandler(EntityInit::registerEntities, EntityEntry.class);
 		
+		
 		BodiesRegistry.setMaxTier(1);
 		NewGalaxy.init();
 		AddonCelestialBodies.init();
