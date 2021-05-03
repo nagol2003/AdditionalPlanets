@@ -24,7 +24,7 @@ public class FerminiumHelmet extends ItemArmor implements ISortableItem
 	
 	@SideOnly(Side.CLIENT)
     @Override
-    public void registerModels(ModelRegistryEvent event) {
+    public void registerModels(ModelRegistryEvent event) { 
         ModelLoader.setCustomModelResourceLocation(InitItems.HELMET_FERMINIUM, 0, new ModelResourceLocation("gcaddon:textures/model/armor/ferminium_layer_1.png"));
     }
 	
