@@ -10,7 +10,6 @@ import io.github.nagol2003.items.tools.ToolPickaxe;
 import io.github.nagol2003.items.tools.ToolShovel;
 import io.github.nagol2003.items.tools.ToolSword;
 import io.github.nagol2003.registry.APRegistry;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -18,23 +17,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class InitItems {
 	
-	public static void registerRenders() {
-        registerRender(HELMET_FERMINIUM);
-    }
- 
-    private static void registerRender(Item item) {
-        ModelLoader.setCustomModelResourceLocation(InitItems.HELMET_FERMINIUM, 0, new ModelResourceLocation(InitItems.HELMET_FERMINIUM.getRegistryName(), "inventory"));
- 
-    }
-    
 	//Items
 	public static final Item FERMINIUM_CHUNK = new ItemFerminiumChunk();
 	public static final Item FERMINIUM_ALLOY = new ItemFerminiumAlloy();
@@ -46,7 +32,7 @@ public class InitItems {
 	
 	//public static final ArmorMaterial  ARMORFERMINIUM = EnumHelper.addArmorMaterial("armor_ferminium", 4, 7, 13.0F, 6.0F, 9);
 	 public static ArmorMaterial ARMORFERMINIUM = EnumHelper.addArmorMaterial("FERMINIUM", "", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
-
+	
 	//Tools
 	public static final Item PICKAXE_FERMINIUM = new ToolPickaxe("ferminium_pickaxe", TOOL_FERMINIUM);
 	public static final Item AXE_FERMINIUM = new ToolAxe("ferminium_axe", TOOL_FERMINIUM);

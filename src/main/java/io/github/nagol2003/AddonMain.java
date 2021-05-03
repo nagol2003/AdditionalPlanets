@@ -54,6 +54,7 @@ public class AddonMain {
 	}
 	
 	
+	
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {
@@ -84,7 +85,6 @@ public class AddonMain {
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);
 		Recipes.init();
-		InitItems.registerRenders();
 		
 	}
 
