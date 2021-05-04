@@ -5,6 +5,8 @@ import io.github.nagol2003.items.ItemFerminiumChunk;
 import io.github.nagol2003.items.ItemStrangeMetallicSubstance;
 import io.github.nagol2003.items.food.CookedCrabMeat;
 import io.github.nagol2003.items.food.RawCrabMeat;
+import io.github.nagol2003.items.food.Reesh;
+import io.github.nagol2003.items.food.ReeshSeeds;
 import io.github.nagol2003.items.tools.ToolAxe;
 import io.github.nagol2003.items.tools.ToolPickaxe;
 import io.github.nagol2003.items.tools.ToolShovel;
@@ -42,6 +44,8 @@ public class InitItems {
 	//Food
 	public static final Item RAW_CRAB_MEAT = new RawCrabMeat("rawcrabmeat", 4, 0.3F, false);
 	public static final Item COOKED_CRAB_MEAT = new CookedCrabMeat("cookedcrabmeat", 8, 0.9F, false);
+	public static final Item REESH = new Reesh("reesh", 6, 0.6F, false);
+	public static final Item REESH_SEEDS = new ReeshSeeds();
 	
 	//Armor
 	public static final Item HELMET_FERMINIUM = new ItemArmor(ARMORFERMINIUM, 7, EntityEquipmentSlot.HEAD).setUnlocalizedName("ferminium_helmet");
@@ -62,6 +66,7 @@ public class InitItems {
 		registry.registerItem(SHOVEL_FERMINIUM, "ferminium_shovel").setCreativeTab(toTab);
 		registry.registerItem(SWORD_FERMINIUM, "ferminium_sword").setCreativeTab(toTab);
 		registry.registerItem(HELMET_FERMINIUM, "ferminium_helmet").setCreativeTab(toTab);
+		registry.registerItem(REESH, "reesh").setCreativeTab(toTab);
 		
 	}
 	
