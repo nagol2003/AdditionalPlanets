@@ -13,7 +13,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class FerminiumHelmet extends ItemArmor implements ISortableItem
 {
+<<<<<<< HEAD
 	public FerminiumHelmet(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) 
+=======
+    public FerminiumHelmet(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) 
+>>>>>>> cdd43e18016ffb98da9524524f913db079bbbdc0
     {
         super(materialIn, renderIndexIn, equipmentSlotIn);
         setUnlocalizedName(name);
@@ -21,7 +25,11 @@ public class FerminiumHelmet extends ItemArmor implements ISortableItem
         
         //ItemInit.ITEMS.add(this);
     }
+<<<<<<< HEAD
 	
+=======
+    
+>>>>>>> cdd43e18016ffb98da9524524f913db079bbbdc0
     @Override
     @SideOnly(Side.CLIENT)
     public EnumRarity getRarity(ItemStack par1ItemStack)

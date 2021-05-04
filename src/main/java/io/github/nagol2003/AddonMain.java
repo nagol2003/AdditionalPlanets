@@ -16,6 +16,7 @@ import io.github.nagol2003.util.Logging;
 import io.github.nagol2003.util.Utils;
 import io.github.nagol2003.util.handlers.RenderHandler;
 import io.github.nagol2003.world.APWorldGen;
+import io.github.nagol2003.world.WorldGenCustomStructures;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -54,6 +55,7 @@ public class AddonMain {
 	}
 	
 	
+	
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {
@@ -65,6 +67,7 @@ public class AddonMain {
 		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
 		registry.addRegistrationHandler(EntityInit::registerEntities, EntityEntry.class);
 		MinecraftForge.EVENT_BUS.register(new AdditionalPlanetsEventHandlerClient());
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 		
 		
 		BodiesRegistry.setMaxTier(1);
@@ -84,7 +87,6 @@ public class AddonMain {
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);
 		Recipes.init();
-		InitItems.registerRenders();
 		
 	}
 
