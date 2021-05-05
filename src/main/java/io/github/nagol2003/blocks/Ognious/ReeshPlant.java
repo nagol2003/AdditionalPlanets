@@ -1,6 +1,5 @@
 package io.github.nagol2003.blocks.Ognious;
 
-import io.github.nagol2003.init.InitBlocks;
 import io.github.nagol2003.init.InitItems;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.state.IBlockState;
@@ -17,7 +16,11 @@ import net.minecraft.world.World;
 
 public class ReeshPlant extends BlockCrops {
 	
+<<<<<<< HEAD
 	//private static final AxisAlignedBB[] reesh = new AxisAlignedBB[] {new AxisAligned
+=======
+	//private static final AxisAlignedBB[] reesh = new AxisAlignedBB[] {new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.25D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.375D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5625D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.8125D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D)};
+>>>>>>> 5a0ae83df872da9ec70400a24dcab7498a8ea151
 	
 	public ReeshPlant(String name) {
 		
@@ -31,6 +34,7 @@ public class ReeshPlant extends BlockCrops {
 			if(this.isMaxAge(state)) {
 				
 				worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(InitItems.REESH, 2)));  //drop
+				worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(InitItems.REESH_SEEDS, 2)));  //drop
 				worldIn.setBlockState(pos, this.withAge(0));
 				return true;
 			}
@@ -52,10 +56,11 @@ public class ReeshPlant extends BlockCrops {
 		return InitItems.REESH;
 	}
 	
-	@Override
-	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		// TODO Auto-generated method stub
-		return super.getBoundingBox(state, source, pos);
-	}
+	//@Override
+	//public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+
+	//	return reesh[((Integer)state.getValue(this.getAgeProperty())).intValue()];
+		
+	//}
 
 }

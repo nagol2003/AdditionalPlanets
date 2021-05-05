@@ -26,27 +26,85 @@ public class WorldGenCustomStructures implements IWorldGenerator
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
 	{
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
+		System.out.println("XDDD:" + world.provider.getDimension());
 		switch(world.provider.getDimension())
 		{
 		//case 2 is custom dimension
 		case 2:
-			
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
+			System.out.println("case: 2");
 			generateStructure(HOME, world, random, chunkX, chunkZ, 25, InitBlocks.FROZENCO2, BiomeDenia.class);
 			
 			break;
 			
 		case 1:
-			
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
+			System.out.println("case: 1");
 			break;
 			//case 0 is overworld; cases refer to dimensions
 		case 0:
-			
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
+			System.out.println("case: 0");
 			generateStructure(HOME, world, random, chunkX, chunkZ, 25, Blocks.GRASS, BiomePlains.class);
-			
 			break;
 			
 		case -1:
-			
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			System.out.println("case: -1");
+			break;
 		}
 	}
 	

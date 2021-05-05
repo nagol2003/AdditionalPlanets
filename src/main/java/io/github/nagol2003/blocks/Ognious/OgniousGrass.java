@@ -16,7 +16,7 @@ public class OgniousGrass extends Block implements ISortableBlock, ITerraformabl
 		super(Material.ROCK);
 		this.setSoundType(SoundType.STONE);
 		this.setHardness(5.0f);
-		this.setHarvestLevel("shears", 2);
+		this.setHarvestLevel("shovel", 2);
 		this.setCreativeTab(AdditionalPlanetsTab.blockTab);
 
 	}

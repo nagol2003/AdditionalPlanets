@@ -10,4 +10,10 @@ public class Reesh extends ItemFood
 		setUnlocalizedName(name);	
 		setRegistryName(name);
 	}
+	
+//	@Override
+	//public void registerModels() {
+	//	Main.proxy.registerItemRenderer(this, 0, "inventory");
+	//}
+	
 } 
