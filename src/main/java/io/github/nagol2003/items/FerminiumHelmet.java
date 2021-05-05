@@ -21,7 +21,6 @@ public class FerminiumHelmet extends ItemArmor implements ISortableItem
         
         //ItemInit.ITEMS.add(this);
     }
-    
     @Override
     @SideOnly(Side.CLIENT)
     public EnumRarity getRarity(ItemStack par1ItemStack)

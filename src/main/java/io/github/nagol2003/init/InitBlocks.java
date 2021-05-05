@@ -55,7 +55,11 @@ public class InitBlocks {
 	public static final Block DENIASTONE = new deniastone();
 	public static final Block DENIAFERMINIUMORE = new DeniaFerminiumOre();
 	public static final Block STRANGEMETALLICDENIA = new StrangeMetallicDenia();
+<<<<<<< HEAD
+	public static final Block REESH_PLANT = new ReeshPlant(null);
+=======
 	public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
+>>>>>>> 5a0ae83df872da9ec70400a24dcab7498a8ea151
 	
 	public static void registerAll (APRegistry registry) {
 		CreativeTabs toTab = AdditionalPlanetsTab.blockTab;
