@@ -33,7 +33,7 @@ public class InitItems {
 	public static final ToolMaterial TOOL_FERMINIUM = EnumHelper.addToolMaterial("tool_ferminium", 7, 1500, 15.0f, 7.0f, 19);
 	
 	//public static final ArmorMaterial  ARMORFERMINIUM = EnumHelper.addArmorMaterial("armor_ferminium", 4, 7, 13.0F, 6.0F, 9);
-	 public static ArmorMaterial ARMORFERMINIUM = EnumHelper.addArmorMaterial("FERMINIUM", "", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
+	 public static ArmorMaterial ARMORFERMINIUM = EnumHelper.addArmorMaterial("FERMINIUM", "FERMINIUM", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
 	
 	//Tools
 	public static final Item PICKAXE_FERMINIUM = new ToolPickaxe("ferminium_pickaxe", TOOL_FERMINIUM);

@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 
 public class ReeshPlant extends BlockCrops {
 	
-	private static final AxisAlignedBB[] reesh = new AxisAlignedBB[] {new AxisAligned
+	//private static final AxisAlignedBB[] reesh = new AxisAlignedBB[] {new AxisAligned
 	
 	public ReeshPlant(String name) {
 		
