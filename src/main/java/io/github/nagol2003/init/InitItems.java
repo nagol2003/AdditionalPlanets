@@ -67,6 +67,7 @@ public class InitItems {
 		registry.registerItem(SWORD_FERMINIUM, "ferminium_sword").setCreativeTab(toTab);
 		registry.registerItem(HELMET_FERMINIUM, "ferminium_helmet").setCreativeTab(toTab);
 		registry.registerItem(REESH, "reesh").setCreativeTab(toTab);
+		registry.registerItem(REESH_SEEDS, "reeshseeds").setCreativeTab(toTab);
 		
 	}
 	
