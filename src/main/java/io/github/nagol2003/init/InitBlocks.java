@@ -10,6 +10,7 @@ import io.github.nagol2003.blocks.Ognious.OgniousLeaves;
 import io.github.nagol2003.blocks.Ognious.OgniousLog;
 import io.github.nagol2003.blocks.Ognious.OgniousRock;
 import io.github.nagol2003.blocks.Ognious.OgniousStone;
+import io.github.nagol2003.blocks.Ognious.ReeshPlant;
 import io.github.nagol2003.blocks.Polulos.PolulosDirt;
 import io.github.nagol2003.blocks.Polulos.PolulosFerminiumOre;
 import io.github.nagol2003.blocks.Polulos.PolulosRock;
@@ -54,6 +55,7 @@ public class InitBlocks {
 	public static final Block DENIASTONE = new deniastone();
 	public static final Block DENIAFERMINIUMORE = new DeniaFerminiumOre();
 	public static final Block STRANGEMETALLICDENIA = new StrangeMetallicDenia();
+	public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
 	
 	public static void registerAll (APRegistry registry) {
 		CreativeTabs toTab = AdditionalPlanetsTab.blockTab;
@@ -82,6 +84,7 @@ public class InitBlocks {
 		registry.registerBlock(DENIASTONE, "deniastone").setCreativeTab(toTab2);
 		registry.registerBlock(DENIAFERMINIUMORE, "deniaferminiumore").setCreativeTab(toTab2);
 		registry.registerBlock(STRANGEMETALLICDENIA, "strangemetallicdenia").setCreativeTab(toTab2);
+		registry.registerBlock(REESH_PLANT, "reeshplant").setCreativeTab(toTab2);
 	}
 	
 }

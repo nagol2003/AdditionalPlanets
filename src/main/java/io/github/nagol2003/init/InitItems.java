@@ -5,14 +5,20 @@ import io.github.nagol2003.items.ItemFerminiumChunk;
 import io.github.nagol2003.items.ItemStrangeMetallicSubstance;
 import io.github.nagol2003.items.food.CookedCrabMeat;
 import io.github.nagol2003.items.food.RawCrabMeat;
+import io.github.nagol2003.items.food.Reesh;
+import io.github.nagol2003.items.food.ReeshSeeds;
 import io.github.nagol2003.items.tools.ToolAxe;
 import io.github.nagol2003.items.tools.ToolPickaxe;
 import io.github.nagol2003.items.tools.ToolShovel;
 import io.github.nagol2003.items.tools.ToolSword;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class InitItems {
@@ -26,6 +32,9 @@ public class InitItems {
 	public static final ToolMaterial MATERIAL_FERMINIUM = EnumHelper.addToolMaterial("material_ferminium", 3, 950, 13.0F, 6.0F, 15);
 	public static final ToolMaterial TOOL_FERMINIUM = EnumHelper.addToolMaterial("tool_ferminium", 7, 1500, 15.0f, 7.0f, 19);
 	
+	//public static final ArmorMaterial  ARMORFERMINIUM = EnumHelper.addArmorMaterial("armor_ferminium", 4, 7, 13.0F, 6.0F, 9);
+	 public static ArmorMaterial ARMORFERMINIUM = EnumHelper.addArmorMaterial("FERMINIUM", "", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
+	
 	//Tools
 	public static final Item PICKAXE_FERMINIUM = new ToolPickaxe("ferminium_pickaxe", TOOL_FERMINIUM);
 	public static final Item AXE_FERMINIUM = new ToolAxe("ferminium_axe", TOOL_FERMINIUM);
@@ -35,6 +44,11 @@ public class InitItems {
 	//Food
 	public static final Item RAW_CRAB_MEAT = new RawCrabMeat("rawcrabmeat", 4, 0.3F, false);
 	public static final Item COOKED_CRAB_MEAT = new CookedCrabMeat("cookedcrabmeat", 8, 0.9F, false);
+	public static final Item REESH = new Reesh("reesh", 6, 0.6F, false);
+	public static final Item REESH_SEEDS = new ReeshSeeds();
+	
+	//Armor
+	public static final Item HELMET_FERMINIUM = new ItemArmor(ARMORFERMINIUM, 7, EntityEquipmentSlot.HEAD).setUnlocalizedName("ferminium_helmet");
 	
 	
 	
@@ -51,6 +65,10 @@ public class InitItems {
 		registry.registerItem(AXE_FERMINIUM, "ferminium_axe").setCreativeTab(toTab);
 		registry.registerItem(SHOVEL_FERMINIUM, "ferminium_shovel").setCreativeTab(toTab);
 		registry.registerItem(SWORD_FERMINIUM, "ferminium_sword").setCreativeTab(toTab);
+		registry.registerItem(HELMET_FERMINIUM, "ferminium_helmet").setCreativeTab(toTab);
+		registry.registerItem(REESH, "reesh").setCreativeTab(toTab);
+		registry.registerItem(REESH_SEEDS, "reeshseeds").setCreativeTab(toTab);
+		
 	}
 	
 	//public static void registerAll (APRegistry registry) {

@@ -4,6 +4,7 @@ import asmodeuscore.core.astronomy.BodiesRegistry;
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
 import io.github.nagol2003.celestial.NewGalaxy;
+import io.github.nagol2003.client.AdditionalPlanetsEventHandlerClient;
 import io.github.nagol2003.init.EntityInit;
 //import io.github.nagol2003.celestial.planets.Polulos.biome.gen.PolulosTreeGen;
 import io.github.nagol2003.init.InitBlocks;
@@ -15,8 +16,10 @@ import io.github.nagol2003.util.Logging;
 import io.github.nagol2003.util.Utils;
 import io.github.nagol2003.util.handlers.RenderHandler;
 import io.github.nagol2003.world.APWorldGen;
+import io.github.nagol2003.world.WorldGenCustomStructures;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -52,6 +55,7 @@ public class AddonMain {
 	}
 	
 	
+	
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {
@@ -62,6 +66,8 @@ public class AddonMain {
 		registry.addRegistrationHandler(InitBlocks::registerAll, Block.class);
 		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
 		registry.addRegistrationHandler(EntityInit::registerEntities, EntityEntry.class);
+		MinecraftForge.EVENT_BUS.register(new AdditionalPlanetsEventHandlerClient());
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 		
 		
 		BodiesRegistry.setMaxTier(1);

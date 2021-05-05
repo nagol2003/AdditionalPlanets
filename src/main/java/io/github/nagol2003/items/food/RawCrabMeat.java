@@ -1,6 +1,5 @@
 package io.github.nagol2003.items.food;
 
-import io.github.nagol2003.init.InitItems;
 import net.minecraft.item.ItemFood;
 
 public class RawCrabMeat extends ItemFood
