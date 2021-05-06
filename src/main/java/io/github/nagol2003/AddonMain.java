@@ -55,7 +55,6 @@ public class AddonMain {
 	}
 	
 	
-	
 
 	@EventHandler
 	public void preInit(final FMLPreInitializationEvent event) {

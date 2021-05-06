@@ -1,4 +1,4 @@
-package io.github.nagol2003.items.food;
+/*package io.github.nagol2003.items.food;
 
 import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.state.IBlockState;
@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class ReeshSeeds extends Item implements IPlantable {
+//public class ReeshSeeds extends Item implements IPlantable {
 
 	@Override
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
@@ -23,7 +23,7 @@ public class ReeshSeeds extends Item implements IPlantable {
 		IBlockState state = worldIn.getBlockState(pos);
 		if(facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this) && worldIn.isAirBlock(pos.up())) {
 			
-			worldIn.setBlockState(pos.up(), InitBlocks.REESH_PLANT.getDefaultState());
+	//		worldIn.setBlockState(pos.up(), InitBlocks.REESH_PLANT.getDefaultState());
 			stack.shrink(1);
 			return EnumActionResult.SUCCESS;
 		}
@@ -38,10 +38,11 @@ public class ReeshSeeds extends Item implements IPlantable {
 		return EnumPlantType.Crop;
 	}
 
-	@Override
-	public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
+	//@Override
+	//public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
 
-		return InitBlocks.REESH_PLANT.getDefaultState();
+	//	return InitBlocks.REESH_PLANT.getDefaultState();
 	}
 
-}
+//}
+*/
