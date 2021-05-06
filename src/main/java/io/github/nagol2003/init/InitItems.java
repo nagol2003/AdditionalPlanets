@@ -82,5 +82,4 @@ public class InitItems {
 	//public static void registerAll (APRegistry registry) {
 		CreativeTabs toTab = AdditionalPlanetsTab.blockTab;
 
-	
 }
