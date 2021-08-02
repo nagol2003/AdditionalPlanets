@@ -6,9 +6,9 @@ import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class APGenSempervirens extends APGenTreeBase {
+public class APGenTestTree extends APGenTreeBaseTest {
 
-	public APGenSempervirens(Block log, Block leaves) {
+	public APGenTestTree(Block log, Block leaves) {
 		super();
 		this.setLogBlock(log.getDefaultState());
 		this.setLeavesBlock(leaves.getDefaultState());
@@ -16,7 +16,7 @@ public class APGenSempervirens extends APGenTreeBase {
 		this.setMaxTrunkSize(21);
 	}
 
-	public APGenSempervirens setCanGenerateOnSand() {
+	public APGenTestTree setCanGenerateOnSand() {
 		super.setTreesCanGenerateOnSand(true);
 		return this;
 	}
@@ -90,11 +90,23 @@ public class APGenSempervirens extends APGenTreeBase {
 
 		if (!this.noLeaves) {
 			this.placeLeavesBlock(world, new BlockPos(x + 1, y, z), this.leavesBlock, this.generateFlag);
-			this.placeLeavesBlock(world, new BlockPos(x - 1, y, z), this.leavesBlock, this.generateFlag);
-			this.placeLeavesBlock(world, new BlockPos(x, y, z + 1), this.leavesBlock, this.generateFlag);
-			this.placeLeavesBlock(world, new BlockPos(x, y, z - 1), this.leavesBlock, this.generateFlag);
-			this.placeLeavesBlock(world, new BlockPos(x, y + 1, z), this.leavesBlock, this.generateFlag);
-			this.placeLeavesBlock(world, new BlockPos(x, y + 2, z), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x + 2, y, z), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x + 3 , y, z), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x + 4, y, z), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x -1, y, z), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x -2, y, z), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x -3, y, z), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x -4, y, z), this.leavesBlock, this.generateFlag);
+			
+			this.placeLeavesBlock(world, new BlockPos(x + 1, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x + 2, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x + 3, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x + 4, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x - 1, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x - 2, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x - 3, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x - 4, y, z + 1), this.leavesBlock, this.generateFlag);
+			this.placeLeavesBlock(world, new BlockPos(x, y, z), this.leavesBlock, this.generateFlag);
 		}
 
 		return true;

@@ -2,7 +2,6 @@ package io.github.nagol2003.celestial.planets.Ognious.biome;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.Ognious.BiomeDecoratorOther;
 import io.github.nagol2003.celestial.planets.Ognious.biome.gen.BiomeOgnious;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.material.Material;
@@ -14,7 +13,7 @@ import net.minecraft.world.chunk.ChunkPrimer;
 
 public class OgniousBiomes extends BiomeGenBaseGC {
 
-	public static final Biome Ognious = new BiomeOgnious(new BiomeProperties("Ognious").setBaseHeight(0.145F).setHeightVariation(0.1F).setRainfall(0.8F));
+	public static final Biome Ognious = new BiomeOgnious(new BiomeProperties("Ognious").setBaseHeight(0.145F).setHeightVariation(0.5F).setRainfall(0.8F));
 	//public static final Biome planetOne_sea = new BiomeGenPlanetOneSea(new BiomeProperties("Planet One Sea").setBaseHeight(0.100F).setHeightVariation(0.2F).setRainfall(0.1F));
 
 	protected OgniousBiomes(BiomeProperties properties) {
@@ -23,7 +22,11 @@ public class OgniousBiomes extends BiomeGenBaseGC {
 
 	@Override
 	public BiomeDecorator createBiomeDecorator() {
-		return new BiomeDecoratorOther();
+		return new BiomeDecoratorOgnious();
+	}
+
+	protected BiomeDecoratorOgnious getBiomeDecorator() {
+		return (BiomeDecoratorOgnious) this.decorator;
 	}
 
 	@Override

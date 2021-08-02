@@ -408,22 +408,22 @@ public class AddonCelestialBodies {
 		Denia.setRelativeOrbitTime(2.0F);
 		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png"));
 		Denia.setBiomeInfo(DeniaBiomes.Denia);
-		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, -1.0F, 0.0F, 0.1F));
 		Denia.setDimensionInfo(dim.idDenia, WorldProviderDenia.class);
 		Denia.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Ognious = new Planet("Ognious").setParentSolarSystem(Garphina);
 		Ognious.setTierRequired(6);
-		Ognious.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		Ognious.setRingColorRGB(60.2F, 150.6F, 0.3F);
 		Ognious.setPhaseShift(1.30F);
 		Ognious.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.05F, 1.05F));
 		Ognious.setRelativeOrbitTime(2.0F);
 		Ognious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png"));
 		Ognious.setBiomeInfo(OgniousBiomes.Ognious);
-		Ognious.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Ognious.setAtmosphere(new AtmosphereInfo(true, true, true, 1.0F, 1.0F, 0.5F));
 		Ognious.setDimensionInfo(dim.idOgnious, WorldProviderOgnious.class);
-		Ognious.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
-
+		Ognious.atmosphereComponent(EnumAtmosphericGas.OXYGEN);
+	
 		Queran = new Planet("Queran").setParentSolarSystem(Garphina);
 		Queran.setTierRequired(6);
 		Queran.setRingColorRGB(0.1F, 0.9F, 0.6F);

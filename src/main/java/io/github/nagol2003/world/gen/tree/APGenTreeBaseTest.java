@@ -14,7 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
-public abstract class APGenTreeBase extends WorldGenAbstractTree {
+public abstract class APGenTreeBaseTest extends WorldGenAbstractTree {
 
 	protected IBlockState logBlock;
 	protected IBlockState leavesBlock;
@@ -34,17 +34,17 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 
 	protected ArrayList<Material> canGrowIntoMaterials;
 
-	public APGenTreeBase(boolean notify) {
+	public APGenTreeBaseTest(boolean notify) {
 		super(notify);
 	}
 
-	public APGenTreeBase() {
+	public APGenTreeBaseTest() {
 		this(false);
 
 		this.setLogBlock(Blocks.LOG.getDefaultState());
 		this.setLeavesBlock(Blocks.LEAVES.getDefaultState());
-		this.trunkSize = 2;
-		this.crownSize = 4;
+		this.trunkSize = 10;
+		this.crownSize = 1;
 		this.setNoLeaves(false);
 		this.setTreesCanGenerateOnSand(false);
 
@@ -194,7 +194,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return logBlock;
 	}
 
-	public APGenTreeBase setLogBlock(IBlockState logBlock) {
+	public APGenTreeBaseTest setLogBlock(IBlockState logBlock) {
 
 		this.logBlock = logBlock;
 		return this;
@@ -205,7 +205,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return leavesBlock;
 	}
 
-	public APGenTreeBase setLeavesBlock(IBlockState leavesBlock) {
+	public APGenTreeBaseTest setLeavesBlock(IBlockState leavesBlock) {
 
 		this.leavesBlock = leavesBlock;
 		return this;
@@ -216,7 +216,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return trunkSize;
 	}
 
-	public APGenTreeBase setTrunkSize(int trunkSize) {
+	public APGenTreeBaseTest setTrunkSize(int trunkSize) {
 
 		this.trunkSize = trunkSize;
 		return this;
@@ -227,7 +227,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return crownSize;
 	}
 
-	public APGenTreeBase setCrownSize(int crownSize) {
+	public APGenTreeBaseTest setCrownSize(int crownSize) {
 
 		this.crownSize = crownSize;
 		return this;
@@ -238,13 +238,13 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return noLeaves;
 	}
 
-	public APGenTreeBase setNoLeaves(boolean noLeaves) {
+	public APGenTreeBaseTest setNoLeaves(boolean noLeaves) {
 
 		this.noLeaves = noLeaves;
 		return this;
 	}
 
-	public APGenTreeBase setTreesCanGenerateOnSand(boolean notOnSand) {
+	public APGenTreeBaseTest setTreesCanGenerateOnSand(boolean notOnSand) {
 		this.treesCanGenerateOnSand = notOnSand;
 		return this;
 	}
@@ -254,7 +254,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return saplingBlock;
 	}
 
-	public APGenTreeBase setSaplingBlock(IBlockState saplingBlock) {
+	public APGenTreeBaseTest setSaplingBlock(IBlockState saplingBlock) {
 
 		this.saplingBlock = saplingBlock;
 		return this;
@@ -265,7 +265,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return generateFlag;
 	}
 
-	public APGenTreeBase setGenerateFlag(int generateFlag) {
+	public APGenTreeBaseTest setGenerateFlag(int generateFlag) {
 
 		this.generateFlag = generateFlag;
 		return this;
@@ -276,7 +276,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return minTrunkSize;
 	}
 
-	public APGenTreeBase setMinTrunkSize(int minTrunkSize) {
+	public APGenTreeBaseTest setMinTrunkSize(int minTrunkSize) {
 
 		this.minTrunkSize = minTrunkSize;
 		return this;
@@ -287,7 +287,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return maxTrunkSize;
 	}
 
-	public APGenTreeBase setMaxTrunkSize(int maxTrunkSize) {
+	public APGenTreeBaseTest setMaxTrunkSize(int maxTrunkSize) {
 
 		this.maxTrunkSize = maxTrunkSize;
 		return this;
@@ -298,7 +298,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return minCrownSize;
 	}
 
-	public APGenTreeBase setMinCrownSize(int minCrownSize) {
+	public APGenTreeBaseTest setMinCrownSize(int minCrownSize) {
 
 		this.minCrownSize = minCrownSize;
 		return this;
@@ -309,7 +309,7 @@ public abstract class APGenTreeBase extends WorldGenAbstractTree {
 		return maxCrownSize;
 	}
 
-	public APGenTreeBase setMaxCrownSize(int maxCrownSize) {
+	public APGenTreeBaseTest setMaxCrownSize(int maxCrownSize) {
 
 		this.maxCrownSize = maxCrownSize;
 		return this;
