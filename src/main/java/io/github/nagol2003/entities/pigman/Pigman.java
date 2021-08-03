@@ -67,14 +67,17 @@ public class Pigman extends ModelBase {
 	@Override
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) {
 		
-		//legs
-		this.right_leg.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;
+		//joints
 		this.left_leg.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;
 		this.right_arm.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;
-		this.left_arm.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;
+		this.right_leg.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * -1.4F * limbSwingAmount;
+		this.left_arm.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * -1.4F * limbSwingAmount;
+		this.head.rotateAngleX = MathHelper.cos(limbSwing * 1.200F) * 0.7F * limbSwingAmount;
+		
+		/*
 		this.body.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;
 		this.headwear.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;
-		this.head.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;		
+		this.head.rotateAngleX = MathHelper.cos(limbSwing * 0.662F) * 1.4F * limbSwingAmount;	*/	
 		
 	}
 }

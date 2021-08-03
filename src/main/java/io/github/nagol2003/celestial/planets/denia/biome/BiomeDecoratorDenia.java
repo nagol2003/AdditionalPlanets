@@ -11,6 +11,7 @@ public class BiomeDecoratorDenia extends BiomeDecoratorSpace {
     private World currentWorld;
     private WorldGenerator ferminiumOre;
     private WorldGenerator strangemetallicsubstance;
+    private WorldGenerator deniaironore;
 
     private boolean isDecorating = false;
 
@@ -18,6 +19,7 @@ public class BiomeDecoratorDenia extends BiomeDecoratorSpace {
 
         this.ferminiumOre = new WorldGenMinableMeta(InitBlocks.DENIAFERMINIUMORE, 20, 0, false, InitBlocks.DENIASTONE, 0);
         this.strangemetallicsubstance = new WorldGenMinableMeta(InitBlocks.STRANGEMETALLICDENIA, 20, 0, false, InitBlocks.DENIASTONE, 0);
+        this.deniaironore = new WorldGenMinableMeta(InitBlocks.DENIAIRONORE, 20, 0, false, InitBlocks.DENIASTONE, 0);
         // WorldGenMinableMeta(Block OreBlock, int numberOfBlocks, int OreMeta, boolean usingMetaData, Block StoneBlock, int StoneMeta);
     }
 
@@ -40,6 +42,7 @@ public class BiomeDecoratorDenia extends BiomeDecoratorSpace {
             //generateOre(amountPerChunk, worldGenerator, minY, maxY);s
             this.generateOre(20, this.ferminiumOre, 15, 64);
             this.generateOre(20, this.strangemetallicsubstance, 15, 64);
+            this.generateOre(100, this.deniaironore, 5, 200);
         
             isDecorating = false;
     }

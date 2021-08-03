@@ -1,6 +1,7 @@
 package io.github.nagol2003.init;
 
 import io.github.nagol2003.blocks.Denia.DeniaFerminiumOre;
+import io.github.nagol2003.blocks.Denia.DeniaIronOre;
 import io.github.nagol2003.blocks.Denia.FROZENCO2;
 import io.github.nagol2003.blocks.Denia.StrangeMetallicDenia;
 import io.github.nagol2003.blocks.Denia.deniastone;
@@ -54,6 +55,7 @@ public class InitBlocks {
 	public static final Block DENIASTONE = new deniastone();
 	public static final Block DENIAFERMINIUMORE = new DeniaFerminiumOre();
 	public static final Block STRANGEMETALLICDENIA = new StrangeMetallicDenia();
+	public static final Block DENIAIRONORE = new DeniaIronOre();
 	//public static final Block REESH_PLANT = new ReeshPlant(null);
 	//public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
 	
@@ -83,6 +85,7 @@ public class InitBlocks {
 		registry.registerBlock(DENIASTONE, "deniastone").setCreativeTab(toTab2);
 		registry.registerBlock(DENIAFERMINIUMORE, "deniaferminiumore").setCreativeTab(toTab2);
 		registry.registerBlock(STRANGEMETALLICDENIA, "strangemetallicdenia").setCreativeTab(toTab2);
+		registry.registerBlock(DENIAIRONORE, "deniaironore").setCreativeTab(toTab2);
 		//registry.registerBlock(REESH_PLANT, "reeshplant").setCreativeTab(toTab2);
 	}
 	

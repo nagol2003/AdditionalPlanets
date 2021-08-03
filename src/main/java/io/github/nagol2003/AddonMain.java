@@ -15,6 +15,7 @@ import io.github.nagol2003.registry.APRegistry;
 import io.github.nagol2003.util.Logging;
 import io.github.nagol2003.util.Utils;
 import io.github.nagol2003.util.handlers.RenderHandler;
+import io.github.nagol2003.util.handlers.SoundsHandler;
 import io.github.nagol2003.world.APWorldGen;
 //import io.github.nagol2003.world.WorldGenCustomStructures;
 import net.minecraft.block.Block;
@@ -73,6 +74,7 @@ public class AddonMain {
 		NewGalaxy.init();
 		AddonCelestialBodies.init();
 		
+		
 		proxy.preInit(registry, event);
 		
 		GameRegistry.registerWorldGenerator(new APWorldGen(), 3);
@@ -86,6 +88,7 @@ public class AddonMain {
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);
 		Recipes.init();
+		SoundsHandler.registerSounds();
 		
 	}
 
@@ -103,7 +106,6 @@ public class AddonMain {
 		proxy.postInit(registry,event);
 	}
 }
-
 
 
 //Shift + U is undo

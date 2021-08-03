@@ -30,6 +30,7 @@ public class InitItems {
 	//Materials
 	public static final ToolMaterial MATERIAL_FERMINIUM = EnumHelper.addToolMaterial("material_ferminium", 3, 950, 13.0F, 6.0F, 15);
 	public static final ToolMaterial TOOL_FERMINIUM = EnumHelper.addToolMaterial("tool_ferminium", 7, 1500, 15.0f, 7.0f, 19);
+	// ?, durability, mining speed, ?, ?
 	
 	//public static final ArmorMaterial  ARMORFERMINIUM = EnumHelper.addArmorMaterial("armor_ferminium", 4, 7, 13.0F, 6.0F, 9);
 	 public static ArmorMaterial ARMORFERMINIUM1 = EnumHelper.addArmorMaterial("FERMINIUM", "FERMINIUM", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);

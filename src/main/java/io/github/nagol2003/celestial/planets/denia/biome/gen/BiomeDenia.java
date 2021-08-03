@@ -30,6 +30,7 @@ public class BiomeDenia extends DeniaBiomes {
             BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
 	}
+	
 	@Override
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {

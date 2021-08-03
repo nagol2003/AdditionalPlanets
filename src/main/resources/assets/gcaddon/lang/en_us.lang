@@ -95,6 +95,8 @@ tile.gcaddon.vulcanrockburnt.name=Burnt Rock
 tile.gcaddon.deniaferminiumore.name=Ferminium Ore
 tile.gcaddon.strangemetallicdenia.name=Strange Metallic Ore
 tile.gcaddon.strangemetallicpolulos.name=Strange Metallic Ore
+tile.gcaddon.deniaironore.name=Iron Ore
+
 
 //Items
 item.ferminium_chunk=Ferminium Chunk

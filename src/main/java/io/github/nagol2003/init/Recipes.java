@@ -13,5 +13,6 @@ public class Recipes {
 		GameRegistry.addSmelting(InitBlocks.POLULOSFERMINIUMORE, new ItemStack(InitItems.FERMINIUM_CHUNK, 1), 35.0f);
 		GameRegistry.addSmelting(InitBlocks.DENIAFERMINIUMORE, new ItemStack(InitItems.FERMINIUM_CHUNK, 1), 35.0f);
 		GameRegistry.addSmelting(InitItems.RAW_CRAB_MEAT, new ItemStack(InitItems.COOKED_CRAB_MEAT, 1), 35.0f);
+		GameRegistry.addSmelting(InitBlocks.DENIAIRONORE, new ItemStack(Items.IRON_INGOT, 1), 35.0f);
 	}
 }

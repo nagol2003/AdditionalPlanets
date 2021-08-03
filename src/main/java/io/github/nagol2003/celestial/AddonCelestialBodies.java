@@ -408,9 +408,9 @@ public class AddonCelestialBodies {
 		Denia.setRelativeOrbitTime(2.0F);
 		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png"));
 		Denia.setBiomeInfo(DeniaBiomes.Denia);
-		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, -1.0F, 0.0F, 0.1F));
+		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, -0.8F, 0.0F, 0.1F));
 		Denia.setDimensionInfo(dim.idDenia, WorldProviderDenia.class);
-		Denia.atmosphereComponent(EnumAtmosphericGas.METHANE);
+		Denia.atmosphereComponent(EnumAtmosphericGas.OXYGEN);
 
 		Ognious = new Planet("Ognious").setParentSolarSystem(Garphina);
 		Ognious.setTierRequired(6);
