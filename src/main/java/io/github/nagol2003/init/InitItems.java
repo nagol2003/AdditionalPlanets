@@ -33,9 +33,9 @@ public class InitItems {
 	
 	//public static final ArmorMaterial  ARMORFERMINIUM = EnumHelper.addArmorMaterial("armor_ferminium", 4, 7, 13.0F, 6.0F, 9);
 	 public static ArmorMaterial ARMORFERMINIUM1 = EnumHelper.addArmorMaterial("FERMINIUM", "FERMINIUM", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
-	 public static ArmorMaterial ARMORFERMINIUM2 = EnumHelper.addArmorMaterial("FERMINIUM", "copper", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
-	 public static ArmorMaterial ARMORFERMINIUM3 = EnumHelper.addArmorMaterial("FERMINIUM", "copper", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
-	 public static ArmorMaterial ARMORFERMINIUM4 = EnumHelper.addArmorMaterial("FERMINIUM", "COPPER", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
+	 public static ArmorMaterial ARMORFERMINIUM2 = EnumHelper.addArmorMaterial("FERMINIUM", "FERMINIUM", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
+	 public static ArmorMaterial ARMORFERMINIUM3 = EnumHelper.addArmorMaterial("FERMINIUM", "FERMINIUM", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
+	 public static ArmorMaterial ARMORFERMINIUM4 = EnumHelper.addArmorMaterial("FERMINIUM", "FERMINIUM", 42, new int[] { 4, 7, 9, 4 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
 	
 	//Tools
 	public static final Item PICKAXE_FERMINIUM = new ToolPickaxe("ferminium_pickaxe", TOOL_FERMINIUM);
