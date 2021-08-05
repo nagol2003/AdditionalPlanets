@@ -66,7 +66,6 @@ public class AddonMain {
 		registry.addRegistrationHandler(InitBlocks::registerAll, Block.class);
 		registry.addRegistrationHandler(InitItems::registerAll, Item.class);
 		registry.addRegistrationHandler(EntityInit::registerEntities, EntityEntry.class);
-		MinecraftForge.EVENT_BUS.register(new AdditionalPlanetsEventHandlerClient());
 		//GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 		
 		

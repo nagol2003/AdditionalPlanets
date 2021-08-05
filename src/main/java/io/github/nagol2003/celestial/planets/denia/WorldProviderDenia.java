@@ -5,14 +5,13 @@ import java.util.List;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.planets.WorldProviderAddonPlanet;
 import io.github.nagol2003.celestial.planets.denia.biome.BiomeProviderDenia;
 import io.github.nagol2003.celestial.planets.denia.biome.ChunkProviderDenia;
 import io.github.nagol2003.init.InitBlocks;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
-import micdoodle8.mods.galacticraft.api.prefab.world.gen.WorldProviderSpace;
 import micdoodle8.mods.galacticraft.api.vector.Vector3;
-import micdoodle8.mods.galacticraft.api.world.ISolarLevel;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ResourceLocation;
@@ -20,7 +19,11 @@ import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
-public class WorldProviderDenia extends WorldProviderSpace implements ISolarLevel {
+public class WorldProviderDenia extends WorldProviderAddonPlanet {
+	
+	public WorldProviderDenia() {
+		this.skyProvider = SkyProviderDenia.class;
+	}
 	
     @Override
     public Vector3 getSkyColor() {
@@ -30,11 +33,6 @@ public class WorldProviderDenia extends WorldProviderSpace implements ISolarLeve
     @Override
     public float getSolarSize() {
         return 0.1F;
-    }
-
-    @Override
-    public boolean hasSunset() {
-        return false;
     }
 
     @Override
@@ -51,21 +49,6 @@ public class WorldProviderDenia extends WorldProviderSpace implements ISolarLeve
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
         BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Denia);
         return BiomeProviderDenia.class;
-    }
-
-    @Override
-    public double getHorizon() {
-        return 44.0D;
-    }
-
-    @Override
-    public int getAverageGroundLevel() {
-        return 44;
-    }
-
-    @Override
-    public boolean canCoordinateBeSpawn(int var1, int var2) {
-        return true;
     }
 
     @Override

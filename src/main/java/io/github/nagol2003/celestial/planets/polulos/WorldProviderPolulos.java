@@ -1,4 +1,4 @@
-package io.github.nagol2003.celestial.planets.j1407b;
+package io.github.nagol2003.celestial.planets.polulos;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
 import io.github.nagol2003.celestial.planets.WorldProviderAddonPlanet;
-import io.github.nagol2003.celestial.planets.j1407b.biome.BiomeProviderj1407b;
-import io.github.nagol2003.celestial.planets.j1407b.biome.ChunkProviderj1407b;
+import io.github.nagol2003.celestial.planets.polulos.biome.BiomeProviderPolulos;
+import io.github.nagol2003.celestial.planets.polulos.biome.ChunkProviderPolulos;
 import io.github.nagol2003.init.InitBlocks;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
@@ -19,10 +19,10 @@ import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
-public class WorldProviderj1407b extends WorldProviderAddonPlanet {
+public class WorldProviderPolulos extends WorldProviderAddonPlanet {
 
-	public WorldProviderj1407b() {
-		this.skyProvider = SkyProviderj1407b.class;
+	public WorldProviderPolulos() {
+		this.skyProvider = SkyProviderPolulos.class;
 	}
 	
     @Override
@@ -42,13 +42,13 @@ public class WorldProviderj1407b extends WorldProviderAddonPlanet {
 
     @Override
     public Class<? extends IChunkGenerator> getChunkProviderClass() {
-        return ChunkProviderj1407b.class;
+        return ChunkProviderPolulos.class;
     }
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.J1407b);
-        return BiomeProviderj1407b.class;
+        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.Polulos);
+        return BiomeProviderPolulos.class;
     }
 
     @Override
@@ -84,7 +84,7 @@ public class WorldProviderj1407b extends WorldProviderAddonPlanet {
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.J1407b;
+        return AddonCelestialBodies.Polulos;
     }
 
     @Override
@@ -99,7 +99,7 @@ public class WorldProviderj1407b extends WorldProviderAddonPlanet {
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimj1407b;
+        return AddonDimensions.dimPolulos;
     }
 
     @Override

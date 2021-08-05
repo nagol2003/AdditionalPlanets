@@ -28,3 +28,4 @@ hs_err_pid*
 /build/
 /run
 !/lib/*
+run/config/splash.properties

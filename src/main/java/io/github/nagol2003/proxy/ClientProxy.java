@@ -1,9 +1,9 @@
  package io.github.nagol2003.proxy;
 
 import java.lang.reflect.Field;
-import net.minecraftforge.fml.relauncher.Side;
+import java.util.Map;
+
 import io.github.nagol2003.Const;
-import io.github.nagol2003.client.SkyProviderEvent;
 import io.github.nagol2003.client.render.ModRenderPlayer;
 import io.github.nagol2003.entities.deniamammal.EntityMammal;
 import io.github.nagol2003.entities.deniamammal.RenderMammal;
@@ -12,34 +12,34 @@ import io.github.nagol2003.entities.pigman.RenderPigman;
 import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
 import io.github.nagol2003.entities.poluloscrab.RenderCrab;
 import io.github.nagol2003.registry.APRegistry;
+import io.github.nagol2003.util.Reflected;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.client.renderer.entity.RenderPlayer;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
-import java.util.Map;
-import net.minecraft.client.renderer.entity.RenderPlayer;
+import net.minecraftforge.fml.relauncher.Side;
 
 @EventBusSubscriber(value = Side.CLIENT, modid = Const.modID)
 public class ClientProxy extends ServerProxy {
-	public static Field playerRenderer = ReflectionHelper.findField(RenderManager.class, "playerRenderer", "field_178637_m");
-	public static Field skinMap = ReflectionHelper.findField(RenderManager.class, "skinMap", "skinMap");
+	
+	public static Field playerRenderer = Reflected.findField(RenderManager.class, "playerRenderer", "field_178637_m");
+	public static Field skinMap = Reflected.findField(RenderManager.class, "skinMap", "field_178636_l");
+	
 	@Override
 	public void preInit(APRegistry registry, FMLPreInitializationEvent event) {
 		super.preInit(registry, event);
 		register_event(this);
-		/// PLACE CODE BELOW ///
-		RenderingRegistry.registerEntityRenderingHandler(EntityPolulosCrab.class, RenderCrab::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMammal.class, RenderMammal::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityPigman.class, RenderPigman::new);
-		
-		register_event(new SkyProviderEvent());
+		/// PLACE CODE BELOW ///v
+		registry.registerEntityRenderer(EntityPolulosCrab.class, RenderCrab::new);
+		registry.registerEntityRenderer(EntityMammal.class, RenderMammal::new);
+		registry.registerEntityRenderer(EntityPigman.class, RenderPigman::new);
 		/// PLACE CODE ABOVE ///
 		registry.clientPreInit(event);
 	}

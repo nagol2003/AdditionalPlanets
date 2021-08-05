@@ -1,17 +1,18 @@
-package io.github.nagol2003.celestial.planets.j1407b;
+package io.github.nagol2003.celestial.planets.thesiusomega;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
-import io.github.nagol2003.celestial.planets.WorldProviderAddonPlanet;
-import io.github.nagol2003.celestial.planets.j1407b.biome.BiomeProviderj1407b;
-import io.github.nagol2003.celestial.planets.j1407b.biome.ChunkProviderj1407b;
+import io.github.nagol2003.celestial.planets.thesiusomega.biome.BiomeProviderThesiusOmega;
+import io.github.nagol2003.celestial.planets.thesiusomega.biome.ChunkProviderThesiusOmega;
 import io.github.nagol2003.init.InitBlocks;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive;
+import micdoodle8.mods.galacticraft.api.prefab.world.gen.WorldProviderSpace;
 import micdoodle8.mods.galacticraft.api.vector.Vector3;
+import micdoodle8.mods.galacticraft.api.world.ISolarLevel;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ResourceLocation;
@@ -19,12 +20,8 @@ import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
-public class WorldProviderj1407b extends WorldProviderAddonPlanet {
+public class WorldProviderThesiusOmega extends WorldProviderSpace implements ISolarLevel {
 
-	public WorldProviderj1407b() {
-		this.skyProvider = SkyProviderj1407b.class;
-	}
-	
     @Override
     public Vector3 getSkyColor() {
         return new Vector3(1, .2, .1);
@@ -36,19 +33,39 @@ public class WorldProviderj1407b extends WorldProviderAddonPlanet {
     }
 
     @Override
+    public boolean hasSunset() {
+        return false;
+    }
+
+    @Override
     public long getDayLength() {
         return 35000L;
     }
 
     @Override
     public Class<? extends IChunkGenerator> getChunkProviderClass() {
-        return ChunkProviderj1407b.class;
+        return ChunkProviderThesiusOmega.class;
     }
 
     @Override
     public Class<? extends BiomeProvider> getBiomeProviderClass() {
-        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.J1407b);
-        return BiomeProviderj1407b.class;
+        BiomeAdaptive.setBodyMultiBiome(AddonCelestialBodies.ThesiusOmega);
+        return BiomeProviderThesiusOmega.class;
+    }
+
+    @Override
+    public double getHorizon() {
+        return 44.0D;
+    }
+
+    @Override
+    public int getAverageGroundLevel() {
+        return 44;
+    }
+
+    @Override
+    public boolean canCoordinateBeSpawn(int var1, int var2) {
+        return true;
     }
 
     @Override
@@ -84,7 +101,7 @@ public class WorldProviderj1407b extends WorldProviderAddonPlanet {
 
     @Override
     public CelestialBody getCelestialBody() {
-        return AddonCelestialBodies.J1407b;
+        return AddonCelestialBodies.ThesiusOmega;
     }
 
     @Override
@@ -99,7 +116,7 @@ public class WorldProviderj1407b extends WorldProviderAddonPlanet {
 
     @Override
     public DimensionType getDimensionType() {
-        return AddonDimensions.dimj1407b;
+        return AddonDimensions.dimThesiusOmega;
     }
 
     @Override

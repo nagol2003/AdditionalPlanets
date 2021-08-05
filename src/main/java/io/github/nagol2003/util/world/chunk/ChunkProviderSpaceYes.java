@@ -3,7 +3,7 @@ package io.github.nagol2003.util.world.chunk;
 import java.util.List;
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.Ognious.biome.MapGenBaseMeta;
+import io.github.nagol2003.celestial.planets.ognious.biome.MapGenBaseMeta;
 import micdoodle8.mods.galacticraft.api.prefab.core.BlockMetaPair;
 import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeDecoratorSpace;
 import micdoodle8.mods.galacticraft.api.world.ChunkProviderBase;

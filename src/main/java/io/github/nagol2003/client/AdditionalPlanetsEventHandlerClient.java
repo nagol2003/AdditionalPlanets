@@ -3,21 +3,21 @@ package io.github.nagol2003.client;
 import io.github.nagol2003.Const;
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import micdoodle8.mods.galacticraft.api.event.client.CelestialBodyRenderEvent;
-import micdoodle8.mods.galacticraft.core.Constants;
-import micdoodle8.mods.galacticraft.core.GalacticraftCore;
 import micdoodle8.mods.galacticraft.core.client.gui.screen.GuiCelestialSelection;
-import micdoodle8.mods.galacticraft.core.proxy.ClientProxyCore;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.FMLClientHandler;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
 
+@Mod.EventBusSubscriber(modid = Const.modID, value = Side.CLIENT)
 public class AdditionalPlanetsEventHandlerClient {
 
 	public static Minecraft mc = FMLClientHandler.instance().getClient();
 	
 	@SubscribeEvent
-    public void onRenderPlanetPost(CelestialBodyRenderEvent.Post event)
+    public static void onRenderPlanetPost(CelestialBodyRenderEvent.Post event)
     {
         if (mc.currentScreen instanceof GuiCelestialSelection)
         {
