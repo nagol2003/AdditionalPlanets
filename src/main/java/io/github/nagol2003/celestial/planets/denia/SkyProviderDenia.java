@@ -28,6 +28,7 @@ public class SkyProviderDenia extends IRenderHandler
     private static final ResourceLocation planet1 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/polulos.png");
     private static final ResourceLocation planet2 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png");
     private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png");
+    //private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ring2.png");
 
     public int starGLCallList = GLAllocation.generateDisplayLists(3);
     public int glSkyList;

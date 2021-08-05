@@ -1,37 +1,36 @@
-package io.github.nagol2003.celestial.planets.denia.biome;
+package io.github.nagol2003.celestial.planets.denia.biome.gen;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.denia.BiomeDecoratorOther;
-import io.github.nagol2003.celestial.planets.denia.biome.gen.BiomeDenia;
-import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
+import io.github.nagol2003.celestial.planets.denia.biome.ChunkProviderDenia;
+import io.github.nagol2003.celestial.planets.denia.biome.DeniaBiomes;
+import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeDecorator;
-import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraftforge.common.BiomeDictionary;
 
-public class DeniaBiomes extends BiomeGenBaseGC {
+public class BiomeDeniaTundra extends DeniaBiomes {
 
-	public static final Biome Denia = new BiomeDenia(new BiomeProperties("Denia").setBaseHeight(0.75F).setHeightVariation(0.15F).setRainfall(0.8F));
-	public static final Biome DeniaTundra = new BiomeDenia(new BiomeProperties("Denia Forest").setBaseHeight(0.75F).setHeightVariation(0.05F).setRainfall(0.8F));
-
-	protected DeniaBiomes(BiomeProperties properties) {
-		super(properties, true);
+	public BiomeDeniaTundra(BiomeProperties properties) {
+		super(properties);
+		this.topBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
+		this.fillerBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
+		this.spawnableMonsterList.clear();
+		this.spawnableCreatureList.clear();
+		this.spawnableWaterCreatureList.clear();
+		//this.getBiomeDecorator().treesPerChunk = 8;
 	}
 
 	@Override
-	public BiomeDecorator createBiomeDecorator() {
-		return new BiomeDecoratorOther();
-	}
+	public void registerTypes(Biome b) {
+		BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
+	}
 	@Override
-	public void genTerrainBlocks (World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
-		generateBiomeSurface(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
-	}
-
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();

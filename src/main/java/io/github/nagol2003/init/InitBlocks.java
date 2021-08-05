@@ -4,6 +4,7 @@ import io.github.nagol2003.blocks.Denia.DeniaFerminiumOre;
 import io.github.nagol2003.blocks.Denia.DeniaIronOre;
 import io.github.nagol2003.blocks.Denia.FROZENCO2;
 import io.github.nagol2003.blocks.Denia.StrangeMetallicDenia;
+import io.github.nagol2003.blocks.Denia.Tundra;
 import io.github.nagol2003.blocks.Denia.deniastone;
 import io.github.nagol2003.blocks.Ognious.MoistDirt;
 import io.github.nagol2003.blocks.Ognious.OgniousGrass;
@@ -56,6 +57,7 @@ public class InitBlocks {
 	public static final Block DENIAFERMINIUMORE = new DeniaFerminiumOre();
 	public static final Block STRANGEMETALLICDENIA = new StrangeMetallicDenia();
 	public static final Block DENIAIRONORE = new DeniaIronOre();
+	public static final Block TUNDRA = new Tundra();
 	//public static final Block REESH_PLANT = new ReeshPlant(null);
 	//public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
 	
@@ -86,6 +88,7 @@ public class InitBlocks {
 		registry.registerBlock(DENIAFERMINIUMORE, "deniaferminiumore").setCreativeTab(toTab2);
 		registry.registerBlock(STRANGEMETALLICDENIA, "strangemetallicdenia").setCreativeTab(toTab2);
 		registry.registerBlock(DENIAIRONORE, "deniaironore").setCreativeTab(toTab2);
+		registry.registerBlock(TUNDRA, "tundra").setCreativeTab(toTab2);
 		//registry.registerBlock(REESH_PLANT, "reeshplant").setCreativeTab(toTab2);
 	}
 	

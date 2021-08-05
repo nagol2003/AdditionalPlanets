@@ -407,7 +407,7 @@ public class AddonCelestialBodies {
 		Denia.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.35F, 1.35F));
 		Denia.setRelativeOrbitTime(2.0F);
 		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png"));
-		Denia.setBiomeInfo(DeniaBiomes.Denia);
+		Denia.setBiomeInfo(DeniaBiomes.Denia, DeniaBiomes.DeniaTundra);
 		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, -0.8F, 0.0F, 0.1F));
 		Denia.setDimensionInfo(dim.idDenia, WorldProviderDenia.class);
 		Denia.atmosphereComponent(EnumAtmosphericGas.OXYGEN);
@@ -783,12 +783,12 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerSolarSystem(SiriusM);
 		//GalaxyRegistry.registerSolarSystem(SiriusS);
 		//GalaxyRegistry.registerSolarSystem(Kepler452);
-		GalaxyRegistry.registerSolarSystem(V1400Centauri);
+		//GalaxyRegistry.registerSolarSystem(V1400Centauri);
 		//GalaxyRegistry.registerSolarSystem(Barban);
 		//GalaxyRegistry.registerSolarSystem(KOI4878);
 		GalaxyRegistry.registerSolarSystem(WormHoleMilkeyWay);
 		GalaxyRegistry.registerSolarSystem(WormHoleAndromeda);
-		GalaxyRegistry.registerSolarSystem(WormHoleMessier);
+		//GalaxyRegistry.registerSolarSystem(WormHoleMessier);
 		
 		// then plants
 		//GalaxyRegistry.registerPlanet(ProximaCentauriB);
@@ -808,7 +808,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(Dark);
 		//GalaxyRegistry.registerPlanet(Vulcan);
 		//GalaxyRegistry.registerPlanet(Kepler452b);
-		GalaxyRegistry.registerPlanet(J1407b); 
+		//GalaxyRegistry.registerPlanet(J1407b); 
 		//GalaxyRegistry.registerPlanet(BarbanI); 
 		//GalaxyRegistry.registerPlanet(BarbanII); 
 		//GalaxyRegistry.registerPlanet(Asteroids); 
