@@ -30,7 +30,7 @@ public class WorldProviderOgnious extends WorldProviderAddonPlanet {
 	
 	public WorldProviderOgnious() {
 		this.skyProvider = SkyProviderOgnious.class;
-		this.constantSnow = true;
+		this.constantSnow = false;
 		this.renderClouds = true;
 	}
 	

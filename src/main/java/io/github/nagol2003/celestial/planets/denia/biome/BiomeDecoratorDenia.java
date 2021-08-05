@@ -42,7 +42,7 @@ public class BiomeDecoratorDenia extends BiomeDecoratorSpace {
             //generateOre(amountPerChunk, worldGenerator, minY, maxY);s
             this.generateOre(20, this.ferminiumOre, 15, 64);
             this.generateOre(20, this.strangemetallicsubstance, 15, 64);
-            this.generateOre(100, this.deniaironore, 5, 200);
+            this.generateOre(150, this.deniaironore, 1, 256);
         
             isDecorating = false;
     }

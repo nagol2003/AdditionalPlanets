@@ -18,11 +18,20 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class WorldProviderDenia extends WorldProviderAddonPlanet {
 	
 	public WorldProviderDenia() {
 		this.skyProvider = SkyProviderDenia.class;
+		this.constantSnow = true;
+	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public float getCloudHeight() {
+		return 400.0F;
 	}
 	
     @Override

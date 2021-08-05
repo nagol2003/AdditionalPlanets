@@ -54,7 +54,7 @@ public abstract class WorldProviderAddonPlanet extends WorldProviderSpace implem
 			}
 		}
 		return super.getCloudRenderer();
-	}
+	} 
 
 	@Override
 	@SideOnly(Side.CLIENT)
