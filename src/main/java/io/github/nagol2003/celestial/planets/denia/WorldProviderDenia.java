@@ -98,7 +98,7 @@ public class WorldProviderDenia extends WorldProviderAddonPlanet {
 
     @Override
     public float getThermalLevelModifier() {
-        return 5.0F;
+        return -0.8F;
     }
 
     @Override

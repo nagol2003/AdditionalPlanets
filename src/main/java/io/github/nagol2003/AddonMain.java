@@ -82,6 +82,8 @@ public class AddonMain {
 
 		RenderHandler.registerEntityRenders();
 	}
+	
+	
 
 	@EventHandler
 	public void init(final FMLInitializationEvent event) {
