@@ -61,7 +61,10 @@ repositories {
 			artifact()
 		}
 	}
+	maven { url "https://maven.mjrlegends.com" }
     maven { url "https://www.cursemaven.com" }
+    maven { url "https://dvs1.progwml6.com/files/maven" }
+    maven { url "http://maven.ic2.player.to" }
 }
 
 dependencies {
@@ -70,6 +73,11 @@ dependencies {
 	compile "GC-1.12-dev:Galacticraft-Planets-Dev:${GCVersion}"
 	compile "GC-1.12-dev:MicdoodleCore-Dev:${GCVersion}"
 	compile "curse.maven:asmodeuscore-303101:3231302"
+	
+	deobfCompile ("com.mjr.extraplanets:ExtraPlanets:1.12.2-0.7.2:dev"){
+		transitive = true;
+	}
+	runtime "com.mjr.mjrlegendslib:MJRLegendsLib:1.12.2-1.2.0"
 	
 	compileOnly "org.projectlombok:lombok:${lombok_version}"
 	annotationProcessor "org.projectlombok:lombok:${lombok_version}"
