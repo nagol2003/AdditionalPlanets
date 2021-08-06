@@ -407,7 +407,8 @@ public class AddonCelestialBodies {
 		Denia.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.35F, 1.35F));
 		Denia.setRelativeOrbitTime(2.0F);
 		Denia.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png"));
-		Denia.setBiomeInfo(DeniaBiomes.Denia, DeniaBiomes.DeniaTundra);
+		//Denia.setBiomeInfo(DeniaBiomes.Denia, DeniaBiomes.DeniaTundra);
+		Denia.setBiomeInfo(DeniaBiomes.Denia, DeniaBiomes.DeniaForest);
 		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, -0.8F, 0.0F, 0.1F));
 		Denia.setDimensionInfo(dim.idDenia, WorldProviderDenia.class);
 		Denia.atmosphereComponent(EnumAtmosphericGas.OXYGEN);

@@ -13,23 +13,23 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 
-public class BiomeDeniaTundra extends DeniaBiomes {
+public class BiomeDeniaForest extends DeniaBiomes {
 
-	public BiomeDeniaTundra(BiomeProperties properties) {
+	public BiomeDeniaForest(BiomeProperties properties) {
 		super(properties);
-		this.topBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
-		this.fillerBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
-		this.spawnableMonsterList.clear();
-		this.spawnableCreatureList.clear();
-		this.spawnableWaterCreatureList.clear();
-		//this.getBiomeDecorator().treesPerChunk = 8;
+        this.topBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
+        this.fillerBlock = Blocks.SNOW.getDefaultState(); //TODO change this
+        this.spawnableMonsterList.clear();
+        this.spawnableCreatureList.clear();
+        this.spawnableWaterCreatureList.clear();
 	}
 
 	@Override
 	public void registerTypes(Biome b) {
-		BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
+            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
 	}
+	
 	@Override
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {

@@ -4,6 +4,7 @@ import java.util.Random;
 
 import io.github.nagol2003.celestial.planets.denia.BiomeDecoratorOther;
 import io.github.nagol2003.celestial.planets.denia.biome.gen.BiomeDenia;
+import io.github.nagol2003.celestial.planets.denia.biome.gen.BiomeDeniaForest;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -16,7 +17,8 @@ import net.minecraft.world.chunk.ChunkPrimer;
 public class DeniaBiomes extends BiomeGenBaseGC {
 
 	public static final Biome Denia = new BiomeDenia(new BiomeProperties("Denia").setBaseHeight(0.75F).setHeightVariation(0.15F).setRainfall(0.8F));
-	public static final Biome DeniaTundra = new BiomeDenia(new BiomeProperties("Denia Forest").setBaseHeight(0.75F).setHeightVariation(0.05F).setRainfall(0.8F));
+	public static final Biome DeniaForest = new BiomeDeniaForest(new BiomeProperties("Denia Forest").setBaseHeight(0.75F).setHeightVariation(0.05F).setRainfall(0.8F));
+	//public static final Biome DeniaTundra = new BiomeDenia(new BiomeProperties("Denia Forest").setBaseHeight(0.75F).setHeightVariation(0.05F).setRainfall(0.8F));
 
 	protected DeniaBiomes(BiomeProperties properties) {
 		super(properties, true);
