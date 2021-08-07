@@ -12,16 +12,16 @@ import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldEntitySpawner;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraft.world.gen.NoiseGeneratorPerlin;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
-	private Random rand;
+	protected Random rand;
 	protected World worldObj;
 	private double[] depthBuffer;
 	private Biome[] biomesForGeneration;
@@ -44,10 +44,10 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 	protected IBlockState waterBlock;
 	protected IBlockState dirtBlock;
 
+	private List<MapGenBaseMeta> worldGenerators;
+
 	protected int seaLevel = 63;
 	protected boolean seaIceLayer = false;
-
-	private List<MapGenBaseMeta> worldGenerators;
 
 	public ChunkProviderMultiBiome(World world, long seed, boolean flag) {
 		super();
@@ -84,8 +84,8 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 			this.worldGenerators = this.getWorldGenerators();
 		}
 
-		for (MapGenBaseMeta generator : this.worldGenerators) {
-			generator.generate(this.worldObj, chunkX, chunkZ, chunkprimer);
+		if(!this.worldGenerators.isEmpty()) {
+			this.worldGenerators.forEach(g -> g.generate(this.worldObj, chunkX, chunkZ, chunkprimer));
 		}
 
 		this.onChunkProvide(chunkX, chunkZ, chunkprimer);
@@ -99,9 +99,9 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 		return chunk;
 	}
 
-	public void setBlocksInChunk(int p_180518_1_, int p_180518_2_, ChunkPrimer p_180518_3_) {
-		this.biomesForGeneration = this.worldObj.getBiomeProvider().getBiomesForGeneration(this.biomesForGeneration, p_180518_1_ * 4 - 2, p_180518_2_ * 4 - 2, 10, 10);
-		this.generateHeightMap(p_180518_1_ * 4, 0, p_180518_2_ * 4);
+	public void setBlocksInChunk(int chunkX, int chunkZ, ChunkPrimer primer) {
+		this.biomesForGeneration = this.worldObj.getBiomeProvider().getBiomesForGeneration(this.biomesForGeneration, chunkX * 4 - 2, chunkZ * 4 - 2, 10, 10);
+		this.generateHeightMap(chunkX * 4, 0, chunkZ * 4);
 
 		for (int i = 0; i < 4; ++i) {
 			int j = i * 5;
@@ -138,15 +138,15 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 
 							for (int l2 = 0; l2 < 4; ++l2) {
 								if ((lvt_45_1_ += d16) > 0.0D) {
-									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.stoneBlock);
+									primer.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.stoneBlock);
 								} else if (i2 * 8 + j2 == (this.seaLevel - 1) && this.seaIceLayer) {
-									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2,
+									primer.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2,
 											Blocks.ICE.getDefaultState());
 								} else if (i2 * 8 + j2 < (this.seaLevel - 1)) {
-									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.waterBlock);
+									primer.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.waterBlock);
 								}
 								else if (i2 * 8 + j2 < (this.seaLevel + 2)) {
-									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.dirtBlock);
+									primer.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.dirtBlock);
 								}
 							}
 
@@ -281,15 +281,17 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 		BlockFalling.fallInstantly = true;
 		int x = chunkX * 16;
 		int z = chunkZ * 16;
-		BlockPos pos = new BlockPos(x, 0, z);
-		Biome biome = this.worldObj.getBiome(pos.add(16, 0, 16));
+
+		this.worldObj.getBiome(new BlockPos(x +16, 0, z +16));
 		this.rand.setSeed(this.worldObj.getSeed());
+
 		long var7 = this.rand.nextLong() / 2L * 2L + 1L;
 		long var9 = this.rand.nextLong() / 2L * 2L + 1L;
 		this.rand.setSeed(chunkX * var7 + chunkZ * var9 ^ this.worldObj.getSeed());
-		biome.decorate(this.worldObj, this.rand, pos);
-		decoratePlanet(this.worldObj, this.rand, x, z);
-		WorldEntitySpawner.performWorldGenSpawning(this.worldObj, biome, x + 8, z + 8, 16, 16, this.rand);
+
+		this.decoratePlanet(this.worldObj, this.rand, x, z);
+
+		this.getOreGenerator().generate(rand, chunkX, chunkZ, worldObj, this, this.worldObj.getChunkProvider());
 		BlockFalling.fallInstantly = false;
 	}
 
@@ -299,6 +301,8 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 		return biomegenbase.getSpawnableList(creatureType);
 	}
 
+	protected abstract IWorldGenerator getOreGenerator();
+
 	@Override
 	public abstract void recreateStructures(Chunk chunk, int x, int z);
 
@@ -306,5 +310,5 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 
 	protected abstract List<MapGenBaseMeta> getWorldGenerators();
 
-	protected abstract void onChunkProvide(int cX, int cZ, ChunkPrimer primer);
+	protected abstract void onChunkProvide(int chunkX, int chunkZ, ChunkPrimer primer);
 }
