@@ -11,11 +11,14 @@ import io.github.nagol2003.util.world.MapGenAddonCaveGen;
 import io.github.nagol2003.util.world.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.MapGenBaseMeta;
 import io.github.nagol2003.world.chunk.ChunkProviderMultiBiome;
+import io.github.nagol2003.world.gen.ore.AddonPlanetOreGenerator;
+import io.github.nagol2003.world.gen.ore.WorldGenMineableOres;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraft.world.gen.feature.WorldGenerator;
 
 public class ChunkProviderOgnious extends ChunkProviderMultiBiome {
 
@@ -25,10 +28,20 @@ public class ChunkProviderOgnious extends ChunkProviderMultiBiome {
 
 	private static IBlockState stoneBlockState = InitBlocks.OGNIOUSSTONE.getDefaultState();
 
+	// Example Ore Generators
+	private WorldGenerator ore1 = new WorldGenMineableOres(InitBlocks.DENIAFERMINIUMORE, 20, 18, 5, 120, stoneBlockState, InitBlocks.OGNIOUSROCK.getDefaultState());
+	private WorldGenerator ore2 = new WorldGenMineableOres(Blocks.IRON_ORE, 25, 9, 20, 70, stoneBlockState, InitBlocks.OGNIOUSROCK.getDefaultState());
+
+
 	public ChunkProviderOgnious(World par1World, long seed, boolean mapFeaturesEnabled) {
 		super(par1World, seed, mapFeaturesEnabled);
 		this.stoneBlock = stoneBlockState;
 		this.waterBlock = Blocks.WATER.getDefaultState();
+	}
+
+	@Override
+	protected AddonPlanetOreGenerator getOreGenerator() {
+		return new AddonPlanetOreGenerator(ore1, ore2);
 	}
 
 	@Override
@@ -49,10 +62,10 @@ public class ChunkProviderOgnious extends ChunkProviderMultiBiome {
 
 	@Override
 	protected void decoratePlanet(World world, Random rand, int x, int z) {
-
 	}
 
 	public static IBlockState getStoneBlockState() {
+
 		return stoneBlockState;
 	}
 }

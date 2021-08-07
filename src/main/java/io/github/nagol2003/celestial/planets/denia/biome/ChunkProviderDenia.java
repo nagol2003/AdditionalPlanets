@@ -16,6 +16,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class ChunkProviderDenia extends ChunkProviderMultiBiome {
 
@@ -54,5 +55,11 @@ public class ChunkProviderDenia extends ChunkProviderMultiBiome {
 
 	public static IBlockState getStoneBlockState() {
 		return stoneBlockState;
+	}
+
+	@Override
+	protected IWorldGenerator getOreGenerator() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
