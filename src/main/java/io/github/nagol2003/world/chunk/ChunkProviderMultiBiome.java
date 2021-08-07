@@ -8,6 +8,7 @@ import micdoodle8.mods.galacticraft.api.world.ChunkProviderBase;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
@@ -17,6 +18,7 @@ import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraft.world.gen.NoiseGeneratorPerlin;
+import net.minecraftforge.fluids.Fluid;
 
 public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 	private Random rand;
@@ -37,8 +39,13 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 	double[] maxLimitRegion;
 	double[] depthRegion;
 
-	protected static IBlockState stoneBlock;
-	protected static IBlockState waterBlock;
+	protected IBlockState stoneBlock;
+	protected Fluid waterBlock2;
+	protected IBlockState waterBlock;
+	protected IBlockState dirtBlock;
+
+	protected int seaLevel = 63;
+	protected boolean seaIceLayer = false;
 
 	private List<MapGenBaseMeta> worldGenerators;
 
@@ -47,9 +54,9 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 		this.depthBuffer = new double[256];
 		this.worldObj = world;
 		this.rand = new Random(seed);
-		this.minLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 16);
-		this.maxLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 16);
-		this.mainPerlinNoise = new NoiseGeneratorOctaves(this.rand, 8);
+		this.minLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 18);
+		this.maxLimitPerlinNoise = new NoiseGeneratorOctaves(this.rand, 18);
+		this.mainPerlinNoise = new NoiseGeneratorOctaves(this.rand, 10);
 		this.surfaceNoise = new NoiseGeneratorPerlin(this.rand, 4);
 		this.scaleNoise = new NoiseGeneratorOctaves(this.rand, 10);
 		this.depthNoise = new NoiseGeneratorOctaves(this.rand, 16);
@@ -131,9 +138,15 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 
 							for (int l2 = 0; l2 < 4; ++l2) {
 								if ((lvt_45_1_ += d16) > 0.0D) {
-									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, ChunkProviderMultiBiome.stoneBlock);
-								} else if (i2 * 8 + j2 < 63) {
-									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, ChunkProviderMultiBiome.waterBlock);
+									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.stoneBlock);
+								} else if (i2 * 8 + j2 == (this.seaLevel - 1) && this.seaIceLayer) {
+									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2,
+											Blocks.ICE.getDefaultState());
+								} else if (i2 * 8 + j2 < (this.seaLevel - 1)) {
+									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.waterBlock);
+								}
+								else if (i2 * 8 + j2 < (this.seaLevel + 2)) {
+									p_180518_3_.setBlockState(i * 4 + k2, i2 * 8 + j2, l * 4 + l2, this.dirtBlock);
 								}
 							}
 

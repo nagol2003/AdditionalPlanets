@@ -13,7 +13,7 @@ public class APGenTestTree extends APGenTreeBaseTest {
 		this.setLogBlock(log.getDefaultState());
 		this.setLeavesBlock(leaves.getDefaultState());
 		this.setMinTrunkSize(11);
-		this.setMaxTrunkSize(21);
+		this.setMaxTrunkSize(91);
 	}
 
 	public APGenTestTree setCanGenerateOnSand() {
@@ -35,6 +35,26 @@ public class APGenTestTree extends APGenTreeBaseTest {
 		int i, j, k;
 		for (i = 0; i < this.trunkSize; i++) {
 			this.placeLogBlock(world, new BlockPos(x, y, z), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 1, y, z + 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x - 1, y, z + 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x, y, z + 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x, y, z - 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 1, y, z - 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x - 1, y, z - 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 1, y, z), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x - 1, y, z), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 2, y, z), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 2, y, z + 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 2, y, z -1 ), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x - 2, y, z), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x - 2, y, z + 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x -2 , y, z - 1), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 1, y, z - 2), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x - 1, y, z - 2), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x, y, z - 2), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x - 1, y, z + 2), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x + 1, y, z + 2), this.logBlock, this.generateFlag);
+			this.placeLogBlock(world, new BlockPos(x, y, z + 2), this.logBlock, this.generateFlag);
 			y++;
 		}
 

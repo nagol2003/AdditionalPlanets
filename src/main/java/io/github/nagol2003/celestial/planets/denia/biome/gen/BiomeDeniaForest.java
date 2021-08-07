@@ -7,7 +7,6 @@ import io.github.nagol2003.celestial.planets.denia.biome.DeniaBiomes;
 import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
@@ -17,19 +16,19 @@ public class BiomeDeniaForest extends DeniaBiomes {
 
 	public BiomeDeniaForest(BiomeProperties properties) {
 		super(properties);
-        this.topBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
-        this.fillerBlock = Blocks.SNOW.getDefaultState(); //TODO change this
-        this.spawnableMonsterList.clear();
-        this.spawnableCreatureList.clear();
-        this.spawnableWaterCreatureList.clear();
+		this.topBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
+		this.fillerBlock = InitBlocks.TUNDRA.getDefaultState(); //TODO change this
+		this.spawnableMonsterList.clear();
+		this.spawnableCreatureList.clear();
+		this.spawnableWaterCreatureList.clear();
+		this.getBiomeDecorator().treesPerChunk = 4;
 	}
 
 	@Override
 	public void registerTypes(Biome b) {
-            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
+		BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
 	}
-	
 	@Override
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {

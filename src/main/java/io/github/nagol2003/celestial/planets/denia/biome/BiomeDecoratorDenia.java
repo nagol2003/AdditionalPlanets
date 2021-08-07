@@ -1,49 +1,43 @@
 package io.github.nagol2003.celestial.planets.denia.biome;
 
+import java.util.Random;
+
 import io.github.nagol2003.init.InitBlocks;
-import micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeDecoratorSpace;
-import micdoodle8.mods.galacticraft.core.world.gen.WorldGenMinableMeta;
+import io.github.nagol2003.world.gen.tree.APGenFirTree;
+import io.github.nagol2003.world.gen.tree.APGenSempervirens;
+import io.github.nagol2003.world.gen.tree.APGenTestTree;
+import io.github.nagol2003.world.gen.tree.APGenTreeFlatTop;
+import io.github.nagol2003.world.gen.tree.APGenTreeWillow;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeDecorator;
 
-public class BiomeDecoratorDenia extends BiomeDecoratorSpace {
-    
-    private World currentWorld;
-    private WorldGenerator ferminiumOre;
-    private WorldGenerator strangemetallicsubstance;
-    private WorldGenerator deniaironore;
+public class BiomeDecoratorDenia extends BiomeDecorator {
 
-    private boolean isDecorating = false;
+	public int treesPerChunk;
 
-    public BiomeDecoratorDenia() {
+	private boolean isDecorating = false;
 
-        this.ferminiumOre = new WorldGenMinableMeta(InitBlocks.DENIAFERMINIUMORE, 20, 0, false, InitBlocks.DENIASTONE, 0);
-        this.strangemetallicsubstance = new WorldGenMinableMeta(InitBlocks.STRANGEMETALLICDENIA, 20, 0, false, InitBlocks.DENIASTONE, 0);
-        this.deniaironore = new WorldGenMinableMeta(InitBlocks.DENIAIRONORE, 20, 0, false, InitBlocks.DENIASTONE, 0);
-        // WorldGenMinableMeta(Block OreBlock, int numberOfBlocks, int OreMeta, boolean usingMetaData, Block StoneBlock, int StoneMeta);
-    }
+	@Override
+	protected void genDecorations(Biome biomeIn, World world, Random random) {
+		if (isDecorating) {
+			return;
+		}
+		isDecorating = true;
 
-    @Override
-    protected void setCurrentWorld(World world) {
-        this.currentWorld = world;
-    }
-
-    @Override
-    protected World getCurrentWorld() {
-        return this.currentWorld;
-    }
-
-    @Override
-    protected void decorate() {
-        if(isDecorating) {
-            return;
-        }
-            isDecorating = true;
-            //generateOre(amountPerChunk, worldGenerator, minY, maxY);s
-            this.generateOre(20, this.ferminiumOre, 15, 64);
-            this.generateOre(20, this.strangemetallicsubstance, 15, 64);
-            this.generateOre(150, this.deniaironore, 1, 256);
-        
-            isDecorating = false;
-    }
+		//AddonMain.LOGGER.info("Trees Allowed Per Chunk: {}", this.treesPerChunk);
+		for (int i = 0; i < this.treesPerChunk; i++) {
+			if (random.nextInt(5) == 1) {
+				BlockPos blockpos = world.getTopSolidOrLiquidBlock(new BlockPos(this.chunkPos.getX() + 8, 0, this.chunkPos.getZ() + 8));
+				blockpos = blockpos.add(random.nextInt(8), 0, random.nextInt(8));
+				//AddonMain.LOGGER.info("Attempting to Generate Tree at: {}", blockpos.toString());
+				//new APGenSempervirens(Blocks.LOG, Blocks.LEAVES).setCanGenerateOnSand().generate(world, random, blockpos);
+				new APGenTestTree(InitBlocks.OGNIOUSLOG, InitBlocks.OGNIOUSLEAVES).setCanGenerateOnSand().generate(world, random, blockpos);
+			}
+		}
+		isDecorating = false;
+	}
 }

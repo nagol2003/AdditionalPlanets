@@ -7,8 +7,10 @@ import io.github.nagol2003.celestial.planets.denia.biome.DeniaBiomes;
 import io.github.nagol2003.entities.deniamammal.EntityMammal;
 import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
 import io.github.nagol2003.init.InitBlocks;
+import micdoodle8.mods.galacticraft.api.galaxies.Satellite;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.monster.EntityPigZombie;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -27,6 +29,7 @@ public class BiomeDenia extends DeniaBiomes {
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
         this.spawnableMonsterList.add(new SpawnListEntry(EntityMammal.class, 150, 4, 10));
+        this.getBiomeDecorator().treesPerChunk = 0;
 	}
 
 	@Override
@@ -34,6 +37,8 @@ public class BiomeDenia extends DeniaBiomes {
             BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
 	}
+	
+
 	
 	@Override
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,

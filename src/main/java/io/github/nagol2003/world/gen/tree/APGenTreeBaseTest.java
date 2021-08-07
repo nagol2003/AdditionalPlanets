@@ -43,7 +43,7 @@ public abstract class APGenTreeBaseTest extends WorldGenAbstractTree {
 
 		this.setLogBlock(Blocks.LOG.getDefaultState());
 		this.setLeavesBlock(Blocks.LEAVES.getDefaultState());
-		this.trunkSize = 10;
+		this.trunkSize = 65;
 		this.crownSize = 1;
 		this.setNoLeaves(false);
 		this.setTreesCanGenerateOnSand(false);

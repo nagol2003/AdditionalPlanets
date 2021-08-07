@@ -27,8 +27,8 @@ public class ChunkProviderOgnious extends ChunkProviderMultiBiome {
 
 	public ChunkProviderOgnious(World par1World, long seed, boolean mapFeaturesEnabled) {
 		super(par1World, seed, mapFeaturesEnabled);
-		ChunkProviderMultiBiome.stoneBlock = stoneBlockState;
-		ChunkProviderMultiBiome.waterBlock = Blocks.WATER.getDefaultState();
+		this.stoneBlock = stoneBlockState;
+		this.waterBlock = Blocks.WATER.getDefaultState();
 	}
 
 	@Override

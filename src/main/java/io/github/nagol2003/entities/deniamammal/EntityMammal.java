@@ -9,8 +9,12 @@ import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
 public class EntityMammal extends EntityAgeable {
@@ -38,6 +42,11 @@ public class EntityMammal extends EntityAgeable {
 	public boolean canBreatheUnderwater() {
 		return true;
 	}
+	
+	 protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty)
+	    {
+	        this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(Items.GOLDEN_SWORD));
+	    }
 
 	@Override
 	public boolean isEntityInsideOpaqueBlock() {
@@ -101,7 +110,7 @@ public class EntityMammal extends EntityAgeable {
 	protected void applyEntityAttributes() {
 		super.applyEntityAttributes();
 		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.25D);
+		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.15D);
 		this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(3.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.ARMOR_TOUGHNESS).setBaseValue(2.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.5D);

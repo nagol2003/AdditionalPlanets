@@ -2,7 +2,6 @@ package io.github.nagol2003.celestial.planets.denia.biome;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.denia.BiomeDecoratorOther;
 import io.github.nagol2003.celestial.planets.denia.biome.gen.BiomeDenia;
 import io.github.nagol2003.celestial.planets.denia.biome.gen.BiomeDeniaForest;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
@@ -11,7 +10,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeDecorator;
-import net.minecraft.world.biome.Biome.BiomeProperties;
 import net.minecraft.world.chunk.ChunkPrimer;
 
 public class DeniaBiomes extends BiomeGenBaseGC {
@@ -26,7 +24,11 @@ public class DeniaBiomes extends BiomeGenBaseGC {
 
 	@Override
 	public BiomeDecorator createBiomeDecorator() {
-		return new BiomeDecoratorOther();
+		return new BiomeDecoratorDenia();
+	}
+
+	protected BiomeDecoratorDenia getBiomeDecorator() {
+		return (BiomeDecoratorDenia) this.decorator;
 	}
 
 	@Override
