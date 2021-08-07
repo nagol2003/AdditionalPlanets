@@ -11,7 +11,7 @@ public class RenderMammal extends RenderLiving<EntityMammal> {
 	
 	public RenderMammal(RenderManager manager) {
 		
-		super(manager, new mammal(), 0.2f);
+		super(manager, new Mammal(), 0.2f);
 	}
 
 	@Override

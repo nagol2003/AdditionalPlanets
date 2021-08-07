@@ -11,7 +11,7 @@ import net.minecraft.util.math.MathHelper;
 //Paste this class into your mod and generate all required imports
 
 
-public class mammal extends ModelBase {
+public class Mammal extends ModelBase {
 	private final ModelRenderer RightLeg;
 	private final ModelRenderer cube_r1;
 	private final ModelRenderer cube_r2;
@@ -31,7 +31,7 @@ public class mammal extends ModelBase {
 	private final ModelRenderer cube_r11;
 	private final ModelRenderer cube_r12;
 
-	public mammal() {
+	public Mammal() {
 		textureWidth = 64;
 		textureHeight = 64;
 
