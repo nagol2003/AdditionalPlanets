@@ -386,7 +386,7 @@ public class AddonCelestialBodies {
 		Polulos.setBiomeInfo(PolulosBiomes.PolulosSavanna, PolulosBiomes.PolulosDesert);
 		Polulos.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Polulos.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
-		Polulos.atmosphereComponent(EnumAtmosphericGas.METHANE);
+		Polulos.atmosphereComponent(EnumAtmosphericGas.METHANE); 
 
 		Shayan = new Planet("Shayan").setParentSolarSystem(Garphina);
 		Shayan.setTierRequired(6);

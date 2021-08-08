@@ -46,6 +46,7 @@ public class DeniaBiomes extends BiomeGenBaseGC {
 		int k = (int) ((noiseVal / 3.0D) + 3.0D + (rand.nextDouble() * 0.45D));
 		int l = x & 15;
 		int i1 = z & 15;
+		
 
 		for (int j1 = 255; j1 >= 0; --j1) {
 			if (j1 == 0) {

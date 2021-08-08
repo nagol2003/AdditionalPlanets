@@ -5,6 +5,7 @@ import java.util.Random;
 import io.github.nagol2003.celestial.planets.polulos.BiomeDecoratorOther;
 import io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosDesert;
 import io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosSavanna;
+import io.github.nagol2003.init.InitBlocks;
 //import io.github.nagol2003.celestial.planets.Polulos.biome.gen.BiomeGenPlanetOneSea;
 import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
 import net.minecraft.block.material.Material;
@@ -16,8 +17,8 @@ import net.minecraft.world.chunk.ChunkPrimer;
 
 public class PolulosBiomes extends BiomeGenBaseGC {
 
-	public static final Biome PolulosSavanna = new BiomePolulosSavanna(new BiomeProperties("Polulos Savanna").setBaseHeight(0.175F).setHeightVariation(0.55F).setRainfall(0.8F));
-	public static final Biome PolulosDesert = new BiomePolulosDesert(new BiomeProperties("Polulos Desert").setBaseHeight(0.100F).setHeightVariation(0.62F).setRainfall(0.1F));
+	public static final Biome PolulosSavanna = new BiomePolulosSavanna(new BiomeProperties("Polulos Savanna").setBaseHeight(0.175F).setHeightVariation(0.75F).setRainfall(0.8F));
+	public static final Biome PolulosDesert = new BiomePolulosDesert(new BiomeProperties("Polulos Desert").setBaseHeight(0.100F).setHeightVariation(0.25F).setRainfall(0.1F));
 	//public static final Biome PolulosSea = new BiomeGenPolulosSea(new BiomeProperties("PolulosSea").setBaseHeight(0.999F).setHeightVariation(0.1F).setRainfall(0.1F));
 
 	protected PolulosBiomes(BiomeProperties properties) {
@@ -37,7 +38,7 @@ public class PolulosBiomes extends BiomeGenBaseGC {
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		//IBlockState stoneBlockState = ChunkProviderPolulos.getStoneBlockState();
+		IBlockState stoneBlockState = InitBlocks.POLULOSROCK.getDefaultState();
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;
@@ -53,7 +54,7 @@ public class PolulosBiomes extends BiomeGenBaseGC {
 
 				if (iblockstate2.getMaterial() == Material.AIR) {
 					j = -1;
-			//	} else if (iblockstate2.getBlock() == stoneBlockState.getBlock()) {
+				} else if (iblockstate2.getBlock() == stoneBlockState.getBlock()) {
 					if (j == -1) {
 						if (k <= 0) {
 							topState = AIR;

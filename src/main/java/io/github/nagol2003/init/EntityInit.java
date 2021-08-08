@@ -10,9 +10,9 @@ public class EntityInit {
 	
 	public static void registerEntities(APRegistry registry) {
 		
-		registry.registerEntity(EntityPolulosCrab.class, "test", 64, 20, true, 13310623, 65354);
-		registry.registerEntity(EntityMammal.class, "mammal", 64, 20, true, 13310623, 65354);
-		registry.registerEntity(EntityPigman.class, "pigman", 64, 20, true, 13310623, 65354);
+		registry.registerEntity(EntityPolulosCrab.class, "test", 94, 20, true, 13310623, 65354);
+		registry.registerEntity(EntityMammal.class, "mammal", 94, 20, true, 13310623, 65354);
+		registry.registerEntity(EntityPigman.class, "pigman", 94, 20, true, 13310623, 65354);
 	
 		//registerEntity("test", EntityPolulosCrab.class, Const.ENTITY_POLULOSCRAB, 50, 13310623, 65354);
 		

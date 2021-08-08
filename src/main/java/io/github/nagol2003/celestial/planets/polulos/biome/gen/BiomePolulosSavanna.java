@@ -34,7 +34,7 @@ public class BiomePolulosSavanna extends PolulosBiomes {
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = (IBlockState) InitBlocks.POLULOSROCK;
+		IBlockState stoneBlockState = InitBlocks.POLULOSROCK.getDefaultState();
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;

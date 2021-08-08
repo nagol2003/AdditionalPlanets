@@ -68,7 +68,6 @@ public class AddonMain {
 		registry.addRegistrationHandler(EntityInit::registerEntities, EntityEntry.class);
 		//GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 		
-		
 		BodiesRegistry.setMaxTier(1);
 		NewGalaxy.init();
 		AddonCelestialBodies.init();
@@ -82,7 +81,6 @@ public class AddonMain {
 
 		RenderHandler.registerEntityRenders();
 	}
-	
 
 	@EventHandler
 	public void init(final FMLInitializationEvent event) {

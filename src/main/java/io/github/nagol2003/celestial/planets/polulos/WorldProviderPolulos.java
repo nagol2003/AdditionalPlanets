@@ -18,16 +18,25 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class WorldProviderPolulos extends WorldProviderAddonPlanet {
-
+	
 	public WorldProviderPolulos() {
 		this.skyProvider = SkyProviderPolulos.class;
+		this.constantSnow = false;
+	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public float getCloudHeight() {
+		return 400.0F;
 	}
 	
     @Override
     public Vector3 getSkyColor() {
-        return new Vector3(1, .2, .1);
+        return new Vector3(1, 1, 1);
     }
 
     @Override
@@ -89,7 +98,7 @@ public class WorldProviderPolulos extends WorldProviderAddonPlanet {
 
     @Override
     public float getThermalLevelModifier() {
-        return 5.0F;
+        return -0.8F;
     }
 
     @Override
@@ -115,7 +124,7 @@ public class WorldProviderPolulos extends WorldProviderAddonPlanet {
     @Override
     public List<Block> getSurfaceBlocks() {
         List<Block> list = new LinkedList<>();
-        list.add(InitBlocks.POLULOSROCK);
+        list.add(InitBlocks.DENIASTONE);
         list.add(Blocks.COBBLESTONE_WALL);
         list.add(Blocks.MOSSY_COBBLESTONE);
         list.add(Blocks.GRAVEL);
@@ -124,10 +133,11 @@ public class WorldProviderPolulos extends WorldProviderAddonPlanet {
 
     @Override
     public Vector3 getFogColor() {
-        return new Vector3(1, .3, .3);
+        return new Vector3(1, 1, 1);
     }
     
     public int getCloudColor() {
     	return 0;
     }
+
 }
