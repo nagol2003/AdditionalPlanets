@@ -23,6 +23,7 @@ public class BiomePolulosSavanna extends PolulosBiomes {
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
+        this.getBiomeDecorator().treesPerChunk = 1;
 	}
 
 	@Override

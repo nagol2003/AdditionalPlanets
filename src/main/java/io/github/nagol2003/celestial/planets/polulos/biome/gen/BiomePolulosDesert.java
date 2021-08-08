@@ -27,6 +27,7 @@ public class BiomePolulosDesert extends PolulosBiomes {
         //add(new SpawnListEntry(EntityPolulosCrab.class, 50, 100, 20));
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
+        this.getBiomeDecorator().treesPerChunk = 0;
 	}
 
 	@Override

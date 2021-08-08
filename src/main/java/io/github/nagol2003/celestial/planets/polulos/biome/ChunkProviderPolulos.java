@@ -12,12 +12,15 @@ import io.github.nagol2003.util.world.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.MapGenBaseMeta;
 import io.github.nagol2003.world.chunk.ChunkProviderExperimental;
 import io.github.nagol2003.world.chunk.ChunkProviderMultiBiome;
+import io.github.nagol2003.world.gen.ore.AddonPlanetOreGenerator;
+import io.github.nagol2003.world.gen.ore.WorldGenMineableOres;
 import micdoodle8.mods.galacticraft.core.GCBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
+import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class ChunkProviderPolulos extends ChunkProviderExperimental {
@@ -26,7 +29,19 @@ public class ChunkProviderPolulos extends ChunkProviderExperimental {
 	private final MapGenAddonCaveGen caveGenerator = new MapGenAddonCaveGen(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState(),
 			Sets.newHashSet(Blocks.HARDENED_CLAY, Blocks.BLACK_GLAZED_TERRACOTTA));
 
-	IBlockState stoneBlockState = InitBlocks.POLULOSROCK.getDefaultState();
+	private static IBlockState stoneBlockState = InitBlocks.POLULOSROCK.getDefaultState();
+	
+	// Example Ore Generators
+	//private WorldGenerator ore4 = new WorldGenMineableOres(oreBlock, blocksPerVein, veinsPerChunk, startY, endY, replaceTargets)
+		//   private WorldGenerator ore1 = new WorldGenMineableOres(InitBlocks.DENIAFERMINIUMORE, 6, 8, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+	//	private WorldGenerator ore2 = new WorldGenMineableOres(InitBlocks.STRANGEMETALLICDENIA, 8, 6, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+	//	        private WorldGenerator ore3 = new WorldGenMineableOres(InitBlocks.DENIAIRONORE, 25, 50, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+	//	              private WorldGenerator ore4 = new WorldGenMineableOres(Blocks.IRON_BLOCK, 5, 15, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+		
+	//	@Override
+	//	protected AddonPlanetOreGenerator getOreGenerator() {
+	//		return new AddonPlanetOreGenerator(ore1, ore2, ore3);
+	//	}
 
 	public ChunkProviderPolulos(World par1World, long seed, boolean mapFeaturesEnabled) {
 		super(par1World, seed, mapFeaturesEnabled);
@@ -55,13 +70,19 @@ public class ChunkProviderPolulos extends ChunkProviderExperimental {
 
 	}
 
-	//public static IBlockState getStoneBlockState() {
-		//return stoneBlockState;
-	//}
+	public static IBlockState getStoneBlockState() {
+		return stoneBlockState;
+	}
 
 	@Override
 	protected IWorldGenerator getOreGenerator() {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	//@Override
+//	protected IWorldGenerator getOreGenerator() {
+//		// TODO Auto-generated method stub
+	//	return null;
+	//}
 }

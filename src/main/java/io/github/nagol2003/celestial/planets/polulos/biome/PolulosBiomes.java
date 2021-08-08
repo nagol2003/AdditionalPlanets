@@ -2,6 +2,7 @@ package io.github.nagol2003.celestial.planets.polulos.biome;
 
 import java.util.Random;
 
+import io.github.nagol2003.celestial.planets.denia.biome.BiomeDecoratorDenia;
 import io.github.nagol2003.celestial.planets.polulos.BiomeDecoratorOther;
 import io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosDesert;
 import io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosSavanna;
@@ -27,7 +28,11 @@ public class PolulosBiomes extends BiomeGenBaseGC {
 
 	@Override
 	public BiomeDecorator createBiomeDecorator() {
-		return new BiomeDecoratorOther();
+		return new BiomeDecoratorPolulos();
+	}
+
+	protected BiomeDecoratorPolulos getBiomeDecorator() {
+		return (BiomeDecoratorPolulos) this.decorator;
 	}
 
 	@Override
