@@ -281,17 +281,21 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 		BlockFalling.fallInstantly = true;
 		int x = chunkX * 16;
 		int z = chunkZ * 16;
-
-		this.worldObj.getBiome(new BlockPos(x +16, 0, z +16));
+		BlockPos pos = new BlockPos(x, 0, z);
+		Biome biome = this.worldObj.getBiome(pos.add(16, 0, 16));
 		this.rand.setSeed(this.worldObj.getSeed());
 
 		long var7 = this.rand.nextLong() / 2L * 2L + 1L;
 		long var9 = this.rand.nextLong() / 2L * 2L + 1L;
 		this.rand.setSeed(chunkX * var7 + chunkZ * var9 ^ this.worldObj.getSeed());
 
+		if(this.getOreGenerator() != null) {
+			this.getOreGenerator().generate(rand, chunkX, chunkZ, worldObj, this, this.worldObj.getChunkProvider());
+		}
+
+		biome.decorate(this.worldObj, this.rand, pos);
 		this.decoratePlanet(this.worldObj, this.rand, x, z);
 
-		this.getOreGenerator().generate(rand, chunkX, chunkZ, worldObj, this, this.worldObj.getChunkProvider());
 		BlockFalling.fallInstantly = false;
 	}
 
