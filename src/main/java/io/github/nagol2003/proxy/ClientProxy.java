@@ -7,6 +7,8 @@ import io.github.nagol2003.Const;
 import io.github.nagol2003.client.render.ModRenderPlayer;
 import io.github.nagol2003.entities.deniamammal.EntityMammal;
 import io.github.nagol2003.entities.deniamammal.RenderMammal;
+import io.github.nagol2003.entities.moose.EntityMoose;
+import io.github.nagol2003.entities.moose.RenderMoose;
 import io.github.nagol2003.entities.pigman.EntityPigman;
 import io.github.nagol2003.entities.pigman.RenderPigman;
 import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
@@ -40,6 +42,7 @@ public class ClientProxy extends ServerProxy {
 		registry.registerEntityRenderer(EntityPolulosCrab.class, RenderCrab::new);
 		registry.registerEntityRenderer(EntityMammal.class, RenderMammal::new);
 		registry.registerEntityRenderer(EntityPigman.class, RenderPigman::new);
+		registry.registerEntityRenderer(EntityMoose.class, RenderMoose::new);
 		/// PLACE CODE ABOVE ///
 		registry.clientPreInit(event);
 	}
