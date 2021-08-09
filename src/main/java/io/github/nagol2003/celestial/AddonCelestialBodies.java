@@ -422,7 +422,7 @@ public class AddonCelestialBodies {
 		Ognious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png"));
 		Ognious.setBiomeInfo(OgniousBiomes.Ognious);
 		Ognious.setAtmosphere(new AtmosphereInfo(true, true, true, 1.0F, 1.0F, 0.5F));
-		Ognious.setDimensionInfo(dim.idOgnious, WorldProviderOgnious.class);
+		//Ognious.setDimensionInfo(dim.idOgnious, WorldProviderOgnious.class);
 		Ognious.atmosphereComponent(EnumAtmosphericGas.OXYGEN);
 	
 		Queran = new Planet("Queran").setParentSolarSystem(Garphina);
@@ -740,7 +740,7 @@ public class AddonCelestialBodies {
 		// comment these out for now but keep em to just change the world provider class later
 
 		GalacticraftRegistry.registerTeleportType(WorldProviderPolulos.class, new TeleportTypeMoon());
-		GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
+		//GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderVulcan.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderj1407b.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderkoi4878b.class, new TeleportTypeMoon());
@@ -780,7 +780,7 @@ public class AddonCelestialBodies {
 		GalaxyRegistry.registerSolarSystem(Garphina);
 		////GalaxyRegistry.registerSolarSystem(Test);
 		//GalaxyRegistry.registerSolarSystem(BlackHole);
-		//GalaxyRegistry.registerSolarSystem(Aa);
+		GalaxyRegistry.registerSolarSystem(Aa);
 		//GalaxyRegistry.registerSolarSystem(SiriusM);
 		//GalaxyRegistry.registerSolarSystem(SiriusS);
 		//GalaxyRegistry.registerSolarSystem(Kepler452);
@@ -807,7 +807,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(Queran);
 		//GalaxyRegistry.registerPlanet(Vermon);
 		//GalaxyRegistry.registerPlanet(Dark);
-		//GalaxyRegistry.registerPlanet(Vulcan);
+		GalaxyRegistry.registerPlanet(Vulcan);
 		//GalaxyRegistry.registerPlanet(Kepler452b);
 		//GalaxyRegistry.registerPlanet(J1407b); 
 		//GalaxyRegistry.registerPlanet(BarbanI); 
