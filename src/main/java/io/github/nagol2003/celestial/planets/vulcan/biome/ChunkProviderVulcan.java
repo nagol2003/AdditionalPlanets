@@ -30,7 +30,7 @@ public class ChunkProviderVulcan extends ChunkProviderAP {
     public ChunkProviderVulcan(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
-        this.waterBlock = InitFluids.TIN.getDefaultState();
+        this.waterBlock = InitFluids.TIN.getBlock().getDefaultState();
         this.seaLevel = 65;
     }
 
