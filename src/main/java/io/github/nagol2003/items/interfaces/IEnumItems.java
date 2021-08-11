@@ -1,16 +1,16 @@
 /**
  * Copyright (C) 2020 Interstellar:  Exoplanets
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
@@ -117,7 +117,7 @@ public interface IEnumItems<E extends Enum<E>, I extends Item> extends IStringSe
          */
 		public void registerItems(IEnumItems... items) {
             for (IEnumItems item : items)
-                registry.registerItem(item.getItem(), item.getName());
+                registry.register(item.getItem(), item.getName());
         }
 
         /**
@@ -129,7 +129,7 @@ public interface IEnumItems<E extends Enum<E>, I extends Item> extends IStringSe
          */
         public <E extends Enum<E>> void registerBlocksGenericEnum(Function<E, Block> block, Function<E, String> name, Class<E> enumClass) {
             for (E e : enumClass.getEnumConstants())
-                registry.registerBlock(block.apply(e), name.apply(e));
+                registry.register(block.apply(e), name.apply(e));
         }
 
         /**
@@ -141,7 +141,7 @@ public interface IEnumItems<E extends Enum<E>, I extends Item> extends IStringSe
          */
         public <E extends Enum<E>> void registerItemsGenericEnum(Function<E, Item> item, Function<E, String> name, Class<E> enumClass) {
             for (E e : enumClass.getEnumConstants())
-                registry.registerItem(item.apply(e), name.apply(e));
+                registry.register(item.apply(e), name.apply(e));
         }
     }
 

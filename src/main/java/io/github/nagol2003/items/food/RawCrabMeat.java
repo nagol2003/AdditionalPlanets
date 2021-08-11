@@ -4,10 +4,8 @@ import net.minecraft.item.ItemFood;
 
 public class RawCrabMeat extends ItemFood
 {
-	public RawCrabMeat(String name, int amount, float saturation, boolean isWolfFood) 
+	public RawCrabMeat(int amount, float saturation, boolean isWolfFood)
 	{
 		super(amount, saturation, isWolfFood);
-		setUnlocalizedName(name);	
-		setRegistryName(name);
 	}
-} 
+}

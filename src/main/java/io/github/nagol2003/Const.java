@@ -1,8 +1,8 @@
 package io.github.nagol2003;
 
 public final class Const {
-   public static final String modID = "gcaddon";
-   public static final String modName = "GCAddon";
+   public static final String modID = "addtlplanets";
+   public static final String modName = "Additional Planets";
    public static final String modVersion = "1.0.0";
 
    public static final String MCVERSION = "[1.12.2]";
@@ -13,6 +13,6 @@ public final class Const {
 
    public static final String ASSET_PREFIX = modID;
    public static final String TEXTURE_PREFIX = ASSET_PREFIX + ":";
-   
+
    public static final int ENTITY_POLULOSCRAB = 250;
 }

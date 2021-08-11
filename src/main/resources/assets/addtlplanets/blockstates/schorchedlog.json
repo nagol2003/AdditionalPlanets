@@ -1,0 +1,27 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "bottom": "addtlplanets:blocks/log_scorched_top",
+      "top": "addtlplanets:blocks/log_scorched_top",
+      "side": "addtlplanets:blocks/log_scorched"
+    },
+    "model": "cube_bottom_top"
+  },
+  "variants": {
+    "normal": [
+      {
+        "y": 90
+      },
+      {
+        "y": 180
+      },
+      {
+        "y": 270
+      }
+    ],
+    "inventory": [
+      {}
+    ]
+  }
+}

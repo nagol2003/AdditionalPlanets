@@ -1,0 +1,7 @@
+{ 
+	"entity.pigman.hurt": {
+		"category": "entity",
+		"subtitle": "entity.pigman.hurt",
+		"sounds": [{ "name": "addtlplanets:entity/pigman/hurt", "stream": true}]
+	} 
+}

@@ -2,7 +2,6 @@ package io.github.nagol2003.client;
 
 import io.github.nagol2003.Const;
 import io.github.nagol2003.celestial.planets.WorldProviderAddonPlanet;
-import io.github.nagol2003.celestial.planets.ognious.SkyProviderOgnious;
 import io.github.nagol2003.client.render.sky.SnowRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.WorldProvider;
@@ -15,13 +14,16 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 @Mod.EventBusSubscriber(modid = Const.modID, value = Side.CLIENT)
 public class PlanetAtmosphereHandler {
-	
+
 	@SubscribeEvent
 	public static void clientTick(TickEvent.ClientTickEvent event) {
 		if (event.phase != TickEvent.Phase.END) return;
 
+		String gc = "gcaddon";
+
+
 		Minecraft mc = Minecraft.getMinecraft();
-		
+
 		if(mc.player != null && mc.world != null) {
 			WorldProvider provider = mc.world.provider;
 			if(provider instanceof WorldProviderAddonPlanet) {

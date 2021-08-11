@@ -1,0 +1,116 @@
+//Solar Systems
+solarsystem.custom_system=Custom Solar System
+solarsystem.AlphaCentauri=Alpha Centauri
+solarsystem.Zakir=Zakir
+solarsystem.Aa=Aa
+solarsystem.BlackHole=Black Hole
+solarsystem.Garphina=Garphina
+solarsystem.SiriusM=Sirius
+solarsystem.unknown=Unknown
+solarsystem.SiriusS=Sirius
+solarsystem.Kepler452=Kepler-452
+solarsystem.V1400Centauri=1SWASP
+solarsystem.Barban=Barban
+solarsystem.KOI4878=KOI-4878
+solarsystem.WormHoleMilkeyWay=Worm Hole
+solarsystem.WormHoleAndromeda=Worm Hole
+solarsystem.WormHoleMessier=Worm Hole
+
+//Stars
+star.custom_star=Custom Star
+star.AlphaCentauri=Alpha Centauri AB
+star.ZakirStar=Zakir
+star.unknown=Unknown
+star.Sirius B=Sirius B
+star.Radon=Radon
+star.Sirius A=Sirius A
+star.BlackHole=Black Hole
+star.KanLaon=Kan-Laon
+star.Kepler452=Kepler-452
+star.V1400Centauri=V1400 Centauri
+star.Barban=Barban
+star.KOI4878=KOI-4878
+star.WormHoleMilkeyWay=Worm Hole
+star.WormHoleAndromeda=Worm Hole
+star.WormHoleMessier=Worm Hole
+
+//Planets
+planet.planet_one=Custom Planet 1
+planet.planet_two=Custom Planet 2
+planet.ZakirPrime=Zakir Prime
+planet.AlphaCentauriV=Alpha Centauri V
+planet.AlphaCentaurfour=Alpha Centauri IV
+planet.AlphaCentaurone=Alpha Centauri I
+planet.AlphaCentaurtwo=Alpha Centauri II
+planet.mother=Ruin
+planet.Polulos=Polulos
+planet.Shayan=Shayan
+planet.Denia=Denia
+planet.Ognious=Ognious
+planet.Queran=Queran
+planet.Vermon=Vermon
+planet.ProximaCentauriB=Proxima Centauri B
+planet.unknownplanet=u̴̯͗n̸̺͘ǩ̸͈n̸̙̈́o̶̠͐w̵̠̄n̸̲̋
+planet.Vulcan=Vulcan
+planet.J1407b=J1407b
+planet.BarbanI=Barban I
+planet.BarbanII=Barban II
+planet.Asteroids=Asteroids
+planet.BarbanIII=Barban III
+planet.BarbanIV=Barban IV
+planet.Kepler452b=Kepler-452b
+planet.ThesiusOmega=Thesius Omega
+planet.KOI4878b=KOI-4878b
+
+//Moons
+moon.planet_one_moon=Planet 1 Moon
+moon.AlphaCentauroneA=AlphaCentauri Ia
+moon.Erink=Erink
+moon.Blastopy=Blastopy
+moon.Keyian=Keyian
+moon.Junsin=Junsin
+moon.Xareious=Xareious
+moon.Ammon=Ammon
+moon.Terrin=Terrin
+moon.BarbanIVa=Barban IVa
+moon.Chiona=Chiona
+
+//Blocks
+tile.addtlplanets.frozenco2.name=Frozen CO2
+tile.addtlplanets.polulosdirt.name=Polulos Dirt
+tile.addtlplanets.polulosrock.name=Polulos Rock
+tile.addtlplanets.schorchedlog.name=Scorched Log
+tile.addtlplanets.schorchedleaves.name=Scorched Leaves
+tile.addtlplanets.polulossand.name=Polulos Sand
+tile.addtlplanets.polulosferminiumore.name=Ferminium Ore
+tile.addtlplanets.ogniousgrass.name=Ognious Grass
+tile.addtlplanets.moistdirt.name=Moist Dirt
+tile.addtlplanets.ogniouslog.name=Ognie Log
+tile.addtlplanets.ogniousleaves.name=Ognie Leaves
+tile.addtlplanets.ogniousstone.name=Ognious Stone
+tile.addtlplanets.ogniousrock.name=Ognious Rock
+tile.addtlplanets.vulcandirt.name=Scorched Dirt
+tile.addtlplanets.vulcanrockscorched.name=Scorched Rock
+tile.addtlplanets.vulcanrockburnt.name=Burnt Rock
+tile.addtlplanets.deniaferminiumore.name=Ferminium Ore
+tile.addtlplanets.strangemetallicdenia.name=Strange Metallic Ore
+tile.addtlplanets.strangemetallicpolulos.name=Strange Metallic Ore
+tile.addtlplanets.deniaironore.name=Iron Ore
+
+
+//Items
+item.ferminium_chunk=Ferminium Chunk
+itemGroup.AdditionalPlanetsTab=Additional Planets
+item.addtlplanets.ferminium_chuaddtlplanets=Ferminuim Chunk
+item.addtlplanets.strange_metaladdtlplanetsstance.name=Strange Metallic Substance
+item.addtlplanets.ferminium_alladdtlplanets=Ferminium Alloy
+itemGroup.additionalPlanets=Additional Planets
+item.addtlplanets.ferminium_swoaddtlplanets=Ferminium Blade
+item.addtlplanets.rawcrabmeat.naddtlplanets Crab Meat
+item.addtlplanets.cookedcrabmeaaddtlplanetsCooked Crab Meat
+item.addtlplanets.ferminium_picaddtlplanetsme=Ferminium Pickaxe
+item.addtlplanets.reesh.name=Readdtlplanets//Entities
+entity.test.name=Krayt
+
+//Galaxies
+galaxy.messier81=Messier 81

@@ -26,15 +26,14 @@ import io.github.nagol2003.blocks.vulcan.VulcanRockBurnt;
 import io.github.nagol2003.blocks.vulcan.VulcanRockScorched;
 import io.github.nagol2003.registry.APRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class InitBlocks {
-	
+
 	//tutorial blocks
 	public static final Block ROCK_1 = new BlockCrust(RockType.IGNEOUS);
 	public static final Block ROCK_2 = new BlockCrust(RockType.METAMORPHIC);
 	public static final Block ROCK_3 = new BlockCrust(RockType.SEDIMENTARY);
-	
+
 	//Additional Planets blocks
 	public static final Block FROZENCO2 = new FROZENCO2();
 	public static final Block POLULOSROCK = new PolulosRock();
@@ -60,36 +59,40 @@ public class InitBlocks {
 	public static final Block TUNDRA = new Tundra();
 	//public static final Block REESH_PLANT = new ReeshPlant(null);
 	//public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
-	
+
 	public static void registerAll (APRegistry registry) {
-		CreativeTabs toTab = AdditionalPlanetsTab.blockTab;
-		CreativeTabs toTab2 = AdditionalPlanetsTab.AdditionalPlanets;
-		registry.registerBlock(ROCK_1, "rock_1").setCreativeTab(toTab);
-		registry.registerBlock(ROCK_2, "rock_2").setCreativeTab(toTab);
-		registry.registerBlock(ROCK_3, "rock_3").setCreativeTab(toTab);
-		registry.registerBlock(FROZENCO2, "frozenco2").setCreativeTab(toTab2);
-		registry.registerBlock(POLULOSROCK, "polulosrock").setCreativeTab(toTab2);
-		registry.registerBlock(POLULOSDIRT, "polulosdirt").setCreativeTab(toTab2);
-		registry.registerBlock(SCORCHEDLOG, "schorchedlog").setCreativeTab(toTab2);
-		registry.registerBlock(POLULOSSAND, "polulossand").setCreativeTab(toTab2);
-		registry.registerBlock(SCORCHEDLEAVES, "schorchedleaves").setCreativeTab(toTab2);
-		registry.registerBlock(POLULOSFERMINIUMORE, "polulosferminiumore").setCreativeTab(toTab2);
-		registry.registerBlock(STRANGEMETALLICPOLULOS, "strangemetallicpolulos").setCreativeTab(toTab2);
-		registry.registerBlock(OGNIOUSGRASS, "ogniousgrass").setCreativeTab(toTab2);
-		registry.registerBlock(MOISTDIRT, "moistdirt").setCreativeTab(toTab2);
-		registry.registerBlock(OGNIOUSLOG, "ogniouslog").setCreativeTab(toTab2);
-		registry.registerBlock(OGNIOUSLEAVES, "ogniousleaves").setCreativeTab(toTab2);
-		registry.registerBlock(OGNIOUSSTONE, "ogniousstone").setCreativeTab(toTab2);
-		registry.registerBlock(OGNIOUSROCK, "ogniousrock").setCreativeTab(toTab2);
-		registry.registerBlock(VULCANDIRT, "vulcandirt").setCreativeTab(toTab2);
-		registry.registerBlock(VULCANROCKSCORCHED, "vulcanrockscorched").setCreativeTab(toTab2);
-		registry.registerBlock(VULCANROCKBURNT, "vulcanrockburnt").setCreativeTab(toTab2);
-		registry.registerBlock(DENIASTONE, "deniastone").setCreativeTab(toTab2);
-		registry.registerBlock(DENIAFERMINIUMORE, "deniaferminiumore").setCreativeTab(toTab2);
-		registry.registerBlock(STRANGEMETALLICDENIA, "strangemetallicdenia").setCreativeTab(toTab2);
-		registry.registerBlock(DENIAIRONORE, "deniaironore").setCreativeTab(toTab2);
-		registry.registerBlock(TUNDRA, "tundra").setCreativeTab(toTab2);
-		//registry.registerBlock(REESH_PLANT, "reeshplant").setCreativeTab(toTab2);
+
+		registry.setTab(AdditionalPlanetsTab.blockTab);
+		registry.register(ROCK_1, "rock_1");
+		registry.register(ROCK_2, "rock_2");
+		registry.register(ROCK_3, "rock_3");
+
+		registry.setTab(AdditionalPlanetsTab.AdditionalPlanets);
+		registry.register(FROZENCO2, "frozenco2");
+		registry.register(POLULOSROCK, "polulosrock");
+		registry.register(POLULOSDIRT, "polulosdirt");
+		registry.register(SCORCHEDLOG, "schorchedlog");
+		registry.register(POLULOSSAND, "polulossand");
+		registry.register(SCORCHEDLEAVES, "schorchedleaves");
+		registry.register(POLULOSFERMINIUMORE, "polulosferminiumore");
+		registry.register(STRANGEMETALLICPOLULOS, "strangemetallicpolulos");
+		registry.register(OGNIOUSGRASS, "ogniousgrass");
+		registry.register(MOISTDIRT, "moistdirt");
+		registry.register(OGNIOUSLOG, "ogniouslog");
+		registry.register(OGNIOUSLEAVES, "ogniousleaves");
+		registry.register(OGNIOUSSTONE, "ogniousstone");
+		registry.register(OGNIOUSROCK, "ogniousrock");
+		registry.register(VULCANDIRT, "vulcandirt");
+		registry.register(VULCANROCKSCORCHED, "vulcanrockscorched");
+		registry.register(VULCANROCKBURNT, "vulcanrockburnt");
+		registry.register(DENIASTONE, "deniastone");
+		registry.register(DENIAFERMINIUMORE, "deniaferminiumore");
+		registry.register(STRANGEMETALLICDENIA, "strangemetallicdenia");
+		registry.register(DENIAIRONORE, "deniaironore");
+		registry.register(TUNDRA, "tundra");
+		//registry.register(REESH_PLANT, "reeshplant");
+
+
 	}
-	
+
 }
