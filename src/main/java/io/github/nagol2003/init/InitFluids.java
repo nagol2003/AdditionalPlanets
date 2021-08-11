@@ -50,6 +50,10 @@ public class InitFluids {
 	public static final Fluid FINITE = createFluid("finite", false,
 			fluid -> fluid.setLuminosity(10).setDensity(800).setViscosity(1500),
 			fluid -> new BlockFluidFinite(fluid, new MaterialLiquid(MapColor.BLACK)));
+	
+	public static final Fluid TIN = createFluid("tin", false,
+			fluid -> fluid.setLuminosity(10).setDensity(1600).setViscosity(100),
+			fluid -> new BlockFluidNoOverlap(fluid, new MaterialLiquid(MapColor.ADOBE)));
 
 	/**
 	 * Create a {@link Fluid} and its {@link IFluidBlock}, or use the existing ones if a fluid has already been registered with the same name.

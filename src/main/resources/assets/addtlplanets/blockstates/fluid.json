@@ -38,6 +38,13 @@
                     "fluid": "finite"
                 }
             }
+        ],
+        "tin": [
+            {
+                "custom": {
+                    "fluid": "tin"
+                }
+            }
         ]
     }
 }

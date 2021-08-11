@@ -7,6 +7,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
 import io.github.nagol2003.init.InitBlocks;
+import io.github.nagol2003.init.InitFluids;
 import io.github.nagol2003.util.world.MapGenAddonCaveGen;
 import io.github.nagol2003.util.world.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.MapGenBaseMeta;
@@ -29,7 +30,7 @@ public class ChunkProviderVulcan extends ChunkProviderAP {
     public ChunkProviderVulcan(World par1World, long seed, boolean mapFeaturesEnabled) {
         super(par1World, seed, mapFeaturesEnabled);
         this.stoneBlock = stoneBlockState;
-        this.waterBlock =Blocks.LAVA.getDefaultState();
+        this.waterBlock = InitFluids.TIN.getDefaultState();
         this.seaLevel = 65;
     }
 
