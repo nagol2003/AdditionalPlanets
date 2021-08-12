@@ -16,9 +16,11 @@ import io.github.nagol2003.util.Utils;
 import io.github.nagol2003.util.handlers.RenderHandler;
 import io.github.nagol2003.util.handlers.SoundsHandler;
 import io.github.nagol2003.world.APWorldGen;
+import micdoodle8.mods.galacticraft.api.recipe.CompressorRecipes;
 //import io.github.nagol2003.world.WorldGenCustomStructures;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -49,6 +51,7 @@ public class AddonMain {
     {
         FluidRegistry.enableUniversalBucket();
     }
+    
 
 	@EventHandler
 	public static void onFingerprintViolation(final FMLFingerprintViolationEvent event) {
@@ -91,7 +94,9 @@ public class AddonMain {
 		proxy.init(registry,event);
 		Recipes.init();
 		SoundsHandler.registerSounds();
-
+		Recipes.compressor();
+		Recipes.compressor2();
+		//Recipes.compressor3();
 	}
 
 
@@ -107,6 +112,7 @@ public class AddonMain {
 		//PolulosTreeGen.register();
 		proxy.postInit(registry,event);
 	}
+
 }
 
 

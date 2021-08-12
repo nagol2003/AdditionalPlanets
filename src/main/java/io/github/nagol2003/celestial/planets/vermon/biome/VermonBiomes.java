@@ -34,7 +34,7 @@ public class VermonBiomes extends BiomeGenBaseGC {
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {
 		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = ChunkProviderVermon.getStoneBlockState();
+		//IBlockState stoneBlockState = ChunkProviderVermon;
 		IBlockState topState = this.topBlock;
 		IBlockState fillState = this.fillerBlock;
 		int j = -1;
@@ -50,7 +50,7 @@ public class VermonBiomes extends BiomeGenBaseGC {
 
 				if (iblockstate2.getMaterial() == Material.AIR) {
 					j = -1;
-				} else if (iblockstate2.getBlock() == stoneBlockState.getBlock()) {
+				//} else if (iblockstate2.getBlock() == stoneBlockState.getBlock()) {
 					if (j == -1) {
 						if (k <= 0) {
 							topState = AIR;

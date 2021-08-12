@@ -469,9 +469,9 @@ public class AddonCelestialBodies {
 		Vulcan.setRelativeOrbitTime(12.0F);
 		Vulcan.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/vulcan.png"));
 		Vulcan.setBiomeInfo(VulcanBiomes.VulcanHell);
-		Vulcan.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		Vulcan.setAtmosphere(new AtmosphereInfo(false, false, false, 13.0F, 0.0F, 0.1F));
 		Vulcan.setDimensionInfo(dim.idVulcan, WorldProviderVulcan.class);
-		Vulcan.atmosphereComponent(EnumAtmosphericGas.METHANE);
+		Vulcan.atmosphereComponent(EnumAtmosphericGas.ARGON);
 		
 		Kepler452b = new Planet("Kepler452b").setParentSolarSystem(Kepler452);
 		Kepler452b.setTierRequired(6);

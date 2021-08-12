@@ -2,85 +2,37 @@ package io.github.nagol2003.celestial.planets.vermon.biome.gen;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.vermon.biome.ChunkProviderVermon;
-import io.github.nagol2003.celestial.planets.vermon.biome.VermonBiomes;
-import io.github.nagol2003.init.InitBlocks;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
+import io.github.nagol2003.celestial.planets.vermon.biome.BiomeDecoratorVermon;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biome.BiomeProperties;
+import micdoodle8.mods.galacticraft.api.world.BiomeGenBaseGC;
+import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.chunk.ChunkPrimer;
-import net.minecraftforge.common.BiomeDictionary;
 
-public class BiomeVermon extends VermonBiomes {
+public class BiomeVermon extends BiomeGenBaseGC
+{
+    public static final Biome Vermon = new BiomeVermon(new BiomeProperties("Vermon2").setBaseHeight(1.5F).setHeightVariation(0.4F).setRainfall(0.0F));
 
-	public BiomeVermon(BiomeProperties properties) {
-		super(properties);
-        this.topBlock = Blocks.GRASS.getDefaultState(); //TODO change this
-        this.fillerBlock = Blocks.STONE.getDefaultState(); //TODO change this
-        this.spawnableMonsterList.clear();
-        this.spawnableCreatureList.clear();
-        this.spawnableWaterCreatureList.clear();
-	}
+    public BiomeVermon(BiomeProperties properties)
+    {
+        super(properties, true);
+    }
 
-	@Override
-	public void registerTypes(Biome b) {
-            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
+   // @Override
+   // public BiomeDecorator createBiomeDecorator()
+  //  {
+   //     return getModdedBiomeDecorator(new BiomeDecoratorVermon());
+   // }
 
-	}
-	@Override
-	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
-			double noiseVal) {
-		int i = worldIn.getSeaLevel();
-		IBlockState stoneBlockState = ChunkProviderVermon.getStoneBlockState();
-		IBlockState topState = this.topBlock;
-		IBlockState fillState = this.fillerBlock;
-		int j = -1;
-		int k = (int) ((noiseVal / 3.0D) + 3.0D + (rand.nextDouble() * 0.45D));
-		int l = x & 15;
-		int i1 = z & 15;
+    @Override
+    public float getSpawningChance()
+    {
+        return 0.1F;
+    }
 
-		for (int j1 = 255; j1 >= 0; --j1) {
-			if (j1 == 0) {
-				chunkPrimerIn.setBlockState(i1, j1, l, BEDROCK);
-			} else {
-				IBlockState iblockstate2 = chunkPrimerIn.getBlockState(i1, j1, l);
-
-				if (iblockstate2.getMaterial() == Material.AIR) {
-					j = -1;
-				} else if (iblockstate2.getBlock() == stoneBlockState.getBlock()) {
-					if (j == -1) {
-						if (k <= 0) {
-							topState = AIR;
-							fillState = STONE;
-						} else if ((j1 >= (i - 4)) && (j1 <= (i + 1))) {
-							topState = this.topBlock;
-							fillState = this.fillerBlock;
-						}
-
-						if ((j1 < i) && ((topState == null) || (topState.getMaterial() == Material.AIR))) {
-							topState = ICE;
-						}
-
-						j = k;
-
-						if (j1 >= (i - 1)) {
-							chunkPrimerIn.setBlockState(i1, j1, l, topState);
-						} else if (j1 < (i - 7 - k)) {
-							topState = AIR;
-							fillState = STONE;
-							chunkPrimerIn.setBlockState(i1, j1, l, GRAVEL);
-						} else {
-							chunkPrimerIn.setBlockState(i1, j1, l, fillState);
-						}
-					} else if (j > 0) {
-						--j;
-						chunkPrimerIn.setBlockState(i1, j1, l, fillState);
-					}
-				}
-			}
-		}
-	}
+    @Override
+    public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal)
+    {
+        super.genTerrainBlocks(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
+    }
 }

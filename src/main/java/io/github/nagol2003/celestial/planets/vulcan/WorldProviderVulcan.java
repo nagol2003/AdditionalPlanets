@@ -5,6 +5,9 @@ import java.util.List;
 
 import io.github.nagol2003.celestial.AddonCelestialBodies;
 import io.github.nagol2003.celestial.AddonDimensions;
+import io.github.nagol2003.celestial.planets.WorldProviderAddonPlanet;
+import io.github.nagol2003.celestial.planets.denia.SkyProviderDenia;
+import io.github.nagol2003.celestial.planets.ognious.SkyProviderOgnious;
 import io.github.nagol2003.celestial.planets.vulcan.biome.BiomeProviderVulcan;
 import io.github.nagol2003.celestial.planets.vulcan.biome.ChunkProviderVulcan;
 import io.github.nagol2003.init.InitBlocks;
@@ -20,7 +23,13 @@ import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
-public class WorldProviderVulcan extends WorldProviderSpace implements ISolarLevel {
+public class WorldProviderVulcan extends WorldProviderAddonPlanet {
+	
+	public WorldProviderVulcan() {
+		this.skyProvider = SkyProviderVulcan.class;
+		this.constantSnow = false;
+		this.renderClouds = false;
+	}
 
     @Override
     public Vector3 getSkyColor() {
@@ -70,7 +79,7 @@ public class WorldProviderVulcan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public float getGravity() {
-        return 0.015F;
+        return 0.030F;
     }
 
     @Override
@@ -106,7 +115,7 @@ public class WorldProviderVulcan extends WorldProviderSpace implements ISolarLev
 
     @Override
     public float getThermalLevelModifier() {
-        return 5.0F;
+        return 13.0F;
     }
 
     @Override
