@@ -291,7 +291,7 @@ public class AddonCelestialBodies {
 		starSol18.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
 		WormHoleMessier.setMainStar(starSol18);
 		
-		Rogue = new SolarSystem("Rogue", NewGalaxy.interstellar.getName()).setMapPosition(new Vector3(-1.0F, 0.5F, 0.0F));
+		Rogue = new SolarSystem("Rogue", NewGalaxy.interstellar.getName()).setMapPosition(new Vector3(0.0F, 0F, 0.0F));
 		Star starSol19 = (Star) new Star("Rogue").setParentSolarSystem(Rogue).setTierRequired(-1);
 		starSol19.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
 		Rogue.setMainStar(starSol19);
