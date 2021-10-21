@@ -33,6 +33,7 @@ public class AddonDimensions {
 	public static DimensionType dimKeyian;
 	public static DimensionType dimBlastopy;
 	public static DimensionType dimThesiusOmega;
+	public static DimensionType dimRoguePlanet;
 
 	public static DimensionType polulosOrbit;
 	public static DimensionType polulosOrbit_static;
@@ -56,6 +57,7 @@ public class AddonDimensions {
 //		AddonDimensions.dimMother = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idMother);
 		AddonDimensions.dimVermon = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idVermon);
 		AddonDimensions.dimVulcan = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idVulcan);
+		AddonDimensions.dimRoguePlanet = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idRoguePlanet);
 //		AddonDimensions.dimShayan = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idShayan);
 //		AddonDimensions.dimQueran = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idQueran);
 //		AddonDimensions.dimBarbanI = WorldUtil.getDimensionTypeById(AddonConfig.addon_dimension.idBarbanI);

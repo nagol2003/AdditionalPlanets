@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 8/7/21 9:00 PM
+Description: Exception generating new chunk
+
+java.lang.ClassCastException: io.github.nagol2003.blocks.Denia.deniastone cannot be cast to net.minecraft.block.state.IBlockState
+	at io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosSavanna.generateBiomeSurface(BiomePolulosSavanna.java:37)
+	at io.github.nagol2003.celestial.planets.polulos.biome.PolulosBiomes.genTerrainBlocks(PolulosBiomes.java:34)
+	at micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive.genTerrainBlocks(BiomeAdaptive.java:235)
+	at io.github.nagol2003.world.chunk.ChunkProviderMultiBiome.replaceBlocksForBiome(ChunkProviderMultiBiome.java:274)
+	at io.github.nagol2003.world.chunk.ChunkProviderMultiBiome.generateChunk(ChunkProviderMultiBiome.java:81)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:155)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:362)
+	at net.minecraft.world.World.spawnEntity(World.java:1318)
+	at net.minecraft.world.WorldServer.spawnEntity(WorldServer.java:1121)
+	at net.minecraft.server.management.PlayerList.playerLoggedIn(PlayerList.java:399)
+	at net.minecraft.server.management.PlayerList.initializeConnectionToPlayer(PlayerList.java:176)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher.completeServerSideConnection(NetworkDispatcher.java:258)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher.access$100(NetworkDispatcher.java:72)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:208)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosSavanna.generateBiomeSurface(BiomePolulosSavanna.java:37)
+	at io.github.nagol2003.celestial.planets.polulos.biome.PolulosBiomes.genTerrainBlocks(PolulosBiomes.java:34)
+	at micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive.genTerrainBlocks(BiomeAdaptive.java:235)
+	at io.github.nagol2003.world.chunk.ChunkProviderMultiBiome.replaceBlocksForBiome(ChunkProviderMultiBiome.java:274)
+	at io.github.nagol2003.world.chunk.ChunkProviderMultiBiome.generateChunk(ChunkProviderMultiBiome.java:81)
+
+-- Chunk to be generated --
+Details:
+	Location: 4,-7
+	Position hash: -30064771068
+	Generator: io.github.nagol2003.celestial.planets.polulos.biome.ChunkProviderPolulos@61bc12ab
+Stacktrace:
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:155)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:362)
+	at net.minecraft.world.World.spawnEntity(World.java:1318)
+	at net.minecraft.world.WorldServer.spawnEntity(WorldServer.java:1121)
+	at net.minecraft.server.management.PlayerList.playerLoggedIn(PlayerList.java:399)
+	at net.minecraft.server.management.PlayerList.initializeConnectionToPlayer(PlayerList.java:176)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher.completeServerSideConnection(NetworkDispatcher.java:258)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher.access$100(NetworkDispatcher.java:72)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:208)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@ef3bd58
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_291, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1062679648 bytes (1013 MB) / 2259156992 bytes (2154 MB) up to 7621050368 bytes (7268 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 9, tcache: 74, allocated: 1, tallocated: 18
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 9 mods loaded, 9 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                  | Version      | Source                                                                 | Signature |
+	|:------ |:------------------- |:------------ |:---------------------------------------------------------------------- |:--------- |
+	| LCHIJA | minecraft           | 1.12.2       | minecraft.jar                                                          | None      |
+	| LCHIJA | mcp                 | 9.42         | minecraft.jar                                                          | None      |
+	| LCHIJA | FML                 | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2847-PROJECT(AdditionalPlanets-secondtry-).jar | None      |
+	| LCHIJA | forge               | 14.23.5.2847 | forgeSrc-1.12.2-14.23.5.2847-PROJECT(AdditionalPlanets-secondtry-).jar | None      |
+	| LCHIJA | micdoodlecore       |              | minecraft.jar                                                          | None      |
+	| LCHIJA | galacticraftcore    | 4.0.2.261    | GalacticraftCore-Dev-1.12.2-4.0.2.261.jar                              | None      |
+	| LCHIJA | galacticraftplanets | 4.0.2.261    | Galacticraft-Planets-Dev-1.12.2-4.0.2.261.jar                          | None      |
+	| LCHIJA | asmodeuscore        | 0.0.25       | asmodeuscore-303101-3231302.jar                                        | None      |
+	| LCHIJA | gcaddon             | 1.0.0        | AdditionalPlanets-1.12.2-1.0.0.jar                                     | None      |
+
+	Loaded coremods (and transformers): 
+MicdoodlePlugin (MicdoodleCore-Dev-1.12.2-4.0.2.261.jar)
+  micdoodle8.mods.miccore.MicdoodleTransformer
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [GCEntityPlayerMP['Player68'/1463, l='New World', x=73.18, y=74.62, z=-109.91]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

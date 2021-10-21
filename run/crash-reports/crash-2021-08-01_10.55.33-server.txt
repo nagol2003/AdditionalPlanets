@@ -1,0 +1,106 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 8/1/21 10:55 AM
+Description: Exception ticking world
+
+java.lang.NullPointerException: Exception ticking world
+	at io.github.nagol2003.world.gen.tree.APGenTreeBase.canGrowInto(APGenTreeBase.java:169)
+	at io.github.nagol2003.world.gen.tree.APGenTreeBase.isReplaceable(APGenTreeBase.java:157)
+	at io.github.nagol2003.world.gen.tree.APGenTreeBase.placeLogBlock(APGenTreeBase.java:127)
+	at io.github.nagol2003.world.gen.tree.APGenTreeFlatTop.genLeaves(APGenTreeFlatTop.java:85)
+	at io.github.nagol2003.world.gen.tree.APGenTreeFlatTop.generate(APGenTreeFlatTop.java:36)
+	at io.github.nagol2003.celestial.planets.Ognious.biome.BiomeDecoratorOgnious.genDecorations(BiomeDecoratorOgnious.java:37)
+	at net.minecraft.world.biome.BiomeDecorator.decorate(BiomeDecorator.java:119)
+	at net.minecraft.world.biome.Biome.decorate(Biome.java:270)
+	at micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive.decorate(BiomeAdaptive.java:221)
+	at io.github.nagol2003.world.chunk.ChunkProviderMultiBiome.populate(ChunkProviderMultiBiome.java:277)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1094)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1060)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:169)
+	at net.minecraft.server.management.PlayerChunkMapEntry.providePlayerChunk(PlayerChunkMapEntry.java:130)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:183)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:236)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:831)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at io.github.nagol2003.world.gen.tree.APGenTreeBase.canGrowInto(APGenTreeBase.java:169)
+	at io.github.nagol2003.world.gen.tree.APGenTreeBase.isReplaceable(APGenTreeBase.java:157)
+	at io.github.nagol2003.world.gen.tree.APGenTreeBase.placeLogBlock(APGenTreeBase.java:127)
+	at io.github.nagol2003.world.gen.tree.APGenTreeFlatTop.genLeaves(APGenTreeFlatTop.java:85)
+	at io.github.nagol2003.world.gen.tree.APGenTreeFlatTop.generate(APGenTreeFlatTop.java:36)
+	at io.github.nagol2003.celestial.planets.Ognious.biome.BiomeDecoratorOgnious.genDecorations(BiomeDecoratorOgnious.java:37)
+	at net.minecraft.world.biome.BiomeDecorator.decorate(BiomeDecorator.java:119)
+	at net.minecraft.world.biome.Biome.decorate(Biome.java:270)
+	at micdoodle8.mods.galacticraft.api.prefab.world.gen.BiomeAdaptive.decorate(BiomeAdaptive.java:221)
+	at io.github.nagol2003.world.chunk.ChunkProviderMultiBiome.populate(ChunkProviderMultiBiome.java:277)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1094)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1060)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:169)
+	at net.minecraft.server.management.PlayerChunkMapEntry.providePlayerChunk(PlayerChunkMapEntry.java:130)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:183)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:236)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [GCEntityPlayerMP['Player703'/444, l='New World', x=4042.21, y=100.00, z=4009.74]]
+	Chunk stats: ServerChunkCache: 489 Drop: 0
+	Level seed: 387181245488120965
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (0,0,0), Chunk: (at 0,0,0 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 0 game time, 0 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:831)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_291, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1024563680 bytes (977 MB) / 2240806912 bytes (2137 MB) up to 7621050368 bytes (7268 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 24, allocated: 1, tallocated: 18
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 9 mods loaded, 9 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                  | Version      | Source                                                                 | Signature |
+	|:------ |:------------------- |:------------ |:---------------------------------------------------------------------- |:--------- |
+	| LCHIJA | minecraft           | 1.12.2       | minecraft.jar                                                          | None      |
+	| LCHIJA | mcp                 | 9.42         | minecraft.jar                                                          | None      |
+	| LCHIJA | FML                 | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2847-PROJECT(AdditionalPlanets-secondtry-).jar | None      |
+	| LCHIJA | forge               | 14.23.5.2847 | forgeSrc-1.12.2-14.23.5.2847-PROJECT(AdditionalPlanets-secondtry-).jar | None      |
+	| LCHIJA | micdoodlecore       |              | minecraft.jar                                                          | None      |
+	| LCHIJA | galacticraftcore    | 4.0.2.261    | GalacticraftCore-Dev-1.12.2-4.0.2.261.jar                              | None      |
+	| LCHIJA | galacticraftplanets | 4.0.2.261    | Galacticraft-Planets-Dev-1.12.2-4.0.2.261.jar                          | None      |
+	| LCHIJA | asmodeuscore        | 0.0.25       | asmodeuscore-0.0.25-303101-3231302.jar                                 | None      |
+	| LCHIJA | gcaddon             | 1.0.0        | GCAddon-1.12.2-1.0.0.jar                                               | None      |
+
+	Loaded coremods (and transformers): 
+MicdoodlePlugin (MicdoodleCore-Dev-1.12.2-4.0.2.261.jar)
+  micdoodle8.mods.miccore.MicdoodleTransformer
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [GCEntityPlayerMP['Player703'/444, l='New World', x=4042.21, y=100.00, z=4009.74]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

@@ -114,6 +114,8 @@ public class AddonCelestialBodies {
 	public static SolarSystem WormHoleMilkeyWay;
 	public static SolarSystem WormHoleAndromeda;
 	public static SolarSystem WormHoleMessier;
+	public static SolarSystem Rogue;
+	public static SolarSystem idk;
 
 	// Planets
 	public static Planet ProximaCentauriB;
@@ -140,6 +142,7 @@ public class AddonCelestialBodies {
 	public static Planet BarbanIV;
 	public static Planet KOI4878b;
 	public static Planet ThesiusOmega;
+	public static Planet RoguePlanet;
 	
 	//  Astroids
 	public static Planet Asteroids;
@@ -275,7 +278,7 @@ public class AddonCelestialBodies {
 		
 		WormHoleMilkeyWay = new SolarSystem("WormHoleMilkeyWay", "milky_way").setMapPosition(new Vector3(-1.0F, 2.5F, 0.0F));
 		Star starSol16 = (Star) new Star("WormHoleMilkeyWay").setParentSolarSystem(WormHoleMilkeyWay).setTierRequired(-1);
-		starSol16.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
+		starSol16.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/galaxy/wormhole.png"));
 		WormHoleMilkeyWay.setMainStar(starSol16);
 		
 		WormHoleAndromeda = new SolarSystem("WormHoleAndromeda", NewGalaxy.andromeda.getName()).setMapPosition(new Vector3(-1.0F, 0.5F, 0.0F));
@@ -287,6 +290,16 @@ public class AddonCelestialBodies {
 		Star starSol18 = (Star) new Star("WormHoleMessier").setParentSolarSystem(WormHoleMessier).setTierRequired(-1);
 		starSol18.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
 		WormHoleMessier.setMainStar(starSol18);
+		
+		Rogue = new SolarSystem("Rogue", NewGalaxy.interstellar.getName()).setMapPosition(new Vector3(-1.0F, 0.5F, 0.0F));
+		Star starSol19 = (Star) new Star("Rogue").setParentSolarSystem(Rogue).setTierRequired(-1);
+		starSol19.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/wormhole.png"));
+		Rogue.setMainStar(starSol19);
+		
+		idk = new SolarSystem("idk", NewGalaxy.interstellar.getName()).setMapPosition(new Vector3(-5.0F, 3.5F, 0.0F));
+		Star starSol20 = (Star) new Star("idk").setParentSolarSystem(idk).setTierRequired(-1);
+		starSol20.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/galaxy/wormhole.png"));
+		idk.setMainStar(starSol20);
 		
 	}
 
@@ -387,7 +400,7 @@ public class AddonCelestialBodies {
 		Polulos.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Polulos.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
 		Polulos.atmosphereComponent(EnumAtmosphericGas.METHANE); 
-
+ 
 		Shayan = new Planet("Shayan").setParentSolarSystem(Garphina);
 		Shayan.setTierRequired(6);
 		Shayan.setRingColorRGB(0.1F, 0.9F, 0.6F);
@@ -572,6 +585,19 @@ public class AddonCelestialBodies {
 		ThesiusOmega.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		ThesiusOmega.setDimensionInfo(dim.idThesiusOmega, WorldProviderThesiusOmega.class);
 		ThesiusOmega.atmosphereComponent(EnumAtmosphericGas.METHANE);
+		
+		RoguePlanet = new Planet("RoguePlanet").setParentSolarSystem(Rogue);
+		RoguePlanet.setRelativeSize(90f);
+		RoguePlanet.setTierRequired(6);
+		RoguePlanet.setRingColorRGB(0.1F, 0.9F, 0.6F);
+		RoguePlanet.setPhaseShift(1.30F);
+		RoguePlanet.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(10F, 0F));
+		RoguePlanet.setRelativeOrbitTime(0.1F);
+		RoguePlanet.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/matter.png"));
+		//RoguePlanet.setBiomeInfo(PolulosBiomes.PolulosSavanna, PolulosBiomes.PolulosDesert);
+		RoguePlanet.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		//RoguePlanet.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
+		RoguePlanet.atmosphereComponent(EnumAtmosphericGas.METHANE); 
 
 	}
 
@@ -789,6 +815,8 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerSolarSystem(KOI4878);
 		GalaxyRegistry.registerSolarSystem(WormHoleMilkeyWay);
 		GalaxyRegistry.registerSolarSystem(WormHoleAndromeda);
+		//GalaxyRegistry.registerSolarSystem(Rogue);
+		GalaxyRegistry.registerSolarSystem(idk);
 		//GalaxyRegistry.registerSolarSystem(WormHoleMessier);
 		
 		// then plants
@@ -808,6 +836,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerPlanet(Vermon);
 		//GalaxyRegistry.registerPlanet(Dark);
 		GalaxyRegistry.registerPlanet(Vulcan);
+		GalaxyRegistry.registerPlanet(RoguePlanet);
 		//GalaxyRegistry.registerPlanet(Kepler452b);
 		//GalaxyRegistry.registerPlanet(J1407b); 
 		//GalaxyRegistry.registerPlanet(BarbanI); 

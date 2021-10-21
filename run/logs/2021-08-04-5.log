@@ -1,0 +1,810 @@
+[17:47:10] [main/INFO] [GradleStart]: Extra: []
+[17:47:10] [main/INFO] [GradleStart]: Found and added coremod: micdoodle8.mods.miccore.MicdoodlePlugin
+[17:47:10] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/evely/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:47:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:47:10] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
+[17:47:10] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_291, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_291\jre
+[17:47:10] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[17:47:10] [main/ERROR] [FML]: Full: C:\Users\evely\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[17:47:10] [main/ERROR] [FML]: Trimmed: c:/users/evely/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[17:47:10] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[17:47:10] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[17:47:10] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[17:47:10] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[17:47:10] [main/INFO] [FML]: Found a command line coremod : micdoodle8.mods.miccore.MicdoodlePlugin
+[17:47:10] [main/WARN] [FML]: The coremod micdoodle8.mods.miccore.MicdoodlePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[17:47:10] [main/INFO] [FML]: Ignoring missing certificate for coremod MicdoodlePlugin (micdoodle8.mods.miccore.MicdoodlePlugin), as this is probably a dev workspace
+[17:47:10] [main/INFO] [FML]: Searching C:\Users\evely\Documents\AdditionalPlanets-secondtry-\run\.\mods for mods
+[17:47:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:47:10] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[17:47:10] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[17:47:10] [main/INFO] [GradleStart]: Injecting location in coremod micdoodle8.mods.miccore.MicdoodlePlugin
+[17:47:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:47:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:47:11] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[17:47:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:47:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:47:11] [main/INFO] [STDOUT]: [micdoodle8.mods.miccore.MicdoodlePlugin:getASMTransformerClass:99]: Successfully Registered Transformer
+[17:47:11] [main/INFO] [STDOUT]: [micdoodle8.mods.miccore.MicdoodlePlugin:injectData:292]: [Micdoodle8Core]: Patching game...
+[17:47:11] [main/INFO] [STDOUT]: [micdoodle8.mods.miccore.MicdoodlePlugin:injectData:292]: [Micdoodle8Core]: Patching game...
+[17:47:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:47:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[17:47:11] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
+[17:47:11] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:47:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:47:11] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[17:47:11] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player390
+[17:47:13] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[17:47:13] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[17:47:14] [Client thread/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_291, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 526060464 bytes (501 MB) / 768606208 bytes (733 MB) up to 7621050368 bytes (7268 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+MicdoodlePlugin (MicdoodleCore-Dev-1.12.2-4.0.2.261.jar)
+  micdoodle8.mods.miccore.MicdoodleTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 471.11' Renderer: 'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+[17:47:14] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
+[17:47:14] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[17:47:14] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[17:47:14] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[17:47:14] [Client thread/INFO] [FML]: Searching C:\Users\evely\Documents\AdditionalPlanets-secondtry-\run\.\mods for mods
+[17:47:15] [Client thread/INFO] [FML]: Forge Mod Loader has identified 9 mods to load
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/WARN] [FML]: * The API Galacticraft API from source C:\Users\evely\.gradle\caches\modules-2\files-2.1\GC-1.12-dev\Galacticraft-API\1.12.2-4.0.2.261\4b86c002bb30a2f523fd9f4bfb3bfcb678e23612\Galacticraft-API-1.12.2-4.0.2.261.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:569)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[17:47:15] [Client thread/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:514)...
+[17:47:15] [Client thread/WARN] [FML]: ****************************************
+[17:47:15] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, micdoodlecore, galacticraftcore, galacticraftplanets, asmodeuscore, gcaddon] at CLIENT
+[17:47:15] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, micdoodlecore, galacticraftcore, galacticraftplanets, asmodeuscore, gcaddon] at SERVER
+[17:47:16] [Client thread/ERROR] [FML]: The mod gcaddon is expecting signature b02331787272ec3515ebe63ecdeea0d746653468 for source GCAddon-1.12.2-1.0.0.jar, however there is no signature matching that description
+[17:47:16] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Planets, FMLFileResourcePack:AsmodeusCore, FMLFileResourcePack:GCAddon
+[17:47:16] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 72821100 nanos
+[17:47:16] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[17:47:16] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[17:47:16] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[17:47:16] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[17:47:16] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[17:47:16] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[17:47:17] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2855
+[17:47:18] [Client thread/INFO] [FML]: Applying holder lookups
+[17:47:18] [Client thread/INFO] [FML]: Holder lookups applied
+[17:47:18] [Client thread/WARN] [gcaddon]: Registry name for gcaddon:rawcrabmeat has already been set. Was trying to set it to gcaddon:rawcrabmeat.
+[17:47:18] [Client thread/WARN] [gcaddon]: Registry name for gcaddon:cookedcrabmeat has already been set. Was trying to set it to gcaddon:cookedcrabmeat.
+[17:47:18] [Client thread/WARN] [gcaddon]: Registry name for gcaddon:ferminium_pickaxe has already been set. Was trying to set it to gcaddon:ferminium_pickaxe.
+[17:47:18] [Client thread/WARN] [gcaddon]: Registry name for gcaddon:ferminium_axe has already been set. Was trying to set it to gcaddon:ferminium_axe.
+[17:47:18] [Client thread/WARN] [gcaddon]: Registry name for gcaddon:ferminium_shovel has already been set. Was trying to set it to gcaddon:ferminium_shovel.
+[17:47:18] [Client thread/WARN] [gcaddon]: Registry name for gcaddon:ferminium_sword has already been set. Was trying to set it to gcaddon:ferminium_sword.
+[17:47:18] [Client thread/WARN] [gcaddon]: Registry name for gcaddon:reesh has already been set. Was trying to set it to gcaddon:reesh.
+[17:47:18] [Client thread/INFO] [FML]: Applying holder lookups
+[17:47:18] [Client thread/INFO] [FML]: Holder lookups applied
+[17:47:18] [Client thread/INFO] [FML]: Applying holder lookups
+[17:47:18] [Client thread/INFO] [FML]: Holder lookups applied
+[17:47:18] [Client thread/INFO] [FML]: Applying holder lookups
+[17:47:18] [Client thread/INFO] [FML]: Holder lookups applied
+[17:47:18] [Client thread/INFO] [FML]: Injecting itemstacks
+[17:47:18] [Client thread/INFO] [FML]: Itemstack injection complete
+[17:47:20] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[17:47:21] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[17:47:21] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:47:21] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[17:47:21] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[17:47:24] [Client thread/INFO] [FML]: Max texture size: 16384
+[17:47:25] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 4096x2048 textures-atlas
+[17:47:26] [Client thread/ERROR] [FML]: Exception loading model for variant gcaddon:ogniousleaves#normal for blockstate "gcaddon:ogniousleaves"
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model gcaddon:ogniousleaves#normal with loader VariantLoader.INSTANCE, skipping
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
+	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:153) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$MissingVariantException
+	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
+	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
+	... 21 more
+[17:47:26] [Client thread/ERROR] [FML]: Exception loading blockstate for the variant gcaddon:ogniousleaves#normal: 
+java.lang.Exception: Could not load model definition for variant gcaddon:ogniousleaves
+	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:269) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:121) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.lang.RuntimeException: Encountered an exception when loading model definition of model gcaddon:blockstates/ogniousleaves.json
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:228) ~[ModelBakery.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
+	... 20 more
+Caused by: java.io.FileNotFoundException: gcaddon:blockstates/ogniousleaves.json
+	at net.minecraft.client.resources.FallbackResourceManager.getAllResources(FallbackResourceManager.java:104) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getAllResources(SimpleReloadableResourceManager.java:79) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:221) ~[ModelBakery.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
+	... 20 more
+[17:47:26] [Client thread/ERROR] [FML]: Exception loading model for variant gcaddon:ogniousleaves#inventory for item "gcaddon:ogniousleaves", normal location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model gcaddon:item/ogniousleaves with loader VanillaLoader.INSTANCE, skipping
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:302) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.io.FileNotFoundException: gcaddon:models/item/ogniousleaves.json
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadModel(ModelBakery.java:334) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.access$1400(ModelLoader.java:115) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:861) ~[ModelLoader$VanillaLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
+	... 20 more
+[17:47:26] [Client thread/ERROR] [FML]: Exception loading model for variant gcaddon:ogniousleaves#inventory for item "gcaddon:ogniousleaves", blockstate location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model gcaddon:ogniousleaves#inventory with loader VariantLoader.INSTANCE, skipping
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:296) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$MissingVariantException
+	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
+	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
+	... 20 more
+[17:47:26] [Client thread/ERROR] [FML]: Exception loading model for variant gcaddon:radon_bow#inventory for item "gcaddon:radon_bow", normal location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model gcaddon:item/radon_bow with loader VanillaLoader.INSTANCE, skipping
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:302) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.io.FileNotFoundException: gcaddon:models/item/radon_bow.json
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadModel(ModelBakery.java:334) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.access$1400(ModelLoader.java:115) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:861) ~[ModelLoader$VanillaLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
+	... 20 more
+[17:47:26] [Client thread/ERROR] [FML]: Exception loading model for variant gcaddon:radon_bow#inventory for item "gcaddon:radon_bow", blockstate location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model gcaddon:radon_bow#inventory with loader VariantLoader.INSTANCE, skipping
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:296) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_291]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_291]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_291]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_291]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$MissingVariantException
+	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
+	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
+	... 20 more
+[17:47:26] [Client thread/INFO] [FML]: Applying holder lookups
+[17:47:26] [Client thread/INFO] [FML]: Holder lookups applied
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc treasure chest`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc air distributor`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc air collector`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc oxygen pipe`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc air lock frame`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc refinery`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc nasa workbench`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc deconstructor`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc air compressor`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc fuel loader`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc landing pad`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc landing pad full`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc space station`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc dummy block`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc air sealer`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc dungeon boss spawner`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc oxygen detector`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc buggy fueler`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc buggy fueler single`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc cargo loader`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc cargo unloader`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc parachest tile`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc solar panel`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc radio telescope`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc magnetic crafting table`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc energy storage module`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc coal generator`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc electric furnace`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc aluminum wire`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc switchable aluminum wire`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc fallen meteor`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc ingot compressor`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc electric ingot compressor`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc circuit fabricator`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc air lock controller`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc oxygen storage module`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc oxygen decompressor`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc space station thruster`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc arc lamp`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc view screen`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc panel lighting`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc telemetry unit`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc painter`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc fluid tank`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc player detector`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc platform`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc emergency post`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc null tile`, expected `galacticraftcore`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc slimeling egg`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc tier 2 treasure chest`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc planet terraformer`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc cryogenic chamber`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc gas liquefier`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc methane synthesizer`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc water electrolyzer`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc mars dungeon spawner`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc launch controller`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc beam reflector`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc beam receiver`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc short range telepad`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc fake short range telepad`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc astro miner base builder`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc astro miner base`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc venus spout`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc venus dungeon spawner`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc tier 3 treasure chest`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc geothermal generator`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc crashed probe`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc solar array module`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc solar array controller`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gc laser turret`, expected `galacticraftplanets`. This could be a intended override, but in most cases indicates a broken mod.
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModRenderPlayer:<init>:22]: Replacing RenderPlayer with custom version, skinny version = : false
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModLayerBipedArmor:<init>:17]: Replacing LayerBipedArmor to custom version
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModRenderPlayer:<init>:27]: ModRenderPlayer layerRenderers = [net.minecraft.client.renderer.entity.layers.LayerHeldItem@3a8dded8, net.minecraft.client.renderer.entity.layers.LayerArrow@10c15a43, net.minecraft.client.renderer.entity.layers.LayerDeadmau5Head@44732ea, net.minecraft.client.renderer.entity.layers.LayerCape@696d7989, net.minecraft.client.renderer.entity.layers.LayerCustomHead@3d420162, net.minecraft.client.renderer.entity.layers.LayerElytra@27cb47cb, net.minecraft.client.renderer.entity.layers.LayerEntityOnShoulder@1a26f1ba, io.github.nagol2003.client.render.ModLayerBipedArmor@18056246]
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.proxy.ClientProxy:init:57]: playerRenderer after reflection is io.github.nagol2003.client.render.ModRenderPlayer@35e12935
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModRenderPlayer:<init>:22]: Replacing RenderPlayer with custom version, skinny version = : false
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModLayerBipedArmor:<init>:17]: Replacing LayerBipedArmor to custom version
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModRenderPlayer:<init>:27]: ModRenderPlayer layerRenderers = [net.minecraft.client.renderer.entity.layers.LayerHeldItem@4869c55d, net.minecraft.client.renderer.entity.layers.LayerArrow@65ef46cb, net.minecraft.client.renderer.entity.layers.LayerDeadmau5Head@564b0f62, net.minecraft.client.renderer.entity.layers.LayerCape@6adf3c1f, net.minecraft.client.renderer.entity.layers.LayerCustomHead@6c9a4f34, net.minecraft.client.renderer.entity.layers.LayerElytra@735c9572, net.minecraft.client.renderer.entity.layers.LayerEntityOnShoulder@7de2a464, io.github.nagol2003.client.render.ModLayerBipedArmor@6ece5003]
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModRenderPlayer:<init>:22]: Replacing RenderPlayer with custom version, skinny version = : true
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModLayerBipedArmor:<init>:17]: Replacing LayerBipedArmor to custom version
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModRenderPlayer:<init>:27]: ModRenderPlayer layerRenderers = [net.minecraft.client.renderer.entity.layers.LayerHeldItem@50135101, net.minecraft.client.renderer.entity.layers.LayerArrow@47f3a974, net.minecraft.client.renderer.entity.layers.LayerDeadmau5Head@2f5ae46a, net.minecraft.client.renderer.entity.layers.LayerCape@3308e7ca, net.minecraft.client.renderer.entity.layers.LayerCustomHead@795923f3, net.minecraft.client.renderer.entity.layers.LayerElytra@233b8da5, net.minecraft.client.renderer.entity.layers.LayerEntityOnShoulder@5bba441c, io.github.nagol2003.client.render.ModLayerBipedArmor@2ff8de16]
+[17:47:27] [Client thread/INFO] [FML]: Injecting itemstacks
+[17:47:27] [Client thread/INFO] [FML]: Itemstack injection complete
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModLayerBipedArmor:<init>:17]: Replacing LayerBipedArmor to custom version
+[17:47:27] [Client thread/INFO] [STDOUT]: [io.github.nagol2003.client.render.ModLayerBipedArmor:<init>:17]: Replacing LayerBipedArmor to custom version
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4442
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4444
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4445
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4446
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4447
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4448
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4450
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4451
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4453
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4454
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4455
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4455
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4457
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4458
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4459
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4460
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4461
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4462
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4463
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4464
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4465
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/ERROR] [Galacticraft]: There was a problem getting WorldProvider type -4466
+[17:47:27] [Client thread/ERROR] [Galacticraft]: (possibly this is a conflict, check Galacticraft config.)
+[17:47:27] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 9 mods
+[17:47:27] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[17:47:27] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[17:47:28] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[17:47:33] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[17:47:33] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[17:47:33] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[17:47:33] [Server thread/INFO] [FML]: Applying holder lookups
+[17:47:33] [Server thread/INFO] [FML]: Holder lookups applied
+[17:47:33] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@64a1477c)
+[17:47:33] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 516 advancements
+[17:47:33] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@64a1477c)
+[17:47:33] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@64a1477c)
+[17:47:33] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -30
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -4452
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -4443
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -29
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -4401
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -4440
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -4449
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -31
+[17:47:34] [Server thread/INFO] [Galacticraft]: Registered Dimension: -28
+[17:47:35] [Server thread/INFO] [FML]: Unloading dimension -1
+[17:47:35] [Server thread/INFO] [FML]: Unloading dimension 1
+[17:47:35] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 20, from 10
+[17:47:35] [Thread-9/INFO] [Galacticraft]: Galacticraft remote version found: 4.0.2
+[17:47:35] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[17:47:35] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[17:47:35] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 9 mods : minecraft@1.12.2,galacticraftcore@4.0.2.261,galacticraftplanets@4.0.2.261,asmodeuscore@0.0.25,micdoodlecore@,gcaddon@1.0.0,FML@8.0.99.99,forge@14.23.5.2847,mcp@9.42
+[17:47:35] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[17:47:35] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[17:47:35] [Server thread/INFO] [FML]: Loading dimension -4452 (New World) (net.minecraft.server.integrated.IntegratedServer@64a1477c)
+[17:47:35] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player390[local:E:2ed82f43] logged in with entity id 281 at (2999.8549835559697, 72.0, 120.6918583738807)
+[17:47:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player390 joined the game
+[17:47:37] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[17:47:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[17:47:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.Denia
+[17:47:37] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 3 advancements
+[17:47:38] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[17:47:38] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[17:47:38] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.Denia
+[17:48:08] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[17:48:08] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[17:48:08] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.Denia

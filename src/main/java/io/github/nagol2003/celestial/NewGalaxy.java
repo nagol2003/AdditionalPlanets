@@ -9,6 +9,7 @@ public class NewGalaxy {
 	
 	public static Galaxies andromeda;
 	public static Galaxies messier81;
+	public static Galaxies interstellar;
 	//public static SolarSystem adnro1;
 	//public static SolarSystem andro2;
 	
@@ -19,6 +20,7 @@ public class NewGalaxy {
 	private static void build() {
 		andromeda = BodiesRegistry.registerGalaxy("andromeda", new ResourceLocation(Const.modID, "textures/gui/galaxy/wormhole.png"));
 		messier81 = BodiesRegistry.registerGalaxy("messier81", new ResourceLocation(Const.modID, "textures/galaxy/messier.png"));
+		interstellar = BodiesRegistry.registerGalaxy("interstellar", new ResourceLocation(Const.modID, "textures/galaxy/space.png"));
 		
 		//adnro1 = new SolarSystem("adnro1", andromeda.getName()).setMapPosition(new Vector3(-1.0F, 1.0F, 0.0F));
 		//Star starSol4 = (Star) new Star("zsadnro1").setParentSolarSystem(adnro1).setTierRequired(-1);

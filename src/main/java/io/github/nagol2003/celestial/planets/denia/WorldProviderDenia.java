@@ -62,7 +62,7 @@ public class WorldProviderDenia extends WorldProviderAddonPlanet {
 
     @Override
     public float getGravity() {
-        return 0.015F;
+        return -0.025F;
     }
 
     @Override

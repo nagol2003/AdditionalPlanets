@@ -52,6 +52,7 @@ public class AddonMain {
         FluidRegistry.enableUniversalBucket();
     }
     
+    
 
 	@EventHandler
 	public static void onFingerprintViolation(final FMLFingerprintViolationEvent event) {
@@ -61,7 +62,6 @@ public class AddonMain {
 			LOGGER.warn("Invalid Fingerprint");
 		}
 	}
-
 
 
 	@EventHandler
