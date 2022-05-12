@@ -82,7 +82,7 @@ public class WorldProviderPolulos extends WorldProviderAddonPlanet {
 
     @Override
     public boolean canSpaceshipTierPass(int tier) {
-        return tier >=3;
+        return tier >=9;
     }
 
     @Override

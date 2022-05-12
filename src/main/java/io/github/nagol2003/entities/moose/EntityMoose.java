@@ -1,5 +1,6 @@
 package io.github.nagol2003.entities.moose;
 
+import micdoodle8.mods.galacticraft.api.entity.IEntityBreathable;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -17,7 +18,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
-public class EntityMoose extends EntityAgeable {
+public class EntityMoose extends EntityAgeable implements IEntityBreathable {
 
 	public float rotation;
 	public float prevRotation;
@@ -42,6 +43,12 @@ public class EntityMoose extends EntityAgeable {
 	public boolean canBreatheUnderwater() {
 		return true;
 	}
+	
+	@Override
+    public boolean canBreath()
+    {
+        return true;
+    }
 	
 	 protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty)
 	    {
@@ -110,7 +117,7 @@ public class EntityMoose extends EntityAgeable {
 	protected void applyEntityAttributes() {
 		super.applyEntityAttributes();
 		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.15D);
+		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.25D);
 		this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(3.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.ARMOR_TOUGHNESS).setBaseValue(2.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.5D);

@@ -1,6 +1,15 @@
 package io.github.nagol2003;
 
+import java.awt.List;
+import java.io.File;
+
+import net.minecraftforge.common.config.Configuration;
+import java.util.ArrayList;
+
+import micdoodle8.mods.galacticraft.core.Constants;
 import net.minecraftforge.common.config.Config;
+import net.minecraftforge.common.config.ConfigCategory;
+import net.minecraftforge.common.config.ConfigElement;
 
 /**
  * Conguration Options Layout is from More-Planets addon for its simplicity
@@ -13,7 +22,10 @@ import net.minecraftforge.common.config.Config;
  */
 @Config(modid = Const.modID)
 public class AddonConfig {
-
+	
+	
+	
+	
 	@Config.LangKey(value = "addon_general")
 	@Config.Comment(value = "Base Addon Configuration: Version Checker, Debug, Mod Option. etc.")
 	public static final General addon_general = new General();

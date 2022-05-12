@@ -1,5 +1,6 @@
 package io.github.nagol2003.entities.poluloscrab;
 
+import micdoodle8.mods.galacticraft.api.entity.IEntityBreathable;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -13,7 +14,7 @@ import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
-public class EntityPolulosCrab extends EntityAgeable {
+public class EntityPolulosCrab extends EntityAgeable implements IEntityBreathable {
 
 	public float rotation;
 	public float prevRotation;
@@ -38,6 +39,12 @@ public class EntityPolulosCrab extends EntityAgeable {
 	public boolean canBreatheUnderwater() {
 		return true;
 	}
+	
+	@Override
+    public boolean canBreath()
+    {
+        return true;
+    }
 
 	@Override
 	public boolean isEntityInsideOpaqueBlock() {

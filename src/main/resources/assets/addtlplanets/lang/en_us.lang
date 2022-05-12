@@ -15,6 +15,7 @@ solarsystem.KOI4878=KOI-4878
 solarsystem.WormHoleMilkeyWay=Worm Hole
 solarsystem.WormHoleAndromeda=Worm Hole
 solarsystem.WormHoleMessier=Worm Hole
+solarsystem.CosmicString=High Tension Cosmic String
 
 //Stars
 star.custom_star=Custom Star
@@ -33,6 +34,7 @@ star.KOI4878=KOI-4878
 star.WormHoleMilkeyWay=Worm Hole
 star.WormHoleAndromeda=Worm Hole
 star.WormHoleMessier=Worm Hole
+star.CosmicString=High Tension Cosmic String
 
 //Planets
 planet.planet_one=Custom Planet 1

@@ -25,6 +25,7 @@ import io.github.nagol2003.blocks.vulcan.VulcanDirt;
 import io.github.nagol2003.blocks.vulcan.VulcanRockBurnt;
 import io.github.nagol2003.blocks.vulcan.VulcanRockScorched;
 import io.github.nagol2003.registry.APRegistry;
+import io.github.nagol2003.testing.LIGHTSPEEDENGINE;
 import net.minecraft.block.Block;
 
 public class InitBlocks {
@@ -57,6 +58,7 @@ public class InitBlocks {
 	public static final Block STRANGEMETALLICDENIA = new StrangeMetallicDenia();
 	public static final Block DENIAIRONORE = new DeniaIronOre();
 	public static final Block TUNDRA = new Tundra();
+	public static final Block LIGHTSPEEDENGINE = new LIGHTSPEEDENGINE();
 	//public static final Block REESH_PLANT = new ReeshPlant(null);
 	//public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
 
@@ -90,6 +92,7 @@ public class InitBlocks {
 		registry.register(STRANGEMETALLICDENIA, "strangemetallicdenia");
 		registry.register(DENIAIRONORE, "deniaironore");
 		registry.register(TUNDRA, "tundra");
+		registry.register(LIGHTSPEEDENGINE, "lightspeedengine");
 		//registry.register(REESH_PLANT, "reeshplant");
 
 

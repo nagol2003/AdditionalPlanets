@@ -1,5 +1,6 @@
 package io.github.nagol2003.entities.deniamammal;
 
+import micdoodle8.mods.galacticraft.api.entity.IEntityBreathable;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -17,7 +18,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
-public class EntityMammal extends EntityAgeable {
+public class EntityMammal extends EntityAgeable implements IEntityBreathable {
 
 	public float rotation;
 	public float prevRotation;
@@ -42,6 +43,12 @@ public class EntityMammal extends EntityAgeable {
 	public boolean canBreatheUnderwater() {
 		return true;
 	}
+	
+	@Override
+    public boolean canBreath()
+    {
+        return true;
+    }
 	
 	 protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty)
 	    {

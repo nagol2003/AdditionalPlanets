@@ -61,6 +61,7 @@ import io.github.nagol2003.celestial.planets.zakir.WorldProviderZakir;
 import io.github.nagol2003.celestial.planets.zakir.biome.ZakirBiomes;
 import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
 import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody;
+import micdoodle8.mods.galacticraft.api.galaxies.CelestialBody.ScalableDistance;
 import micdoodle8.mods.galacticraft.api.galaxies.GalaxyRegistry;
 import micdoodle8.mods.galacticraft.api.galaxies.Moon;
 import micdoodle8.mods.galacticraft.api.galaxies.Planet;
@@ -116,6 +117,9 @@ public class AddonCelestialBodies {
 	public static SolarSystem WormHoleMessier;
 	public static SolarSystem Rogue;
 	public static SolarSystem idk;
+	public static SolarSystem shipmilk;
+	public static SolarSystem shipspace;
+	public static SolarSystem CosmicString;
 
 	// Planets
 	public static Planet ProximaCentauriB;
@@ -143,6 +147,8 @@ public class AddonCelestialBodies {
 	public static Planet KOI4878b;
 	public static Planet ThesiusOmega;
 	public static Planet RoguePlanet;
+	public static Planet shipmilk2;
+	public static Planet shipspace2;
 	
 	//  Astroids
 	public static Planet Asteroids;
@@ -159,6 +165,20 @@ public class AddonCelestialBodies {
 	public static Moon Terrin;
 	public static Moon BarbanIVa;
 	public static Moon Chiona;
+	
+	public static Satellite polulosOrbit;
+	
+	public static Satellite polulosOrbit(String name, Planet planet, float phaseShift, float distance, float orbitTime, float size, int tier)
+    {
+		Satellite satellite = new Satellite(name).setParentBody(Denia);
+		polulosOrbit.setPhaseShift(phaseShift);
+		polulosOrbit.setRelativeDistanceFromCenter(new ScalableDistance(distance, distance));
+		polulosOrbit.setRelativeOrbitTime(orbitTime);
+		polulosOrbit.setRelativeSize(size);
+		polulosOrbit.setTierRequired(tier);
+		polulosOrbit.setBodyIcon(new ResourceLocation("moreplanets:textures/gui/celestialbodies/" + name + ".png"));
+        return satellite;
+    }
 	
 
 	//public static Satellite polulosOrbit;
@@ -301,7 +321,22 @@ public class AddonCelestialBodies {
 		starSol20.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/galaxy/wormhole.png"));
 		idk.setMainStar(starSol20);
 		
-	}
+		shipmilk = new SolarSystem("shipmilk", "milky_way").setMapPosition(new Vector3(-5.0F, 3.5F, 0.0F));
+		Star starSol21 = (Star) new Star("shipmilk").setParentSolarSystem(shipmilk).setTierRequired(-1);
+		starSol21.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/galaxy/wormhole.png"));
+		shipmilk.setMainStar(starSol21);
+		
+		shipspace = new SolarSystem("shipspace", NewGalaxy.interstellar.getName()).setMapPosition(new Vector3(-5.0F, 3.5F, 0.0F));
+		Star starSol22 = (Star) new Star("shipspace").setParentSolarSystem(shipspace).setTierRequired(-1);
+		starSol22.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/galaxy/wormhole.png"));
+		shipspace.setMainStar(starSol22);
+		
+		CosmicString = new SolarSystem("CosmicString", NewGalaxy.interstellar.getName()).setMapPosition(new Vector3(3.1F, 1.7F, 0.0F));
+		Star starSol23 = (Star) new Star("CosmicString").setParentSolarSystem(CosmicString).setTierRequired(-1);
+		starSol23.setBodyIcon(new ResourceLocation("galacticraftcore", "textures/gui/celestialbodies/s.png"));
+		CosmicString.setMainStar(starSol23);
+		 
+	} 
 
 	/**
 	 * Register planets.
@@ -390,7 +425,7 @@ public class AddonCelestialBodies {
 		mother.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Polulos = new Planet("Polulos").setParentSolarSystem(Garphina);
-		Polulos.setTierRequired(6);
+		Polulos.setTierRequired(9);
 		Polulos.setRingColorRGB(0.1F, 0.9F, 0.6F);
 		Polulos.setPhaseShift(1.30F);
 		Polulos.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.25F, 0.25F));
@@ -414,7 +449,7 @@ public class AddonCelestialBodies {
 		Shayan.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 		Denia = new Planet("Denia").setParentSolarSystem(Garphina);
-		Denia.setTierRequired(6);
+		Denia.setTierRequired(8);
 		Denia.setRingColorRGB(0.1F, 0.9F, 0.6F);
 		Denia.setPhaseShift(1.30F);
 		Denia.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.35F, 1.35F));
@@ -475,7 +510,7 @@ public class AddonCelestialBodies {
 		Dark.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		Vulcan = new Planet("Vulcan").setParentSolarSystem(Aa);
-		Vulcan.setTierRequired(6);
+		Vulcan.setTierRequired(16);
 		Vulcan.setRingColorRGB(0.8F, 0.1F, 0.6F);
 		Vulcan.setPhaseShift(1.30F);
 		Vulcan.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(0.5F, 0.5F));
@@ -598,6 +633,30 @@ public class AddonCelestialBodies {
 		RoguePlanet.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		//RoguePlanet.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
 		RoguePlanet.atmosphereComponent(EnumAtmosphericGas.METHANE); 
+		
+		shipmilk2 = new Planet("ThesiusOmega").setParentSolarSystem(Aa);
+		shipmilk2.setTierRequired(6);
+		shipmilk2.setRingColorRGB(0F, 1F, 0F);
+		shipmilk2.setPhaseShift(1.30F);
+		shipmilk2.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
+		shipmilk2.setRelativeOrbitTime(12.0F);
+		shipmilk2.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/thesius.png"));
+		shipmilk2.setBiomeInfo(ThesiusOmegaBiomes.ThesiusOmega);
+		shipmilk2.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		shipmilk2.setDimensionInfo(dim.idThesiusOmega, WorldProviderThesiusOmega.class);
+		shipmilk2.atmosphereComponent(EnumAtmosphericGas.METHANE);
+		
+		shipspace2 = new Planet("shipspace2").setParentSolarSystem(shipspace);
+		shipspace2.setTierRequired(6);
+		shipspace2.setRingColorRGB(0F, 1F, 0F);
+		shipspace2.setPhaseShift(1.30F);
+		shipspace2.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(2.4F, 2.4F));
+		shipspace2.setRelativeOrbitTime(12.0F);
+		shipspace2.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/thesius.png"));
+		shipspace2.setBiomeInfo(ThesiusOmegaBiomes.ThesiusOmega);
+		shipspace2.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		shipspace2.setDimensionInfo(dim.idThesiusOmega, WorldProviderThesiusOmega.class);
+		shipspace2.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 	}
 
@@ -818,6 +877,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerSolarSystem(Rogue);
 		GalaxyRegistry.registerSolarSystem(idk);
 		//GalaxyRegistry.registerSolarSystem(WormHoleMessier);
+		GalaxyRegistry.registerSolarSystem(CosmicString);
 		
 		// then plants
 		//GalaxyRegistry.registerPlanet(ProximaCentauriB);
