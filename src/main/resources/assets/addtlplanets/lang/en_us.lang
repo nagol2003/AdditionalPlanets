@@ -99,6 +99,9 @@ tile.addtlplanets.strangemetallicdenia.name=Strange Metallic Ore
 tile.addtlplanets.strangemetallicpolulos.name=Strange Metallic Ore
 tile.addtlplanets.deniaironore.name=Iron Ore
 
+//TEST Block
+tile.addtlplanets.teststructureblock.name=Test Structure Block
+
 
 //Items
 item.ferminium_chunk=Ferminium Chunk

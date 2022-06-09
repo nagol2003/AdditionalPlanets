@@ -15,4 +15,6 @@ public final class Const {
    public static final String TEXTURE_PREFIX = ASSET_PREFIX + ":";
 
    public static final int ENTITY_POLULOSCRAB = 250;
+   
+   public static final boolean IS_OODONE_COOL = true;
 }

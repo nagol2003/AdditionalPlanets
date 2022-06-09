@@ -1,5 +1,6 @@
 package io.github.nagol2003.init;
 
+import io.github.nagol2003.blocks.TestStructureBlock;
 import io.github.nagol2003.blocks.Denia.DeniaFerminiumOre;
 import io.github.nagol2003.blocks.Denia.DeniaIronOre;
 import io.github.nagol2003.blocks.Denia.FROZENCO2;
@@ -59,6 +60,9 @@ public class InitBlocks {
 	public static final Block DENIAIRONORE = new DeniaIronOre();
 	public static final Block TUNDRA = new Tundra();
 	public static final Block LIGHTSPEEDENGINE = new LIGHTSPEEDENGINE();
+
+
+	public static final Block TESTSTRUCTUREBLOCK = new TestStructureBlock(); //FIXME TEMP
 	//public static final Block REESH_PLANT = new ReeshPlant(null);
 	//public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
 
@@ -93,6 +97,10 @@ public class InitBlocks {
 		registry.register(DENIAIRONORE, "deniaironore");
 		registry.register(TUNDRA, "tundra");
 		registry.register(LIGHTSPEEDENGINE, "lightspeedengine");
+
+
+
+		registry.register(TESTSTRUCTUREBLOCK, "teststructureblock"); //FIXME TEMP
 		//registry.register(REESH_PLANT, "reeshplant");
 
 
