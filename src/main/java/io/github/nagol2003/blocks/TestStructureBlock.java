@@ -40,17 +40,38 @@ public class TestStructureBlock extends Block{
     @Override
     public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack itemstack) {
         super.onBlockPlacedBy(world, pos, state, entity, itemstack);
+        //entity.getHorizontalFacing().getIndex();
+        System.out.println("Facing: " + entity.getHorizontalFacing().getIndex());
         if (world.isRemote)
             return;
         Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-                new ResourceLocation("addtlplanets", "penis"));
+                new ResourceLocation("addtlplanets", "test"));
         if (template == null)
             return;
         BlockPos spawnTo = new BlockPos(pos.getX(), pos.getY(), pos.getZ());
         IBlockState iblockstate = world.getBlockState(spawnTo);
         world.notifyBlockUpdate(spawnTo, iblockstate, iblockstate, 3);
+
+
+        Rotation rotation = Rotation.NONE;
+        switch(entity.getHorizontalFacing().getIndex()) {
+            case 2: //north
+                rotation = Rotation.CLOCKWISE_180; //FIXME POSSIBLY WRONG ORIENTATION
+                break;
+            case 3: //south
+                rotation = Rotation.NONE; //FIXME POSSIBLY WRONG ORIENTATION
+                break;
+            case 4: //West
+                rotation = Rotation.CLOCKWISE_90; //FIXME POSSIBLY WRONG ORIENTATION
+                break;
+            case 5: //East
+                rotation = Rotation.COUNTERCLOCKWISE_90; //FIXME POSSIBLY WRONG ORIENTATION
+                break;
+        }
+
+
         template.addBlocksToWorldChunk(world, spawnTo,
-                new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk((ChunkPos) null)
+                new PlacementSettings().setRotation(rotation).setMirror(Mirror.NONE).setChunk((ChunkPos) null)
                         .setReplacedBlock((Block) null).setIgnoreStructureBlock(false).setIgnoreEntities(false));
     }
 }
