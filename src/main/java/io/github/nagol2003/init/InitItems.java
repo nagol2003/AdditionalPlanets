@@ -3,6 +3,7 @@ package io.github.nagol2003.init;
 import io.github.nagol2003.items.ItemFerminiumAlloy;
 import io.github.nagol2003.items.ItemFerminiumChunk;
 import io.github.nagol2003.items.ItemStrangeMetallicSubstance;
+import io.github.nagol2003.items.TinCan;
 import io.github.nagol2003.items.food.CookedCrabMeat;
 import io.github.nagol2003.items.food.RawCrabMeat;
 import io.github.nagol2003.items.food.Reesh;
@@ -55,6 +56,8 @@ public class InitItems {
 	public static final Item CHESTPLATE_FERMINIUM = new ItemArmor(ARMORFERMINIUM2, 7, EntityEquipmentSlot.CHEST);
 	public static final Item LEGGINGS_FERMINIUM = new ItemArmor(ARMORFERMINIUM3, 7, EntityEquipmentSlot.LEGS);
 	public static final Item BOOTS_FERMINIUM = new ItemArmor(ARMORFERMINIUM4, 7, EntityEquipmentSlot.FEET);
+	
+	public static final Item TIN_CAN = new TinCan(null);
 
 
 
@@ -77,6 +80,7 @@ public class InitItems {
 		registry.register(CHESTPLATE_FERMINIUM, "ferminium_chestplate");
 		registry.register(LEGGINGS_FERMINIUM, "ferminium_leggings");
 		registry.register(BOOTS_FERMINIUM, "ferminium_boots");
+		registry.register(TIN_CAN, "tin_can");
 
 	}
 

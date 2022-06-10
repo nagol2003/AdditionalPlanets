@@ -40,7 +40,7 @@ public class LIGHTSPEEDENGINE extends Block implements ISortableBlock, ITerrafor
 	
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-		Minecraft.getMinecraft().player.sendChatMessage("/dimensiontp");
+		Minecraft.getMinecraft().player.sendChatMessage("/dimensiontptwo");
 		return true;
 		
         }
