@@ -48,14 +48,33 @@ public class SmallPHUBlock extends Block implements ISortableBlock, ITerraformab
         if (world.isRemote)
             return;
         Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-                new ResourceLocation("addtlplanets", "testbase"));
+                new ResourceLocation("addtlplanets", "smallphub"));
         if (template == null)
             return;
         BlockPos spawnTo = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
         IBlockState iblockstate = world.getBlockState(spawnTo);
         world.notifyBlockUpdate(spawnTo, iblockstate, iblockstate, 3);
+
+
+        Rotation rotation = Rotation.NONE;
+        switch(entity.getHorizontalFacing().getIndex()) {
+            case 2: //north
+                rotation = Rotation.CLOCKWISE_180; 
+                break;
+            case 3: //south
+                rotation = Rotation.NONE; 
+                break;
+            case 4: //West
+                rotation = Rotation.CLOCKWISE_90; 
+                break;
+            case 5: //East
+                rotation = Rotation.COUNTERCLOCKWISE_90; 
+                break;
+        }
+
+
         template.addBlocksToWorldChunk(world, spawnTo,
-                new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk((ChunkPos) null)
+                new PlacementSettings().setRotation(rotation).setMirror(Mirror.NONE).setChunk((ChunkPos) null)
                         .setReplacedBlock((Block) null).setIgnoreStructureBlock(false).setIgnoreEntities(false));
     }
 	

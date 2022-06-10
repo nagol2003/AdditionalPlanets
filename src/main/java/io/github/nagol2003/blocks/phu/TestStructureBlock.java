@@ -40,12 +40,10 @@ public class TestStructureBlock extends Block{
     @Override
     public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack itemstack) {
         super.onBlockPlacedBy(world, pos, state, entity, itemstack);
-        //entity.getHorizontalFacing().getIndex();
-        System.out.println("Facing: " + entity.getHorizontalFacing().getIndex());
         if (world.isRemote)
             return;
         Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-                new ResourceLocation("addtlplanets", "test"));
+                new ResourceLocation("addtlplanets", "penis"));
         if (template == null)
             return;
         BlockPos spawnTo = new BlockPos(pos.getX(), pos.getY(), pos.getZ());
