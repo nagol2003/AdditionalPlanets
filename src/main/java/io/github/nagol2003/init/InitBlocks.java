@@ -1,6 +1,5 @@
 package io.github.nagol2003.init;
 
-import io.github.nagol2003.blocks.TestStructureBlock;
 import io.github.nagol2003.blocks.Denia.DeniaFerminiumOre;
 import io.github.nagol2003.blocks.Denia.DeniaIronOre;
 import io.github.nagol2003.blocks.Denia.FROZENCO2;
@@ -22,6 +21,8 @@ import io.github.nagol2003.blocks.Polulos.ScorchedLog;
 import io.github.nagol2003.blocks.Polulos.StrangeMetallicPolulos;
 import io.github.nagol2003.blocks.Tutorial.BlockCrust;
 import io.github.nagol2003.blocks.Tutorial.BlockCrust.RockType;
+import io.github.nagol2003.blocks.phu.SmallPHUBlock;
+import io.github.nagol2003.blocks.phu.TestStructureBlock;
 import io.github.nagol2003.blocks.vulcan.VulcanDirt;
 import io.github.nagol2003.blocks.vulcan.VulcanRockBurnt;
 import io.github.nagol2003.blocks.vulcan.VulcanRockScorched;
@@ -63,6 +64,8 @@ public class InitBlocks {
 
 
 	public static final Block TESTSTRUCTUREBLOCK = new TestStructureBlock(); //FIXME TEMP
+	public static final Block SMALLPHUBLOCK = new SmallPHUBlock(); //FIXME TEMP
+	
 	//public static final Block REESH_PLANT = new ReeshPlant(null);
 	//public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
 
@@ -101,6 +104,8 @@ public class InitBlocks {
 
 
 		registry.register(TESTSTRUCTUREBLOCK, "teststructureblock"); //FIXME TEMP
+		registry.register(SMALLPHUBLOCK, "smallphublock"); //FIXME TEMP
+		
 		//registry.register(REESH_PLANT, "reeshplant");
 
 

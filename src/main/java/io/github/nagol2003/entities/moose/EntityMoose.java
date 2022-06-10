@@ -31,7 +31,7 @@ public class EntityMoose extends EntityAgeable implements IEntityBreathable {
 
 	public EntityMoose(World worldIn) {
 		super(worldIn);
-		this.setSize(2.0F, height);
+		this.setSize(4.0F, 8.0F);
 
 	}
 
@@ -117,7 +117,7 @@ public class EntityMoose extends EntityAgeable implements IEntityBreathable {
 	protected void applyEntityAttributes() {
 		super.applyEntityAttributes();
 		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.25D);
+		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.45D);
 		this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(3.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.ARMOR_TOUGHNESS).setBaseValue(2.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.5D);
