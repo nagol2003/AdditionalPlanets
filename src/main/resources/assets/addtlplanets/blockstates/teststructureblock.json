@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "defaults": {
         "model": "cube_all",
-        "textures": { "all": "addtlplanets:blocks/teststructureblock" }
+        "textures": { "all": "addtlplanets:blocks/netherreactor" }
     },
     "variants": {
         "inventory": { "transform": "forge:default-block" },
