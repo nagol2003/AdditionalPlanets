@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:120
 fboEnable:true
-difficulty:0
+difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:true
@@ -29,7 +29,7 @@ fullscreen:false
 enableVsync:true
 useVbo:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 touchscreen:false
 overrideWidth:0
@@ -88,6 +88,18 @@ key_key.hotbar.9:10
 key_[GC] Galaxy Map:50
 key_[GC] Open Spaceship Inventory:33
 key_[GC] Toggle Sensor Goggles Mode:37
+key_key.jei.toggleOverlay:24:CONTROL
+key_key.jei.focusSearch:33:CONTROL
+key_key.jei.toggleCheatMode:0
+key_key.jei.toggleEditMode:0
+key_key.jei.showRecipe:19
+key_key.jei.showUses:22
+key_key.jei.recipeBack:14
+key_key.jei.previousPage:201
+key_key.jei.nextPage:209
+key_key.jei.bookmark:30
+key_key.jei.toggleBookmarkOverlay:0
+key_WorldEdit Reference:38
 soundCategory_master:0.23509933
 soundCategory_music:0.52112675
 soundCategory_record:1.0

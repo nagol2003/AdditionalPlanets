@@ -61,6 +61,7 @@ public class AddonMain {
    
     
     
+    
 	@EventHandler
 	public static void onFingerprintViolation(final FMLFingerprintViolationEvent event) {
 		if (!Utils.isDeobfuscated()) {
@@ -97,6 +98,7 @@ public class AddonMain {
 		RenderHandler.registerEntityRenders();
 	}
 
+	
 	@EventHandler
 	public void init(final FMLInitializationEvent event) {
 		proxy.init(registry,event);

@@ -1,0 +1,104 @@
+{
+  "galacticraftcore:galacticraft/oxygen_gear": {
+    "criteria": {
+      "heavy_tank": "2022-06-13 11:34:21 -0400"
+    },
+    "done": false
+  },
+  "galacticraftcore:galacticraft/coal_generator": {
+    "criteria": {
+      "coal_generator": "2022-06-13 12:04:37 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2022-06-13 11:34:41 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/fill_all_tanks": {
+    "criteria": {
+      "heavy_tank": "2022-06-13 11:34:21 -0400"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_quartz_block": "2022-06-13 11:39:07 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab": {
+    "criteria": {
+      "has_quartz_block": "2022-06-13 11:39:07 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pillar_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2022-06-13 11:39:07 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/fill_tank": {
+    "criteria": {
+      "heavy_tank": "2022-06-13 11:34:21 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2022-06-13 11:28:28 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal": {
+    "criteria": {
+      "has_the_recipe": "2022-06-13 12:53:18 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/fuel_loader": {
+    "criteria": {
+      "fuel_loader": "2022-06-13 12:03:46 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/oxygen_compressor": {
+    "criteria": {
+      "oxygen_compressor": "2022-06-13 12:48:53 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_at_least_9_coal": "2022-06-13 12:53:18 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/refinery": {
+    "criteria": {
+      "refinery": "2022-06-13 12:03:48 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/oxygen_collector": {
+    "criteria": {
+      "oxygen_collector": "2022-06-13 11:28:27 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-06-13 11:28:27 -0400"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2022-06-13 11:39:07 -0400"
+    },
+    "done": true
+  }
+}

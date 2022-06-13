@@ -1,0 +1,26 @@
+{
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2022-06-12 02:10:24 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/oxygen_compressor": {
+    "criteria": {
+      "oxygen_compressor": "2022-06-12 02:14:07 -0400"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/oxygen_collector": {
+    "criteria": {
+      "oxygen_collector": "2022-06-12 02:13:49 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-06-12 02:10:24 -0400"
+    },
+    "done": false
+  }
+}
