@@ -21,6 +21,12 @@ import io.github.nagol2003.blocks.Polulos.ScorchedLog;
 import io.github.nagol2003.blocks.Polulos.StrangeMetallicPolulos;
 import io.github.nagol2003.blocks.Tutorial.BlockCrust;
 import io.github.nagol2003.blocks.Tutorial.BlockCrust.RockType;
+import io.github.nagol2003.blocks.phu.PHUAlphaHead;
+import io.github.nagol2003.blocks.phu.PHUAlphaLeft;
+import io.github.nagol2003.blocks.phu.PHUAlphaLeftCenter;
+import io.github.nagol2003.blocks.phu.PHUAlphaRight;
+import io.github.nagol2003.blocks.phu.PHUAlphaRightCenter;
+import io.github.nagol2003.blocks.phu.PHUAlphaTail;
 import io.github.nagol2003.blocks.phu.SmallPHUBlock;
 import io.github.nagol2003.blocks.phu.TestStructureBlock;
 import io.github.nagol2003.blocks.vulcan.VulcanDirt;
@@ -66,6 +72,14 @@ public class InitBlocks {
 	public static final Block TESTSTRUCTUREBLOCK = new TestStructureBlock(); //FIXME TEMP
 	public static final Block SMALLPHUBLOCK = new SmallPHUBlock(); //FIXME TEMP
 	
+	//PHU ALPHA	
+	public static final Block PHUALPHAHEAD = new PHUAlphaHead(); //FIXME TEMP
+	public static final Block PHUALPHALEFT = new PHUAlphaLeft(); //FIXME TEMP
+	public static final Block PHUALPHALEFTCENTER = new PHUAlphaLeftCenter(); //FIXME TEMP
+	public static final Block PHUALPHARIGHTCENTER = new PHUAlphaRightCenter(); //FIXME TEMP
+	public static final Block PHUALPHARIGHT = new PHUAlphaRight(); //FIXME TEMP
+	public static final Block PHUALPHATAIL = new PHUAlphaTail(); //FIXME TEMP
+	
 	//public static final Block REESH_PLANT = new ReeshPlant(null);
 	//public static final Block REESH_PLANT = new ReeshPlant("reeshplant");
 
@@ -105,6 +119,15 @@ public class InitBlocks {
 
 		registry.register(TESTSTRUCTUREBLOCK, "teststructureblock"); //FIXME TEMP
 		registry.register(SMALLPHUBLOCK, "smallphublock"); //FIXME TEMP
+		
+		//PHU ALPHA
+		registry.register(PHUALPHAHEAD, "phualphahead"); //FIXME TEMP
+		registry.register(PHUALPHALEFT, "phualphaleft"); //FIXME TEMP
+		registry.register(PHUALPHALEFTCENTER, "phualphaleftcenter"); //FIXME TEMP
+		registry.register(PHUALPHARIGHTCENTER, "phualpharightcenter"); //FIXME TEMP
+		registry.register(PHUALPHARIGHT, "phualpharight"); //FIXME TEMP
+		registry.register(PHUALPHATAIL, "phualphatail"); //FIXME TEMP
+		
 		
 		//registry.register(REESH_PLANT, "reeshplant");
 

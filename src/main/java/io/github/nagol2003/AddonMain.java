@@ -59,8 +59,8 @@ public class AddonMain {
         FluidRegistry.enableUniversalBucket();
     }
    
-    
-    
+   
+   
     
 	@EventHandler
 	public static void onFingerprintViolation(final FMLFingerprintViolationEvent event) {
@@ -71,6 +71,7 @@ public class AddonMain {
 		}
 	}
 
+	
 	
 	
 	@EventHandler
@@ -98,6 +99,7 @@ public class AddonMain {
 		RenderHandler.registerEntityRenders();
 	}
 
+	
 	
 	@EventHandler
 	public void init(final FMLInitializationEvent event) {

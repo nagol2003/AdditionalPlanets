@@ -1,0 +1,15 @@
+{
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2022-10-06 13:14:20 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-10-06 13:14:20 -0400",
+      "desert": "2022-10-06 13:14:37 -0400"
+    },
+    "done": false
+  }
+}

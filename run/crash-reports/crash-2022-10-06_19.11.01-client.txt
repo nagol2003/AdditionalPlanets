@@ -1,0 +1,147 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 10/6/22 7:11 PM
+Description: Rendering Block Entity
+
+java.lang.IllegalAccessError: tried to access field net.minecraft.client.renderer.entity.RenderLivingBase.mainModel from class micdoodle8.mods.galacticraft.core.client.screen.GameScreenText
+	at micdoodle8.mods.galacticraft.core.client.screen.GameScreenText.renderLiving(GameScreenText.java:345)
+	at micdoodle8.mods.galacticraft.core.client.screen.GameScreenText.render(GameScreenText.java:313)
+	at micdoodle8.mods.galacticraft.core.client.screen.DrawGameScreen.doDraw(DrawGameScreen.java:191)
+	at micdoodle8.mods.galacticraft.core.client.screen.DrawGameScreen.drawScreen(DrawGameScreen.java:100)
+	at micdoodle8.mods.galacticraft.core.client.render.tile.TileEntityScreenRenderer.render(TileEntityScreenRenderer.java:97)
+	at micdoodle8.mods.galacticraft.core.client.render.tile.TileEntityScreenRenderer.render(TileEntityScreenRenderer.java:16)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.render(TileEntityRendererDispatcher.java:156)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.render(TileEntityRendererDispatcher.java:131)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:705)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1347)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1259)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1062)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1119)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at micdoodle8.mods.galacticraft.core.client.screen.GameScreenText.renderLiving(GameScreenText.java:345)
+	at micdoodle8.mods.galacticraft.core.client.screen.GameScreenText.render(GameScreenText.java:313)
+	at micdoodle8.mods.galacticraft.core.client.screen.DrawGameScreen.doDraw(DrawGameScreen.java:191)
+	at micdoodle8.mods.galacticraft.core.client.screen.DrawGameScreen.drawScreen(DrawGameScreen.java:100)
+	at micdoodle8.mods.galacticraft.core.client.render.tile.TileEntityScreenRenderer.render(TileEntityScreenRenderer.java:97)
+	at micdoodle8.mods.galacticraft.core.client.render.tile.TileEntityScreenRenderer.render(TileEntityScreenRenderer.java:16)
+
+-- Block Entity Details --
+Details:
+	Name: minecraft:gc view screen // micdoodle8.mods.galacticraft.core.tile.TileEntityScreen
+	Block type: ID #302 (tile.view_screen // micdoodle8.mods.galacticraft.core.blocks.BlockScreen // galacticraftcore:view_screen)
+	Block data value: 2 / 0x2 / 0b0010
+	Block location: World: (-404,5,732), Chunk: (at 12,0,12 in -26,45; contains blocks -416,0,720 to -401,255,735), Region: (-1,1; contains chunks -32,32 to -1,63, blocks -512,0,512 to -1,255,1023)
+	Actual block type: ID #302 (tile.view_screen // micdoodle8.mods.galacticraft.core.blocks.BlockScreen // galacticraftcore:view_screen)
+	Actual block data value: 2 / 0x2 / 0b0010
+Stacktrace:
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.render(TileEntityRendererDispatcher.java:156)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.render(TileEntityRendererDispatcher.java:131)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:705)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1347)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1259)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [GCEntityClientPlayerMP['Player795'/19276, l='MpServer', x=-406.34, y=5.00, z=727.09]]
+	Chunk stats: MultiplayerChunkCache: 1681, 1681
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-274,4,844), Chunk: (at 14,0,12 in -18,52; contains blocks -288,0,832 to -273,255,847), Region: (-1,1; contains chunks -32,32 to -1,63, blocks -512,0,512 to -1,255,1023)
+	Level time: 189046 game time, 31312 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 9 total; [EntityArmorStand['Armor Stand'/19184, l='MpServer', x=-375.50, y=5.00, z=702.50], EntityArmorStand['Armor Stand'/19185, l='MpServer', x=-372.50, y=5.00, z=702.50], EntityCow['Cow'/19217, l='MpServer', x=-327.19, y=4.00, z=800.32], EntityArmorStand['Armor Stand'/19186, l='MpServer', x=-369.50, y=5.00, z=702.50], EntitySheep['Sheep'/19207, l='MpServer', x=-342.38, y=4.00, z=801.59], EntityArmorStand['Armor Stand'/19181, l='MpServer', x=-375.50, y=5.00, z=697.50], EntityArmorStand['Armor Stand'/19182, l='MpServer', x=-372.50, y=5.00, z=697.50], GCEntityClientPlayerMP['Player795'/19276, l='MpServer', x=-406.34, y=5.00, z=727.09], EntityArmorStand['Armor Stand'/19183, l='MpServer', x=-369.50, y=5.00, z=697.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2741)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:419)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_341, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1178023280 bytes (1123 MB) / 2729443328 bytes (2603 MB) up to 7621050368 bytes (7268 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 12 mods loaded, 12 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                       | Version      | Source                                                                 | Signature |
+	|:------ |:------------------------ |:------------ |:---------------------------------------------------------------------- |:--------- |
+	| LCHIJA | minecraft                | 1.12.2       | minecraft.jar                                                          | None      |
+	| LCHIJA | mcp                      | 9.42         | minecraft.jar                                                          | None      |
+	| LCHIJA | FML                      | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2847-PROJECT(AdditionalPlanets-secondtry-).jar | None      |
+	| LCHIJA | forge                    | 14.23.5.2847 | forgeBin-1.12.2-14.23.5.2847-PROJECT(AdditionalPlanets-secondtry-).jar | None      |
+	| LCHIJA | micdoodlecore            |              | minecraft.jar                                                          | None      |
+	| LCHIJA | galacticraftcore         | 4.0.2.261    | GalacticraftCore-Dev-1.12.2-4.0.2.261.jar                              | None      |
+	| LCHIJA | galacticraftplanets      | 4.0.2.261    | Galacticraft-Planets-Dev-1.12.2-4.0.2.261.jar                          | None      |
+	| LCHIJA | asmodeuscore             | 0.0.25       | asmodeuscore-303101-3231302.jar                                        | None      |
+	| LCHIJA | addtlplanets             | 1.0.0        | AdditionalPlanets-1.12.2-1.0.0.jar                                     | None      |
+	| LCHIJA | jei                      | 4.16.1.302   | jei_1.12.2-4.16.1.302.jar                                              | None      |
+	| LCHIJA | limitlessstructureblocks | 1.1.0        | LimitlessStructureBlocks-1.12.2-1.1.0.jar                              | None      |
+	| LCHIJA | worldedit                | 6.1.8        | worldedit-forge-mc1.12-6.1.8-dist.jar                                  | None      |
+
+	Loaded coremods (and transformers): 
+MicdoodlePlugin (MicdoodleCore-Dev-1.12.2-4.0.2.261.jar)
+  micdoodle8.mods.miccore.MicdoodleTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 516.94' Renderer: 'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 2070/PCIe/SSE2 GL version 4.6.0 NVIDIA 516.94, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 12x Intel(R) Core(TM) i7-8086K CPU @ 4.00GHz
