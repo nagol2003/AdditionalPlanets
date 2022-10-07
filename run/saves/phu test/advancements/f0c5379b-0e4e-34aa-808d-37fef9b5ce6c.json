@@ -1,0 +1,14 @@
+{
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2022-10-07 12:01:54 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-10-07 12:04:56 -0400"
+    },
+    "done": true
+  }
+}

@@ -98,6 +98,9 @@ tile.addtlplanets.deniaferminiumore.name=Ferminium Ore
 tile.addtlplanets.strangemetallicdenia.name=Strange Metallic Ore
 tile.addtlplanets.strangemetallicpolulos.name=Strange Metallic Ore
 tile.addtlplanets.deniaironore.name=Iron Ore
+tile.addtlplanets.phualphaleft.name=Large PHU Left
+tile.addtlplanets.phualphahead.name=Large PHU Center
+tile.addtlplanets.phualpharight.name=Large PHU Right
 
 //TEST Block
 tile.addtlplanets.teststructureblock.name=Test Structure Block

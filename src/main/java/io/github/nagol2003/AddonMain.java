@@ -70,7 +70,6 @@ public class AddonMain {
 			LOGGER.warn("Invalid Fingerprint");
 		}
 	}
-
 	
 	
 	
@@ -98,7 +97,6 @@ public class AddonMain {
 
 		RenderHandler.registerEntityRenders();
 	}
-
 	
 	
 	@EventHandler

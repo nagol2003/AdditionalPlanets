@@ -74,6 +74,7 @@ public class PHUAlphaHead extends Block implements ISortableBlock, ITerraformabl
                 break;
         }
 
+        
 
         template.addBlocksToWorldChunk(world, spawnTo,
                 new PlacementSettings().setRotation(rotation).setMirror(Mirror.NONE).setChunk((ChunkPos) null)
