@@ -31,7 +31,7 @@ public class Recipes {
       }
 	
 	public static void compressor2() {
-        ItemStack input = new ItemStack(InitItems.COOKED_CRAB_MEAT, 1);
+        ItemStack input = new ItemStack(InitItems.COOKED_CRAB_MEAT, 2);
         ItemStack outputResult = new ItemStack(InitItems.BOOTS_FERMINIUM, 1, 6);
                              
         CompressorRecipes.addShapelessRecipe(outputResult, input, input);

@@ -89,7 +89,7 @@ public class WorldProviderVulcan extends WorldProviderAddonPlanet {
 
     @Override
     public double getMeteorFrequency() {
-        return 9.0D;
+        return 0.01D;
     }
 
     @Override

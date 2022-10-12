@@ -1,0 +1,14 @@
+{
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2022-10-12 01:39:30 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2022-10-12 01:39:30 -0400"
+    },
+    "done": false
+  }
+}
