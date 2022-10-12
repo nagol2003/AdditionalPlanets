@@ -12951,3 +12951,162 @@ java.io.FileNotFoundException: galacticraftcore:textures/gui/celestialbodies/s.p
 [01:01:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.venusinecraftFormatting
 [01:01:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.VulcaninecraftFormatting
 [01:01:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/moon.mooninecraftFormatting
+[01:02:33] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 2823ms behind, skipping 56 tick(s)inecraftFormatting
+[01:03:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: [Player779: Teleported Player779 to 1000.5, 100.0, 1000.5]inecraftFormatting
+[01:03:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Teleported Player779 to 1000.5, 100.0, 1000.5inecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...inecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworldinecraftFormatting
+[01:03:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save New WorldinecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.asteroidsinecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.DeniainecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.marsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.PolulosinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.venusinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.VulcaninecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/moon.mooninecraftFormatting
+[01:03:17] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 27982ms behind, skipping 559 tick(s)inecraftFormatting
+[01:03:17] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!inecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod minecraftinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod minecraftinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Minecraft took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod mcpinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod mcpinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Minecraft Coder Pack took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod FMLinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod FMLinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Forge Mod Loader took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod forgeinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod forgeinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Minecraft Forge took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod micdoodlecoreinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod micdoodlecoreinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Micdoodle8 Core took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod galacticraftcoreinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod galacticraftcoreinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Galacticraft Core took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod galacticraftplanetsinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod galacticraftplanetsinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Galacticraft Planets took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod asmodeuscoreinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod asmodeuscoreinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - AsmodeusCore took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod addtlplanetsinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod addtlplanetsinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Additional Planets took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod jeiinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod jeiinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Just Enough Items took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod limitlessstructureblocksinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod limitlessstructureblocksinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - Limitless Structure Blocks took 0.000sinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sending event FMLServerStoppingEvent to mod worldeditinecraftFormatting
+[01:03:17] [Server thread/TRACE] [FML]: Sent event FMLServerStoppingEvent to mod worldeditinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Step: ServerStopping - WorldEdit took 0.000sinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Bar Finished: ServerStopping took 0.001sinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping serverinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving playersinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worldsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworldinecraftFormatting
+[01:03:17] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save New WorldinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.asteroidsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.DeniainecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.marsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.PolulosinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.venusinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.VulcaninecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/moon.mooninecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension 0inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -30inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -4452inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -29inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -4440inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -31inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -4442inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -28inecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Reverting to frozen data state.inecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod minecraftinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod minecraftinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Minecraft took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod mcpinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod mcpinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod FMLinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod FMLinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Forge Mod Loader took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod forgeinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod forgeinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Minecraft Forge took 0.073sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod micdoodlecoreinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod micdoodlecoreinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Micdoodle8 Core took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod galacticraftcoreinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod galacticraftcoreinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Galacticraft Core took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod galacticraftplanetsinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod galacticraftplanetsinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Galacticraft Planets took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod asmodeuscoreinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod asmodeuscoreinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - AsmodeusCore took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod addtlplanetsinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod addtlplanetsinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Additional Planets took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod jeiinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod jeiinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Just Enough Items took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod limitlessstructureblocksinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod limitlessstructureblocksinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - Limitless Structure Blocks took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLModIdMappingEvent to mod worldeditinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLModIdMappingEvent to mod worldeditinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ModIdMapping - WorldEdit took 0.000sinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Finished: ModIdMapping took 0.073sinecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Frozen state restored.inecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod minecraftinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod minecraftinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Minecraft took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod mcpinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod mcpinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Minecraft Coder Pack took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod FMLinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod FMLinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Forge Mod Loader took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod forgeinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod forgeinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Minecraft Forge took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod micdoodlecoreinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod micdoodlecoreinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Micdoodle8 Core took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod galacticraftcoreinecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -30inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -4452inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -29inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -4440inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -31inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -4442inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -28inecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod galacticraftcoreinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Galacticraft Core took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod galacticraftplanetsinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod galacticraftplanetsinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Galacticraft Planets took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod asmodeuscoreinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod asmodeuscoreinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - AsmodeusCore took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod addtlplanetsinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod addtlplanetsinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Additional Planets took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod jeiinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod jeiinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Just Enough Items took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod limitlessstructureblocksinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod limitlessstructureblocksinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - Limitless Structure Blocks took 0.000sinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sending event FMLServerStoppedEvent to mod worldeditinecraftFormatting
+[01:03:19] [Server thread/TRACE] [FML]: Sent event FMLServerStoppedEvent to mod worldeditinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Step: ServerStopped - WorldEdit took 0.000sinecraftFormatting
+[01:03:19] [Server thread/DEBUG] [FML]: Bar Finished: ServerStopped took 0.001sinecraftFormatting
+[01:03:19] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...inecraftFormatting
+[01:03:19] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.cominecraftFormatting

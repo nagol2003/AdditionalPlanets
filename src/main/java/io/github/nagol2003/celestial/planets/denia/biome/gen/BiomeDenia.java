@@ -28,7 +28,7 @@ public class BiomeDenia extends DeniaBiomes {
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
-        this.spawnableMonsterList.add(new SpawnListEntry(EntityMammal.class, 1, 1, 1));
+        this.spawnableMonsterList.add(new SpawnListEntry(EntityMammal.class, 150, 4, 10));
         this.getBiomeDecorator().treesPerChunk = 0;
 	}
 

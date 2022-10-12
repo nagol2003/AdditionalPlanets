@@ -920,3 +920,47 @@ java.io.FileNotFoundException: galacticraftcore:textures/gui/celestialbodies/s.p
 [01:01:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.venusinecraftFormatting
 [01:01:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.VulcaninecraftFormatting
 [01:01:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/moon.mooninecraftFormatting
+[01:02:33] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 2823ms behind, skipping 56 tick(s)inecraftFormatting
+[01:03:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: [Player779: Teleported Player779 to 1000.5, 100.0, 1000.5]inecraftFormatting
+[01:03:06] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Teleported Player779 to 1000.5, 100.0, 1000.5inecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...inecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworldinecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.asteroidsinecraftFormatting
+[01:03:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.DeniainecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.marsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.PolulosinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.venusinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.VulcaninecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/moon.mooninecraftFormatting
+[01:03:17] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 27982ms behind, skipping 559 tick(s)inecraftFormatting
+[01:03:17] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!inecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping serverinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving playersinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worldsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworldinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.asteroidsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.DeniainecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.marsinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.PolulosinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.venusinecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/planet.VulcaninecraftFormatting
+[01:03:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/moon.mooninecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension 0inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -30inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -4452inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -29inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -4440inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -31inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -4442inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Unloading dimension -28inecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[01:03:19] [Server thread/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -30inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -4452inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -29inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -4440inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -31inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -4442inecraftFormatting
+[01:03:19] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -28inecraftFormatting
+[01:03:19] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...inecraftFormatting
+[01:03:19] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.cominecraftFormatting
