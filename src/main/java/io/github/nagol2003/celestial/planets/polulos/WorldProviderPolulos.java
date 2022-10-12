@@ -36,7 +36,7 @@ public class WorldProviderPolulos extends WorldProviderAddonPlanet {
 	
     @Override
     public Vector3 getSkyColor() {
-        return new Vector3(1, 1, 1);
+        return new Vector3(1, .25, 0);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class WorldProviderPolulos extends WorldProviderAddonPlanet {
 
     @Override
     public long getDayLength() {
-        return 35000L;
+        return 10000L;
     }
 
     @Override
@@ -133,7 +133,7 @@ public class WorldProviderPolulos extends WorldProviderAddonPlanet {
 
     @Override
     public Vector3 getFogColor() {
-        return new Vector3(1, 1, 1);
+        return new Vector3(1, .25, 0);
     }
     
     public int getCloudColor() {

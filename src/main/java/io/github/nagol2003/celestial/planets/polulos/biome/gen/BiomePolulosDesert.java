@@ -10,6 +10,7 @@ import io.github.nagol2003.init.InitBlocks;
 import micdoodle8.mods.galacticraft.planets.mars.world.gen.BiomeMars;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -23,6 +24,7 @@ public class BiomePolulosDesert extends PolulosBiomes {
 		super(properties);
         this.topBlock = InitBlocks.POLULOSSAND.getDefaultState(); //TODO change this
         this.fillerBlock = InitBlocks.POLULOSSAND.getDefaultState(); //TODO change this
+        this.spawnableMonsterList.remove(EntityZombie.class);
         this.spawnableMonsterList.add(new SpawnListEntry(EntityPolulosCrab.class, 25, 100, 50));
         //add(new SpawnListEntry(EntityPolulosCrab.class, 50, 100, 20));
         this.spawnableCreatureList.clear();

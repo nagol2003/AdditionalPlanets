@@ -36,7 +36,7 @@ public class WorldProviderDenia extends WorldProviderAddonPlanet {
 	
     @Override
     public Vector3 getSkyColor() {
-        return new Vector3(1, 1, 1);
+        return new Vector3(.5, .5, 1);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class WorldProviderDenia extends WorldProviderAddonPlanet {
 
     @Override
     public long getDayLength() {
-        return 35000L;
+        return 60000L;
     }
 
     @Override

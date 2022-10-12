@@ -28,13 +28,13 @@ public class BiomeDenia extends DeniaBiomes {
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
-        this.spawnableMonsterList.add(new SpawnListEntry(EntityMammal.class, 150, 4, 10));
+        this.spawnableMonsterList.add(new SpawnListEntry(EntityMammal.class, 1, 1, 1));
         this.getBiomeDecorator().treesPerChunk = 0;
 	}
 
 	@Override
 	public void registerTypes(Biome b) {
-            BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
+            BiomeDictionary.addTypes(b, BiomeDictionary.Type.COLD, BiomeDictionary.Type.DRY, BiomeDictionary.Type.SNOWY, BiomeDictionary.Type.MOUNTAIN);
 
 	}
 	

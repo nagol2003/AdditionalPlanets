@@ -5,6 +5,7 @@ import java.util.Random;
 import org.lwjgl.opengl.GL11;
 
 import io.github.nagol2003.Const;
+import io.github.nagol2003.celestial.planets.denia.SkyProviderDenia;
 import micdoodle8.mods.galacticraft.core.Constants;
 import micdoodle8.mods.galacticraft.core.dimension.WorldProviderMoon;
 import micdoodle8.mods.galacticraft.core.util.ConfigManagerCore;
@@ -28,6 +29,7 @@ public class SkyProviderPolulos extends IRenderHandler
     private static final ResourceLocation planet1 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png");
     private static final ResourceLocation planet2 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png");
     private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png");
+    private static final ResourceLocation ship = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/cov2.png");
 
     public int starGLCallList = GLAllocation.generateDisplayLists(3);
     public int glSkyList;
@@ -224,6 +226,22 @@ public class SkyProviderPolulos extends IRenderHandler
         }
 
         world.getMoonPhase();
+        worldRenderer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
+        worldRenderer.pos(-var12, -100.0D, var12).tex(0D, 1.0D).endVertex();
+        worldRenderer.pos(var12, -100.0D, var12).tex(1.0D, 1.0D).endVertex();
+        worldRenderer.pos(var12, -100.0D, -var12).tex(1.0D, 0D).endVertex();
+        worldRenderer.pos(-var12, -100.0D, -var12).tex(0D, 0D).endVertex();
+        var23.draw();
+        
+        //Ship
+        var12 = 20F;
+        GL11.glScalef(0.6F, 0.6F, 0.6F);
+        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
+
+        {
+            FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderPolulos.ship);
+        }
+
         worldRenderer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
         worldRenderer.pos(-var12, -100.0D, var12).tex(0D, 1.0D).endVertex();
         worldRenderer.pos(var12, -100.0D, var12).tex(1.0D, 1.0D).endVertex();

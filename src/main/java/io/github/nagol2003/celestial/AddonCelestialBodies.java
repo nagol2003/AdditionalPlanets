@@ -434,7 +434,7 @@ public class AddonCelestialBodies {
 		Polulos.setBiomeInfo(PolulosBiomes.PolulosSavanna, PolulosBiomes.PolulosDesert);
 		Polulos.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Polulos.setDimensionInfo(dim.idPolulos, WorldProviderPolulos.class);
-		Polulos.atmosphereComponent(EnumAtmosphericGas.METHANE); 
+		Polulos.atmosphereComponent(EnumAtmosphericGas.ARGON); 
  
 		Shayan = new Planet("Shayan").setParentSolarSystem(Garphina);
 		Shayan.setTierRequired(6);
@@ -459,7 +459,7 @@ public class AddonCelestialBodies {
 		Denia.setBiomeInfo(DeniaBiomes.Denia, DeniaBiomes.DeniaForest);
 		Denia.setAtmosphere(new AtmosphereInfo(false, false, false, -0.8F, 0.0F, 0.1F));
 		Denia.setDimensionInfo(dim.idDenia, WorldProviderDenia.class);
-		Denia.atmosphereComponent(EnumAtmosphericGas.OXYGEN);
+		Denia.atmosphereComponent(EnumAtmosphericGas.HYDROGEN);
 
 		Ognious = new Planet("Ognious").setParentSolarSystem(Garphina);
 		Ognious.setTierRequired(6);
@@ -519,7 +519,7 @@ public class AddonCelestialBodies {
 		Vulcan.setBiomeInfo(VulcanBiomes.VulcanHell);
 		Vulcan.setAtmosphere(new AtmosphereInfo(false, false, false, 13.0F, 0.0F, 0.1F));
 		Vulcan.setDimensionInfo(dim.idVulcan, WorldProviderVulcan.class);
-		Vulcan.atmosphereComponent(EnumAtmosphericGas.ARGON);
+		Vulcan.atmosphereComponent(EnumAtmosphericGas.METHANE);
 		
 		Kepler452b = new Planet("Kepler452b").setParentSolarSystem(Kepler452);
 		Kepler452b.setTierRequired(6);
