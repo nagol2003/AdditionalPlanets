@@ -107,8 +107,7 @@ public class AddonMain {
 		SoundsHandler.registerSounds();
 		Recipes.compressor();
 		Recipes.compressor2();
-		//Recipes.compressor3();
-		
+		//Recipes.compressor3();	
 	}
 
 	

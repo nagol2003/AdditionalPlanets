@@ -1,0 +1,36 @@
+def resourceTargets = [ 'mcmod.info', 'pack.mcmeta' ]
+def intoTargets = [
+	"$rootDir/out/production/resources/",
+	"$rootDir/out/production/${project.name}.main/",
+	"$rootDir/bin/main/"
+]
+def replaceProperties = 
+[ 
+	modid: 				"${mod_id}",
+	name: 				"${mod_name}", 
+	description: 		"${mod_description}",
+	version: 			"${version}",
+	minecraftversion: 	"${minecraft_version}",
+	modcredits: 		"${mod_credits}"
+]
+
+processResources {
+	inputs.properties replaceProperties
+	replaceProperties.put 'project', project
+
+	filesMatching(resourceTargets) {
+		expand replaceProperties
+	}
+
+	intoTargets.each { target ->
+		if (file(target).exists()) {
+			copy {
+				from(sourceSets.main.resources) {
+					include resourceTargets
+					expand replaceProperties
+				}
+				into target
+			}
+		}
+	}
+}

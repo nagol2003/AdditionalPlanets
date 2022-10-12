@@ -1,0 +1,5 @@
+plugins {
+	id "net.galacticraft.addon" version "1.0.0"
+}
+
+rootProject.name = 'AdditionalPlanets'

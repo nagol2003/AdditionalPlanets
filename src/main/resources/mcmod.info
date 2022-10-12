@@ -1,14 +1,14 @@
 [
   {
-    "modid": "addtlplanets",
-    "name": "Additional Planets",
-    "description": "Tutorial Galacticraft Addon",
+    "modid": ${modid}
+    "name": "${name}",
+    "description": "${description}",
     "version": "${version}",
-    "mcversion": "${mcversion}",
+    "mcversion": "${minecraftversion}",
     "url": "",
     "updateUrl": "",
     "authorList": ["Nagol2003"],
-    "credits": "This addon was made possible by direct assistance from ROMVoid, Oodone, and Awa for code, as well as many others like Eeeeeeee for ideas, textures, and models. Thank you!",
+    "credits": "${modcredits}",
     "logoFile": "",
     "screenshots": []
   }
