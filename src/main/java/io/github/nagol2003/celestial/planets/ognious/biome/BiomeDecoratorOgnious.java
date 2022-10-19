@@ -33,7 +33,6 @@ public class BiomeDecoratorOgnious extends BiomeDecorator {
 				new ApGenHerobrineTree(Blocks.NETHERRACK, Blocks.WALL_SIGN, Blocks.GOLD_BLOCK).setCanGenerateOnSand().generate(world, random, blockpos);
 			}
 		}
-		isDecorating = false;
-		
+		isDecorating = false;	
 	}
 }

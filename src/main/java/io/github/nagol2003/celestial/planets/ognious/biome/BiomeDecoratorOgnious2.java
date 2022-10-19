@@ -34,6 +34,5 @@ public class BiomeDecoratorOgnious2 extends BiomeDecorator {
 			}
 		}
 		isDecorating = false;
-		
 	}
 }
