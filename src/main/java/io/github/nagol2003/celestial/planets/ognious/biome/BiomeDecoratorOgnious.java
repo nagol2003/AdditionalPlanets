@@ -2,13 +2,7 @@ package io.github.nagol2003.celestial.planets.ognious.biome;
 
 import java.util.Random;
 
-import io.github.nagol2003.init.InitBlocks;
-import io.github.nagol2003.world.gen.tree.APGenFirTree;
-import io.github.nagol2003.world.gen.tree.APGenSempervirens;
-import io.github.nagol2003.world.gen.tree.APGenTestTree;
-import io.github.nagol2003.world.gen.tree.APGenTreeFlatTop;
-import io.github.nagol2003.world.gen.tree.APGenTreeWillow;
-import net.minecraft.block.Block;
+import io.github.nagol2003.world.gen.tree.ApGenHerobrineTree;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -35,9 +29,11 @@ public class BiomeDecoratorOgnious extends BiomeDecorator {
 				blockpos = blockpos.add(random.nextInt(8), 0, random.nextInt(8));
 				//AddonMain.LOGGER.info("Attempting to Generate Tree at: {}", blockpos.toString());
 				//new APGenSempervirens(Blocks.LOG, Blocks.LEAVES).setCanGenerateOnSand().generate(world, random, blockpos);
-				new APGenTestTree(InitBlocks.OGNIOUSLOG, InitBlocks.OGNIOUSLEAVES).setCanGenerateOnSand().generate(world, random, blockpos);
+				//new APGenTestTree(InitBlocks.OGNIOUSLOG, InitBlocks.OGNIOUSLEAVES).setCanGenerateOnSand().generate(world, random, blockpos);
+				new ApGenHerobrineTree(Blocks.NETHERRACK, Blocks.WALL_SIGN, Blocks.GOLD_BLOCK).setCanGenerateOnSand().generate(world, random, blockpos);
 			}
 		}
 		isDecorating = false;
+		
 	}
 }

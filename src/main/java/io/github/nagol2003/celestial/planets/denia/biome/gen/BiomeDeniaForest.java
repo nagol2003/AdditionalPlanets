@@ -4,14 +4,12 @@ import java.util.Random;
 
 import io.github.nagol2003.celestial.planets.denia.biome.ChunkProviderDenia;
 import io.github.nagol2003.celestial.planets.denia.biome.DeniaBiomes;
-import io.github.nagol2003.entities.deniamammal.EntityMammal;
 import io.github.nagol2003.entities.moose.EntityMoose;
 import io.github.nagol2003.init.InitBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 
@@ -24,8 +22,8 @@ public class BiomeDeniaForest extends DeniaBiomes {
 		this.spawnableMonsterList.clear();
 		this.spawnableCreatureList.clear();
 		this.spawnableWaterCreatureList.clear();
-		this.spawnableMonsterList.add(new SpawnListEntry(EntityMoose.class, 400, 105, 400));
-		this.getBiomeDecorator().treesPerChunk = 4;
+		this.spawnableMonsterList.add(new SpawnListEntry(EntityMoose.class, 1, 1, 1));
+		this.getBiomeDecorator().testTreePerChunk = 4;
 	}
 
 	@Override

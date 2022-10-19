@@ -12,21 +12,15 @@ import io.github.nagol2003.init.Recipes;
 import io.github.nagol2003.proxy.ServerProxy;
 import io.github.nagol2003.registry.APRegistry;
 import io.github.nagol2003.testing.CommandPlanetTeleportTwo;
-
+import io.github.nagol2003.testing.WorldGenCustomStructures;
 import io.github.nagol2003.util.Logging;
 import io.github.nagol2003.util.Utils;
 import io.github.nagol2003.util.handlers.RenderHandler;
 import io.github.nagol2003.util.handlers.SoundsHandler;
 import io.github.nagol2003.world.APWorldGen;
-import micdoodle8.mods.galacticraft.api.GalacticraftRegistry;
-import micdoodle8.mods.galacticraft.api.galaxies.GalaxyRegistry;
-import micdoodle8.mods.galacticraft.api.recipe.CompressorRecipes;
-import micdoodle8.mods.galacticraft.core.util.GCCoreUtil;
 //import io.github.nagol2003.world.WorldGenCustomStructures;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -60,6 +54,7 @@ public class AddonMain {
     }
    
    
+    
    
     
 	@EventHandler
@@ -70,6 +65,7 @@ public class AddonMain {
 			LOGGER.warn("Invalid Fingerprint");
 		}
 	}
+	
 	
 	
 	
@@ -97,7 +93,10 @@ public class AddonMain {
 		//GameRegistry.registerWorldGenerator(new PolulosWorldGen(), -4440);
 
 		RenderHandler.registerEntityRenders();
+		
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 	}
+	
 	
 	
 	@EventHandler
@@ -124,6 +123,7 @@ public class AddonMain {
 		//PolulosTreeGen.register();
 		proxy.postInit(registry,event);
 	}
+	
 	
 	@EventHandler
     public void onServerStarting(FMLServerStartingEvent event) {

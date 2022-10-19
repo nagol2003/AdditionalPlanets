@@ -5,17 +5,11 @@ import java.util.Random;
 import io.github.nagol2003.celestial.planets.denia.biome.ChunkProviderDenia;
 import io.github.nagol2003.celestial.planets.denia.biome.DeniaBiomes;
 import io.github.nagol2003.entities.deniamammal.EntityMammal;
-import io.github.nagol2003.entities.poluloscrab.EntityPolulosCrab;
-import io.github.nagol2003.init.InitBlocks;
-import micdoodle8.mods.galacticraft.api.galaxies.Satellite;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.monster.EntityPigZombie;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biome.BiomeProperties;
-import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 
@@ -28,8 +22,8 @@ public class BiomeDenia extends DeniaBiomes {
         this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
-        this.spawnableMonsterList.add(new SpawnListEntry(EntityMammal.class, 150, 4, 10));
-        this.getBiomeDecorator().treesPerChunk = 0;
+        this.spawnableMonsterList.add(new SpawnListEntry(EntityMammal.class, 2, 1, 2));
+        this.getBiomeDecorator().testTreePerChunk = 0;
 	}
 
 	@Override

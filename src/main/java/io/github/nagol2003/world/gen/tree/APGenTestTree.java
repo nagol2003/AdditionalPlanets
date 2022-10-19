@@ -8,17 +8,13 @@ import net.minecraft.world.World;
 
 public class APGenTestTree extends APGenTreeBaseTest {
 
-	public APGenTestTree(Block log, Block leaves) {
+	public APGenTestTree(Block log, Block leaves, boolean canGenerateOnSand) {
 		super();
 		this.setLogBlock(log.getDefaultState());
 		this.setLeavesBlock(leaves.getDefaultState());
 		this.setMinTrunkSize(11);
 		this.setMaxTrunkSize(91);
-	}
-
-	public APGenTestTree setCanGenerateOnSand() {
-		super.setTreesCanGenerateOnSand(true);
-		return this;
+		this.setTreesCanGenerateOnSand(canGenerateOnSand);
 	}
 
 	@Override

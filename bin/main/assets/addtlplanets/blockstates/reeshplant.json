@@ -1,0 +1,13 @@
+{
+	"variants": {
+	
+	"age=0": { "model": "addtlplanets:reeshplant0" },
+	"age=1": { "model": "addtlplanets:reeshplant1" },
+	"age=2": { "model": "addtlplanets:reeshplant2" },
+	"age=3": { "model": "addtlplanets:reeshplant3" },
+	"age=4": { "model": "addtlplanets:reeshplant4" },
+	"age=5": { "model": "addtlplanets:reeshplant5" },
+	"age=6": { "model": "addtlplanets:reeshplant6" },
+	"age=7": { "model": "addtlplanets:reeshplant7" }
+	}
+}

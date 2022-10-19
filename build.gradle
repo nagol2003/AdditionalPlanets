@@ -1,76 +1,133 @@
-plugins {
-	id "net.galacticraft.addon" version "1.0.0"
-	id 'io.freefair.lombok' version '6.5.0.2'
-	id 'eclipse'
+buildscript {
+    repositories {
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+		maven {
+			url 'https://plugins.gradle.org/m2/'
+		}
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+		classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.4.0"
+        
+    }
 }
+
+plugins {
+	  id 'eclipse'
+	  id 'idea'
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'com.matthewprenger.cursegradle'
 
 version = "${minecraft_version}-1.0.0"
-group = "io.github.nagol2003"
+group= "io.github.nagol2003" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "AdditionalPlanets"
 
-galacticraft {
-	version("4.0.3")
-}
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 minecraft {
+    version = "${minecraft_version}-${forge_version}"
+    runDir = "run"
+    mappings = "${mappings_version}" 
+    makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+}
 
-    mappings channel: mappings_channel, version: mappings_version
-
-    runs {
-        client {
-            workingDirectory project.file('run/client')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-			if (project.hasProperty('uuid'))
-				args '--uuid', project.getProperty('uuid')
-			if (project.hasProperty('username'))
-				args '--username', project.getProperty('username')
-        }
-
-        server {
-            workingDirectory project.file('run/server')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                "${mod_id}" {
-                    source sourceSets.main
-                }
-            }
+idea.module {
+    inheritOutputDirs=true
+    downloadJavadoc = true
+    iml {
+        whenMerged { module ->
+            module.dependencies*.exported = true
         }
     }
 }
 
+String GCBuild = "261"
+String GCVersion = "1.12.2-4.0.2.${GCBuild}"
+
 repositories {
-    mavenCentral()
-	maven { url "https://www.cursemaven.com" }
+	mavenCentral()
+	ivy {
+		url "https://micdoodle8.com/new-builds/"
+		layout 'pattern', {
+			artifact "[organization]/${GCBuild}/[module]-[revision].jar"
+		}
+		metadataSources {
+			artifact()
+		}
+	}
+    maven { url "https://www.cursemaven.com" }
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-	implementation "curse.maven:asmodeuscore-303101:3231302"
+
+	compile "GC-1.12-dev:GalacticraftCore-Dev:${GCVersion}"
+	compile "GC-1.12-dev:Galacticraft-Planets-Dev:${GCVersion}"
+	compile "GC-1.12-dev:MicdoodleCore-Dev:${GCVersion}"
+	compile "curse.maven:asmodeuscore-303101:3231302"
+	
+	compileOnly "org.projectlombok:lombok:${lombok_version}"
+	annotationProcessor "org.projectlombok:lombok:${lombok_version}"
+
+	testCompileOnly "org.projectlombok:lombok:${lombok_version}"
+	testAnnotationProcessor "org.projectlombok:lombok:${lombok_version}"
+	
 }
 
-apply from: 'gradle/resources.gradle'
+processResources {
 
-jar.finalizedBy('reobfJar')
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+		expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+    
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
 
 task deobfJar(type: Jar) {
-    duplicatesStrategy(DuplicatesStrategy.FAIL)
-    archiveClassifier.set('dev')
-	from sourceSets.main.output
+    from sourceSets.main.output
+    classifier = 'dev'
 }
 
-clean {
-	def filteredDelete = new HashSet<>()
-	for (def toDelete : getDelete()) {
-		for (def f : file(toDelete).listFiles()) {
-			if (f.getName() != "fg_cache") {
-				filteredDelete.add(f)
+task signJar(type: SignJar, dependsOn: reobfJar) {
+    onlyIf {
+        project.hasProperty('keyStore')
+    }
+    keyStore = project.findProperty('keyStore')
+    alias = project.findProperty('keyStoreAlias')
+    storePass = project.findProperty('keyStorePass')
+    keyPass = project.findProperty('keyStoreKeyPass')
+    inputFile = jar.archivePath
+    outputFile = jar.archivePath
+}
+
+curseforge {
+    if (project.hasProperty('curseforge_key')){
+		apiKey = project.findProperty("curseforge_key")
+		project {
+			id = "PROJECT-ID"
+			releaseType = "release"
+			addGameVersion "${mcVersion}"
+			mainArtifact(jar) {
+				//relations {
+				//	requiredLibrary 'some-coremod'
+				//}
 			}
+			addArtifact(apiJar)
+			addArtifact(deobfJar)
 		}
 	}
-	setDelete(filteredDelete)
 }
+
+build.dependsOn signJar
+tasks.build.dependsOn signJar
+tasks.curseforge.dependsOn build

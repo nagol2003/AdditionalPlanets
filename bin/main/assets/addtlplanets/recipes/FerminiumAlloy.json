@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+   		 "FF ",
+   		 "FS ",
+   		 "   "
+    ],
+    
+    "key": 
+    {
+    	"F":
+    	{
+    		"item": "addtlplanets:ferminium_chunk"
+    	},
+    	
+    	"S":
+    	{
+    		"item": "addtlplanets:strange_metallic_substance"
+    	}
+     },
+    
+    "result": 
+    {
+    	"item": "addtlplanets:ferminium_alloy",
+    	"count": 2
+    }
+}

@@ -10,6 +10,7 @@ import io.github.nagol2003.init.InitBlocks;
 import io.github.nagol2003.util.world.MapGenAddonCaveGen;
 import io.github.nagol2003.util.world.MapGenAddonRavinGen;
 import io.github.nagol2003.util.world.MapGenBaseMeta;
+import io.github.nagol2003.world.chunk.ChunkProviderClassicFlat;
 import io.github.nagol2003.world.chunk.ChunkProviderMultiBiome;
 import io.github.nagol2003.world.gen.ore.AddonPlanetOreGenerator;
 import io.github.nagol2003.world.gen.ore.WorldGenMineableOres;
@@ -20,7 +21,7 @@ import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
-public class ChunkProviderOgnious extends ChunkProviderMultiBiome {
+public class ChunkProviderOgnious extends ChunkProviderClassicFlat {
 
 	private final MapGenAddonRavinGen ravineGenerator = new MapGenAddonRavinGen();
 	private final MapGenAddonCaveGen caveGenerator = new MapGenAddonCaveGen(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState(),

@@ -37,7 +37,7 @@ public class WorldProviderOgnious extends WorldProviderAddonPlanet {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Vec3d getCloudColor(float partialTicks) {
-		return new Vec3d(0.5, 0.8, 0.8);
+		return new Vec3d(1, 1, 1);
 	}
 
 	@Override
@@ -48,7 +48,7 @@ public class WorldProviderOgnious extends WorldProviderAddonPlanet {
 
 	@Override
 	public Vector3 getSkyColor() {
-		return new Vector3(.3, .6, 1);
+		return new Vector3(0.57, 0.75, 1);
 	}
 
 	@Override
@@ -140,6 +140,6 @@ public class WorldProviderOgnious extends WorldProviderAddonPlanet {
 
 	@Override
 	public Vector3 getFogColor() {
-		return new Vector3(0, 0, 0);
+		return new Vector3(1, 1, 1);
 	}
 }

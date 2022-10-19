@@ -46,7 +46,7 @@ public abstract class ChunkProviderMultiBiome extends ChunkProviderBase {
 
 	private List<MapGenBaseMeta> worldGenerators;
 
-	protected int seaLevel = 63;
+	protected int seaLevel = 64;
 	protected boolean seaIceLayer = false;
 
 	public ChunkProviderMultiBiome(World world, long seed, boolean flag) {

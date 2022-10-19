@@ -165,6 +165,7 @@ public class AddonCelestialBodies {
 	public static Moon Terrin;
 	public static Moon BarbanIVa;
 	public static Moon Chiona;
+	public static Moon Ship;
 	
 	public static Satellite polulosOrbit;
 	
@@ -468,9 +469,9 @@ public class AddonCelestialBodies {
 		Ognious.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(1.05F, 1.05F));
 		Ognious.setRelativeOrbitTime(2.0F);
 		Ognious.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png"));
-		Ognious.setBiomeInfo(OgniousBiomes.Ognious);
+		Ognious.setBiomeInfo(OgniousBiomes.Ognious, OgniousBiomes.Forest);
 		Ognious.setAtmosphere(new AtmosphereInfo(true, true, true, 1.0F, 1.0F, 0.5F));
-		//Ognious.setDimensionInfo(dim.idOgnious, WorldProviderOgnious.class);
+		Ognious.setDimensionInfo(dim.idOgnious, WorldProviderOgnious.class);
 		Ognious.atmosphereComponent(EnumAtmosphericGas.OXYGEN);
 	
 		Queran = new Planet("Queran").setParentSolarSystem(Garphina);
@@ -686,6 +687,19 @@ public class AddonCelestialBodies {
 		Erink.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
 		Erink.setDimensionInfo(dim.idErink, WorldProviderErink.class);
 		Erink.atmosphereComponent(EnumAtmosphericGas.METHANE);
+		
+		Ship = new Moon("Ship").setParentPlanet(Ognious);
+		Ship.setPhaseShift(2.436F);
+		Ship.setRingColorRGB(1F, 0F, 0F);
+		Ship.setRelativeDistanceFromCenter(new CelestialBody.ScalableDistance(5F, 2F));
+		Ship.setRelativeOrbitTime(50.0F);
+		Ship.setTierRequired(999999);
+		Ship.setRelativeSize(1.9F);
+		Ship.setBodyIcon(new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/cov23.png"));
+		//Ship.setBiomeInfo(ErinkBiomes.Erink);
+		Ship.setAtmosphere(new AtmosphereInfo(false, false, false, 5.0F, 0.0F, 0.1F));
+		//Ship.setDimensionInfo(dim.idErink, WorldProviderErink.class);
+		Ship.atmosphereComponent(EnumAtmosphericGas.METHANE);
 
 
 		Blastopy = new Moon("Blastopy").setParentPlanet(Vermon);
@@ -825,7 +839,7 @@ public class AddonCelestialBodies {
 		// comment these out for now but keep em to just change the world provider class later
 
 		GalacticraftRegistry.registerTeleportType(WorldProviderPolulos.class, new TeleportTypeMoon());
-		//GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
+		GalacticraftRegistry.registerTeleportType(WorldProviderOgnious.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderVulcan.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderj1407b.class, new TeleportTypeMoon());
 		GalacticraftRegistry.registerTeleportType(WorldProviderkoi4878b.class, new TeleportTypeMoon());
@@ -854,6 +868,7 @@ public class AddonCelestialBodies {
 		//GalacticraftRegistry.registerTeleportType(WorldProvidertestStation.class, new TeleportTypeSpaceStation());
 		//GalacticraftRegistry.registerTeleportType(WorldProviderPolulosOrbit.class, new APSatTeleportType());
 	}
+	
 
 	private static void registerAll() {
 		// Now we register each Celestial Body after we have created and defined them
@@ -919,6 +934,7 @@ public class AddonCelestialBodies {
 		//GalaxyRegistry.registerMoon(BarbanIVa);
 		//GalaxyRegistry.registerMoon(Chiona);
 		//GalaxyRegistry.registerSatellite(testStation);
+		GalaxyRegistry.registerMoon(Ship);
 
 		//GalaxyRegistry.registerSatellite(polulosOrbit);
 	}

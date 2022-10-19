@@ -5,6 +5,7 @@ import java.util.Random;
 import org.lwjgl.opengl.GL11;
 
 import io.github.nagol2003.Const;
+import io.github.nagol2003.celestial.planets.polulos.SkyProviderPolulos;
 import micdoodle8.mods.galacticraft.core.Constants;
 import micdoodle8.mods.galacticraft.core.dimension.WorldProviderMoon;
 import micdoodle8.mods.galacticraft.core.util.ConfigManagerCore;
@@ -31,6 +32,7 @@ public class SkyProviderOgnious extends IRenderHandler
     private static final ResourceLocation planet1 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/polulos.png");
     private static final ResourceLocation planet2 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png");
     private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png");
+    private static final ResourceLocation ship2 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/cov232.png");
 
     public int starGLCallList = GLAllocation.generateDisplayLists(3);
     public int glSkyList;
@@ -123,6 +125,7 @@ public class SkyProviderOgnious extends IRenderHandler
         float f8;
         float f9;
         float f10;
+        float f11;
 
         float f18 = world.getStarBrightness(partialTicks);
 
@@ -139,7 +142,7 @@ public class SkyProviderOgnious extends IRenderHandler
         final Tessellator var23 = Tessellator.getInstance();
         GL11.glDepthMask(false);
         GL11.glEnable(GL11.GL_FOG);
-        GL11.glColor3f(0, 0, 0);
+        GL11.glColor3f(0.57f, 0.75f, 1f);
         GL11.glCallList(this.glSkyList);
         GL11.glDisable(GL11.GL_FOG);
         GL11.glDisable(GL11.GL_ALPHA_TEST);
@@ -233,6 +236,22 @@ public class SkyProviderOgnious extends IRenderHandler
         worldRenderer.pos(var12, -100.0D, var12).tex(1.0D, 1.0D).endVertex();
         worldRenderer.pos(var12, -100.0D, -var12).tex(1.0D, 0D).endVertex();
         worldRenderer.pos(-var12, -100.0D, -var12).tex(0D, 0D).endVertex();
+        var23.draw();
+        
+      //Ship
+        f11 = 35F;
+        GL11.glScalef(0.6F, 0.6F, 0.6F);
+        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
+
+        {
+            FMLClientHandler.instance().getClient().renderEngine.bindTexture(SkyProviderOgnious.ship2);
+        }
+
+        worldRenderer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
+        worldRenderer.pos(-f11, -50.0D, f11).tex(0D, 1.0D).endVertex();
+        worldRenderer.pos(f11, -50.0D, f11).tex(1.0D, 1.0D).endVertex();
+        worldRenderer.pos(f11, -50.0D, -f11).tex(1.0D, 0D).endVertex();
+        worldRenderer.pos(-f11, -50.0D, -f11).tex(0D, 0D).endVertex();
         var23.draw();
 
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);

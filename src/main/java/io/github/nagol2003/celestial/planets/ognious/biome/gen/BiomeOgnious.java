@@ -2,6 +2,7 @@ package io.github.nagol2003.celestial.planets.ognious.biome.gen;
 
 import java.util.Random;
 
+import io.github.nagol2003.celestial.planets.ognious.biome.BiomeDecoratorOgnious;
 import io.github.nagol2003.celestial.planets.ognious.biome.ChunkProviderOgnious;
 import io.github.nagol2003.celestial.planets.ognious.biome.OgniousBiomes;
 import io.github.nagol2003.init.InitBlocks;
@@ -9,6 +10,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraftforge.common.BiomeDictionary;
 
@@ -21,7 +23,7 @@ public class BiomeOgnious extends OgniousBiomes {
 		this.spawnableMonsterList.clear();
 		this.spawnableCreatureList.clear();
 		this.spawnableWaterCreatureList.clear();
-		this.getBiomeDecorator().treesPerChunk = 4;
+		this.getBiomeDecorator().treesPerChunk = 1;
 	}
 
 	@Override
@@ -29,6 +31,16 @@ public class BiomeOgnious extends OgniousBiomes {
 		BiomeDictionary.addTypes(b, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.SANDY);
 
 	}
+	
+	@Override
+	public BiomeDecorator createBiomeDecorator() {
+		return new BiomeDecoratorOgnious();
+	}
+
+	protected BiomeDecoratorOgnious getBiomeDecorator() {
+		return (BiomeDecoratorOgnious) this.decorator;
+	}
+	
 	@Override
 	public void generateBiomeSurface(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z,
 			double noiseVal) {

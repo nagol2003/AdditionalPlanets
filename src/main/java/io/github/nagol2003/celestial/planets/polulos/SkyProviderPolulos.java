@@ -29,7 +29,7 @@ public class SkyProviderPolulos extends IRenderHandler
     private static final ResourceLocation planet1 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/ognious.png");
     private static final ResourceLocation planet2 = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/denia.png");
     private static final ResourceLocation sunTexture = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/radonstar.png");
-    private static final ResourceLocation ship = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/cov2.png");
+    private static final ResourceLocation ship = new ResourceLocation(Const.ASSET_PREFIX, "textures/gui/celestialbodies/cov232.png");
 
     public int starGLCallList = GLAllocation.generateDisplayLists(3);
     public int glSkyList;
@@ -122,6 +122,7 @@ public class SkyProviderPolulos extends IRenderHandler
         float f8;
         float f9;
         float f10;
+        float f11;
 
         float f18 = world.getStarBrightness(partialTicks);
 
@@ -234,7 +235,7 @@ public class SkyProviderPolulos extends IRenderHandler
         var23.draw();
         
         //Ship
-        var12 = 20F;
+        f11 = 35F;
         GL11.glScalef(0.6F, 0.6F, 0.6F);
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1F);
 
@@ -243,10 +244,10 @@ public class SkyProviderPolulos extends IRenderHandler
         }
 
         worldRenderer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
-        worldRenderer.pos(-var12, -100.0D, var12).tex(0D, 1.0D).endVertex();
-        worldRenderer.pos(var12, -100.0D, var12).tex(1.0D, 1.0D).endVertex();
-        worldRenderer.pos(var12, -100.0D, -var12).tex(1.0D, 0D).endVertex();
-        worldRenderer.pos(-var12, -100.0D, -var12).tex(0D, 0D).endVertex();
+        worldRenderer.pos(-f11, -50.0D, f11).tex(0D, 1.0D).endVertex();
+        worldRenderer.pos(f11, -50.0D, f11).tex(1.0D, 1.0D).endVertex();
+        worldRenderer.pos(f11, -50.0D, -f11).tex(1.0D, 0D).endVertex();
+        worldRenderer.pos(-f11, -50.0D, -f11).tex(0D, 0D).endVertex();
         var23.draw();
 
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);

@@ -31,14 +31,14 @@ public class ChunkProviderDenia extends ChunkProviderMultiBiome {
 	
 	// Example Ore Generators
 	//private WorldGenerator ore4 = new WorldGenMineableOres(oreBlock, blocksPerVein, veinsPerChunk, startY, endY, replaceTargets)
-		   private WorldGenerator ore1 = new WorldGenMineableOres(InitBlocks.DENIAFERMINIUMORE, 6, 8, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
-		private WorldGenerator ore2 = new WorldGenMineableOres(InitBlocks.STRANGEMETALLICDENIA, 8, 6, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
-		        private WorldGenerator ore3 = new WorldGenMineableOres(InitBlocks.DENIAIRONORE, 25, 50, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
-		              private WorldGenerator ore4 = new WorldGenMineableOres(Blocks.IRON_BLOCK, 5, 15, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+		private WorldGenerator ore1 = new WorldGenMineableOres(InitBlocks.DENIAFERMINIUMORE, 6, 18, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+		private WorldGenerator ore2 = new WorldGenMineableOres(InitBlocks.STRANGEMETALLICDENIA, 8, 16, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+		private WorldGenerator ore3 = new WorldGenMineableOres(InitBlocks.DENIAIRONORE, 25, 50, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
+		private WorldGenerator ore4 = new WorldGenMineableOres(Blocks.IRON_BLOCK, 5, 15, 1, 200, stoneBlockState, InitBlocks.DENIASTONE.getDefaultState());
 		
 		@Override
 		protected AddonPlanetOreGenerator getOreGenerator() {
-			return new AddonPlanetOreGenerator(ore1, ore2, ore3);
+			return new AddonPlanetOreGenerator(ore1, ore2, ore3, ore4);
 		}
 
 	public ChunkProviderDenia(World par1World, long seed, boolean mapFeaturesEnabled) {
