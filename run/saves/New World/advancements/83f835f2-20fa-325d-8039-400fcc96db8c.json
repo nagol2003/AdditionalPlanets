@@ -1,0 +1,17 @@
+{
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2022-10-19 00:04:27 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "deep_ocean": "2022-10-19 00:05:08 -0400",
+      "forest_hills": "2022-10-19 00:04:44 -0400",
+      "savanna": "2022-10-19 00:04:58 -0400",
+      "plains": "2022-10-19 00:04:27 -0400"
+    },
+    "done": false
+  }
+}

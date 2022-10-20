@@ -3,15 +3,14 @@ package io.github.nagol2003.testing;
 import java.util.ArrayList;
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.vulcan.biome.gen.BiomeVulcanHell;
+import io.github.nagol2003.AddonConfig;
+import io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosDesert;
 import io.github.nagol2003.init.InitBlocks;
-import io.github.nagol2003.testing.WorldGenStructure;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
-import net.minecraft.world.biome.BiomeDesert;
 import net.minecraft.world.biome.BiomePlains;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
@@ -26,16 +25,20 @@ public class WorldGenCustomStructures implements IWorldGenerator
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
 	{
-		
+		if (world.provider.getDimension() == AddonConfig.addon_dimension.idPolulos)
 		{
 		
 			
-			generateStructure(PENIS, world, random, chunkX, chunkZ, 20, InitBlocks.VULCANDIRT, BiomeVulcanHell.class);
-			generateStructure(PENIS, world, random, chunkX, chunkZ, 20, Blocks.GRASS, BiomePlains.class);
+			generateStructure(PENIS, world, random, chunkX, chunkZ, 20, InitBlocks.POLULOSSAND, BiomePolulosDesert.class);
 			
 		
 			
 		}
+		
+		else {
+			generateStructure(PENIS, world, random, chunkX, chunkZ, 20, Blocks.GRASS, BiomePlains.class);
+		}
+		
 	}
 	
 	private void generateStructure(WorldGenerator generator, World world, Random random, int chunkX, int chunkZ, int chance, Block topBlock, Class<?>... classes)

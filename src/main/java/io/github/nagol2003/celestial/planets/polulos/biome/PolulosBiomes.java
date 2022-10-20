@@ -2,8 +2,6 @@ package io.github.nagol2003.celestial.planets.polulos.biome;
 
 import java.util.Random;
 
-import io.github.nagol2003.celestial.planets.denia.biome.BiomeDecoratorDenia;
-import io.github.nagol2003.celestial.planets.polulos.BiomeDecoratorOther;
 import io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosDesert;
 import io.github.nagol2003.celestial.planets.polulos.biome.gen.BiomePolulosSavanna;
 import io.github.nagol2003.init.InitBlocks;
