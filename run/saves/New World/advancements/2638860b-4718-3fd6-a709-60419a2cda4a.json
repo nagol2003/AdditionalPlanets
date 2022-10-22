@@ -1,0 +1,20 @@
+{
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2022-10-22 07:18:24 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-10-22 07:19:28 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "birch_forest_hills": "2022-10-22 07:18:22 -0400"
+    },
+    "done": false
+  }
+}

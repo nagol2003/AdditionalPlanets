@@ -88,8 +88,8 @@ key_key.hotbar.9:10
 key_[GC] Galaxy Map:50
 key_[GC] Open Spaceship Inventory:33
 key_[GC] Toggle Sensor Goggles Mode:37
-soundCategory_master:1.0
-soundCategory_music:1.0
+soundCategory_master:0.7649007
+soundCategory_music:0.19014084
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

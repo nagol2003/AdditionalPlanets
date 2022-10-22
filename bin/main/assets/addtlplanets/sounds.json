@@ -1,7 +1,19 @@
 { 
+	"entity.pigman.ambient": {
+		"category": "entity",
+		"subtitle": "entity.pigman.ambient",
+		"sounds": [{ "name": "addtlplanets:entity/pigman/ambient", "stream": true}]
+	},
+ 
 	"entity.pigman.hurt": {
 		"category": "entity",
 		"subtitle": "entity.pigman.hurt",
 		"sounds": [{ "name": "addtlplanets:entity/pigman/hurt", "stream": true}]
+	}, 
+
+	"entity.pigman.death": {
+		"category": "entity",
+		"subtitle": "entity.pigman.death",
+		"sounds": [{ "name": "addtlplanets:entity/pigman/death", "stream": true}]
 	} 
 }

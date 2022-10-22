@@ -23,7 +23,7 @@ public class BiomeForest extends OgniousBiomes {
 		this.spawnableMonsterList.clear();
 		this.spawnableCreatureList.clear();
 		this.spawnableWaterCreatureList.clear();
-		this.getBiomeDecorator().treesPerChunk = 5;
+		this.getBiomeDecorator().treesPerChunk = 1;
 	}
 
 	@Override

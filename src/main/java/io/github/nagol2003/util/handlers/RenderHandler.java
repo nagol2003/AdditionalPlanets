@@ -2,6 +2,8 @@ package io.github.nagol2003.util.handlers;
 
 import io.github.nagol2003.entities.deniamammal.EntityMammal;
 import io.github.nagol2003.entities.deniamammal.RenderMammal;
+import io.github.nagol2003.entities.entity303.EntityEntity303;
+import io.github.nagol2003.entities.entity303.RenderEntity303;
 import io.github.nagol2003.entities.moose.EntityMoose;
 import io.github.nagol2003.entities.moose.RenderMoose;
 import io.github.nagol2003.entities.pigman.EntityPigman;
@@ -52,6 +54,13 @@ public class RenderHandler {
 			@Override
 			public Render<? super EntityPigman2> createRenderFor(RenderManager manager) {
 				return new RenderPigman2(manager);
+			}
+		});
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityEntity303.class, new IRenderFactory<EntityEntity303>() {
+			@Override
+			public Render<? super EntityEntity303> createRenderFor(RenderManager manager) {
+				return new RenderEntity303(manager);
 			}
 		});
 		

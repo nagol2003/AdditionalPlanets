@@ -7,6 +7,8 @@ import io.github.nagol2003.Const;
 import io.github.nagol2003.client.render.ModRenderPlayer;
 import io.github.nagol2003.entities.deniamammal.EntityMammal;
 import io.github.nagol2003.entities.deniamammal.RenderMammal;
+import io.github.nagol2003.entities.entity303.EntityEntity303;
+import io.github.nagol2003.entities.entity303.RenderEntity303;
 import io.github.nagol2003.entities.moose.EntityMoose;
 import io.github.nagol2003.entities.moose.RenderMoose;
 import io.github.nagol2003.entities.pigman.EntityPigman;
@@ -27,7 +29,6 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import net.minecraftforge.fml.relauncher.Side;
 
 @EventBusSubscriber(value = Side.CLIENT, modid = Const.modID)
@@ -46,6 +47,7 @@ public class ClientProxy extends ServerProxy {
 		registry.registerEntityRenderer(EntityPigman.class, RenderPigman::new);
 		registry.registerEntityRenderer(EntityPigman2.class, RenderPigman2::new);
 		registry.registerEntityRenderer(EntityMoose.class, RenderMoose::new);
+		registry.registerEntityRenderer(EntityEntity303.class, RenderEntity303::new);
 		/// PLACE CODE ABOVE ///
 		registry.clientPreInit(event);
 	}

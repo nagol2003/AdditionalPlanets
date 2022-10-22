@@ -6,6 +6,7 @@ import io.github.nagol2003.blocks.Denia.FROZENCO2;
 import io.github.nagol2003.blocks.Denia.StrangeMetallicDenia;
 import io.github.nagol2003.blocks.Denia.Tundra;
 import io.github.nagol2003.blocks.Denia.deniastone;
+import io.github.nagol2003.blocks.Ognious.ClassicLog;
 import io.github.nagol2003.blocks.Ognious.MoistDirt;
 import io.github.nagol2003.blocks.Ognious.OgniousGrass;
 import io.github.nagol2003.blocks.Ognious.OgniousLeaves;
@@ -67,6 +68,7 @@ public class InitBlocks {
 	public static final Block DENIAIRONORE = new DeniaIronOre();
 	public static final Block TUNDRA = new Tundra();
 	public static final Block LIGHTSPEEDENGINE = new LIGHTSPEEDENGINE();
+	public static final Block CLASSICLOG = new ClassicLog();
 
 
 	public static final Block TESTSTRUCTUREBLOCK = new TestStructureBlock(); //FIXME TEMP
@@ -114,6 +116,7 @@ public class InitBlocks {
 		registry.register(DENIAIRONORE, "deniaironore");
 		registry.register(TUNDRA, "tundra");
 		registry.register(LIGHTSPEEDENGINE, "lightspeedengine");
+		registry.register(CLASSICLOG, "classiclog");
 
 
 
